@@ -1,0 +1,197 @@
+{
+  "$comentario": "FUENTE ÚNICA DE CIFRAS DE PANACLAW. Ningún otro archivo de este repositorio puede inventar, redondear ni proyectar un importe. Si una cifra no está aquí, no existe. Espejo de src/data/{plans,modules,ebot,seguridad,care}.ts del repositorio Richardlovelove/PanaClaw.",
+  "version": "1.0.0",
+  "verificadoContra": {
+    "repositorio": "Richardlovelove/PanaClaw",
+    "rama": "main",
+    "fecha": "2026-08-14",
+    "archivos": [
+      "src/data/plans.ts",
+      "src/data/modules.ts",
+      "src/data/ebot.ts",
+      "src/data/seguridad.ts",
+      "src/data/care.ts"
+    ]
+  },
+  "moneda": "USD",
+  "reglas": {
+    "noSumarMezclado": "Una cifra de pago único y una mensual NUNCA se suman en el mismo total. Se presentan como dos totales separados. Regla 10 del repositorio de origen.",
+    "noProyectar": "Prohibido multiplicar una mensualidad por 12 para enseñar un número más grande o más redondo. Anuncia un compromiso que nadie ha firmado.",
+    "rangosSeRespetan": "Un precio con rango ($80–$150) se cita con su rango completo. Citar solo el mínimo sin la palabra «desde» es publicidad engañosa.",
+    "desde": "La forma correcta de acortar un rango es «desde $80», nunca «$80»."
+  },
+
+  "webs": {
+    "$nota": "Pago único. El plazo cuenta desde que el cliente entrega material Y el 50% del pago, no desde la primera conversación.",
+    "cobro": "50% al empezar, 50% al entregar",
+    "planes": [
+      {
+        "slug": "start",
+        "nombre": "PanaClaw Start",
+        "precio": 295,
+        "precioTexto": "$295",
+        "entrega": "72 h",
+        "rondasCambios": 0,
+        "secciones": "4–5",
+        "editablePorCliente": false,
+        "paraQuien": "Emprender, un evento, o dejar de mandar clientes a un perfil de Instagram"
+      },
+      {
+        "slug": "launch",
+        "nombre": "PanaClaw Launch",
+        "precio": 450,
+        "precioTexto": "$450",
+        "entrega": "4–5 días",
+        "rondasCambios": 2,
+        "secciones": "7 a medida",
+        "editablePorCliente": false,
+        "paraQuien": "Quien invierte en publicidad y necesita dónde caer"
+      },
+      {
+        "slug": "corporate",
+        "nombre": "PanaClaw Corporate",
+        "precio": 850,
+        "precioTexto": "$850",
+        "entrega": "8–12 días",
+        "rondasCambios": 3,
+        "secciones": "hasta 10 páginas",
+        "editablePorCliente": true,
+        "destacado": true,
+        "paraQuien": "Sustituye al WordPress de $1,200 de las agencias"
+      },
+      {
+        "slug": "commerce",
+        "nombre": "PanaClaw Commerce",
+        "precio": 1200,
+        "precioTexto": "$1,200",
+        "entrega": "15–20 días",
+        "rondasCambios": 4,
+        "secciones": "Corporate + tienda",
+        "editablePorCliente": true,
+        "paraQuien": "Negocio panameño que quiere vender sin depender de las redes"
+      }
+    ],
+    "rondaExtra": { "precio": 40, "precioTexto": "$40", "unidad": "por ronda" },
+    "desde": "$295"
+  },
+
+  "capacidades": {
+    "$nota": "Pago único, se suman a cualquier plan web. En el sitio se llaman «capacidades avanzadas», nunca «módulos» de cara al cliente.",
+    "items": [
+      { "slug": "cuentas", "nombre": "Cuentas de usuario", "precio": 450, "precioTexto": "$450" },
+      { "slug": "panel", "nombre": "Panel de control", "precio": 650, "precioTexto": "$650" },
+      { "slug": "reservas", "nombre": "Reservas y citas", "precio": 600, "precioTexto": "$600" },
+      { "slug": "portal", "nombre": "Portal de clientes", "precio": 750, "precioTexto": "$750" },
+      { "slug": "integracion", "nombre": "Conexión con otro sistema", "precio": 350, "precioTexto": "$350" },
+      { "slug": "inventario", "nombre": "Control de inventario", "precio": 550, "precioTexto": "$550" }
+    ],
+    "desde": "$350"
+  },
+
+  "ebot": {
+    "$nota": "Pago único a PanaClaw. NO hay mensualidad nuestra. Los dos costos recurrentes se pagan a terceros y se publican siempre junto al precio: callarlos es la letra chica que la marca dice no tener.",
+    "nombre": "eBot",
+    "precio": 499,
+    "precioTexto": "$499",
+    "cobro": "Pago único, sin mensualidad de PanaClaw",
+    "entrega": "3–5 días",
+    "periodoAjustes": "catorce días",
+    "topePreguntasFrecuentes": 30,
+    "canales": ["WhatsApp", "Instagram", "Messenger", "Telegram"],
+    "costosDeTerceros": [
+      {
+        "concepto": "La nube donde vive",
+        "precioTexto": "$5 al mes",
+        "aQuien": "Cloudflare",
+        "obligatorio": true
+      },
+      {
+        "concepto": "El cerebro que piensa",
+        "precioTexto": "$1–2 al mes",
+        "aQuien": "La empresa de IA que elija el cliente",
+        "obligatorio": true
+      }
+    ]
+  },
+
+  "seguridad": {
+    "$nota": "La Auditoría es obligatoria y siempre se paga aparte. Ningún plan mensual la incluye. Proteger sin haber revisado es proteger a ciegas.",
+    "auditoria": {
+      "slug": "revision",
+      "nombre": "Auditoría de Seguridad",
+      "precioTexto": "$80–$150",
+      "cobro": "Pago único",
+      "entrega": "Informe en 5 días",
+      "tramos": [
+        { "slug": "chico", "label": "Una página o unas pocas secciones", "precio": 80, "precioTexto": "$80" },
+        { "slug": "medio", "label": "Varias páginas, blog o formularios", "precio": 110, "precioTexto": "$110" },
+        { "slug": "tienda", "label": "Una tienda o un sistema con cuentas", "precio": 150, "precioTexto": "$150" }
+      ]
+    },
+    "mensuales": [
+      {
+        "slug": "protegida",
+        "nombre": "Web Protegida",
+        "precioTexto": "$30–$60",
+        "sufijo": "/mes",
+        "requisito": "Empieza con la Auditoría de Seguridad",
+        "destacado": true
+      },
+      {
+        "slug": "blindada",
+        "nombre": "Web Blindada",
+        "precioTexto": "$70–$120",
+        "sufijo": "/mes",
+        "requisito": "Empieza con la Auditoría de Seguridad",
+        "respuestaIncidente": "24–48 h"
+      }
+    ]
+  },
+
+  "care": {
+    "$nota": "Mantenimiento de infraestructura. NO es ciberseguridad. Sin permanencia.",
+    "planes": [
+      {
+        "slug": "base",
+        "nombre": "Care Base",
+        "precioTexto": "$35",
+        "sufijo": "/mes",
+        "horasCambios": "1 hora/mes"
+      },
+      {
+        "slug": "pro",
+        "nombre": "Care Pro",
+        "precioTexto": "$75",
+        "sufijo": "/mes",
+        "horasCambios": "3 horas/mes",
+        "respuesta": "menos de 24 horas",
+        "destacado": true
+      },
+      {
+        "slug": "business",
+        "nombre": "Care Business",
+        "precioTexto": "$150–$250",
+        "sufijo": "/mes",
+        "horasCambios": "6–8 horas/mes",
+        "respuesta": "menos de 4 horas"
+      }
+    ],
+    "descuentoAnual": "Pago anual adelantado: dos meses gratis en cualquier plan",
+    "desde": "$35/mes"
+  },
+
+  "diagnostico": {
+    "$nota": "Mira el NEGOCIO (por qué no vende). No confundir con la Auditoría de Seguridad, que mira por dónde te entran.",
+    "nombre": "Diagnóstico de Ventas",
+    "precio": 49,
+    "precioTexto": "$49",
+    "cobro": "Pago único, completo por adelantado",
+    "entrega": "Informe + llamada de 30 min en 48 h"
+  },
+
+  "otrosImportes": {
+    "$nota": "Cifras que aparecen en el copy del sitio y que un agente puede necesitar citar.",
+    "dominioAnual": { "precioTexto": "$15 al año", "concepto": "Renovación del dominio, único costo obligatorio de un sitio sin Care" },
+    "referenciaCompetencia": { "precioTexto": "$1,200", "concepto": "Lo que cobra una agencia por un WordPress equivalente al Corporate" }
+  }
+}

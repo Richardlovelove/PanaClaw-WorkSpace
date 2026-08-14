@@ -1,0 +1,199 @@
+{
+  "$comentario": "FUENTE ÚNICA DE TOKENS VISUALES. Los hex, las fuentes y los pesos que se pegan en Nano Banana, Pomelli, Canva, Grok o cualquier generador salen de aquí y solo de aquí. Espejo de src/styles/global.css y scripts/generate-brand-assets.mjs del repositorio Richardlovelove/PanaClaw.",
+  "version": "1.0.0",
+  "verificadoContra": {
+    "repositorio": "Richardlovelove/PanaClaw",
+    "fecha": "2026-08-14",
+    "archivos": ["src/styles/global.css", "scripts/generate-brand-assets.mjs", "src/data/site.ts"]
+  },
+
+  "identidad": {
+    "nombre": "PanaClaw",
+    "escritura": "Una sola palabra, P y C mayúsculas. Nunca «Pana Claw», «PANACLAW» en prosa ni «Panaclaw».",
+    "tagline": "Sitios rápidos. Código tuyo.",
+    "descripcionCorta": "Webs en Panamá. Abren en menos de 1 s, listas en días y quedan a tu nombre. Desde $295.",
+    "mercado": "Panamá",
+    "idioma": "es-PA",
+    "sitio": "https://panaclaw.netlify.app"
+  },
+
+  "color": {
+    "$regla": "UN SOLO ACENTO CROMÁTICO. Naranja para UI y acentos de texto; rojo ember RESERVADO A FONDOS. El ember nunca aparece en texto.",
+    "tokens": {
+      "deep-black": {
+        "hex": "#100101",
+        "uso": "Fondo maestro de absolutamente todo. No es negro puro: lleva un punto de rojo.",
+        "rgb": [16, 1, 1]
+      },
+      "flash-orange": {
+        "hex": "#FF5100",
+        "uso": "Acento único. Botones, antetítulos, viñetas, focus, el punto de la marca.",
+        "rgb": [255, 81, 0]
+      },
+      "ember-red": {
+        "hex": "#FF1E1E",
+        "uso": "SOLO fondos: degradados, vetas de imagen, shader del hero. Prohibido en texto.",
+        "rgb": [255, 30, 30]
+      },
+      "signal-red": {
+        "hex": "#EE0000",
+        "uso": "Paso intermedio en degradados de fondo. No se usa suelto.",
+        "rgb": [238, 0, 0]
+      },
+      "soft-white": {
+        "hex": "#FFF7F7",
+        "uso": "Texto principal. Blanco cálido, no #FFFFFF.",
+        "rgb": [255, 247, 247]
+      },
+      "studio-gray": {
+        "hex": "#BABABA",
+        "uso": "Texto secundario, bajadas, notas, estados apagados.",
+        "rgb": [186, 186, 186]
+      }
+    },
+    "paletaParaGeneradores": ["#100101", "#FF5100", "#FF1E1E", "#FFF7F7", "#BABABA"],
+    "prohibido": [
+      "Azul de cualquier tono: es el color de todas las agencias tecnológicas y es exactamente contra quien se posiciona la marca",
+      "Verde, morado, amarillo, pastel",
+      "Blanco puro #FFFFFF como fondo o como texto",
+      "Negro puro #000000",
+      "Degradados arcoíris o multicolor",
+      "Un segundo color de acento junto al naranja"
+    ],
+    "deudaConocida": {
+      "contrasteBotonPrincipal": "Blanco #FFF7F7 sobre naranja #FF5100 da 3.1:1 y WCAG AA pide 4.5:1 a ese cuerpo de letra. Es una decisión de marca tomada a sabiendas, documentada en global.css. No la 'arregles' cambiando el naranja sin decidirlo con el dueño de la marca."
+    }
+  },
+
+  "tipografia": {
+    "familia": "Archivo",
+    "fallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "fuente": "@fontsource/archivo",
+    "pesosEnUso": [300, 400, 500, 600, 700],
+    "$regla": "Una sola familia para todo. No hay fuente secundaria, ni serif de titulares, ni display.",
+    "escala": {
+      "h1-hero": {
+        "size": "clamp(48px, 8vw, 112px)",
+        "weight": 600,
+        "lineHeight": 0.98,
+        "letterSpacing": "-0.02em",
+        "transform": "uppercase",
+        "maxWidth": "14ch"
+      },
+      "h2-seccion": {
+        "size": "clamp(36px, 5vw, 64px)",
+        "weight": 600,
+        "lineHeight": 1.02,
+        "letterSpacing": "-0.02em",
+        "transform": "uppercase",
+        "maxWidth": "20ch"
+      },
+      "antetitulo": {
+        "size": "14px",
+        "weight": 400,
+        "letterSpacing": "0.16em",
+        "transform": "uppercase",
+        "color": "#FF5100",
+        "nota": "El eyebrow naranja sobre negro es la firma tipográfica más reconocible de la marca."
+      },
+      "bajada": {
+        "size": "18px",
+        "weight": 300,
+        "color": "#BABABA",
+        "maxWidth": "52ch"
+      },
+      "cuerpo": { "size": "15–17px", "weight": 300, "lineHeight": 1.6, "color": "#BABABA" },
+      "precio": { "size": "44px", "weight": 600, "letterSpacing": "-0.02em" },
+      "boton": {
+        "size": "13–14px",
+        "weight": 500,
+        "letterSpacing": "0.03em–0.06em",
+        "transform": "uppercase en CTAs de nav, sentence case en botones de hero"
+      },
+      "wordmark": {
+        "weight": 700,
+        "letterSpacing": "0.20em",
+        "transform": "uppercase",
+        "nota": "PANACLAW en versalitas muy espaciadas, seguido de un punto naranja."
+      }
+    }
+  },
+
+  "forma": {
+    "radios": {
+      "pill": "999px — nav, botones, badges, chips",
+      "tarjeta": "20–22px — planes, servicios, care",
+      "campo": "12px — inputs, selects, textarea",
+      "icono": "22% del lado — favicon redondeado"
+    },
+    "bordes": "1px solid rgba(255,255,255,.10) sobre fondo rgba(255,255,255,.02). La tarjeta de PanaClaw es un rectángulo de vidrio apenas más claro que el fondo, no una caja blanca.",
+    "sombras": "0 14px 48px rgba(0,0,0,.55) — profunda y difusa, nunca dura ni offset lateral.",
+    "cristal": "backdrop-filter: blur(26px) saturate(150%) sobre rgba(9,1,1,.88). Es el tratamiento del nav flotante.",
+    "vinetaViñeta": "Punto naranja de 8px como marcador de lista. Nunca un check verde, nunca un guion."
+  },
+
+  "logo": {
+    "simbolo": "Rayo (bolt) sobre cuadrado negro, con degradado #FF5100 → #FF1E1E de arriba-izquierda a abajo-derecha.",
+    "pathSVG": "M37.5 6 18 35.5h11.2L26.5 58 46 28.5H34.8L37.5 6Z",
+    "viewBox": "0 0 64 64",
+    "fondo": "#100101, esquinas redondeadas al 22% del lado",
+    "wordmark": "PANACLAW en Archivo 700, tracking 0.20em, color #FFF7F7, seguido de «.» en #FF5100",
+    "originales": "brand-assets/logo-original.{png,svg} en el repositorio del sitio",
+    "regenerar": "npm run brand en el repositorio del sitio. Los favicons y og.png son archivos generados y NO se recalculan en cada build.",
+    "usosProhibidos": [
+      "Rayo en cualquier color que no sea el degradado naranja→ember",
+      "Rayo sobre fondo claro",
+      "Estirar, rotar o inclinar el símbolo",
+      "Wordmark sin tracking",
+      "Añadir efectos: sombra, contorno, bisel, brillo"
+    ]
+  },
+
+  "movimiento": {
+    "$regla": "Sin librería de animación. Solo transiciones CSS; JavaScript únicamente decide cuándo dispararlas.",
+    "propiedadesAnimables": ["transform", "opacity"],
+    "prohibido": "Animar cualquier otra propiedad — provoca repintados y el argumento entero de la marca es la velocidad.",
+    "duraciones": "0.2s–0.3s, ease. Nada por encima de 0.35s.",
+    "accesibilidad": "prefers-reduced-motion: reduce desactiva TODAS las animaciones. Sin excepción."
+  },
+
+  "imagen": {
+    "$regla": "Las imágenes van de fondo, nunca como pieza de producto. A sangre, apagadas y bajo un velo que abre carril al texto. Lo que brilla es el titular.",
+    "formato": "16:9 en origen, recorte con object-position declarado por escena",
+    "opacidadPorDefecto": "0.4–0.5, hasta 0.85 en imágenes muy oscuras",
+    "esteticaCanonica": "Materia oscura incandescente: obsidiana, cristal negro, roca fundida, circuitos rojos, estelas de luz. Sin gente, sin oficinas, sin laptops, sin stock corporativo.",
+    "referenciasDelSitio": [
+      "Proyectil oscuro atravesando estelas de luz roja a alta velocidad",
+      "Monolitos negros con circuitos rojos alzados sobre una llanura fracturada",
+      "Hélice de bloques de cristal rojo encajados uno tras otro",
+      "Retícula infinita de servidores encendidos en rojo perdiéndose en el horizonte",
+      "Una mano de cristal oscuro tocando una esfera de datos incandescente",
+      "Cintas de luz roja trenzándose sobre obsidiana pulida",
+      "Esfera de roca incandescente flotando sola en una cámara oscura"
+    ]
+  },
+
+  "layout": {
+    "contenedor": "max-width 1280px, padding lateral 40px (24px en móvil)",
+    "seccion": "padding vertical 120px",
+    "rejillas": "3 columnas para servicios y capacidades, 4 para planes, gap 18–24px",
+    "$regla": "Una sola fuente de verdad para cada medida. Dos reglas calculando el mismo ancho es el bug que más ha costado en el repositorio de origen."
+  },
+
+  "contacto": {
+    "$regla": "El número NO se imprime en la UI. Los botones dicen «WhatsApp» sin dígitos. El número solo aparece cuando la persona ya está dentro del chat. Es una decisión de marca.",
+    "whatsappLegible": "+1 (940) 604-6565",
+    "whatsappCrudo": "19406046565",
+    "mensajePorDefecto": "Hola PanaClaw, quiero cotizar mi sitio web",
+    "horario": "Lun–Vie · 9:00 – 18:00",
+    "zona": "Hora de Panamá (GMT-5)",
+    "plantillaEnlace": "https://wa.me/19406046565?text={mensaje-url-encoded}"
+  },
+
+  "medicion": {
+    "metaPixelId": "1067898639025746",
+    "ga4MeasurementId": "",
+    "eventoConversion": "Lead, se dispara solo en /gracias/",
+    "$regla": "Activar o desactivar una herramienta de medición obliga a actualizar /privacidad en el mismo commit. Si la página dice una cosa y el sitio hace otra, deja de ser un descuido y pasa a ser una declaración falsa."
+  }
+}
