@@ -86,7 +86,7 @@ es la base. Encima de esa base, según la petición:
 | Guion o prompt de video, reel, anuncio en video | `prompts/video/video-corto.md` + `adn/02-voz-y-tono.md` |
 | Anuncios pagados (Meta, Google) | `campanas/plantillas/estructura-anuncio.md` + `campanas/canales/` + `catalogo/` del producto |
 | Una campaña completa | `campanas/README.md` (el embudo entero) y de ahí a las plantillas |
-| Alimentar Pomelli / Google Labs | `prompts/plataformas/pomelli.md` — **tiene una advertencia crítica, no la saltes** |
+| Alimentar Pomelli / Google Labs | `prompts/plataformas/pomelli.md` — deriva la marca del sitio en vivo, no de aquí |
 | Prompts para Grok, GPT u otro modelo ajeno | `prompts/plataformas/grok.md` |
 | Diseños en Canva | `prompts/plataformas/canva.md` |
 | Precios, cotizar, armar una propuesta | `datos/precios.json` → `catalogo/` → `skills/propuesta-comercial/SKILL.md` |

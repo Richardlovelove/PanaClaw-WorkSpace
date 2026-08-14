@@ -17,34 +17,7 @@ Cada punto lleva quién lo desbloquea:
 
 ---
 
-## 1 · La imagen social lleva el nombre de marca anterior `[código]`
-
-**Qué pasa.** `public/og.png` del sitio —la imagen que se ve al compartir
-cualquier enlace en WhatsApp, en un chat o en una red— lleva el wordmark
-**«CuatroNodos»**, un nombre de marca anterior.
-
-**Dónde está.** En `scripts/generate-brand-assets.mjs` del repositorio
-`Richardlovelove/PanaClaw`, dentro de la función `ogSvg()`. El texto está escrito
-literalmente ahí.
-
-**Además**, la bajada de esa misma imagen dice «Sitios Jamstack en Panamá». La
-palabra está en la lista de jerga prohibida del propio proyecto (regla 12 de
-`docs/convenciones.md` del sitio).
-
-**Qué bloquea.**
-
-- **Pomelli**, y cualquier herramienta que derive la marca rastreando el sitio:
-  `og.png` es exactamente el recurso que priorizan. Ver
-  [`prompts/plataformas/pomelli.md`](../prompts/plataformas/pomelli.md).
-- **Cualquier campaña.** Cada enlace compartido enseña el nombre equivocado.
-
-**Cómo se arregla.** En el repositorio del sitio: cambiar el texto del wordmark
-por `PanaClaw` y la bajada por una sin jerga, correr `npm run brand` y commitear
-el `og.png` regenerado. Los assets de marca **no** se recalculan en cada build.
-
----
-
-## 2 · No hay dominio propio `[$]` `[tuyo]`
+## 1 · No hay dominio propio `[$]` `[tuyo]`
 
 **Qué pasa.** El sitio vive en `panaclaw.netlify.app`.
 
@@ -52,12 +25,12 @@ el `og.png` regenerado. Los assets de marca **no** se recalculan en cada build.
 contradice el pilar de «el sitio es tuyo» en el primer clic, y es lo primero que
 nota alguien que está evaluando agencias.
 
-**Nota del repositorio del sitio:** el dominio se compra cuando el punto 1 esté
-resuelto, no antes — arreglarlo después sale más caro.
+**Nota del repositorio del sitio:** el dominio se compra cuando el resto de esta
+lista esté resuelto, no antes — arreglarlo después sale más caro.
 
 ---
 
-## 3 · Google Analytics 4 sin configurar `[cuenta]`
+## 2 · Google Analytics 4 sin configurar `[cuenta]`
 
 **Qué pasa.** `ga4MeasurementId` está vacío en `src/data/analytics.ts`, a
 propósito: un identificador falso mediría en la cuenta de nadie y lo parecería
@@ -81,7 +54,7 @@ redacción y pasa a ser una declaración falsa.
 
 ---
 
-## 4 · Los cuatro proyectos están sin medir `[código]`
+## 3 · Los cuatro proyectos están sin medir `[código]`
 
 **Qué pasa.** Las fichas de `src/data/projects.ts` tienen nombre, dominio, enlace
 y sector. No tienen métricas, ni año, ni reto, ni solución.
@@ -98,7 +71,7 @@ se ve corta pero nunca falsa.
 
 ---
 
-## 5 · No hay identidad sonora `[tuyo]`
+## 4 · No hay identidad sonora `[tuyo]`
 
 **Qué pasa.** La marca no tiene música, ni locutor, ni criterio de audio
 definido.
@@ -113,7 +86,7 @@ pregunta que hay que hacerle al humano cada vez que pida un video con voz.
 
 ---
 
-## 6 · No hay cuentas de redes sociales `[tuyo]`
+## 5 · No hay cuentas de redes sociales `[tuyo]`
 
 **Qué pasa.** El footer del sitio lista WhatsApp, Instagram, LinkedIn, GitHub y
 X, pero **solo WhatsApp tiene enlace**. Los demás iconos salen desactivados,
@@ -132,6 +105,6 @@ externa o proponer una métrica **lee esto antes**, y dice en la entrega qué pu
 afecta a su trabajo.
 
 No es una lista de excusas: es la aplicación hacia dentro de la regla 7 de la
-marca —**di siempre qué no incluye**—. Entregar una campaña sin avisar de que el
-enlace compartido enseña el nombre equivocado es exactamente la letra chica que
-esta marca dice no tener.
+marca —**di siempre qué no incluye**—. Entregar una campaña sin avisar de que su
+canal principal todavía no se puede medir es exactamente la letra chica que esta
+marca dice no tener.

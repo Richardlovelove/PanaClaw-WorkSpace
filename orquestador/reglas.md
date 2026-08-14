@@ -43,10 +43,11 @@ Instagram, Facebook, Telegram, Yappy, PayPal, GitHub, Cloudflare.
 **La prueba:** si una frase solo la entiende un programador, está mal escrita.
 Reescríbela diciendo qué le cambia al cliente, no con qué se hace.
 
-> `og.png` del sitio dice hoy «Sitios Jamstack en Panamá». Es una infracción
-> conocida de esta regla, está anotada en
-> [`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md) y **no se
-> replica en nada que produzcas.**
+> Esta regla se ha roto en producción una vez: la imagen social del sitio decía
+> «Sitios Jamstack en Panamá», que es lo que se ve al pegar un enlace en un
+> chat. Se corrigió el 2026-08-14. Se cuenta porque enseña dónde se cuela la
+> jerga: no en la página que se revisa diez veces, sino en el archivo generado
+> que nadie vuelve a mirar.
 
 ## 4. Nada de datos inventados
 

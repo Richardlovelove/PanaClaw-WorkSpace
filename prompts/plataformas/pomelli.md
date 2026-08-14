@@ -10,36 +10,35 @@ mal.** Este archivo es sobre lo segundo.
 
 ---
 
-## ⚠️ Advertencia crítica — leer antes de conectarlo
+## Antes de conectarlo: qué va a leer
 
-> **Hoy, Pomelli va a deducir el nombre de marca equivocado.**
+Pomelli no lee este repositorio. Lee **el sitio en vivo**, y con lo que encuentre
+construye el perfil. Así que lo que importa no es lo que esté escrito aquí, sino
+lo que haya publicado allí.
 
-La imagen social del sitio (`public/og.png`, la que se ve al compartir cualquier
-enlace) lleva el wordmark **«CuatroNodos»**, un nombre de marca anterior. Está
-generada por `scripts/generate-brand-assets.mjs`, que todavía tiene ese texto
-escrito dentro.
+La pieza que más pesa en ese análisis es **`public/og.png`**, la imagen social:
+es la que el sitio se declara a sí mismo como representativa, la que se ve al
+pegar un enlace en un chat, y la única donde el nombre de la marca aparece
+escrito dentro de una imagen.
 
-Ese archivo es exactamente el tipo de recurso que una herramienta de análisis de
-marca prioriza: es la imagen que el sitio se declara a sí mismo como
-representativa.
+> **Esa imagen llevó dos nombres de marca anteriores.** La publicada decía
+> «FLASK.» y el generador decía «CuatroNodos» — distintos entre sí, porque el
+> PNG se generó con una versión del script y no se volvió a correr al renombrar.
+> Además la bajada decía «Sitios Jamstack en Panamá», con la jerga dentro.
+> **Corregido el 2026-08-14**: hoy dice `PANACLAW.` y «Sitios web en Panamá ·
+> abren en menos de 1 s · desde $295».
 
-**Además**, el mismo `og.png` lleva la frase «Sitios Jamstack en Panamá», que
-infringe la regla de cero jerga. Si Pomelli la absorbe, va a producir copy con
-esa palabra dentro.
+**Comprueba que sigue bien antes de conectar Pomelli.** Es un archivo generado
+que nadie vuelve a mirar, y ya se desincronizó dos veces:
 
-### Qué hacer
+```bash
+# En el repositorio del sitio
+npm run brand && open public/og.png    # y MÍRALO
+```
 
-**Antes de conectar Pomelli**, arreglar el origen: cambiar `CuatroNodos` por
-`PanaClaw` y la bajada por una sin jerga en
-`scripts/generate-brand-assets.mjs`, correr `npm run brand` y commitear el
-`og.png` regenerado.
-
-Está anotado en
-[`operacion/deuda-conocida.md`](../../operacion/deuda-conocida.md) como el punto
-que **bloquea** este flujo de trabajo.
-
-**Si no se puede arreglar antes**, hay que revisar a mano el DNA que produzca
-Pomelli y corregir el nombre y la descripción, en cada campaña, cada vez.
+Si `npm run brand` aborta diciendo que el renderizador no dibuja texto, esa es
+una protección deliberada: la versión de sharp de esa máquina emitiría la imagen
+sin una sola letra. El motivo está en la cabecera del script.
 
 ---
 
@@ -68,8 +67,8 @@ Pomelli deduce; no acierta todo. Repasa estos campos contra
 | Mercado | Panamá |
 | Idioma | Español (es-PA) |
 
-**Comprueba el nombre aunque no esperes un error.** Es el campo que la advertencia
-de arriba compromete.
+**Comprueba el nombre aunque no esperes un error.** Es el campo que más veces se
+ha roto en esta marca, y siempre en silencio.
 
 ### Paleta
 
@@ -148,7 +147,7 @@ Todo lo que salga de Pomelli pasa por
 [`orquestador/protocolo-entrega.md`](../../orquestador/protocolo-entrega.md)
 igual que si lo hubieras escrito tú. Lo que más falla:
 
-- [ ] ¿Dice `PanaClaw` en todas partes? → busca «CuatroNodos»
+- [ ] ¿Dice `PanaClaw` en todas partes? → busca «CuatroNodos» y «FLASK» <!-- v: nombres de marca anteriores que hay que buscar -->
 - [ ] ¿Aparece «Jamstack» o cualquier otra jerga?
 - [ ] ¿Se coló azul en alguna pieza?
 - [ ] ¿Hay personas en las imágenes?

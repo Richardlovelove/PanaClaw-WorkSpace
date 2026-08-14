@@ -22,7 +22,89 @@ no incluye**, que es la firma de la marca.
 
 ---
 
-## Cómo está organizado
+## Cómo está todo conectado
+
+De dónde sale la verdad, por dónde pasa y en qué se convierte:
+
+```mermaid
+flowchart TD
+    SITIO["Repositorio del sitio<br/><b>Richardlovelove/PanaClaw</b><br/><i>src/data/*.ts · global.css</i>"]
+
+    subgraph FUENTE["datos/ — fuente única"]
+        PRECIOS["<b>precios.json</b><br/>toda cifra decible"]
+        MARCA["<b>marca.json</b><br/>todo hex y fuente"]
+    end
+
+    subgraph SABER["Capa de conocimiento"]
+        ADN["<b>adn/</b><br/>identidad · voz<br/>sistema visual · audiencia"]
+        CAT["<b>catalogo/</b><br/>6 productos<br/>condiciones · fronteras"]
+    end
+
+    subgraph HACER["Capa de producción"]
+        PROMPTS["<b>prompts/</b><br/>bloques · imagen<br/>video · plataformas"]
+        CAMP["<b>campanas/</b><br/>embudo · plantillas"]
+        SKILLS["<b>skills/</b><br/>procedimientos"]
+    end
+
+    ORQ["<b>CLAUDE.md</b><br/>enruta según lo que pida el humano"]
+    AGENTE(["Agente<br/>Claude · Grok · Pomelli"])
+    ENTREGA["Entregable<br/><i>prompts, creativos,<br/>anuncios, propuestas</i>"]
+    VERIF{{"herramientas/verificar.mjs"}}
+
+    SITIO -->|"espejo manual<br/>operacion/sincronizacion.md"| FUENTE
+    PRECIOS --> CAT
+    MARCA --> ADN
+    ADN --> PROMPTS & CAMP & SKILLS
+    CAT --> PROMPTS & CAMP & SKILLS
+    AGENTE --> ORQ
+    ORQ --> SABER & HACER
+    HACER --> ENTREGA
+    FUENTE -.->|"verifica toda cifra<br/>y todo hex"| VERIF
+    VERIF -.-> ENTREGA
+```
+
+**Lo que hace que esto no se pudra:** las cifras y los hex viven en **un solo
+sitio**. Todo lo demás apunta a `datos/`, no lo copia. Es la misma regla que el
+sitio aplica a su código, y `verificar.mjs` la hace cumplir sola.
+
+### Jerarquía de autoridad
+
+Cuando dos archivos se contradigan, gana el de la izquierda:
+
+```mermaid
+flowchart LR
+    A["<b>datos/*.json</b>"] --> B["adn/*"] --> C["catalogo/*"] --> D["todo lo demás"]
+```
+
+Un `.md` que diga `$300` cuando `precios.json` dice `$295` está equivocado, y se <!-- v: contraejemplo, $300 es la cifra equivocada que se ilustra -->
+corrige el `.md`. Nunca al revés.
+
+### Qué lee un agente según lo que le pidas
+
+```mermaid
+flowchart LR
+    H(["El humano pide…"])
+
+    H --> I["«prompts para<br/>Nano Banana»"]
+    H --> A["«anuncios<br/>para Meta»"]
+    H --> P["«cuánto le<br/>cobro a…»"]
+    H --> O["«pásaselo<br/>a Pomelli»"]
+
+    I --> I2["marca.json →<br/>prompts/bloques/ →<br/>prompts/imagen/"]
+    A --> A2["adn/audiencia →<br/>campanas/plantillas/ →<br/>catalogo/ del producto"]
+    P --> P2["precios.json →<br/>catalogo/ →<br/>skills/propuesta-comercial"]
+    O --> O2["prompts/plataformas/<br/>pomelli.md"]
+
+    I2 & A2 & P2 & O2 --> E["orquestador/<br/>protocolo-entrega.md"]
+    E --> R(["Entregable<br/>verificado"])
+```
+
+La tabla completa está en [`CLAUDE.md`](CLAUDE.md) y, con más detalle, en
+[`orquestador/enrutador.md`](orquestador/enrutador.md).
+
+---
+
+## El árbol
 
 ```
 CLAUDE.md         ← El orquestador. Punto de entrada de cualquier agente.
@@ -47,12 +129,6 @@ skills/           Procedimientos empaquetados para agentes
 orquestador/      Reglas duras, enrutador y protocolo de entrega
 herramientas/     verificar.mjs
 operacion/        Sincronización con el sitio y deuda conocida
-```
-
-**Jerarquía de autoridad**, cuando dos archivos se contradigan:
-
-```
-datos/*.json  →  adn/*  →  catalogo/*  →  todo lo demás
 ```
 
 ---
@@ -83,14 +159,18 @@ procedimiento están en
 
 ## Antes de arrancar una campaña
 
-Lee [`operacion/deuda-conocida.md`](operacion/deuda-conocida.md). Hay tres cosas
+Lee [`operacion/deuda-conocida.md`](operacion/deuda-conocida.md). Hay dos cosas
 abiertas que afectan directamente a cualquier trabajo de marketing:
 
-1. **La imagen social del sitio lleva un nombre de marca anterior** — es lo que
-   se ve al compartir cualquier enlace, y lo que van a leer las herramientas que
-   deducen la marca rastreando el sitio
-2. **No hay dominio propio** todavía
-3. **Google Analytics sin configurar** — hoy solo mide Meta
+1. **No hay dominio propio** todavía — un anuncio que cae en un subdominio de
+   Netlify contradice «el sitio es tuyo» en el primer clic
+2. **Google Analytics sin configurar** — hoy solo mide Meta, así que una campaña
+   de Google se puede correr pero no leer
+
+Cerrado el 2026-08-14: la imagen social del sitio llevaba un nombre de marca
+anterior y una palabra de jerga. Es lo que se ve al compartir un enlace y lo que
+leen las herramientas que deducen la marca rastreando el sitio, así que
+bloqueaba el flujo de Pomelli. Ya dice `PANACLAW.`
 
 ---
 

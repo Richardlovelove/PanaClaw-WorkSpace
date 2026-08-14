@@ -116,10 +116,10 @@ estructura, después se produce.
 
 **Lee:** `prompts/plataformas/` — el archivo de la plataforma concreta.
 
-⚠️ **Pomelli tiene una advertencia crítica**
-([`prompts/plataformas/pomelli.md`](../prompts/plataformas/pomelli.md)):
-deriva su «Business DNA» rastreando el sitio en vivo, y hoy el sitio le va a dar
-un nombre de marca equivocado. Leer antes de conectarlo, no después.
+**Pomelli es distinto**
+([`prompts/plataformas/pomelli.md`](../prompts/plataformas/pomelli.md)): no lee
+este repositorio, deriva su «Business DNA» rastreando el sitio en vivo. Lo que
+hay que hacer es comprobar lo que va a leer y corregir lo que deduzca mal.
 
 **Entrega:** el bloque de contexto listo para pegar en esa plataforma, adaptado a
 su formato y a su límite de caracteres. No un volcado de este repositorio.

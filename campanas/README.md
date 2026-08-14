@@ -136,20 +136,21 @@ canal» ni «coste por cliente» mientras solo haya un píxel y un evento.
 
 ## Dos avisos antes de arrancar pauta
 
+
 ### 1 · No hay dominio propio
 
 El sitio vive en `panaclaw.netlify.app`. Un anuncio pagado que lleva a un
 subdominio de Netlify contradice el pilar de «el sitio es tuyo» en el primer
 clic, y es lo primero que va a notar alguien que esté evaluando agencias.
 
-### 2 · La imagen social lleva el nombre de marca anterior
+### 2 · Google no se puede medir todavía
 
-`og.png` dice «CuatroNodos» y «Sitios Jamstack en Panamá». Es lo que se ve al <!-- v: se cita el texto defectuoso de og.png, no es copy de marca -->
-compartir cualquier enlace del sitio en WhatsApp, en un chat o en una red.
+Falta configurar Google Analytics, así que una campaña de Google se puede correr
+pero no leer. Meta sí tiene medición.
 
 Las dos cosas están en
-[`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md) y **las dos
-bloquean una campaña seria**. Dilo antes de producir, no después.
+[`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md). Dilo antes de
+producir, no después.
 
 ---
 
