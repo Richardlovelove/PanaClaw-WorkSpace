@@ -1,8 +1,8 @@
 {
-  "$comentario": "FUENTE ÚNICA DE CIFRAS DE PANACLAW. Ningún otro archivo de este repositorio puede inventar, redondear ni proyectar un importe. Si una cifra no está aquí, no existe. Espejo de src/data/{plans,modules,ebot,seguridad,care}.ts del repositorio Richardlovelove/PanaClaw.",
+  "$comentario": "FUENTE ÚNICA DE CIFRAS DE PANACLAW. Ningún otro archivo de este repositorio puede inventar, redondear ni proyectar un importe. Si una cifra no está aquí, no existe. Espejo de src/data/{plans,modules,ebot,seguridad,care}.ts del repositorio abrinay1997-stack/PanaClaw.",
   "version": "1.0.0",
   "verificadoContra": {
-    "repositorio": "Richardlovelove/PanaClaw",
+    "repositorio": "abrinay1997-stack/PanaClaw",
     "rama": "main",
     "fecha": "2026-08-14",
     "archivos": [

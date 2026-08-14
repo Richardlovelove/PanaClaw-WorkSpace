@@ -1,8 +1,8 @@
 {
-  "$comentario": "FUENTE ÚNICA DE TOKENS VISUALES. Los hex, las fuentes y los pesos que se pegan en Nano Banana, Pomelli, Canva, Grok o cualquier generador salen de aquí y solo de aquí. Espejo de src/styles/global.css y scripts/generate-brand-assets.mjs del repositorio Richardlovelove/PanaClaw.",
+  "$comentario": "FUENTE ÚNICA DE TOKENS VISUALES. Los hex, las fuentes y los pesos que se pegan en Nano Banana, Pomelli, Canva, Grok o cualquier generador salen de aquí y solo de aquí. Espejo de src/styles/global.css y scripts/generate-brand-assets.mjs del repositorio abrinay1997-stack/PanaClaw.",
   "version": "1.0.0",
   "verificadoContra": {
-    "repositorio": "Richardlovelove/PanaClaw",
+    "repositorio": "abrinay1997-stack/PanaClaw",
     "fecha": "2026-08-14",
     "archivos": ["src/styles/global.css", "scripts/generate-brand-assets.mjs", "src/data/site.ts"]
   },

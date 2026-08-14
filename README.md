@@ -28,7 +28,7 @@ De dónde sale la verdad, por dónde pasa y en qué se convierte:
 
 ```mermaid
 flowchart TD
-    SITIO["Repositorio del sitio<br/><b>Richardlovelove/PanaClaw</b><br/><i>src/data/*.ts · global.css</i>"]
+    SITIO["Repositorio del sitio<br/><b>abrinay1997-stack/PanaClaw</b><br/><i>src/data/*.ts · global.css</i>"]
 
     subgraph FUENTE["datos/ — fuente única"]
         PRECIOS["<b>precios.json</b><br/>toda cifra decible"]
@@ -147,7 +147,7 @@ Detalles en [`herramientas/README.md`](herramientas/README.md).
 
 ## Relación con el repositorio del sitio
 
-El sitio vive en **`Richardlovelove/PanaClaw`** (Astro estático en Netlify) y es
+El sitio vive en **`abrinay1997-stack/PanaClaw`** (Astro estático en Netlify) y es
 la fuente original de casi todo lo que hay aquí: los precios salen de
 `src/data/*.ts` y los tokens de `src/styles/global.css`.
 

@@ -1,7 +1,7 @@
 # Sincronización con el repositorio del sitio
 
 Este repositorio es **un espejo, no una copia paralela**. Casi todo lo que hay
-aquí nace en `Richardlovelove/PanaClaw`, el repositorio del sitio.
+aquí nace en `abrinay1997-stack/PanaClaw`, el repositorio del sitio.
 
 Cuando cambia algo allí, cambia aquí. Este archivo dice qué mirar y en qué orden.
 
@@ -10,7 +10,7 @@ Cuando cambia algo allí, cambia aquí. Este archivo dice qué mirar y en qué o
 ## La dirección del flujo
 
 ```
-Richardlovelove/PanaClaw   →   PanaClaw-WorkSpace
+abrinay1997-stack/PanaClaw   →   PanaClaw-WorkSpace
      (el sitio)                    (el cerebro)
 ```
 

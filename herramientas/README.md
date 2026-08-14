@@ -37,7 +37,7 @@ Las ocho reglas restantes son de criterio y las revisa quien entrega
 ## Qué NO puede ver
 
 **Solo compara este repositorio consigo mismo.** No lee
-`Richardlovelove/PanaClaw`.
+`abrinay1997-stack/PanaClaw`.
 
 Si alguien cambia un precio en el sitio y no lo trae aquí, `precios.json` seguirá
 siendo internamente coherente y esto dirá que todo está bien — mientras la marca

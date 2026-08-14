@@ -117,7 +117,7 @@ antes de salir. El resumen:
 
 ## 6. Relación con el repositorio del sitio
 
-El sitio vive en **`Richardlovelove/PanaClaw`** (Astro estático en Netlify). Ese
+El sitio vive en **`abrinay1997-stack/PanaClaw`** (Astro estático en Netlify). Ese
 repositorio es la fuente original de casi todo lo que hay aquí: los precios salen
 de `src/data/*.ts` y los tokens de `src/styles/global.css`.
 
