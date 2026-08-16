@@ -96,6 +96,34 @@ mucho más rápido, y la bajada está para leerse.
 **Más de 8 líneas no es un titular, es un párrafo.** Si no cabe en ocho, el
 mensaje tiene dos ideas y son dos piezas.
 
+**El número de líneas propone, el carácter más largo dispone.** Si una línea se
+pasa del rango de caracteres de su tamaño, baja un escalón. Un titular de tres
+líneas donde una tiene 19 caracteres es un titular L, no XL.
+
+### eBot no cabe en un titular
+
+**`eBot` se escribe con e minúscula y B mayúscula, siempre.** El titular va en
+versalitas, así que dentro de un titular se convertiría en `EBOT`, que es una de
+las tres formas que la marca prohíbe expresamente.
+
+La salida es una sola, y es limpia:
+
+> **El nombre del producto vive en el antetítulo, y el antetítulo respeta su
+> escritura.** El antetítulo va en versalitas *salvo* cuando contiene un nombre
+> con minúscula obligatoria. Ahí se escribe tal cual: `eBot`.
+
+```
+✓  eBot                          ← antetítulo, escritura respetada
+   ATIENDE TUS MENSAJES.         ← titular en versalitas, sin el nombre dentro
+   NO REEMPLAZA TU SITIO.
+
+✗  EBOT ATIENDE TUS MENSAJES.    ← el nombre roto dentro del titular
+```
+
+En la descripción no hay problema: va en caja normal y se escribe `eBot`.
+
+Aplica a cualquier nombre futuro que lleve minúscula obligatoria, no solo a este.
+
 ### Antonio a −0.01em, no a −0.02em
 
 El titular del sitio va a −0.02em porque Archivo es de ancho normal y necesita
@@ -108,8 +136,14 @@ palabra deja de leerse a tamaño de pulgar.
 
 Es la decisión que más define la pieza y la que más fácil se arruina.
 
-**Un solo tramo del titular va en `#FF5100`. Continuo. Nunca más del 40 % de los
-caracteres.** Todo lo demás en `#FFF7F7`.
+**Un solo tramo del titular va en `#FF5100`. Continuo. Nunca más de la mitad de
+los caracteres.** Todo lo demás en `#FFF7F7`.
+
+> El tope estuvo un rato en el 40 % y estaba mal. La pieza publicada que mejor
+> funciona —«no hacemos cubos con brasa / hacemos obsidiana fría, rápida»— lleva
+> el 56 % en naranja, porque la afirmación es más larga que la negación y eso es
+> exactamente lo que la hace funcionar. **Lo que rompe una pieza no es la
+> proporción: es que haya dos tramos naranjas en vez de uno.**
 
 ```
 ✓  NO HACEMOS PLANTILLAS.
@@ -221,7 +255,9 @@ y=1254.
 ## Antes de dar una pieza por buena
 
 - [ ] ¿El titular es Antonio 700 en versalitas, y el resto Archivo?
-- [ ] ¿El tamaño corresponde al número de líneas?
+- [ ] ¿El tamaño corresponde al número de líneas, y ninguna línea se pasa de su
+      rango de caracteres?
+- [ ] ¿Algún nombre de minúscula obligatoria —`eBot`— metido dentro del titular?
 - [ ] ¿Hay **un solo** tramo naranja, y es la afirmación o la cifra?
 - [ ] ¿Alguna letra en `#FF1E1E`?
 - [ ] ¿Los cortes de línea respetan las unidades de sentido?

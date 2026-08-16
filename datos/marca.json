@@ -213,7 +213,8 @@
     },
 
     "acentoEnTitular": {
-      "$regla": "UN solo tramo del titular en #FF5100, continuo, y nunca más del 40 % de los caracteres. El resto en #FFF7F7. El ember #FF1E1E sigue prohibido en texto, aquí también.",
+      "$regla": "UN solo tramo del titular en #FF5100, continuo, y nunca más de la mitad de los caracteres. El resto en #FFF7F7. El ember #FF1E1E sigue prohibido en texto, aquí también.",
+      "$porQueLaMitad": "El tope se fijó primero en 40 % y estaba mal: la pieza publicada que mejor funciona —«no hacemos cubos con brasa / hacemos obsidiana fría, rápida»— lleva el 56 % en naranja porque la afirmación es más larga que la negación, y es justo lo que la hace funcionar. Lo que rompe una pieza no es la proporción: es que haya dos tramos naranjas en vez de uno.",
       "queVaEnNaranja": "La afirmación, la consecuencia o la cifra. En un titular de forma «no hacemos X, hacemos Y», el naranja es Y.",
       "queNuncaVaEnNaranja": "La negación, la bajada, la nota y el titular entero."
     },
