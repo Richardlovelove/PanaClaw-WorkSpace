@@ -81,13 +81,16 @@ es la base. Encima de esa base, según la petición:
 
 | Si el humano pide… | Lee, en este orden |
 |---|---|
+| **Contenido de Instagram del mes** (piezas + descripciones + hashtags) | `skills/contenido-instagram/SKILL.md` — y de ahí a todo lo demás |
 | Prompts de imagen, creativos, Nano Banana | `datos/marca.json` → `prompts/README.md` → `prompts/bloques/` → `prompts/imagen/nano-banana.md` |
 | Imágenes **por lote** (10, 50, 200 piezas) | lo anterior + `prompts/imagen/lote.md` + `skills/lote-visual/SKILL.md` |
+| Maquetar una pieza: retícula, tamaños, qué va en naranja | `datos/marca.json` → `redesSociales` + `prompts/imagen/texto-en-imagen.md` |
 | Guion o prompt de video, reel, anuncio en video | `prompts/video/video-corto.md` + `adn/02-voz-y-tono.md` |
 | Anuncios pagados (Meta, Google) | `campanas/plantillas/estructura-anuncio.md` + `campanas/canales/` + `catalogo/` del producto |
 | Una campaña completa | `campanas/README.md` (el embudo entero) y de ahí a las plantillas |
 | Alimentar Pomelli / Google Labs | `prompts/plataformas/pomelli.md` — deriva la marca del sitio en vivo, no de aquí |
 | Prompts para Grok, GPT u otro modelo ajeno | `prompts/plataformas/grok.md` |
+| Que Meta AI monte el HTML del mes | `prompts/plataformas/meta-ai.md` |
 | Diseños en Canva | `prompts/plataformas/canva.md` |
 | Precios, cotizar, armar una propuesta | `datos/precios.json` → `catalogo/` → `skills/propuesta-comercial/SKILL.md` |
 | Explicar un producto, comparar planes | `catalogo/` del producto + `catalogo/08-fronteras.md` |

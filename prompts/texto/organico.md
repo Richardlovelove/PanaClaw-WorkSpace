@@ -79,8 +79,14 @@ verificado: qué es, para quién, y el enlace. **Sin métricas** — no están m
 - **Una idea por publicación.** Si hay dos, son dos publicaciones.
 - **Sin llamada a la acción en la mayoría.** Una de cada tres, como mucho. El
   orgánico construye el argumento; la conversión la hace la pauta y la web.
-- **Sin hashtags de relleno.** Si se usan, tres como máximo y concretos
-  (`#Panamá`, `#negociospanama`). Nada de `#emprendimiento #éxito #motivación`.
+- **Hashtags: seis como máximo, todos concretos** y en minúscula
+  (`#panaclaw`, `#sitioswebpanama`, `#panama`). Nada de `#emprendimiento
+  #éxito #motivación`. Cuatro buenos valen más que seis con dos de paja.
+- **Emojis: solo en la descripción, y solo en sus tres articulaciones.** La
+  regla completa, con la estructura exacta, está en
+  [`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md) → «La excepción de redes
+  sociales». Dentro de la imagen no entra ninguno.
+- **La firma cierra siempre:** `PanaClaw — sitios rápidos, código tuyo.`
 - **Sin carruseles de diez consejos.** No es la voz: la marca no da consejos
   genéricos, cuenta cómo trabaja.
 - **Sin «¿sabías que…?»** ni preguntas retóricas de apertura.
@@ -162,5 +168,7 @@ días, eso es más de medio año sin repetirse **y sin inventar nada**.
 - [ ] ¿Empieza por la situación del lector, no por la marca?
 - [ ] ¿Alguna cifra? → verifícala contra `precios.json`
 - [ ] ¿Dice en algún punto qué no incluye?
-- [ ] ¿Emojis, exclamaciones, hashtags de relleno?
+- [ ] ¿Exclamaciones, hashtags de relleno, más de seis hashtags?
+- [ ] ¿Algún emoji fuera de las tres articulaciones, o dentro de una imagen?
+- [ ] ¿Está la firma al cierre?
 - [ ] ¿Algún dato, métrica o testimonio que no puedas señalar en el repositorio?

@@ -25,6 +25,25 @@ agencia de una persona y suficiente para que el argumento se acumule.
 Los tipos están definidos en
 [`prompts/texto/organico.md`](../../prompts/texto/organico.md).
 
+### La variante de doce
+
+Cuando el mes se produce de una vez con
+[`skills/contenido-instagram/SKILL.md`](../../skills/contenido-instagram/SKILL.md),
+la rejilla sube a doce y el reparto queda así:
+
+| Tipo | Cuántas |
+|---|---|
+| Cifra publicada | 4 |
+| Desastre explicado | 3 |
+| Objeción contestada | 3 |
+| Frontera | 1 |
+| Trabajo enseñado | 1 |
+
+**La duodécima no siempre existe.** El «trabajo enseñado» necesita un proyecto
+publicado y verificado que encaje con el producto del mes. Si no lo hay, se
+sustituye por otra cifra publicada y **se dice al entregar el calendario**, no
+cuando toque producirla.
+
 ---
 
 ## Por qué el material no se acaba

@@ -13,6 +13,7 @@ No son documentación de la marca: eso está en [`adn/`](../adn/) y
 
 | Skill | Cuándo se dispara |
 |---|---|
+| [`contenido-instagram`](contenido-instagram/SKILL.md) | «El contenido de Instagram del mes», «planeamiento enfocado en eBot» |
 | [`lote-visual`](lote-visual/SKILL.md) | «Genera N creativos», «un lote para el mes» |
 | [`anuncio-pagado`](anuncio-pagado/SKILL.md) | «Anuncios para Meta», «copy para pauta» |
 | [`propuesta-comercial`](propuesta-comercial/SKILL.md) | «Arma una propuesta», «cotiza esto» |

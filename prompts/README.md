@@ -50,6 +50,7 @@ poco»: la razón de que existan es que sean idénticos entre piezas.
 |---|---|
 | [`imagen/nano-banana.md`](imagen/nano-banana.md) | Imagen suelta con el modelo de imagen de Gemini |
 | [`imagen/lote.md`](imagen/lote.md) | 10, 50 o 200 piezas que tienen que verse hermanas |
+| [`imagen/texto-en-imagen.md`](imagen/texto-en-imagen.md) | **La maquetación**: retícula, escala y acento de una pieza con el texto puesto |
 | [`video/video-corto.md`](video/video-corto.md) | Reel, story, anuncio en video |
 | [`texto/anuncios.md`](texto/anuncios.md) | Copy de pauta |
 | [`texto/organico.md`](texto/organico.md) | Publicaciones, WhatsApp, correo |
@@ -58,6 +59,7 @@ poco»: la razón de que existan es que sean idénticos entre piezas.
 
 | Archivo | Para qué |
 |---|---|
+| [`plataformas/meta-ai.md`](plataformas/meta-ai.md) | Meta AI. Genera los fondos y monta el HTML del mes. **No escribe copy.** |
 | [`plataformas/pomelli.md`](plataformas/pomelli.md) | Google Labs. **Lleva una advertencia crítica.** |
 | [`plataformas/grok.md`](plataformas/grok.md) | Grok, GPT y cualquier modelo ajeno |
 | [`plataformas/canva.md`](plataformas/canva.md) | Canva y su IA |
@@ -83,16 +85,26 @@ Los generadores interpretan «naranja» como cualquier cosa entre `#FF8C00` y <!
 `#FF4500`. Con el hex, aciertan mucho más y sobre todo **aciertan igual la <!-- v: hex de ejemplo de lo que un generador confunde con naranja -->
 segunda vez**.
 
-### 3. La imagen no lleva el texto
+### 3. El motor genera el fondo. El texto se compone encima
 
-Salvo petición explícita, **el texto va encima en el editor**, no dentro de la
-generación. Dos razones: los modelos de imagen siguen escribiendo mal en español
-—tildes, eñes, «Ñ» convertida en «N»— y el titular de PanaClaw tiene una
-tipografía concreta (Archivo, tracking negativo, versalitas) que ningún generador
-reproduce.
+**Nunca se le pide a un motor de imagen que escriba el titular.** Siguen
+comiéndose las tildes y convirtiendo la eñe en ene, y ninguno reproduce la
+tipografía de la marca con su interlínea y su tracking. Una pieza que dice
+«CODIGO TUYO» sin tilde ya no es de PanaClaw.
 
-Lo que sí se le pide al generador es **dejar el hueco**: aire limpio en el tercio
-donde va a caer el titular. Está en `bloques/encuadre.md`.
+Lo que sí se le pide es **dejar el carril limpio**: negro sin detalle donde va a
+caer el texto. Está en [`bloques/encuadre.md`](bloques/encuadre.md).
+
+Quién compone el texto encima depende de la pieza:
+
+| Pieza | Quién monta el texto |
+|---|---|
+| Redes sociales, por lote | El HTML que devuelve Meta AI, con las fuentes cargadas y la retícula en píxeles → [`imagen/texto-en-imagen.md`](imagen/texto-en-imagen.md) |
+| Una pieza suelta, un retoque | A mano → [`plataformas/canva.md`](plataformas/canva.md) |
+| Anuncio pagado | En el editor del canal |
+
+En los tres casos el resultado es el mismo: **la imagen final sí lleva el texto
+dentro.** Lo que no lo lleva nunca es el pixel que devuelve el generador.
 
 ### 4. Nada de gente
 

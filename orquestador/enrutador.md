@@ -64,6 +64,32 @@ que **el estilo no varía y el sujeto sí** — si varían los dos, no es un lot
 
 ---
 
+### Contenido de Instagram del mes
+
+> «Dame el contenido de Instagram del mes», «planeamiento del siguiente mes
+> enfocado en eBot», «el prompt para que Meta me arme las piezas»
+
+**Lee:** [`skills/contenido-instagram/SKILL.md`](../skills/contenido-instagram/SKILL.md)
+y sigue su lista — manda a `datos/`, al `catalogo/` del producto, a
+`adn/04-audiencia.md`, a `prompts/imagen/texto-en-imagen.md` y a
+`prompts/plataformas/meta-ai.md`.
+
+**Pregunta antes:**
+- ¿Qué producto es el foco del mes? Uno, no seis
+- ¿Cuántas publicaciones? Por defecto 12
+- ¿Algo del mes anterior que no se pueda repetir?
+
+**Entrega:** un solo prompt maestro listo para pegar en Meta AI, que devuelve el
+documento HTML con las piezas ya compuestas, sus descripciones, sus hashtags y la
+descarga en PNG a 1080×1350.
+
+**La regla que no se negocia:** Claude escribe el 100 % del texto y Meta no
+redacta nada. Meta inventa cifras con formato perfecto —la última vez, ocho
+invenciones en doce publicaciones— y esta marca vende precisamente que no hay
+letra chica.
+
+---
+
 ### Video
 
 > «Un reel», «guion para un video», «prompt para Veo/Sora»

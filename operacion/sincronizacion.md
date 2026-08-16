@@ -42,6 +42,17 @@ contradicción, se reporta — y se anota en
 | `scripts/generate-brand-assets.mjs` | `logo` (el path del rayo, los degradados) |
 | `src/data/site.ts` | `identidad`, `contacto` |
 | `src/data/analytics.ts` | `medicion` |
+| **Nada. No existe allí** | **`redesSociales`** |
+
+> `redesSociales` es el único bloque de `marca.json` que **no** baja del sitio: el
+> sitio no publica en Instagram y no tiene ni Antonio ni una retícula de
+> 1080×1350. Se decidió aquí, el 2026-08-16, y por eso lleva su propio campo
+> `decidido` en vez de heredar `verificadoContra`.
+>
+> **Consecuencia:** si algún día el sitio adopta Antonio, deja de ser una
+> extensión y pasa a ser espejo — y entonces el flujo se invierte al normal.
+> Mientras tanto, un cambio en la tipografía del sitio **no** toca este bloque, y
+> un cambio en este bloque **no** es motivo para tocar el sitio.
 
 ### Copy y reglas → `adn/` y `catalogo/`
 

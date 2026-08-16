@@ -104,6 +104,40 @@ Tres elementos, y juntos identifican a la marca sin logo:
 > **Escribe en minúscula.** Las mayúsculas las pone el CSS. Un texto entregado ya
 > gritado no se puede volver a bajar.
 
+### La extensión de redes sociales
+
+**Archivo sigue siendo la familia del sitio.** Una sola, para todo, sin
+excepciones. Lo que cambió el 2026-08-16 es que **las piezas de redes usan dos**:
+
+| | Familia | Roles |
+|---|---|---|
+| Titulares | **Antonio** 700 | Titular y cifra |
+| Apoyo | **Archivo** 300/400/500/700 | Antetítulo, bajada, nota, wordmark |
+
+**Por qué una segunda familia y por qué esa.** El titular de un sitio se lee a
+pantalla completa y con el cursor quieto. El de una pieza de feed se lee al
+tamaño de un pulgar, en movimiento y con una imagen detrás peleándole el
+contraste. Archivo 600 aguanta lo primero y se deshace en lo segundo. Antonio es
+condensada: al mismo cuerpo mete casi el doble de caracteres por línea, y eso es
+lo que produce el bloque compacto de tres líneas que la marca ya usa en el hero.
+
+**Antonio solo en el peso 700, y solo en titular y cifra.** Los pesos ligeros son
+demasiado finos para sobrevivir sobre una imagen, y llevan a subir el tamaño para
+compensar — que es exactamente como se rompe la retícula.
+
+**Ninguna otra familia.** En particular las que sugiere por defecto cualquier
+editor para este aspecto: Montserrat, Open Sans, Inter, Roboto, Poppins, Oswald, <!-- v: lista negra de tipografías, se nombran para prohibirlas -->
+Bebas Neue, Impact, Helvetica, Arial, Lato, Futura. <!-- v: lista negra de tipografías, se nombran para prohibirlas -->
+
+
+Los valores exactos —retícula, escala en píxeles, anclajes, velo— están en
+[`datos/marca.json`](../datos/marca.json) → `redesSociales`, y cómo se usan en
+[`prompts/imagen/texto-en-imagen.md`](../prompts/imagen/texto-en-imagen.md).
+
+> **Es el único bloque de `marca.json` que no es espejo del sitio.** Allí no
+> existe, porque el sitio no publica en Instagram. Por eso lleva su propia fecha
+> de decisión en vez de heredar `verificadoContra`.
+
 ---
 
 ## Forma

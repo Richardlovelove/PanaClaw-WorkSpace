@@ -10,6 +10,7 @@
  *   3. Cero jerga
  *   5. Un solo acento cromático (hex fuera de datos/marca.json)
  *   8. Los rangos se citan enteros
+ *   9. Ninguna tipografía fuera de las declaradas en datos/marca.json
  *
  * Y además: que no queden enlaces internos rotos ni huecos sin resolver.
  *
@@ -262,6 +263,54 @@ function reglaColor() {
 }
 
 /* ------------------------------------------------------------------ *
+ * Tipografía — solo las familias declaradas en marca.json
+ * ------------------------------------------------------------------ */
+
+/**
+ * Las familias que cualquier editor sugiere por defecto para el aspecto de
+ * esta marca. Ninguna es de PanaClaw y todas entran por la misma puerta:
+ * alguien maqueta una pieza partiendo de una plantilla, la fuente de la
+ * plantilla se queda, y a la tercera pieza el sistema tiene cuatro familias
+ * y ya no se reconoce.
+ *
+ * La lista blanca NO está aquí: sale de los campos `familia` de marca.json.
+ * El día que el dueño de la marca adopte una de estas, la declara en el JSON
+ * y este cepo deja de saltar solo, sin tocar el código.
+ */
+const FAMILIAS_VIGILADAS = [
+  'Montserrat', 'Open Sans', 'Inter', 'Roboto', 'Poppins', 'Oswald',
+  'Bebas Neue', 'Impact', 'Helvetica', 'Arial', 'Lato', 'Futura',
+];
+
+function reglaTipografia() {
+  const declaradas = new Set();
+  (function recolectar(nodo, clave) {
+    if (typeof nodo === 'string') {
+      if (clave === 'familia') declaradas.add(nodo.trim().toLowerCase());
+      return;
+    }
+    if (nodo && typeof nodo === 'object') {
+      for (const [k, v] of Object.entries(nodo)) recolectar(v, k);
+    }
+  })(marca, null);
+
+  const vigiladas = FAMILIAS_VIGILADAS.filter((f) => !declaradas.has(f.toLowerCase()));
+
+  for (const ruta of md) {
+    if (saltar(ruta)) continue;
+    for (const { n, contenido, exenta } of lineas(ruta)) {
+      if (exenta) continue;
+      for (const familia of vigiladas) {
+        const re = new RegExp(`\\b${familia.replace(/ /g, '\\s')}\\b`);
+        if (re.test(contenido)) {
+          error(rel(ruta), n, `Tipografía «${familia}» no está declarada en datos/marca.json`);
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ *
  * Enlaces internos
  * ------------------------------------------------------------------ */
 
@@ -309,6 +358,7 @@ reglaImportes();
 reglaRangos();
 reglaJerga();
 reglaColor();
+reglaTipografia();
 enlaces();
 huecos();
 

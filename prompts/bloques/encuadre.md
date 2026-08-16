@@ -65,6 +65,29 @@ funden en negro.
 
 ---
 
+## Piezas de redes con el texto ya compuesto
+
+Cuando la pieza se maqueta con la retícula de
+[`prompts/imagen/texto-en-imagen.md`](../imagen/texto-en-imagen.md), el carril
+limpio no es «el tercio inferior» genérico: es el que corresponda al anclaje que
+lleve esa pieza.
+
+| Anclaje | Qué se le pide al motor |
+|---|---|
+| **Alto** | «La mitad superior queda en negro casi puro, limpio y sin detalle. El sujeto ocupa la mitad inferior y su incandescencia se apaga antes de subir.» |
+| **Medio** | «El sujeto se abre hacia los bordes y hacia el tercio superior. La banda central del cuadro queda en negro limpio, con la luz muriendo antes de entrar en ella.» |
+| **Bajo** | «El sujeto ocupa los dos tercios superiores, desplazado hacia arriba. El tercio inferior queda en negro casi puro, limpio y sin detalle.» |
+
+Y en las tres, dos zonas que se dejan libres siempre, porque ahí van el rayo y el
+wordmark:
+
+```
+Los 180 píxeles superiores y los 160 inferiores quedan en negro limpio, sin
+ninguna forma ni reflejo.
+```
+
+---
+
 ## Zonas seguras
 
 Lo que las interfaces tapan y hay que dejar libre:
@@ -107,6 +130,8 @@ error de composición.
 2. **Comprueba el recorte cuadrado.** Casi toda pieza vertical se va a ver
    recortada a 1:1 en algún sitio. Si el sujeto se parte, el encuadre está mal
    aunque la imagen sea buena.
-3. **El texto se pone en Archivo**, no en la fuente del editor por defecto.
-   Titular peso 600, versalitas, tracking `-0.02em`. Antetítulo naranja `#FF5100`
-   14 px con tracking `0.16em`.
+3. **El texto se compone encima**, nunca en la fuente del editor por defecto.
+   En web y anuncios, Archivo 600 en versalitas con tracking `-0.02em`. En
+   piezas de redes manda la escala de
+   [`prompts/imagen/texto-en-imagen.md`](../imagen/texto-en-imagen.md), donde el
+   titular es Antonio 700.

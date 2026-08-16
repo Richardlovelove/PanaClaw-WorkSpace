@@ -1,11 +1,21 @@
 # Plataforma · Canva
 
-Canva es donde se **maqueta**, no donde se genera el estilo. El sistema visual de
-PanaClaw es demasiado específico para que su IA lo deduzca; lo que sí hace bien
-es aplicar una plantilla consistente a N piezas.
+Canva es donde se **retoca**, no donde se genera el estilo ni donde se maqueta el
+mes. El sistema visual de PanaClaw es demasiado específico para que su IA lo
+deduzca; lo que sí hace bien es ajustar a mano una pieza concreta.
 
-**Flujo recomendado:** la imagen se genera en Nano Banana → se maqueta en Canva
-con el texto en Archivo.
+> **Canva dejó de ser el paso obligatorio.** El lote de redes se compone solo,
+> con las fuentes reales y la retícula en píxeles, en el documento HTML que
+> devuelve Meta AI: [`meta-ai.md`](meta-ai.md) y
+> [`prompts/imagen/texto-en-imagen.md`](../imagen/texto-en-imagen.md). Maquetar a
+> mano doce piezas es doce oportunidades de que el tracking salga distinto.
+
+**Cuándo sigue siendo Canva:** una pieza suelta, un retoque sobre algo ya
+compuesto, una adaptación a otra proporción, o cualquier cosa que no sea el lote
+del mes.
+
+**Flujo:** la imagen se genera en Nano Banana → se maqueta en Canva con la escala
+de [`prompts/imagen/texto-en-imagen.md`](../imagen/texto-en-imagen.md).
 
 ---
 
@@ -27,15 +37,21 @@ Una vez, y todo lo demás sale bien solo.
 
 ### Fuentes
 
-**Archivo** en todos los roles. Está en Google Fonts, así que Canva la tiene.
+**Dos, y solo dos.** Las dos están en Google Fonts, así que Canva las tiene.
 
 | Rol | Fuente | Peso | Ajustes |
 |---|---|---|---|
-| Titular | Archivo | 600 | Versalitas, tracking −2 %, interlínea 0.98 |
-| Antetítulo | Archivo | 400 | Versalitas, tracking +16 %, color `#FF5100` |
-| Bajada | Archivo | 300 | Color `#BABABA` |
-| Cuerpo | Archivo | 300 | Interlínea 1.6, color `#BABABA` |
-| Cifra | Archivo | 600 | Tracking −2 % |
+| Titular | **Antonio** | 700 | Versalitas, tracking −1 %, interlínea 0.88 |
+| Cifra | **Antonio** | 700 | Versalitas, tracking 0 |
+| Antetítulo | Archivo | 500 | Versalitas, tracking +16 %, color `#FF5100` |
+| Bajada | Archivo | 300 | Interlínea 1.45, color `#BABABA` |
+| Nota / límite | Archivo | 400 | Versalitas, tracking +14 %, color `#BABABA` |
+| Wordmark | Archivo | 700 | Versalitas, tracking +22 %, punto en `#FF5100` |
+
+Los tamaños en píxeles sobre lienzo de 1080×1350 están en
+[`prompts/imagen/texto-en-imagen.md`](../imagen/texto-en-imagen.md). **Para
+piezas de web y anuncios, el titular sigue siendo Archivo 600 a −2 %** — Antonio
+es solo de redes.
 
 > Canva no tiene «tracking negativo» con ese nombre: es **Espaciado entre
 > letras**, en valor negativo. Es el ajuste que más se olvida y el que más se
@@ -134,7 +150,8 @@ redimensión, comprueba:
 
 ## Antes de exportar
 
-- [ ] ¿Archivo en todos los textos, con el tracking correcto?
+- [ ] ¿Antonio en el titular y la cifra, Archivo en todo lo demás?
+- [ ] ¿El tracking correcto en cada rol?
 - [ ] ¿Algún color fuera de los cinco?
 - [ ] ¿Algún texto en `#FF1E1E`?
 - [ ] ¿La cifra coincide con `datos/precios.json`?

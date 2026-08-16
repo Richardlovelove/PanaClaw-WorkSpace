@@ -183,7 +183,7 @@ La voz no cambia. El registro sí.
 | Cuerpo web | Explicativo, con el desastre concreto | 2–4 frases por bloque |
 | WhatsApp | Directo y sin formalismo, como escribe una persona | 1–3 líneas |
 | Correo | Igual que WhatsApp pero con saludo | ≤120 palabras |
-| Instagram orgánico | El pilar contado en una historia concreta | 1 idea, sin hashtags de relleno |
+| Instagram orgánico | El pilar contado en una historia concreta | 1 idea · hasta 6 hashtags concretos · emojis solo en las tres articulaciones |
 | Anuncio pagado | El dolor en la primera línea, la cifra en la segunda | ≤2 líneas antes del «ver más» |
 | Respuesta de bot | Corta y honesta. Si no sabe, lo dice y pasa a un humano | 1–3 frases |
 
@@ -191,7 +191,8 @@ La voz no cambia. El registro sí.
 
 ## Puntuación y formato
 
-- **Sin emojis** en copy de marca. Ninguno.
+- **Sin emojis** en copy de marca. Ninguno. **Una excepción, con nombre y
+  límites: la descripción de una publicación de redes sociales** — ver abajo.
 - **Sin signos de exclamación**, salvo que sea literalmente una exclamación de
   alguien citado.
 - **Sin mayúsculas de énfasis** dentro de una frase (`GRATIS`, `HOY`).
@@ -201,6 +202,70 @@ La voz no cambia. El registro sí.
 - Rangos con guion corto sin espacios: `$80–$150`, `4–5 días`, `8–12 días`.
 - Precios con separador de millar: `$1,200`. Nunca `$1200` ni `$1.200`. <!-- v: contraejemplos de formato de precio -->
 - Comillas angulares «» en prosa larga; rectas en interfaz.
+
+---
+
+## La excepción de redes sociales
+
+**Decidida el 2026-08-16 por el dueño de la marca.** Aplica **solo a la
+descripción** de una publicación de Instagram o Facebook. No aplica a nada más.
+
+### Dónde sí, dónde no
+
+| Sí | No |
+|---|---|
+| La descripción de una publicación de redes | El texto dentro de la imagen |
+| | Titulares, de cualquier medio |
+| | Web, WhatsApp, correo, propuestas |
+| | Anuncios pagados |
+| | Respuestas del eBot |
+
+### Los emojis hacen estructura, no decoración
+
+No se espolvorean. Marcan las tres articulaciones de la descripción, siempre las
+mismas, y por eso se reconocen sin leer:
+
+```
+[la situación del lector]                    ← un emoji al final, y solo aquí
+[el cuerpo: qué pasa de verdad, qué hacemos] ← ninguno
+[la cifra]                                   ← ⚡ detrás
+PanaClaw — sitios rápidos, código tuyo.      ← 🌋 detrás
+[hashtags]
+```
+
+Nunca dos emojis seguidos, nunca uno a mitad de frase, nunca uno sustituyendo a
+una palabra. Y **jamás al lado de una cifra que no sea la cifra**: un emoji
+detrás de un plazo o de un porcentaje lo convierte en promesa.
+
+**La firma es fija.** `PanaClaw — sitios rápidos, código tuyo.` cierra todas las
+publicaciones. Es la tagline declarada en
+[`datos/marca.json`](../datos/marca.json), y repetida es como se pega.
+
+### Hashtags: seis, todos concretos
+
+Antes eran tres. Ahora el tope son **seis**, y la regla de fondo no cambió: cada
+uno tiene que nombrar algo real —la marca, el país, el servicio, el producto—.
+
+```
+✓  #panaclaw #sitioswebpanama #paginaswebpanama #panama #diseñoweb #ebot
+✗  #éxito #motivación #emprendimiento #negocios #tips #viral
+```
+
+En minúscula, sin acentos raros, y ninguno inventado para rellenar hasta seis.
+Cuatro buenos valen más que seis con dos de paja.
+
+### Lo que la excepción NO relaja
+
+Ni un ápice de lo demás. Sigue prohibido, también en una descripción de redes:
+
+- Signos de exclamación
+- Mayúsculas de énfasis
+- Urgencia inventada, descuentos que no existen
+- Jerga y relleno de agencia
+- **Datos inventados.** Es el fallo que llega disfrazado de descripción con
+  buen ritmo: «la mayoría de los sitios en Panamá tardan 5 segundos», «cada
+  segundo cuesta un 7 % de conversión», «nuestro proceso tiene 6 puertas». Las
+  tres suenan bien, las tres se leen rápido y ninguna es cierta.
 
 ---
 
@@ -237,6 +302,8 @@ Estructuras, no frases hechas. Rellénalas contra el contexto real.
 4. ¿Alguna promesa que no puedas señalar en `datos/precios.json` o en el
    catálogo? → fuera.
 5. ¿Dice en algún sitio qué **no** incluye? → si no, falta.
-6. ¿Un emoji, una exclamación o una urgencia inventada? → fuera.
+6. ¿Una exclamación o una urgencia inventada? → fuera. ¿Un emoji fuera de la
+   descripción de una publicación de redes, o en una de sus articulaciones
+   equivocadas? → fuera también.
 7. Léelo en voz alta. ¿Suena a una persona explicándole algo a otra, o a un
    folleto? Si es folleto, empieza otra vez por el dolor.
