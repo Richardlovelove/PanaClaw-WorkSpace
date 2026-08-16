@@ -86,7 +86,9 @@ verificado: qué es, para quién, y el enlace. **Sin métricas** — no están m
   regla completa, con la estructura exacta, está en
   [`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md) → «La excepción de redes
   sociales». Dentro de la imagen no entra ninguno.
-- **La firma cierra siempre:** `PanaClaw — sitios rápidos, código tuyo.`
+- **La firma cierra siempre**, y la manda la tagline del producto del mes: la de
+  marca por defecto, la del producto cuando tiene una declarada. La tabla está
+  en [`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md).
 - **Sin carruseles de diez consejos.** No es la voz: la marca no da consejos
   genéricos, cuenta cómo trabaja.
 - **Sin «¿sabías que…?»** ni preguntas retóricas de apertura.

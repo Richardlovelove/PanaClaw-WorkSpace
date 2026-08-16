@@ -237,9 +237,27 @@ Nunca dos emojis seguidos, nunca uno a mitad de frase, nunca uno sustituyendo a
 una palabra. Y **jamás al lado de una cifra que no sea la cifra**: un emoji
 detrás de un plazo o de un porcentaje lo convierte en promesa.
 
-**La firma es fija.** `PanaClaw — sitios rápidos, código tuyo.` cierra todas las
-publicaciones. Es la tagline declarada en
-[`datos/marca.json`](../datos/marca.json), y repetida es como se pega.
+**La firma es fija dentro de un mes, y la manda la tagline del producto del
+mes.** Repetida diez o doce veces seguidas es como una frase se pega; alternada
+no se pega ninguna.
+
+| Mes enfocado en | Firma |
+|---|---|
+| La marca, o un producto sin tagline propia | `PanaClaw — sitios rápidos, código tuyo.` |
+| eBot | `eBot de PanaClaw — todos tus mensajes, en un solo lugar.` |
+| Ciberseguridad | `PanaClaw — que no te lo hackeen.` |
+
+Las tres taglines están declaradas: la de marca en
+[`datos/marca.json`](../datos/marca.json), las de producto en su ficha de
+[`catalogo/`](../catalogo/). **No se inventa una firma nueva.** Si el producto
+del mes no tiene tagline declarada, se usa la de marca.
+
+Cuando el producto lleva su nombre en la firma, el nombre va en su escritura
+exacta: `eBot`, nunca `EBOT`.
+
+> **Una firma no se dice tres veces en la misma pieza.** Si el titular de una
+> publicación ya es la tagline, la descripción no la repite al abrir: abre por
+> otro lado y deja que la firma la cierre.
 
 ### Hashtags: seis, todos concretos
 

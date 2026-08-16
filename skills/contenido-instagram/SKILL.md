@@ -62,11 +62,16 @@ Si el humano ya los dio, no preguntes nada y produce.
 
 ## 4 · Procedimiento
 
-### Paso 1 · Fijar el público y el ángulo
+### Paso 1 · Fijar el público, el ángulo y la firma
 
 Del producto sale el público, y de
 [`adn/04-audiencia.md`](../../adn/04-audiencia.md) salen su situación, lo que
 teme y su objeción principal. **Un solo público y un solo ángulo en el mes.**
+
+Y la firma, que también la manda el producto: la tagline de su ficha de
+[`catalogo/`](../../catalogo/) si tiene una declarada, y la de marca si no. La
+tabla está en [`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md). Se fija aquí
+y no cambia en las doce.
 
 Escríbelos antes de nada. Todo lo demás se mide contra ellos: una publicación que
 no le habla a ese público sobra aunque esté bien escrita.
@@ -186,7 +191,9 @@ Antes de entregar, una a una:
 - [ ] ¿Llamada a la acción en 4 como mucho?
 - [ ] ¿Seis hashtags o menos en todas, y todos concretos?
 - [ ] ¿Emojis solo en las descripciones, y solo en sus tres articulaciones?
-- [ ] ¿Ninguna descripción sin su firma al cierre?
+- [ ] ¿Ninguna descripción sin su firma al cierre, y la misma en las doce?
+- [ ] ¿La firma es la tagline del producto del mes, y no una inventada?
+- [ ] ¿Alguna pieza dice su tagline tres veces —titular, apertura y firma—?
 - [ ] ¿Cada titular cabe en 8 líneas, con los cortes escritos?
 - [ ] ¿Un solo tramo naranja por titular?
 - [ ] ¿El bloque de estilo está una sola vez y es idéntico para todas?
