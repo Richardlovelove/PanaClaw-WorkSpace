@@ -100,6 +100,37 @@ están cargadas.
 
 Y un botón que las descargue todas de una.
 
+### Las cinco trampas del exportador
+
+**Aquí es donde falla, y falla en silencio: la vista previa se ve perfecta y el
+PNG sale roto.** Estas cinco van literales en el prompt maestro, porque no son
+gustos — son fallos observados en un documento que por lo demás estaba bien.
+
+```
+1. ctx.letterSpacing NO se reinicia al cambiar ctx.font. Si lo usas para el
+   tracking del wordmark, ponlo a '0px' inmediatamente después de dibujarlo.
+   Si no, el tracking se filtra a la cifra, al antetítulo y al titular, y el
+   titular se sale del lienzo.
+
+2. Fija ctx.textBaseline='top' antes de dibujar y usa la misma Y que el
+   maquetado. Con el valor por defecto ('alphabetic') el texto del PNG cae
+   más abajo que en la vista previa.
+
+3. Mide el alto real del bloque de texto con getBoundingClientRect() del
+   elemento ya maquetado. No lo estimes multiplicando líneas por interlínea:
+   el anclaje al centro óptico se descuadra respecto a lo que se ve.
+
+4. El rayo empieza en y=96, no está centrado en y=96. Su caja va de 96 a 160.
+
+5. Un botón que lanza 33 descargas seguidas lo bloquea el navegador a la
+   tercera. O agrupas en un ZIP de verdad, o el botón se llama "descargar una
+   por una" y avisa de que hay que permitirlo.
+```
+
+**Y una comprobación que el humano hace, no el modelo:** descarga una pieza y
+ponla al lado de su vista previa. Si no son idénticas, el exportador está mal y
+las 33 lo están.
+
 ### El resto del documento
 
 Debajo de cada pieza, en texto seleccionable para copiar y pegar:

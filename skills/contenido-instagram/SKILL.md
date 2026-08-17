@@ -148,12 +148,14 @@ acortar, traducir o completar cualquier texto.
 
 ━━ 2. EL SISTEMA VISUAL ━━
 Los cinco hex. Las dos familias con sus roles. La retícula en píxeles. La
-escala completa. El velo. La regla del acento naranja.
+escala completa. EL ORDEN DEL BLOQUE DE TEXTO. El velo. La regla del acento
+naranja.
 
 ━━ 3. EL CONTRATO DEL HTML ━━
 Las dos fuentes de Google Fonts. Lienzo de 1080×1350 exactos. Botón de
 descarga por pieza y botón de descargar todas. Descripción y hashtags en
-texto seleccionable debajo de cada pieza.
+texto seleccionable debajo de cada pieza. Y las cinco trampas del exportador
+de prompts/plataformas/meta-ai.md, literales.
 
 ━━ 4. EL BLOQUE DE ESTILO ━━
 Literal, de prompts/bloques/estilo-visual.md. Una sola vez.
@@ -198,7 +200,14 @@ Antes de entregar, una a una:
 - [ ] ¿Un solo tramo naranja por titular?
 - [ ] ¿El bloque de estilo está una sola vez y es idéntico para todas?
 - [ ] ¿La prohibición de escribir aparece al principio **y** al final?
+- [ ] ¿Está el orden del bloque de texto escrito, y no solo la escala? Dar los
+      tamaños sin el orden deja al modelo poniendo la cifra encima del titular
+- [ ] ¿Están las cinco trampas del exportador dentro del prompt maestro?
 - [ ] ¿Huecos sin resolver en el prompt maestro?
+
+**Y cuando vuelva el documento, antes de publicar nada:** descarga una pieza y
+ponla al lado de su vista previa. Si no son idénticas, el exportador está mal y
+lo están las 33.
 
 ---
 

@@ -57,6 +57,27 @@ Sobre lienzo de 1080×1350. Todas las medidas en píxeles.
 centrado. Es la misma composición del sitio, donde el titular cae siempre en el
 carril izquierdo del contenedor.
 
+### El orden del bloque no se negocia
+
+De arriba abajo, siempre, sin excepción:
+
+```
+ANTETÍTULO      el tema, o el nombre del producto
+TITULAR         lo que se lee de lejos
+bajada          si la lleva
+CIFRA           si la lleva
+NOTA            el límite, si hay cifra o plazo
+```
+
+**La cifra va después del titular, nunca antes.** Un importe suelto encima del
+antetítulo no tiene de qué ser el precio todavía: el lector se encuentra el
+número antes que la cosa. El titular monta el argumento y la cifra lo cierra —
+por eso `cifra` lleva 44 px de aire por encima y no por debajo.
+
+Es el error que comete un modelo cuando se le da la escala pero no el orden, y
+se detecta en un vistazo: si lo primero que lees en la pieza es un número, está
+al revés.
+
 ### Los tres anclajes verticales
 
 El bloque de texto no se centra a ojo. Se ancla a uno de tres sitios, y lo
