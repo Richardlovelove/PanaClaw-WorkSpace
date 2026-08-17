@@ -78,13 +78,27 @@ lleve esa pieza.
 | **Medio** | «El sujeto se abre hacia los bordes y hacia el tercio superior. La banda central del cuadro queda en negro limpio, con la luz muriendo antes de entrar en ella.» |
 | **Bajo** | «El sujeto ocupa los dos tercios superiores, desplazado hacia arriba. El tercio inferior queda en negro casi puro, limpio y sin detalle.» |
 
-Y en las tres, dos zonas que se dejan libres siempre, porque ahí van el símbolo y el
-wordmark:
+### Las dos bandas reservadas van PRIMERO
+
+En las tres, dos zonas se dejan libres siempre, porque ahí caen el símbolo y el
+wordmark. **Y se piden al principio del encuadre, no al final.**
 
 ```
-Los 180 píxeles superiores y los 160 inferiores quedan en negro limpio, sin
-ninguna forma ni reflejo.
+Encuadre: los 180 píxeles superiores y los 160 inferiores del cuadro quedan en
+negro limpio, sin ninguna forma, resplandor ni reflejo — ni siquiera difuso. El
+sujeto vive entre esas dos bandas y su luz se apaga antes de tocarlas.
+[y aquí sigue el encuadre del anclaje que toque]
 ```
+
+> **Por qué al principio, y medido.** En la primera pieza producida con este
+> sistema, la banda reservada iba en la última frase del encuadre y el motor la
+> ignoró: metió el sujeto incandescente justo detrás del símbolo. El 39 % de los
+> píxeles de esa banda salieron por encima de 60 de luminancia, con picos de 113,
+> y el símbolo naranja quedó sobre un resplandor naranja.
+
+**El velo no lo arregla.** Se probó subir el velo en esa banda y la mejora fue de
+52 a 43 de luminancia media: insuficiente, y a costa de apagar la imagen entera.
+Si el fondo invade la banda reservada, **se regenera el fondo.** No se tapa.
 
 ---
 

@@ -295,3 +295,20 @@ y=1254.
 - [ ] ¿Todo alineado a x=72, con el rayo como única excepción centrada?
 - [ ] ¿Se lee el titular al tamaño de un pulgar? Aléjate y míralo pequeño.
 - [ ] Si la pieza dice una cifra, ¿está la nota del límite debajo?
+- [ ] **Mira la banda del símbolo, y 96 a 168.** ¿Asoma algo del fondo detrás?
+      Si hay resplandor, forma o reflejo, el fondo está mal generado y se
+      regenera. El símbolo naranja sobre un resplandor naranja desaparece.
+- [ ] Lo mismo en la banda del wordmark, de y 1190 a 1350.
+- [ ] ¿El wordmark termina en y=1254? Si se colocó por su borde superior en vez
+      de por su base, queda unos 14 px alto y se nota contra el margen.
+
+### La comprobación que no se puede saltar
+
+**Descarga la pieza y ponla al lado de su vista previa.** Si no son idénticas, el
+exportador está mal — y si está mal en una, está mal en todas. Las cinco trampas
+que lo causan están en
+[`prompts/plataformas/meta-ai.md`](../plataformas/meta-ai.md).
+
+Un desfase de dos o tres píxeles entre las dos es normal y viene de que el lienzo
+posiciona por la caja del tipo y el navegador por la caja de línea. Por encima de
+seis, algo está mal calculado.
