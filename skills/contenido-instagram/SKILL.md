@@ -31,14 +31,15 @@ En este orden:
 1. [`datos/precios.json`](../../datos/precios.json) — toda cifra que se vaya a decir
 2. [`datos/marca.json`](../../datos/marca.json) → `redesSociales` — retícula, escala, velo
 3. [`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md) — y en particular «La excepción de redes sociales»
-4. [`adn/04-audiencia.md`](../../adn/04-audiencia.md) — el público del mes y sus objeciones
-5. [`catalogo/`](../../catalogo/) — la ficha del producto del mes, entera
-6. [`catalogo/08-fronteras.md`](../../catalogo/08-fronteras.md) — si el mes toca Care, Seguridad, Diagnóstico o Auditoría
-7. [`prompts/texto/organico.md`](../../prompts/texto/organico.md) — los cinco tipos de publicación
-8. [`prompts/imagen/texto-en-imagen.md`](../../prompts/imagen/texto-en-imagen.md) — la maquetación
-9. [`prompts/plataformas/meta-ai.md`](../../prompts/plataformas/meta-ai.md) — el contrato
-10. [`campanas/plantillas/calendario.md`](../../campanas/plantillas/calendario.md) — la mezcla de tipos
-11. [`prompts/bloques/estilo-visual.md`](../../prompts/bloques/estilo-visual.md) y
+4. [`adn/05-personalidad.md`](../../adn/05-personalidad.md) — desde dónde se dice
+5. [`adn/04-audiencia.md`](../../adn/04-audiencia.md) — el público del mes y sus objeciones
+6. [`catalogo/`](../../catalogo/) — la ficha del producto del mes, entera
+7. [`catalogo/08-fronteras.md`](../../catalogo/08-fronteras.md) — si el mes toca Care, Seguridad, Diagnóstico o Auditoría
+8. [`prompts/texto/organico.md`](../../prompts/texto/organico.md) — los cinco tipos de publicación
+9. [`prompts/imagen/texto-en-imagen.md`](../../prompts/imagen/texto-en-imagen.md) — la maquetación
+10. [`prompts/plataformas/meta-ai.md`](../../prompts/plataformas/meta-ai.md) — el contrato
+11. [`campanas/plantillas/calendario.md`](../../campanas/plantillas/calendario.md) — la mezcla de tipos
+12. [`prompts/bloques/estilo-visual.md`](../../prompts/bloques/estilo-visual.md) y
     [`negativos.md`](../../prompts/bloques/negativos.md) — se copian literales
 
 ---

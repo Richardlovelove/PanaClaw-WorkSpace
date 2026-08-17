@@ -18,6 +18,7 @@ líneas en total y evitan el 90 % de los errores:
 1. [`CLAUDE.md`](../CLAUDE.md) — dónde está todo y las cinco reglas duras
 2. [`adn/01-identidad.md`](../adn/01-identidad.md) — quién es la marca
 3. [`adn/02-voz-y-tono.md`](../adn/02-voz-y-tono.md) — cómo habla
+4. [`adn/05-personalidad.md`](../adn/05-personalidad.md) — desde dónde habla
 
 Y según el medio, uno de estos dos:
 

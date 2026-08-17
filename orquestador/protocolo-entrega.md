@@ -56,7 +56,19 @@ Búsqueda literal en el entregable: `Jamstack`, `CDN`, `LCP`, `SSG`, `headless`,
 
 Cero resultados o se reescribe.
 
-### 4. Promesas
+### 4. Personalidad
+
+Tres preguntas de [`adn/05-personalidad.md`](../adn/05-personalidad.md):
+
+- ¿Sobra el 30 %? → bórralo.
+- ¿Se dice el límite **antes** de que lo pregunten? → si no, falta.
+- ¿Hay ruego, urgencia, justificación del precio, o una autoridad afirmada en
+  vez de demostrada? → fuera.
+
+Y la búsqueda literal del léxico de esta capa: `premium`, `exclusivo`,
+`boutique`, `VIP`, `élite`, `alta gama`, `líder`, `referente`, `los mejores`.
+
+### 5. Promesas
 
 - ¿Se promete posicionamiento en Google? → prohibido.
 - ¿Se promete un plazo sin decir desde cuándo cuenta? → el reloj empieza cuando
@@ -64,7 +76,7 @@ Cero resultados o se reescribe.
 - ¿Hay un dato, cifra o testimonio que no puedas señalar en este repositorio? →
   fuera.
 
-### 5. Huecos
+### 6. Huecos
 
 Ni un `[completa aquí]`, ni un `<tu negocio>`, ni un corchete vacío, ni un <!-- v: contraejemplos de huecos sin resolver -->
 «inserta el precio». Un prompt con huecos no está entregado: está delegado de
