@@ -75,10 +75,12 @@ corrige el `.md`. Nunca al revés.
 
 ## 4. Enrutador — qué leer según lo que te pidan
 
-Lee siempre **`adn/02-voz-y-tono.md`** y **`adn/05-personalidad.md`** antes de
-escribir texto de cara al cliente, y **`datos/marca.json`** antes de describir
-cualquier cosa visual. El primero dice cómo se construye una frase; el segundo,
-desde dónde se dice. Eso es la base. Encima de esa base, según la petición:
+Lee siempre **`adn/02-voz-y-tono.md`**, **`adn/05-personalidad.md`** y
+**`adn/06-claridad.md`** antes de escribir texto de cara al cliente, y
+**`datos/marca.json`** antes de describir cualquier cosa visual. El primero dice
+cómo se construye una frase; el segundo, desde dónde se dice; el tercero, qué se
+dice primero y con qué palabras lo entiende quien lo lee. Eso es la base. Encima
+de esa base, según la petición:
 
 | Si el humano pide… | Lee, en este orden |
 |---|---|
@@ -95,7 +97,8 @@ desde dónde se dice. Eso es la base. Encima de esa base, según la petición:
 | Diseños en Canva | `prompts/plataformas/canva.md` |
 | Precios, cotizar, armar una propuesta | `datos/precios.json` → `catalogo/` → `skills/propuesta-comercial/SKILL.md` |
 | Explicar un producto, comparar planes | `catalogo/` del producto + `catalogo/08-fronteras.md` |
-| Copy de web, correo, WhatsApp, orgánico | `adn/02-voz-y-tono.md` + `adn/05-personalidad.md` + `prompts/texto/organico.md` |
+| Copy de web, correo, WhatsApp, orgánico | `adn/02-voz-y-tono.md` + `adn/05-personalidad.md` + `adn/06-claridad.md` + `prompts/texto/organico.md` |
+| Revisar por qué una pieza no se entiende, o no suena a la marca | `adn/06-claridad.md` — las tres alturas y el traductor |
 | Responder una objeción de un cliente | `adn/04-audiencia.md` (las objeciones están catalogadas ahí) |
 | Crear una skill nueva | `skills/README.md` + `skills/_plantilla/SKILL.md` |
 | Saber si el repo está al día | `operacion/sincronizacion.md` + `node herramientas/verificar.mjs` |
