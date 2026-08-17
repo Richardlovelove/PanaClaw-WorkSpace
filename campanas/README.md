@@ -129,6 +129,14 @@ Solo lo que el sitio puede medir hoy. Está en
 Google Ads no se va a poder medir bien hasta que se configure GA4. Está anotado
 en [`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md).
 
+**Y el evento contra el que se optimiza NO es `Lead` al arrancar.** Un conjunto
+de anuncios necesita unas 50 conversiones semanales para salir de la fase de
+aprendizaje, y sin histórico de esta marca no se sabe cuánto costaría un `Lead`.
+La primera campaña se optimiza contra **conversaciones de WhatsApp**, que es
+además el canal principal de la marca, y se pasa a `Lead` cuando haya volumen.
+El porqué, con los números, está en
+[`canales/meta.md`](canales/meta.md).
+
 **No propongas métricas que no se pueden medir.** Nada de «tasa de conversión por
 canal» ni «coste por cliente» mientras solo haya un píxel y un evento.
 
@@ -142,6 +150,11 @@ canal» ni «coste por cliente» mientras solo haya un píxel y un evento.
 El sitio vive en `panaclaw.netlify.app`. Un anuncio pagado que lleva a un
 subdominio de Netlify contradice el pilar de «el sitio es tuyo» en el primer
 clic, y es lo primero que va a notar alguien que esté evaluando agencias.
+
+> **En curso (2026-08-17):** el dueño de la marca compra `panaclaw.com`. Cuando
+> esté apuntando, este aviso se borra de aquí y de
+> [`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md) — no se
+> archiva, se borra.
 
 ### 2 · Google no se puede medir todavía
 
