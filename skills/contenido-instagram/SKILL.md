@@ -32,14 +32,17 @@ En este orden:
 2. [`datos/marca.json`](../../datos/marca.json) → `redesSociales` — retícula, escala, velo
 3. [`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md) — y en particular «La excepción de redes sociales»
 4. [`adn/05-personalidad.md`](../../adn/05-personalidad.md) — desde dónde se dice
-5. [`adn/04-audiencia.md`](../../adn/04-audiencia.md) — el público del mes y sus objeciones
-6. [`catalogo/`](../../catalogo/) — la ficha del producto del mes, entera
-7. [`catalogo/08-fronteras.md`](../../catalogo/08-fronteras.md) — si el mes toca Care, Seguridad, Diagnóstico o Auditoría
-8. [`prompts/texto/organico.md`](../../prompts/texto/organico.md) — los cinco tipos de publicación
-9. [`prompts/imagen/texto-en-imagen.md`](../../prompts/imagen/texto-en-imagen.md) — la maquetación
-10. [`prompts/plataformas/meta-ai.md`](../../prompts/plataformas/meta-ai.md) — el contrato
-11. [`campanas/plantillas/calendario.md`](../../campanas/plantillas/calendario.md) — la mezcla de tipos
-12. [`prompts/bloques/estilo-visual.md`](../../prompts/bloques/estilo-visual.md) y
+5. [`adn/06-claridad.md`](../../adn/06-claridad.md) — a qué altura empieza cada
+   pieza y la proporción del calendario. **Es el archivo que decide si el mes
+   vende o solo informa**
+6. [`adn/04-audiencia.md`](../../adn/04-audiencia.md) — el público del mes y sus objeciones
+7. [`catalogo/`](../../catalogo/) — la ficha del producto del mes, entera
+8. [`catalogo/08-fronteras.md`](../../catalogo/08-fronteras.md) — si el mes toca Care, Seguridad, Diagnóstico o Auditoría
+9. [`prompts/texto/organico.md`](../../prompts/texto/organico.md) — los cinco tipos de publicación
+10. [`prompts/imagen/texto-en-imagen.md`](../../prompts/imagen/texto-en-imagen.md) — la maquetación
+11. [`prompts/plataformas/meta-ai.md`](../../prompts/plataformas/meta-ai.md) — el contrato
+12. [`campanas/plantillas/calendario.md`](../../campanas/plantillas/calendario.md) — la mezcla de tipos
+13. [`prompts/bloques/estilo-visual.md`](../../prompts/bloques/estilo-visual.md) y
     [`negativos.md`](../../prompts/bloques/negativos.md) — se copian literales
 
 ---
@@ -103,6 +106,10 @@ Por publicación, y en este orden:
    nunca el nombre del plan. De 2 a 8 líneas, con los cortes ya decididos y el
    tramo naranja ya marcado, según
    [`prompts/imagen/texto-en-imagen.md`](../../prompts/imagen/texto-en-imagen.md).
+   **Y a la altura de la consecuencia**, no del hecho ni de la condición: la
+   escalera y el traductor están en
+   [`adn/06-claridad.md`](../../adn/06-claridad.md). Un titular que dice el
+   precio o lo que no incluye está usando el sitio de otro.
 2. **La descripción**, con las tres articulaciones y su firma al cierre.
 3. **Los hashtags**, seis como máximo.
 4. **La nota del límite**, si la pieza dice una cifra o un plazo. Obligatoria.
@@ -191,6 +198,13 @@ Antes de entregar, una a una:
 - [ ] ¿Algún dato, métrica, testimonio o proceso que no exista en el catálogo?
 - [ ] ¿Cada pieza que dice una cifra o un plazo lleva su nota de límite?
 - [ ] ¿Un solo público y un solo ángulo en las doce?
+- [ ] ¿Cuántos titulares abren por la consecuencia, cuántos por el hecho y
+      cuántos por la condición? La proporción está en
+      [`adn/06-claridad.md`](../../adn/06-claridad.md) y se cuenta, no se estima
+- [ ] ¿Más de una de cada tres piezas abre por el límite? → reordénalas
+- [ ] ¿Hay alguna palabra de la columna izquierda del traductor en un titular
+      —«código», «panel», «complementos», «alojamiento»—? → baja el hecho a la
+      nota y sube su consecuencia
 - [ ] ¿Llamada a la acción en 4 como mucho?
 - [ ] ¿Seis hashtags o menos en todas, y todos concretos?
 - [ ] ¿Emojis solo en las descripciones, y solo en sus tres articulaciones?

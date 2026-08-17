@@ -1,7 +1,8 @@
 # Personalidad
 
 Quién es la marca **cuando habla**. [`02-voz-y-tono.md`](02-voz-y-tono.md) dice
-cómo se construye una frase; este archivo dice desde dónde se dice.
+cómo se construye una frase; este archivo dice desde dónde se dice; y
+[`06-claridad.md`](06-claridad.md) dice qué se dice primero.
 
 Es la diferencia entre escribir correcto y escribir como PanaClaw.
 

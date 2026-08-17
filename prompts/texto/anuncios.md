@@ -16,6 +16,11 @@ Esto es cómo se **escribe** el texto.
 4. LÍMITE      Qué no incluye, o desde cuándo cuenta el plazo.
 ```
 
+Las cuatro partes son las tres alturas de
+[`adn/06-claridad.md`](../../adn/06-claridad.md) en orden descendente: gancho y
+giro son la consecuencia, la cifra es el hecho y el límite es la condición. Un
+anuncio que empieza por la 3 o por la 4 está subiendo la escalera al revés.
+
 Las cuatro. El cuarto es el que la mayoría de los anuncios se salta y el que hace
 que este suene distinto.
 
