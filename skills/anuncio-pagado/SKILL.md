@@ -23,13 +23,15 @@ Produce copy y especificación de piezas de pauta.
 ## 2 · Qué se lee
 
 1. [`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md)
-2. [`adn/04-audiencia.md`](../../adn/04-audiencia.md) — los ganchos y las
+2. [`adn/06-claridad.md`](../../adn/06-claridad.md) — la altura del gancho y la
+   regla de que todo «no» viene con su «sí»
+3. [`adn/04-audiencia.md`](../../adn/04-audiencia.md) — los ganchos y las
    objeciones salen de aquí
-3. [`datos/precios.json`](../../datos/precios.json) — **literal**, no de memoria
-4. El [`catalogo/`](../../catalogo/) del producto que se anuncia
-5. [`campanas/plantillas/estructura-anuncio.md`](../../campanas/plantillas/estructura-anuncio.md)
-6. [`campanas/canales/`](../../campanas/canales/) — el del canal
-7. [`prompts/texto/anuncios.md`](../../prompts/texto/anuncios.md)
+4. [`datos/precios.json`](../../datos/precios.json) — **literal**, no de memoria
+5. El [`catalogo/`](../../catalogo/) del producto que se anuncia
+6. [`campanas/plantillas/estructura-anuncio.md`](../../campanas/plantillas/estructura-anuncio.md)
+7. [`campanas/canales/`](../../campanas/canales/) — el del canal
+8. [`prompts/texto/anuncios.md`](../../prompts/texto/anuncios.md)
 
 ---
 
@@ -44,8 +46,10 @@ Produce copy y especificación de piezas de pauta.
 - Canal: Meta (es el único con medición activa)
 - Etapa: frío
 - Producto: Start $295 o Diagnóstico $49 — las dos cifras que funcionan en frío
-- Destino: `/planes/`
-- Cuatro variantes, una hipótesis cada una
+- Objetivo: **conversaciones de WhatsApp**, no `Lead` del sitio. El porqué está
+  en [`campanas/canales/meta.md`](../../campanas/canales/meta.md)
+- Destino: WhatsApp en frío, `/planes/` cuando el destino sea el sitio
+- **De 8 a 12 conceptos distintos**, en una campaña y un conjunto
 
 ---
 
@@ -82,16 +86,23 @@ nosotros».
 Meta: gancho y cifra dentro de los **primeros 125 caracteres**.
 Google: títulos de **30 caracteres, contados**.
 
-### Paso 6 · Variantes
+### Paso 6 · Conceptos
 
-Si piden varias, **una hipótesis por variante**. Todo lo demás igual: misma
-imagen, mismo producto, mismo destino.
+**Una hipótesis por concepto**, y de 8 a 12 conceptos. Doce redacciones del mismo
+mensaje no son doce conceptos: son uno repetido doce veces, y la plataforma los
+agrupa y los hace competir entre sí en vez de ampliar el alcance.
 
-Cuatro redacciones del mismo mensaje no son cuatro variantes.
+Lo que se varía entre conceptos —dolor, ángulo, escena madre y formato— y lo que
+no se varía nunca —el bloque de estilo, la paleta, las dos familias— está en
+[`campanas/canales/meta.md`](../../campanas/canales/meta.md).
 
 ### Paso 7 · Entregar
 
-Tabla: variante · hipótesis · gancho · cuerpo · CTA · destino.
+Tabla: concepto · hipótesis · gancho · cuerpo · llamada a la acción · destino ·
+formato.
+
+Y arriba, la estructura de campaña: objetivo, público, presupuesto diario y qué
+automatizaciones van activadas. Sin eso es copy suelto, no una campaña.
 
 ---
 
@@ -110,14 +121,21 @@ Tabla: variante · hipótesis · gancho · cuerpo · CTA · destino.
 - [ ] ¿Una sola llamada a la acción?
 - [ ] ¿El CTA de WhatsApp va sin número?
 - [ ] ¿Cabe en el límite del canal, contado?
-- [ ] ¿Cada variante prueba una hipótesis distinta?
+- [ ] ¿Cada concepto prueba una hipótesis distinta?
+- [ ] ¿Son de 8 a 12 conceptos, en una campaña y un conjunto?
+- [ ] ¿El titular de cada anuncio está a la altura de la consecuencia, y cada
+      «no» lleva su «sí»? → [`adn/06-claridad.md`](../../adn/06-claridad.md)
+- [ ] ¿Va declarado el contenido generado con IA? Los fondos de esta marca los
+      genera un generador de imagen, y no declararlo tumba el anuncio
+- [ ] ¿Están desactivadas las mejoras automáticas de creativo?
 
 ---
 
 ## Qué se dice al entregar
 
-1. Producto, público, etapa y canal
-2. **Qué hipótesis prueba cada variante**
-3. Si aplica: que Google no se puede medir todavía (falta GA4), o que el destino
-   sigue siendo un subdominio de Netlify. Ver
+1. Producto, público, etapa, canal y objetivo
+2. **Qué hipótesis prueba cada concepto**
+3. Si aplica: que no hay cadena de producción de vídeo, que Google no se puede
+   medir todavía (falta GA4), o que el destino sigue siendo un subdominio
+   prestado. Ver
    [`operacion/deuda-conocida.md`](../../operacion/deuda-conocida.md)
