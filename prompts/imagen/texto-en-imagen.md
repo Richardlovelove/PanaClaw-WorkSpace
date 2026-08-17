@@ -234,15 +234,22 @@ llegar al carril. No se sube el velo hasta tapar la imagen.
 
 ## El rayo y el wordmark
 
-**Rayo:** 64×64, centrado horizontalmente, borde superior en y=96. El path y el
-degradado salen de [`datos/marca.json`](../../datos/marca.json) → `logo`. Se
-dibuja con el path real, no con una aproximación:
+**Símbolo:** 88 de ancho por 72 de alto, centrado horizontalmente, borde superior
+en y=96. Es la garra de tres zarpazos sobre los corchetes angulares. El path
+completo sale de [`datos/marca.json`](../../datos/marca.json) → `logo.pathSVG`,
+en `viewBox="0 0 100 81.56"` y con `fill-rule="evenodd"`. El archivo está en
+[`logo-original.svg`](../../logo-original.svg).
 
-```
-M37.5 6 18 35.5h11.2L26.5 58 46 28.5H34.8L37.5 6Z    viewBox 0 0 64 64
-```
+Tres cosas que se rompen solas si no se dicen:
 
-Sobre fondo oscuro no lleva el cuadrado negro detrás: el fondo ya es el cuadrado.
+1. **No es cuadrado.** 100 × 81.56. Meterlo en una caja cuadrada lo estira, y
+   estirar el símbolo está en la lista de usos prohibidos.
+2. **`fill-rule="evenodd"`.** Sin eso los huecos de los corchetes se rellenan y
+   el logo sale como una mancha.
+3. **Naranja `#FF5100` plano**, sin degradado. A 88 píxeles el degradado a ember
+   no se ve y solo ensucia el borde.
+
+Sobre fondo oscuro no lleva cuadrado detrás: el fondo ya es el cuadrado.
 
 **Wordmark:** `PANACLAW` en Archivo 700, tracking 0.22em, `#FFF7F7`, **seguido de
 un punto en `#FF5100`**. Alineado a la izquierda en x=72, base del bloque en

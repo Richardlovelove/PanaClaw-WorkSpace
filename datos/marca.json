@@ -155,7 +155,14 @@
       "margenSuperior": 72,
       "margenInferior": 72,
       "anchoUtil": 936,
-      "logo": { "lado": 64, "posicion": "centrado horizontal", "borde superior": 96 },
+      "logo": {
+        "ancho": 88,
+        "alto": 72,
+        "posicion": "centrado horizontal",
+        "bordeSuperior": 96,
+        "$nota": "88 y no 64: a 64 el símbolo se pierde en un lienzo de 1080 de ancho. El alto sale de la proporción real del símbolo (100 × 81.56), no se fuerza a cuadrado.",
+        "color": "#FF5100 plano. El degradado a #FF1E1E se pierde a este tamaño y solo ensucia el borde."
+      },
       "wordmark": { "x": 72, "baseBloque": 1254, "alineacion": "izquierda" },
       "anclajesTexto": {
         "alto": { "topeBloque": 248, "para": "titulares de 6 a 8 líneas" },
@@ -242,9 +249,13 @@
   },
 
   "logo": {
-    "simbolo": "Rayo (bolt) sobre cuadrado negro, con degradado #FF5100 → #FF1E1E de arriba-izquierda a abajo-derecha.",
-    "pathSVG": "M37.5 6 18 35.5h11.2L26.5 58 46 28.5H34.8L37.5 6Z",
-    "viewBox": "0 0 64 64",
+    "simbolo": "Una garra de tres zarpazos atravesando un par de corchetes angulares — el signo de «código» rasgado. Seis figuras: el corchete izquierdo, el derecho, el punto romboidal y los tres zarpazos.",
+    "pathSVG": "M73.43 28.64L54.69 50.19L42.73 77.94L67.38 50.63L67.45 47.83L68.19 44.36Z M81.03 21.85L73.95 28.93L85.68 40.52L67.9 58.38L75.2 65.76L100 40.52Z M74.61 15.5L74.39 15.5L73.8 16.09L73.65 16.39L73.28 16.61L72.69 17.2L72.62 17.42L67.6 22.44L67.6 22.59L72.1 27.01L72.25 27.01L79.19 20.08Z M25.17 15.35L0 40.3L25.39 65.32L32.32 58.16L14.32 40.37L32.18 22.36Z M59.26 1.77L32.69 28.79L32.62 31.52L31.59 36.31L26.64 51.74L45.68 29.75L50.41 19.41Z M75.94 0.15L52.18 27.24L50.85 31L41.62 43.62L23.91 81.56L48.12 52.55L49.89 47.98L59.04 35.65Z",
+    "viewBox": "0 0 100 81.56",
+    "fillRule": "evenodd",
+    "$proporcion": "NO es cuadrado: 100 de ancho por 81.56 de alto. Escalarlo a una caja cuadrada lo deforma, y deformar el símbolo está en la lista de usos prohibidos.",
+    "$origen": "Trazado de logo-original.png (1408×1408 RGBA) el 2026-08-17. Comprobado rasterizando el trazado contra el alfa del original: 0.48 % de píxeles distintos. El archivo vectorial está en logo-original.svg.",
+    "$divergenciaConElSitio": "marca.json declaraba hasta hoy un rayo, «M37.5 6 18 35.5h11.2L26.5 58 46 28.5H34.8L37.5 6Z» en viewBox 0 0 64 64, que es lo que dibuja scripts/generate-brand-assets.mjs del repositorio del sitio. El símbolo real de la marca —el que se usa en las piezas publicadas y el que está en logo-original.png— es este. Mientras no se corrija el generador del sitio, los favicons y el og.png siguen saliendo con el rayo. HAY QUE ARREGLARLO ALLÍ; aquí queda anotado, no resuelto.",
     "fondo": "#100101, esquinas redondeadas al 22% del lado",
     "wordmark": "PANACLAW en Archivo 700, tracking 0.20em, color #FFF7F7, seguido de «.» en #FF5100",
     "originales": "brand-assets/logo-original.{png,svg} en el repositorio del sitio",
