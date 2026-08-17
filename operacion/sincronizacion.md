@@ -39,7 +39,7 @@ contradicción, se reporta — y se anota en
 |---|---|
 | `src/styles/global.css` (`:root`) | `color.tokens` |
 | `src/styles/global.css` | `tipografia.escala`, `forma`, `layout` |
-| `scripts/generate-brand-assets.mjs` | `logo` (el path del rayo, los degradados) |
+| `scripts/generate-brand-assets.mjs` | `logo` — **hoy en divergencia, ver abajo** |
 | `src/data/site.ts` | `identidad`, `contacto` |
 | `src/data/analytics.ts` | `medicion` |
 | **Nada. No existe allí** | **`redesSociales`** |
@@ -53,6 +53,15 @@ contradicción, se reporta — y se anota en
 > extensión y pasa a ser espejo — y entonces el flujo se invierte al normal.
 > Mientras tanto, un cambio en la tipografía del sitio **no** toca este bloque, y
 > un cambio en este bloque **no** es motivo para tocar el sitio.
+
+> **`logo` está en divergencia desde el 2026-08-17.** Es la única excepción viva
+> a la regla de que el sitio manda: el generador de assets dibuja un rayo y el
+> símbolo real de la marca es la garra sobre los corchetes. Aquí manda el
+> símbolo real, porque el original —`logo-original.png`— es más autoridad que un
+> script que quedó sin actualizar. **El sitio es el que tiene que ponerse al
+> día**, y el procedimiento exacto está en
+> [`deuda-conocida.md`](deuda-conocida.md) punto 6. Hasta que eso pase, los
+> favicons y el `og.png` siguen saliendo con el rayo.
 
 ### Copy y reglas → `adn/` y `catalogo/`
 

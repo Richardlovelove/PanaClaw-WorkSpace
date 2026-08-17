@@ -98,6 +98,37 @@ publicarse todavía.
 
 ---
 
+## 6 · El sitio dibuja el símbolo equivocado `[código]`
+
+**Qué pasa.** El símbolo real de la marca es la garra de tres zarpazos sobre los
+corchetes angulares — el que está en
+[`logo-original.png`](../logo-original.png) y el que llevan todas las piezas
+publicadas. `scripts/generate-brand-assets.mjs`, en el repositorio del sitio,
+sigue dibujando un rayo: `M37.5 6 18 35.5h11.2L26.5 58 46 28.5H34.8L37.5 6Z`.
+
+**Qué bloquea.** Nada del contenido —aquí ya manda el símbolo correcto— pero
+**los favicons y el `og.png` del sitio salen con el símbolo viejo**. Es lo que se
+ve en la pestaña del navegador y en la miniatura cuando alguien comparte el
+enlace por WhatsApp.
+
+**Cómo se arregla,** en el repositorio del sitio:
+
+1. Sustituir el path y el `viewBox` en `scripts/generate-brand-assets.mjs` por
+   los de [`datos/marca.json`](../datos/marca.json) → `logo`, respetando
+   `fill-rule="evenodd"` y la proporción 100 × 81.56.
+2. Reemplazar `brand-assets/logo-original.svg` por
+   [`logo-original.svg`](../logo-original.svg) de este repositorio.
+3. Correr `npm run brand` y commitear los archivos generados: no se recalculan
+   en cada build.
+4. Comprobar que el favicon no se deforma: la caja del favicon es cuadrada y el
+   símbolo no lo es. Va centrado con aire, nunca estirado.
+
+**Mientras tanto:** en Canva y en cualquier pieza se usa
+[`logo-original.svg`](../logo-original.svg) de aquí, **nunca** el `favicon.svg`
+del sitio.
+
+---
+
 ## Cómo se usa este documento
 
 Cualquier agente que vaya a producir una campaña, conectar una herramienta

@@ -88,7 +88,9 @@ cualquier extractor automático sobre un sitio oscuro.
 
 ### Tipografía
 
-**Archivo**, una sola familia, pesos 300–700. Si propone una segunda fuente para
+**Archivo**, pesos 300–700. Pomelli deriva la marca del sitio, y el sitio es
+Archivo sola: aquí no entra Antonio, que es solo de piezas de redes. Si propone
+una segunda fuente para
 titulares o para cuerpo, quítala.
 
 ### Tono de voz

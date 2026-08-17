@@ -40,7 +40,7 @@ importa a nadie.
 |---|---|---|
 | 0–2,5 s | Escena madre, plano cerrado, movimiento continuo | El desastre, 4–6 palabras |
 | 2,5–5 s | La misma escena abriéndose | La cifra, sola y grande |
-| 5–6 s | Negro con el rayo y el wordmark | El CTA |
+| 5–6 s | Negro con el símbolo y el wordmark | El CTA |
 
 ### 15 segundos — story
 
@@ -50,7 +50,7 @@ importa a nadie.
 | 1–6 s | Escena madre, plano general lento | El desastre, en dos líneas |
 | 6–11 s | Corte a plano cerrado del detalle incandescente | La cifra + el plazo |
 | 11–14 s | La escena apagándose | Qué NO incluye, en una línea |
-| 14–15 s | Negro, rayo, wordmark | El CTA |
+| 14–15 s | Negro, símbolo, wordmark | El CTA |
 
 > El plano de «qué no incluye» es el que distingue un video de PanaClaw de
 > cualquier otro anuncio. No lo cortes por falta de tiempo: corta antes el plano

@@ -43,7 +43,11 @@ Cada hex se copió de [`datos/marca.json`](../datos/marca.json).
 
 - ¿`#FF1E1E` aparece en algún texto? → prohibido, es color de fondo.
 - ¿Aparece azul, verde, morado o `#FFFFFF` puro? → fuera.
-- ¿La tipografía es Archivo? → no hay segunda familia.
+- ¿La tipografía es la que toca? Archivo en web, anuncios, correo y propuestas.
+  En piezas de redes, Antonio 700 en titular y cifra y Archivo en el resto.
+  **Ninguna otra familia, en ningún caso** — el verificador la caza.
+- ¿El símbolo es la garra, y no el rayo viejo? ¿Lleva `fill-rule="evenodd"` y
+  conserva su proporción 100 × 81.56?
 
 ### 3. Jerga
 

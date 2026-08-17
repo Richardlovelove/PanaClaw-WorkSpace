@@ -72,8 +72,12 @@ acento. **No lo «arregles» por tu cuenta.**
 
 ## Tipografía
 
-**Archivo. Una sola familia, para todo.** No hay serif de titulares, no hay fuente
-display, no hay segunda familia. Pesos en uso: 300, 400, 500, 600, 700.
+**Archivo, para todo lo que es el sitio.** No hay serif de titulares y no hay
+fuente display. Pesos en uso: 300, 400, 500, 600, 700.
+
+En **piezas de redes sociales** —y solo ahí— entra una segunda familia, Antonio,
+para titular y cifra. La razón y los roles están más abajo, en «La extensión de
+redes sociales». Fuera de ese caso, Archivo sola.
 
 ### La firma tipográfica
 
@@ -207,20 +211,43 @@ sostiene.
 
 ## Logo
 
-**Símbolo:** un rayo sobre cuadrado negro, con degradado `#FF5100` → `#FF1E1E`.
+**Símbolo:** una garra de tres zarpazos atravesando un par de corchetes
+angulares — el signo de «código» rasgado. Seis figuras: el corchete izquierdo,
+el derecho, el punto romboidal y los tres zarpazos.
 
 ```
-path:    M37.5 6 18 35.5h11.2L26.5 58 46 28.5H34.8L37.5 6Z
-viewBox: 0 0 64 64
-fondo:   #100101, esquinas al 22 %
+viewBox:   0 0 100 81.56
+fill-rule: evenodd
+color:     #FF5100 plano
+archivo:   logo-original.svg  ·  original en logo-original.png
 ```
+
+El path completo está en [`datos/marca.json`](../datos/marca.json) → `logo.pathSVG`.
+Se copia de ahí, no se aproxima a mano.
+
+**Tres cosas lo rompen en silencio:**
+
+1. **No es cuadrado.** 100 × 81.56. Forzarlo a una caja cuadrada lo deforma, y
+   deformarlo está en la lista de prohibiciones de abajo.
+2. **`fill-rule="evenodd"` es obligatorio.** Sin eso los huecos de los corchetes
+   se rellenan y el símbolo sale como una mancha sólida.
+3. **Naranja plano.** El degradado a ember no se ve por debajo de unos 200 px y
+   solo ensucia el borde.
 
 **Wordmark:** `PANACLAW` en Archivo 700, tracking `0.20em`, `#FFF7F7`, seguido de
 un punto `.` en `#FF5100`. El punto naranja es parte de la marca.
 
-**Prohibido:** rayo en otro color, rayo sobre fondo claro, estirar/rotar/inclinar,
-wordmark sin tracking, y cualquier efecto añadido (sombra, contorno, bisel,
-brillo).
+**Prohibido:** el símbolo en otro color, sobre fondo claro, estirado, rotado o
+inclinado; wordmark sin tracking; y cualquier efecto añadido (sombra, contorno,
+bisel, brillo).
+
+> **Divergencia abierta con el sitio.** Este archivo declaró hasta el 2026-08-17
+> un rayo, `M37.5 6 18 35.5h11.2L26.5 58 46 28.5H34.8L37.5 6Z`, que es lo que
+> sigue dibujando `scripts/generate-brand-assets.mjs` en el repositorio del
+> sitio. Mientras eso no se corrija allí, **los favicons y el `og.png` salen con
+> el símbolo viejo.** El procedimiento está en
+> [`operacion/sincronizacion.md`](../operacion/sincronizacion.md) y la deuda en
+> [`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md).
 
 **Regenerar:** `npm run brand` en el repositorio del sitio. Los favicons y el
 `og.png` son archivos generados que **no** se recalculan en cada build; hay que

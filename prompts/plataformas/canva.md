@@ -59,8 +59,12 @@ es solo de redes.
 
 ### Logo
 
-Sube el `favicon.svg` del sitio (rayo naranja) y el wordmark. **Solo versión
-sobre fondo oscuro** — no subas variantes sobre claro, porque no existen.
+Sube [`logo-original.svg`](../../logo-original.svg) —la garra sobre los
+corchetes— y el wordmark. **Solo versión sobre fondo oscuro**: no subas
+variantes sobre claro, porque no existen.
+
+> No uses el `favicon.svg` del sitio: todavía dibuja el rayo viejo. La
+> divergencia está anotada en [`adn/03-sistema-visual.md`](../../adn/03-sistema-visual.md).
 
 ---
 

@@ -2,8 +2,8 @@
 
 Proporción por canal y, sobre todo, **dónde dejar el hueco para el texto**.
 
-El titular de PanaClaw no se genera: se pone encima, en Archivo, con su tracking
-negativo. Lo que se le pide al generador es que **deje el carril limpio**.
+El titular de PanaClaw no se genera nunca: se compone encima. Lo que se le pide
+al generador es que **deje el carril limpio**.
 
 ---
 
@@ -78,7 +78,7 @@ lleve esa pieza.
 | **Medio** | «El sujeto se abre hacia los bordes y hacia el tercio superior. La banda central del cuadro queda en negro limpio, con la luz muriendo antes de entrar en ella.» |
 | **Bajo** | «El sujeto ocupa los dos tercios superiores, desplazado hacia arriba. El tercio inferior queda en negro casi puro, limpio y sin detalle.» |
 
-Y en las tres, dos zonas que se dejan libres siempre, porque ahí van el rayo y el
+Y en las tres, dos zonas que se dejan libres siempre, porque ahí van el símbolo y el
 wordmark:
 
 ```

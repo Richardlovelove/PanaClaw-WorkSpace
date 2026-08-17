@@ -120,7 +120,8 @@ gustos — son fallos observados en un documento que por lo demás estaba bien.
    elemento ya maquetado. No lo estimes multiplicando líneas por interlínea:
    el anclaje al centro óptico se descuadra respecto a lo que se ve.
 
-4. El rayo empieza en y=96, no está centrado en y=96. Su caja va de 96 a 160.
+4. El símbolo EMPIEZA en y=96, no está centrado en y=96. Su caja va de 96 a
+   168, y mide 88 de ancho por 72 de alto. No es cuadrado.
 
 5. Un botón que lanza 33 descargas seguidas lo bloquea el navegador a la
    tercera. O agrupas en un ZIP de verdad, o el botón se llama "descargar una

@@ -180,17 +180,21 @@ oficial).
 
 ---
 
-## El texto va encima, no dentro
+## El texto se compone encima, nunca se genera
 
-Salvo petición explícita del humano, **no le pidas a este motor que escriba el
-titular**. Escribe mal en español —come tildes y convierte la eñe— y no
-reproduce Archivo con su tracking negativo.
+**No le pidas a este motor que escriba el titular.** Escribe mal en español
+—come tildes y convierte la eñe— y no reproduce la tipografía de la marca. En
+un mes de contenido normal, más de la mitad de los titulares llevan tilde, eñe o
+signo de apertura: no es un riesgo ocasional, es la mayoría de las piezas.
 
-Lo que sí hace bien es dejar el hueco. Después:
+Lo que sí hace bien es dejar el hueco. Después, según dónde vaya la pieza:
 
-- **Titular:** Archivo 600, versalitas, tracking `-0.02em`, color `#FFF7F7`
-- **Antetítulo:** Archivo 400, 14 px, tracking `0.16em`, color `#FF5100`
-- **Bajada:** Archivo 300, color `#BABABA`
+- **Web, anuncios, correo:** Archivo 600, versalitas, tracking `-0.02em`,
+  `#FFF7F7`. Antetítulo Archivo 400, 14 px, tracking `0.16em`, `#FF5100`.
+  Bajada Archivo 300, `#BABABA`.
+- **Redes sociales:** manda la escala completa de
+  [`prompts/imagen/texto-en-imagen.md`](texto-en-imagen.md), donde el titular es
+  Antonio 700 y hay una retícula en píxeles.
 
 ---
 

@@ -90,8 +90,10 @@ ser de la marca aunque acierte los colores.
 `texto · letras · números · tipografía · iconos · logotipos · gráficos · flechas ·
 infografías · marcas de agua`
 
-El texto va encima, en el editor, con Archivo. Los generadores escriben mal en
-español —tildes, eñes— y no reproducen el tracking negativo de la marca.
+El texto se compone encima, nunca se genera. Los motores escriben mal en español
+—tildes, eñes— y no reproducen la tipografía de la marca. Quién lo compone y con
+qué medidas está en
+[`prompts/imagen/texto-en-imagen.md`](../imagen/texto-en-imagen.md).
 
 **Si la pieza sí lleva texto generado**, quita solo `texto`, `letras` y
 `tipografía` de la lista. Deja los iconos, los logos y las infografías fuera.
