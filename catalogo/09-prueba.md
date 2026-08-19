@@ -66,6 +66,18 @@ ejemplo o marcador de posición:**
 - Premios, certificaciones o reconocimientos
 - Comparativas de «antes y después» con cifras
 - Porcentajes de mejora de cualquier tipo
+- **Afirmaciones sobre cómo se comporta la competencia**: que no publica sus
+  precios, que no da la cifra hasta la tercera reunión. Nadie lo ha comprobado y
+  hay indicios de lo contrario
+  ([`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md) punto 6). Lo
+  único citable de la categoría es el `$1,200` de
+  [`datos/precios.json`](../datos/precios.json) → `otrosImportes.referenciaCompetencia`,
+  porque esa cifra sí está publicada en el propio sitio
+
+> **Sí se puede contar la escena del plazo** —«preguntas por una web y te dicen
+> un mes y medio, y pasan tres»— porque es copy publicado del sitio
+> (`src/data/services.ts`, pilar 03). La diferencia es que ahí se cuenta lo que
+> le pasó a alguien, no se afirma un dato sobre el mercado.
 
 > El único dato de mercado que el copy del sitio usa es que **cuatro de cada diez
 > personas abandonan una página que tarda más de tres segundos**. Es una

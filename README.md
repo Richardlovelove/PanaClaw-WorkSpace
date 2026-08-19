@@ -159,13 +159,14 @@ procedimiento están en
 
 ## Antes de arrancar una campaña
 
-Lee [`operacion/deuda-conocida.md`](operacion/deuda-conocida.md). Hay dos cosas
-abiertas que afectan directamente a cualquier trabajo de marketing:
+Lee [`operacion/deuda-conocida.md`](operacion/deuda-conocida.md). Queda una cosa
+abierta que afecta directamente a cualquier trabajo de marketing:
 
-1. **No hay dominio propio** todavía — un anuncio que cae en un subdominio de
-   Netlify contradice «el sitio es tuyo» en el primer clic
-2. **Google Analytics sin configurar** — hoy solo mide Meta, así que una campaña
+1. **Google Analytics sin configurar** — hoy solo mide Meta, así que una campaña
    de Google se puede correr pero no leer
+
+Cerrado el 2026-08-17: el sitio ya tiene dominio propio, `panaclaw.com`. Es el
+único destino que se pone en una pieza; `panaclaw.netlify.app` no se reparte.
 
 Cerrado el 2026-08-14: la imagen social del sitio llevaba un nombre de marca
 anterior y una palabra de jerga. Es lo que se ve al compartir un enlace y lo que

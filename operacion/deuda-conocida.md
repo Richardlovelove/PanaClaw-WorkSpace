@@ -17,20 +17,7 @@ Cada punto lleva quién lo desbloquea:
 
 ---
 
-## 1 · No hay dominio propio `[$]` `[tuyo]`
-
-**Qué pasa.** El sitio vive en `panaclaw.netlify.app`.
-
-**Qué bloquea.** Pauta pagada. Un anuncio que lleva a un subdominio de Netlify
-contradice el pilar de «el sitio es tuyo» en el primer clic, y es lo primero que
-nota alguien que está evaluando agencias.
-
-**Nota del repositorio del sitio:** el dominio se compra cuando el resto de esta
-lista esté resuelto, no antes — arreglarlo después sale más caro.
-
----
-
-## 2 · Google Analytics 4 sin configurar `[cuenta]`
+## 1 · Google Analytics 4 sin configurar `[cuenta]`
 
 **Qué pasa.** `ga4MeasurementId` está vacío en `src/data/analytics.ts`, a
 propósito: un identificador falso mediría en la cuenta de nadie y lo parecería
@@ -54,7 +41,7 @@ redacción y pasa a ser una declaración falsa.
 
 ---
 
-## 3 · Los cuatro proyectos están sin medir `[código]`
+## 2 · Los cuatro proyectos están sin medir `[código]`
 
 **Qué pasa.** Las fichas de `src/data/projects.ts` tienen nombre, dominio, enlace
 y sector. No tienen métricas, ni año, ni reto, ni solución.
@@ -71,7 +58,7 @@ se ve corta pero nunca falsa.
 
 ---
 
-## 4 · No hay identidad sonora `[tuyo]`
+## 3 · No hay identidad sonora `[tuyo]`
 
 **Qué pasa.** La marca no tiene música, ni locutor, ni criterio de audio
 definido.
@@ -86,7 +73,7 @@ pregunta que hay que hacerle al humano cada vez que pida un video con voz.
 
 ---
 
-## 5 · No hay cuentas de redes sociales `[tuyo]`
+## 4 · No hay cuentas de redes sociales `[tuyo]`
 
 **Qué pasa.** El footer del sitio lista WhatsApp, Instagram, LinkedIn, GitHub y
 X, pero **solo WhatsApp tiene enlace**. Los demás iconos salen desactivados,
@@ -98,7 +85,7 @@ publicarse todavía.
 
 ---
 
-## 6 · El sitio dibuja el símbolo equivocado `[código]`
+## 5 · El sitio dibuja el símbolo equivocado `[código]`
 
 **Qué pasa.** El símbolo real de la marca es la garra de tres zarpazos sobre los
 corchetes angulares — el que está en
@@ -129,17 +116,25 @@ del sitio.
 
 ---
 
-## 7 · Dos afirmaciones de mercado sin verificar `[tuyo]`
+## 6 · Dos afirmaciones de mercado sin verificar `[tuyo]`
 
-**Qué pasa.** El ADN afirma dos cosas sobre la competencia que nadie ha
+**Qué pasa.** El ADN se apoyaba en dos cosas sobre la competencia que nadie ha
 comprobado:
 
-1. `adn/01-identidad.md` y `adn/05-personalidad.md` dicen que la categoría **no
-   publica el precio** y que la agencia «no te dice la cifra hasta la tercera
-   reunión». Una búsqueda del 2026-08-19 encontró agencias panameñas con cifras
-   públicas —una con «desde $399» en el propio título de su web, otra con tres <!-- v: precio publicado por un competidor, no un importe del catálogo de PanaClaw -->
-   precios publicados—. No se pudieron abrir las páginas para confirmarlo, así
-   que **el hallazgo es indicativo, no concluyente**.
+1. `adn/01-identidad.md`, `adn/05-personalidad.md`, `adn/06-claridad.md`,
+   `adn/07-redaccion.md` y `prompts/texto/organico.md` decían que la categoría
+   **no publica el precio** y que la agencia «no te dice la cifra hasta la
+   tercera reunión». Una búsqueda del 2026-08-19 encontró agencias panameñas con
+   cifras públicas —una con «desde $399» en el propio título de su web, otra con <!-- v: precio publicado por un competidor, no un importe del catálogo de PanaClaw -->
+   tres precios publicados—. No se pudieron abrir las páginas para confirmarlo,
+   así que **el hallazgo es indicativo, no concluyente**.
+
+   **Hecho el 2026-08-19:** la afirmación se sacó de los cinco archivos y se
+   prohibió expresamente en [`catalogo/09-prueba.md`](../catalogo/09-prueba.md).
+   Lo que queda es el argumento comprobable —nuestro precio está publicado y se
+   lee sin escribirle a nadie— y el `$1,200` de referencia, que sí está en el
+   sitio. **Lo que sigue abierto es la comprobación**, abajo.
+
 2. `adn/05-personalidad.md` presenta el `$1,200` de
    [`datos/precios.json`](../datos/precios.json) → `otrosImportes.referenciaCompetencia`
    como el precio de la categoría. Es una referencia, no una medición.
@@ -151,13 +146,14 @@ regla 4 prohíbe los datos sin verificar. Y si resulta cierta, el argumento de
 a ser una paridad.
 
 **Cómo se arregla.** Abrir cinco o seis webs de agencias panameñas, anotar cuáles
-publican cifra y con qué fecha, y reescribir las dos frases con lo que se vea.
-Si la mayoría publica precio, el diferenciador se muda a lo que nadie más dice:
-a nombre de quién queda el sitio.
+publican cifra y con qué fecha. Con eso en la mano se puede volver a afirmar algo
+sobre la categoría — con su fecha al lado, como cualquier otro dato de este
+repositorio. Si la mayoría publica precio, el diferenciador se muda a lo que
+nadie más dice: a nombre de quién queda el sitio.
 
 ---
 
-## 8 · Los cuatro pilares están ordenados por facilidad, no por defensibilidad `[tuyo]`
+## 7 · Los cuatro pilares están ordenados por facilidad, no por defensibilidad `[tuyo]`
 
 **Qué pasa.** `adn/01-identidad.md` ordena el argumento en velocidad, seguridad y
 plazo, y la campaña reparte el peso a partes iguales entre velocidad, precio,

@@ -123,14 +123,14 @@ gustos — son fallos observados en un documento que por lo demás estaba bien.
 4. El símbolo EMPIEZA en y=96, no está centrado en y=96. Su caja va de 96 a
    168, y mide 88 de ancho por 72 de alto. No es cuadrado.
 
-5. Un botón que lanza 33 descargas seguidas lo bloquea el navegador a la
-   tercera. O agrupas en un ZIP de verdad, o el botón se llama "descargar una
-   por una" y avisa de que hay que permitirlo.
+5. Un botón que lanza una descarga por pieza, todas seguidas, lo bloquea el
+   navegador a la tercera. O agrupas en un ZIP de verdad, o el botón se llama
+   "descargar una por una" y avisa de que hay que permitirlo.
 ```
 
 **Y una comprobación que el humano hace, no el modelo:** descarga una pieza y
 ponla al lado de su vista previa. Si no son idénticas, el exportador está mal y
-las 33 lo están.
+lo están todas las del lote.
 
 ### El resto del documento
 

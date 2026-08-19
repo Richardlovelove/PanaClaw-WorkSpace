@@ -44,10 +44,11 @@ sin una sola letra. El motivo está en la cabecera del script.
 
 ## Qué darle
 
-**URL:** `https://panaclaw.netlify.app`
+**URL:** `https://panaclaw.com`
 
-> Hoy el sitio está en beta, publicado sin dominio propio. Cuando haya dominio,
-> se le da el dominio: es lo que va a quedar guardado en el perfil.
+> Es el dominio propio del sitio desde el 2026-08-17 y lo que declara `site` en
+> `astro.config.mjs`. Se le da este y no `panaclaw.netlify.app`: la URL que se
+> analiza es la que queda guardada en el perfil.
 
 ---
 
