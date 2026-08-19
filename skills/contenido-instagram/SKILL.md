@@ -35,14 +35,16 @@ En este orden:
 5. [`adn/06-claridad.md`](../../adn/06-claridad.md) — a qué altura empieza cada
    pieza y la proporción del calendario. **Es el archivo que decide si el mes
    vende o solo informa**
-6. [`adn/04-audiencia.md`](../../adn/04-audiencia.md) — el público del mes y sus objeciones
-7. [`catalogo/`](../../catalogo/) — la ficha del producto del mes, entera
-8. [`catalogo/08-fronteras.md`](../../catalogo/08-fronteras.md) — si el mes toca Care, Seguridad, Diagnóstico o Auditoría
-9. [`prompts/texto/organico.md`](../../prompts/texto/organico.md) — los cinco tipos de publicación
-10. [`prompts/imagen/texto-en-imagen.md`](../../prompts/imagen/texto-en-imagen.md) — la maquetación
-11. [`prompts/plataformas/meta-ai.md`](../../prompts/plataformas/meta-ai.md) — el contrato
-12. [`campanas/plantillas/calendario.md`](../../campanas/plantillas/calendario.md) — la mezcla de tipos
-13. [`prompts/bloques/estilo-visual.md`](../../prompts/bloques/estilo-visual.md) y
+6. [`adn/07-redaccion.md`](../../adn/07-redaccion.md) — el gancho, el ritmo y el
+   cierre. Es el que decide si además se recuerda
+7. [`adn/04-audiencia.md`](../../adn/04-audiencia.md) — el público del mes y sus objeciones
+8. [`catalogo/`](../../catalogo/) — la ficha del producto del mes, entera
+9. [`catalogo/08-fronteras.md`](../../catalogo/08-fronteras.md) — si el mes toca Care, Seguridad, Diagnóstico o Auditoría
+10. [`prompts/texto/organico.md`](../../prompts/texto/organico.md) — los cinco tipos de publicación
+11. [`prompts/imagen/texto-en-imagen.md`](../../prompts/imagen/texto-en-imagen.md) — la maquetación
+12. [`prompts/plataformas/meta-ai.md`](../../prompts/plataformas/meta-ai.md) — el contrato
+13. [`campanas/plantillas/calendario.md`](../../campanas/plantillas/calendario.md) — la mezcla de tipos
+14. [`prompts/bloques/estilo-visual.md`](../../prompts/bloques/estilo-visual.md) y
     [`negativos.md`](../../prompts/bloques/negativos.md) — se copian literales
 
 ---

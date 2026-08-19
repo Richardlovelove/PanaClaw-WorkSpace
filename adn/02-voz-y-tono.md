@@ -5,10 +5,12 @@ de cara al cliente, en cualquier medio: web, anuncio, WhatsApp, correo, guion de
 video o respuesta de un bot.
 
 Aquí está cómo se construye una frase. **Desde dónde se dice** está en
-[`05-personalidad.md`](05-personalidad.md), y **qué se dice primero** está en
-[`06-claridad.md`](06-claridad.md). Los tres se leen juntos: con este solo, el
-texto sale correcto pero sin carácter, y puede salir correcto, con carácter y aun
-así ilegible para quien no es del oficio.
+[`05-personalidad.md`](05-personalidad.md), **qué se dice primero** está en
+[`06-claridad.md`](06-claridad.md) y **cómo se hace que funcione** está en
+[`07-redaccion.md`](07-redaccion.md). Los cuatro se leen juntos: con este solo,
+el texto sale correcto pero sin carácter; puede salir correcto, con carácter y
+aun así ilegible para quien no es del oficio; y puede salir correcto, con
+carácter, entendible y sin fuerza ninguna.
 
 ---
 

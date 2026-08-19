@@ -2,10 +2,12 @@
 
 Publicaciones, WhatsApp y correo. Todo lo que no se paga por mostrar.
 
-**Base obligatoria:** [`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md) y
-[`adn/06-claridad.md`](../../adn/06-claridad.md). El segundo decide **por dónde
+**Base obligatoria:** [`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md),
+[`adn/06-claridad.md`](../../adn/06-claridad.md) y
+[`adn/07-redaccion.md`](../../adn/07-redaccion.md). El segundo decide **por dónde
 empieza** cada publicación: casi todo el orgánico se lee en frío, y en frío se
-abre por la consecuencia, nunca por el precio ni por el límite.
+abre por la consecuencia, nunca por el precio ni por el límite. El tercero decide
+**si además funciona**: el gancho, el ritmo y el cierre.
 
 ---
 

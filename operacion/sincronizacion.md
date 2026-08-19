@@ -73,6 +73,20 @@ contradicción, se reporta — y se anota en
 | `docs/convenciones.md` | `orquestador/reglas.md` |
 | Las listas `*NoIncluye` de cada producto | El «qué NO incluye» de cada ficha |
 
+### Lo que NO tiene espejo en el sitio
+
+Tres bloques se decidieron aquí y no vienen de `abrinay1997-stack/PanaClaw`. No
+se sincronizan: se mantienen aquí y llevan su propia fecha de decisión.
+
+| Archivo | Qué es | Decidido |
+|---|---|---|
+| `datos/marca.json` → `redesSociales` | La segunda familia tipográfica y la retícula de las piezas de redes | 2026-08-16 |
+| `adn/06-claridad.md` | Qué se dice primero y con qué palabras | 2026-08-17 |
+| `adn/07-redaccion.md` | Cómo se hace que el texto funcione | 2026-08-19 |
+
+Si alguno de los tres acaba mandando también sobre el copy del sitio, el camino
+es el de siempre y va al revés: se lleva primero al sitio y después baja aquí.
+
 ---
 
 ## Procedimiento

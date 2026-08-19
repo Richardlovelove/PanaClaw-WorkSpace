@@ -3,9 +3,10 @@
 [`02-voz-y-tono.md`](02-voz-y-tono.md) dice **cómo se construye una frase**.
 [`05-personalidad.md`](05-personalidad.md) dice **desde dónde se dice**. Este
 dice **cómo le llega al que lo lee**: qué se dice primero, con qué palabras lo
-entiende, y con qué disposición.
+entiende, y con qué disposición. Y [`07-redaccion.md`](07-redaccion.md) dice
+**cómo se hace que funcione**.
 
-Los tres se leen juntos antes de escribir una sola palabra de cara al cliente.
+Los cuatro se leen juntos antes de escribir una sola palabra de cara al cliente.
 Con los dos primeros el texto sale correcto y con carácter, y aun así puede
 llegar frío, distante o dando lecciones.
 
@@ -347,7 +348,98 @@ promesa si se puede comprobar el primer día.
 
 ---
 
-## 9 · Lo que este archivo NO relaja
+## 9 · Di qué vendes, con esas palabras
+
+**Decidido el 2026-08-19 por el dueño de la marca**, después de leer los doce
+anuncios de la primera campaña de pauta. El veredicto, literal: *«sonamos muy
+misteriosos y poco claros; a veces son empresarios que no tienen ni idea de qué
+es que se entregue en 72 horas o de qué es el código»*.
+
+Es la tercera vez que el mismo fallo llega por una puerta distinta, así que aquí
+está cerrada la puerta.
+
+### Por qué las secciones 1 a 8 no lo evitaron
+
+La sección 3 ya trae la prueba, y la primera de sus tres preguntas es **«¿sé qué
+me estás ofreciendo?»**. Los doce anuncios pasaban la 2 —se entendía qué le
+cambia al lector— y fallaban la 1: ninguno decía, con esas palabras, qué se
+vende.
+
+```
+✗  SABES LO QUE CUESTA ANTES DE ESCRIBIRME.
+✗  EL CLIC LO PAGAS TÚ. LA ESPERA LA PAGAN ELLOS.
+✗  LA DIRECCIÓN EN INTERNET ES TUYA, NO MÍA.
+```
+
+Las tres son ciertas, están a la altura de la consecuencia y no llevan jerga.
+Y las tres son **adivinanzas**: hay que deducir que lo que se vende es una
+página web. Escribir la consecuencia no exime de nombrar la cosa.
+
+### Las tres reglas
+
+**1 · El antetítulo nombra la categoría, no el plan.**
+
+`PANACLAW START` no le dice nada a alguien que nunca ha encargado una web: es un
+nombre interno usado como si fuera una explicación. El antetítulo es el primer
+texto que se lee y tiene que situar al lector.
+
+| No | Sí |
+|---|---|
+| `PANACLAW START` | `PÁGINAS WEB EN PANAMÁ` |
+| `DIAGNÓSTICO DE VENTAS` | `SI YA TIENES PÁGINA WEB` |
+
+**El nombre del producto no desaparece: baja a la nota o al cuerpo**, entero y
+con su escritura exacta. Sigue prohibido acortarlo.
+
+**2 · La pieza dice qué se hace, en presente y con el verbo normal.**
+
+En algún sitio de cada pieza tiene que aparecer la frase llana: «te hacemos tu
+página web», «reviso tu página y te digo por qué no vende». Sin metáfora y sin
+elipsis. Si tapas el logo y la cifra, un dueño de negocio tiene que poder decir
+qué se vende ahí.
+
+**3 · Enumerar no es de mal gusto.**
+
+Cuatro planes con lo que trae cada uno se dicen como una lista de cuatro, no se
+insinúan. Una pieza que dice «tenemos cuatro planes y este es cada uno» y los
+enumera está haciendo el trabajo; una que dice «el precio está publicado» y
+espera que el lector vaya a mirar, no.
+
+### El traductor, un escalón más abajo
+
+La tabla de la sección 2 baja el hecho a la consecuencia. Estas filas bajan otro
+escalón: quitan la palabra de oficio que quedaba dentro de la consecuencia.
+
+| Se estaba diciendo | Se dice |
+|---|---|
+| Entrega en 72 horas | Lista en 72 horas, o sea tres días |
+| El código queda a tu nombre | Los archivos de tu página quedan en una cuenta tuya. Si mañana trabajas con otro, te la llevas entera |
+| El dominio queda a tu nombre | La dirección donde te encuentran en internet se registra a tu nombre |
+| Sin panel de edición | Si quieres cambiar un texto o una foto, me escribes y lo cambio yo |
+| Con panel de edición | Cambias los textos y las fotos tú mismo, desde el celular, sin llamar a nadie |
+| 2 rondas de cambios | Dos tandas de correcciones, antes de publicarla |
+| Control de stock | Control de existencias: la página sabe cuánto te queda de cada cosa |
+| Medición de visitas | Ves cuánta gente entró y por dónde llegó |
+| Preparada para salir en Google | Google la puede leer entera |
+
+**La regla del número no cambia.** «Tres días» no sustituye a «72 horas»: van las
+dos, la cifra y su traducción. Quitar la cifra sería perder lo único que la
+categoría no puede copiar.
+
+### Lo que esta sección NO autoriza
+
+- **Escribir más largo por escribir más largo.** La economía de
+  [`05-personalidad.md`](05-personalidad.md) sigue en pie: sobra el 30 %. Lo que
+  se pide es cambiar palabras raras por palabras normales, no añadir párrafos.
+- **Explicar en vez de afirmar.** «Te hacemos tu página web» es llano y afirma.
+  «Nos dedicamos a ayudar a los negocios a tener presencia» es relleno de
+  agencia y sigue prohibido.
+- **Bajar la precisión.** Ni un adjetivo en lugar de una cifra, ni un plazo sin
+  su condición.
+
+---
+
+## 10 · Lo que este archivo NO relaja
 
 Es la parte que más fácil se malinterpreta. **Traducir no es ablandar, y ser
 cercano no es ser blando.**
@@ -378,7 +470,7 @@ cercano no es ser blando.**
 ## Autocorrección
 
 Sobre las siete de [`02-voz-y-tono.md`](02-voz-y-tono.md) y las cuatro de
-[`05-personalidad.md`](05-personalidad.md), estas nueve:
+[`05-personalidad.md`](05-personalidad.md), estas doce:
 
 **De altura**
 
@@ -391,17 +483,26 @@ Sobre las siete de [`02-voz-y-tono.md`](02-voz-y-tono.md) y las cuatro de
 4. En el conjunto del calendario, ¿más de una de cada tres piezas abre por el
    límite?
 
+**De claridad llana**
+
+5. **Tapa el logo y la cifra y léela.** ¿Un dueño de negocio sabría qué se
+   vende? Si hay que deducirlo, la pieza es una adivinanza.
+6. ¿El antetítulo nombra la categoría, o es un nombre de plan que solo
+   entiendo yo?
+7. ¿Aparece en algún sitio la frase llana de qué se hace, en presente y con el
+   verbo normal?
+
 **De disposición**
 
-5. **Subraya cada «no», «sin» y «no incluye».** ¿Cada uno tiene su «lo que sí» a
+8. **Subraya cada «no», «sin» y «no incluye».** ¿Cada uno tiene su «lo que sí» a
    menos de una frase? Si alguno está solo, falta media pieza.
-6. ¿Alguna frase describe cómo se porta, qué piensa o qué se calla el lector?
+9. ¿Alguna frase describe cómo se porta, qué piensa o qué se calla el lector?
    → gírala hacia una decisión propia de la marca.
-7. ¿Nombro algún daño que no iba a hacer —castigo, mala cara, cobro sorpresa—
+10. ¿Nombro algún daño que no iba a hacer —castigo, mala cara, cobro sorpresa—
    para decir que no lo hago? → dilo al derecho o quítalo.
-8. ¿Sabe el lector, al terminar, que hay alguien del otro lado y por dónde se
+11. ¿Sabe el lector, al terminar, que hay alguien del otro lado y por dónde se
    entra? Nombrar la puerta no cuenta como llamada a la acción.
-9. ¿He ganado claridad quitando precisión, o cercanía quitando el límite? →
+12. ¿He ganado claridad quitando precisión, o cercanía quitando el límite? →
    entonces no he ganado ninguna de las dos. Vuelve a poner la cifra, vuelve a
    poner el límite, y acompáñalos.
 

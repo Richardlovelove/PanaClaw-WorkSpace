@@ -23,15 +23,17 @@ Produce copy y especificación de piezas de pauta.
 ## 2 · Qué se lee
 
 1. [`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md)
-2. [`adn/06-claridad.md`](../../adn/06-claridad.md) — la altura del gancho y la
-   regla de que todo «no» viene con su «sí»
-3. [`adn/04-audiencia.md`](../../adn/04-audiencia.md) — los ganchos y las
+2. [`adn/06-claridad.md`](../../adn/06-claridad.md) — la altura del gancho, la
+   regla de que todo «no» viene con su «sí», y la prueba del rótulo
+3. [`adn/07-redaccion.md`](../../adn/07-redaccion.md) — **el oficio**: las seis
+   palancas, las cinco formas de gancho, el ritmo y el cierre
+4. [`adn/04-audiencia.md`](../../adn/04-audiencia.md) — los ganchos y las
    objeciones salen de aquí
-4. [`datos/precios.json`](../../datos/precios.json) — **literal**, no de memoria
-5. El [`catalogo/`](../../catalogo/) del producto que se anuncia
-6. [`campanas/plantillas/estructura-anuncio.md`](../../campanas/plantillas/estructura-anuncio.md)
-7. [`campanas/canales/`](../../campanas/canales/) — el del canal
-8. [`prompts/texto/anuncios.md`](../../prompts/texto/anuncios.md)
+5. [`datos/precios.json`](../../datos/precios.json) — **literal**, no de memoria
+6. El [`catalogo/`](../../catalogo/) del producto que se anuncia
+7. [`campanas/plantillas/estructura-anuncio.md`](../../campanas/plantillas/estructura-anuncio.md)
+8. [`campanas/canales/`](../../campanas/canales/) — el del canal
+9. [`prompts/texto/anuncios.md`](../../prompts/texto/anuncios.md)
 
 ---
 
@@ -76,6 +78,12 @@ medio? → dos totales separados, nunca sumados.
 ### Paso 4 · Escribir las cuatro partes
 
 `gancho → giro → cifra → límite`. Las cuatro.
+
+**Y se escriben con el método de [`adn/07-redaccion.md`](../../adn/07-redaccion.md) §6:**
+la oferta en una frase llana primero, diez ganchos de los que sobrevive uno, el
+cuerpo largo y feo sin editar, borrar el 30 %, leerlo en voz alta. Las listas de
+comprobación van al final; comprobar mientras se escribe produce texto correcto
+y muerto.
 
 El **límite** es el que hace que suene a esta marca: «el reloj arranca cuando nos
 das tus textos y la mitad del pago», «los $5 de la nube se pagan aparte, no a
@@ -125,6 +133,11 @@ automatizaciones van activadas. Sin eso es copy suelto, no una campaña.
 - [ ] ¿Son de 8 a 12 conceptos, en una campaña y un conjunto?
 - [ ] ¿El titular de cada anuncio está a la altura de la consecuencia, y cada
       «no» lleva su «sí»? → [`adn/06-claridad.md`](../../adn/06-claridad.md)
+- [ ] ¿Pasa la prueba del rótulo? Tapa la marca y la cifra: ¿se sabe qué se
+      vende sin deducirlo?
+- [ ] ¿Pasa la prueba del descarte? Si el gancho valdría para otra agencia de
+      Panamá, es un rótulo → [`adn/07-redaccion.md`](../../adn/07-redaccion.md)
+- [ ] ¿Más de dos palancas de `07-redaccion.md` §2 en una misma pieza corta?
 - [ ] ¿Va declarado el contenido generado con IA? Los fondos de esta marca los
       genera un generador de imagen, y no declararlo tumba el anuncio
 - [ ] ¿Están desactivadas las mejoras automáticas de creativo?

@@ -12,17 +12,22 @@ dos: este repositorio está construido para que leer de más no haga daño.
 
 ## Base común
 
-Estos tres se leen **siempre**, independientemente de la petición. Son ~600
-líneas en total y evitan el 90 % de los errores:
+Estos cuatro se leen **siempre**, independientemente de la petición, y evitan
+el 90 % de los errores:
 
 1. [`CLAUDE.md`](../CLAUDE.md) — dónde está todo y las cinco reglas duras
 2. [`adn/01-identidad.md`](../adn/01-identidad.md) — quién es la marca
 3. [`adn/02-voz-y-tono.md`](../adn/02-voz-y-tono.md) — cómo habla
 4. [`adn/05-personalidad.md`](../adn/05-personalidad.md) — desde dónde habla
 
-Y según el medio, uno de estos dos:
+Y según el medio:
 
-- Vas a escribir → nada más, ya tienes la voz
+- Vas a escribir texto de cara al cliente → añade
+  [`adn/06-claridad.md`](../adn/06-claridad.md), que dice qué se dice primero y
+  con qué palabras, y [`adn/07-redaccion.md`](../adn/07-redaccion.md), que dice
+  cómo se hace que funcione. Los dos, siempre: con el primero solo, el texto se
+  entiende y no mueve a nadie; con el segundo solo, suena bien y hay que
+  descifrarlo
 - Vas a describir algo visual → [`datos/marca.json`](../datos/marca.json)
 - Vas a decir un precio → [`datos/precios.json`](../datos/precios.json)
 
