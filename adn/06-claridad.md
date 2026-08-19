@@ -388,10 +388,30 @@ texto que se lee y tiene que situar al lector.
 | `PANACLAW START` | `PÁGINAS WEB EN PANAMÁ` |
 | `DIAGNÓSTICO DE VENTAS` | `SI YA TIENES PÁGINA WEB` |
 
-**El nombre del producto no desaparece: baja a la nota o al cuerpo**, entero y
-con su escritura exacta. Sigue prohibido acortarlo.
+**El nombre del producto no desaparece: baja a la bajada, a la descripción o al
+cuerpo del anuncio**, entero y con su escritura exacta. Sigue prohibido
+acortarlo.
+
+**Nunca a la nota ni al titular**, que van en versalitas por
+[`datos/marca.json`](../datos/marca.json): ahí `eBot` saldría `EBOT`, que
+[`02-voz-y-tono.md`](02-voz-y-tono.md) prohíbe expresamente.
+
+**Y la excepción, para los nombres con minúscula obligatoria:** el antetítulo
+lleva la categoría y el nombre juntos, y respeta su escritura.
+
+```
+✓  BOTS PARA WHATSAPP · eBot
+✗  eBot                          ← solo el nombre: no sitúa a nadie
+✗  BOTS PARA WHATSAPP            ← el nombre se pierde de la pieza
+```
 
 **2 · La pieza dice qué se hace, en presente y con el verbo normal.**
+
+**No tiene que ser el titular.** Puede vivir en la bajada, en la nota, en la
+primera línea de la descripción o en el cuerpo del anuncio — el titular sigue
+mandándolo la retícula de
+[`prompts/imagen/texto-en-imagen.md`](../prompts/imagen/texto-en-imagen.md). Lo
+que no puede es faltar.
 
 En algún sitio de cada pieza tiene que aparecer la frase llana: «te hacemos tu
 página web», «reviso tu página y te digo por qué no vende». Sin metáfora y sin
@@ -414,6 +434,10 @@ escalón: quitan la palabra de oficio que quedaba dentro de la consecuencia.
 |---|---|
 | Entrega en 72 horas | Lista en 72 horas, o sea tres días |
 | El código queda a tu nombre | Los archivos de tu página quedan en una cuenta tuya. Si mañana trabajas con otro, te la llevas entera |
+
+> **La única excepción es la tagline.** «Sitios rápidos. Código tuyo.» está
+> declarada en [`datos/marca.json`](../datos/marca.json) y no se toca: ahí
+> «código» es un nombre, no una explicación. En cualquier otro sitio se traduce.
 | El dominio queda a tu nombre | La dirección donde te encuentran en internet se registra a tu nombre |
 | Sin panel de edición | Si quieres cambiar un texto o una foto, me escribes y lo cambio yo |
 | Con panel de edición | Cambias los textos y las fotos tú mismo, desde el celular, sin llamar a nadie |

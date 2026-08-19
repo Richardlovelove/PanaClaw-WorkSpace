@@ -6,6 +6,12 @@ escrito.
 Cómo se escribe el texto:
 [`prompts/texto/anuncios.md`](../../prompts/texto/anuncios.md).
 
+**Y con qué oficio se llena cada hueco:**
+[`adn/06-claridad.md`](../../adn/06-claridad.md) —qué se dice primero y con qué
+palabras— y [`adn/07-redaccion.md`](../../adn/07-redaccion.md) —las palancas, la
+prueba, el gancho y el ritmo—. Esta plantilla dice qué va en cada campo; esos dos
+dicen cómo se escribe para que funcione.
+
 ---
 
 ## La ficha

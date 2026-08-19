@@ -100,7 +100,7 @@ según la petición:
 | Explicar un producto, comparar planes | `catalogo/` del producto + `catalogo/08-fronteras.md` |
 | Copy de web, correo, WhatsApp, orgánico | la base de arriba + `prompts/texto/organico.md` |
 | Revisar por qué una pieza no se entiende, o no suena a la marca | `adn/06-claridad.md` — las tres alturas y el traductor |
-| Revisar por qué una pieza se entiende pero no mueve a nadie | `adn/07-redaccion.md` — las seis palancas, el gancho y el ritmo |
+| Revisar por qué una pieza se entiende pero no mueve a nadie | `adn/07-redaccion.md` — las seis palancas, la prueba, el gancho y el ritmo |
 | Responder una objeción de un cliente | `adn/04-audiencia.md` (las objeciones están catalogadas ahí) |
 | Crear una skill nueva | `skills/README.md` + `skills/_plantilla/SKILL.md` |
 | Saber si el repo está al día | `operacion/sincronizacion.md` + `node herramientas/verificar.mjs` |

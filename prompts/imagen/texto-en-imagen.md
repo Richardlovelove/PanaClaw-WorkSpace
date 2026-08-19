@@ -62,7 +62,8 @@ carril izquierdo del contenedor.
 De arriba abajo, siempre, sin excepción:
 
 ```
-ANTETÍTULO      el tema, o el nombre del producto
+ANTETÍTULO      la categoría en la que está el lector; el nombre del
+                producto solo si lleva minúscula obligatoria (06 §9)
 TITULAR         lo que se lee de lejos
 bajada          si la lleva
 CIFRA           si la lleva

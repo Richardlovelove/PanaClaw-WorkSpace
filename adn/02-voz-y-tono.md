@@ -186,7 +186,7 @@ La voz no cambia. El registro sí.
 
 | Canal | Registro | Largo |
 |---|---|---|
-| Titular web / anuncio | Afirmación desnuda, en mayúsculas | 3–8 palabras |
+| Titular web / anuncio | Afirmación desnuda, en mayúsculas | 3–8 palabras. **En una pieza de redes manda la retícula:** 2–8 líneas, `prompts/imagen/texto-en-imagen.md` |
 | Bajada | La consecuencia para el cliente | 1–2 frases, ≤52 caracteres de ancho |
 | Cuerpo web | Explicativo, con el desastre concreto | 2–4 frases por bloque |
 | WhatsApp | Directo y sin formalismo, como escribe una persona | 1–3 líneas |

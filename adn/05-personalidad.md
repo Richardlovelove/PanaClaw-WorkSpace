@@ -222,7 +222,8 @@ La personalidad no cambia. Lo que cambia es cuánta se deja ver.
 
 Sobre las siete de [`02-voz-y-tono.md`](02-voz-y-tono.md), estas cuatro:
 
-1. ¿Sobra el 30 %? → bórralo y vuelve a leerlo.
+1. ¿Se hizo el recorte del paso 5 de [`07-redaccion.md`](07-redaccion.md) §7? Si
+   no, hazlo ahora. Si ya se hizo, **no se recorta otra vez**.
 2. ¿Se dice el límite **antes** de que lo pregunten? → si no, falta.
 3. ¿Hay algo que suene a ruego, a urgencia o a justificación del precio? → fuera.
 4. ¿Se afirma una autoridad en vez de demostrarla? → cámbiala por el dato que la

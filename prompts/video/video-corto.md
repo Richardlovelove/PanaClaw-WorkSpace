@@ -1,5 +1,10 @@
 # Video corto
 
+> **El texto en pantalla y el cierre son copy de marca.** Se escriben con
+> [`adn/06-claridad.md`](../../adn/06-claridad.md) y
+> [`adn/07-redaccion.md`](../../adn/07-redaccion.md) delante, igual que cualquier
+> otra pieza: el ritmo de §5 vale para un guion tanto como para un párrafo.
+
 Reel, story y anuncio en video. Estructura plano a plano, no guion escrito.
 
 ---

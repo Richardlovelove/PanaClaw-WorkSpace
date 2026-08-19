@@ -220,6 +220,13 @@ Antes de entregar, una a una:
 - [ ] ¿Está el orden del bloque de texto escrito, y no solo la escala? Dar los
       tamaños sin el orden deja al modelo poniendo la cifra encima del titular
 - [ ] ¿Están las cinco trampas del exportador dentro del prompt maestro?
+- [ ] ¿Pasa cada pieza la prueba del rótulo? Tapa la marca y la cifra: ¿se sabe
+      qué se vende sin deducirlo? → [`adn/06-claridad.md`](../../adn/06-claridad.md) §9
+- [ ] ¿El antetítulo nombra la categoría en la que está el lector, y no el
+      nombre del plan?
+- [ ] ¿Pasa la prueba del descarte? Si el titular valdría para otra agencia de
+      Panamá, es un rótulo → [`adn/07-redaccion.md`](../../adn/07-redaccion.md) §4
+- [ ] ¿Cada afirmación fuerte lleva su prueba a menos de una frase? → `07` §3
 - [ ] ¿Huecos sin resolver en el prompt maestro?
 
 **Y cuando vuelva el documento, antes de publicar nada:** descarga una pieza y

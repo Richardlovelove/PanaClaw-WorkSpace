@@ -1,4 +1,11 @@
-# Bloque · Voz comprimida
+# Bloque · Voz
+
+> **Antes de comprimir nada:** este bloque destila
+> [`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md). Si vas a escribir copy de
+> verdad y no solo a alimentar a otro modelo, léete también
+> [`adn/06-claridad.md`](../../adn/06-claridad.md) y
+> [`adn/07-redaccion.md`](../../adn/07-redaccion.md): sin el primero el texto sale
+> misterioso, sin el segundo sale correcto y sin fuerza. comprimida
 
 La voz de la marca en un bloque pegable. Para cuando hay que **cargar el ADN en
 otra IA** —Grok, GPT, Gemini, un asistente de Canva, un campo de «tono de marca»

@@ -184,6 +184,7 @@ La regla entera, con su traductor, está en
 - [ ] ¿Un emoji, una exclamación, una urgencia inventada?
 - [ ] ¿Cada variante prueba una hipótesis distinta?
 - [ ] ¿Una sola llamada a la acción?
-- [ ] ¿Pasa la prueba del descarte de [`adn/07-redaccion.md`](../../adn/07-redaccion.md):
+- [ ] ¿Pasa la prueba del descarte de [`adn/07-redaccion.md`](../../adn/07-redaccion.md) §4:
       el gancho funcionaría igual para otra agencia de Panamá?
+- [ ] ¿Cada afirmación fuerte lleva su prueba a menos de una frase? → `07` §3
 - [ ] ¿Leído en voz alta, alterna la longitud y cierra en palabra fuerte?

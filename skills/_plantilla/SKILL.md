@@ -23,7 +23,9 @@ En este orden:
 2. [`archivo`](../../ruta/archivo.md) — qué aporta
 
 Y siempre, si el entregable es de cara al cliente:
-[`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md).
+[`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md). Y si la skill produce
+texto de cara al cliente, también [`adn/06-claridad.md`](../../adn/06-claridad.md)
+y [`adn/07-redaccion.md`](../../adn/07-redaccion.md).
 
 ---
 

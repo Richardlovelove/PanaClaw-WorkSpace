@@ -26,7 +26,7 @@ Produce copy y especificación de piezas de pauta.
 2. [`adn/06-claridad.md`](../../adn/06-claridad.md) — la altura del gancho, la
    regla de que todo «no» viene con su «sí», y la prueba del rótulo
 3. [`adn/07-redaccion.md`](../../adn/07-redaccion.md) — **el oficio**: las seis
-   palancas, las cinco formas de gancho, el ritmo y el cierre
+   palancas, la prueba, las cinco formas de gancho, el ritmo y el cierre
 4. [`adn/04-audiencia.md`](../../adn/04-audiencia.md) — los ganchos y las
    objeciones salen de aquí
 5. [`datos/precios.json`](../../datos/precios.json) — **literal**, no de memoria
@@ -79,7 +79,7 @@ medio? → dos totales separados, nunca sumados.
 
 `gancho → giro → cifra → límite`. Las cuatro.
 
-**Y se escriben con el método de [`adn/07-redaccion.md`](../../adn/07-redaccion.md) §6:**
+**Y se escriben con el método de [`adn/07-redaccion.md`](../../adn/07-redaccion.md) §7:**
 la oferta en una frase llana primero, diez ganchos de los que sobrevive uno, el
 cuerpo largo y feo sin editar, borrar el 30 %, leerlo en voz alta. Las listas de
 comprobación van al final; comprobar mientras se escribe produce texto correcto
@@ -137,7 +137,11 @@ automatizaciones van activadas. Sin eso es copy suelto, no una campaña.
       vende sin deducirlo?
 - [ ] ¿Pasa la prueba del descarte? Si el gancho valdría para otra agencia de
       Panamá, es un rótulo → [`adn/07-redaccion.md`](../../adn/07-redaccion.md)
-- [ ] ¿Más de dos palancas de `07-redaccion.md` §2 en una misma pieza corta?
+- [ ] ¿Más de una palanca **añadida** sobre las cuatro partes? Las cuatro partes
+      ya son cuatro palancas y no cuentan: `07-redaccion.md` §2
+- [ ] ¿Cada afirmación fuerte lleva su prueba a menos de una frase? → `07` §3
+- [ ] ¿La pieza de decisión lleva las tres promesas de riesgo, cada una con su
+      consecuencia? → `07` §2
 - [ ] ¿Va declarado el contenido generado con IA? Los fondos de esta marca los
       genera un generador de imagen, y no declararlo tumba el anuncio
 - [ ] ¿Están desactivadas las mejoras automáticas de creativo?

@@ -76,7 +76,21 @@ Y la búsqueda literal del léxico de esta capa: `premium`, `exclusivo`,
 - ¿Hay un dato, cifra o testimonio que no puedas señalar en este repositorio? →
   fuera.
 
-### 6. Huecos
+### 6. Claridad y oficio
+
+Dos preguntas, y las dos se contestan mirando la pieza, no recordándola:
+
+- **La prueba del rótulo.** Tapa la marca y la cifra. ¿Un dueño de negocio sabe
+  qué se vende? Si hay que deducirlo, es una adivinanza →
+  [`adn/06-claridad.md`](../adn/06-claridad.md) §9.
+- **La prueba del descarte.** ¿El gancho funcionaría igual para otra agencia de
+  Panamá? Entonces es un rótulo → [`adn/07-redaccion.md`](../adn/07-redaccion.md) §4.
+
+Y el recorte: **¿se hizo el paso 5 del método de `07-redaccion.md` §7?** Si sí,
+no se recorta otra vez aquí. Recortar tres veces produce la adivinanza que las
+dos preguntas de arriba vienen a cazar.
+
+### 7. Huecos
 
 Ni un `[completa aquí]`, ni un `<tu negocio>`, ni un corchete vacío, ni un <!-- v: contraejemplos de huecos sin resolver -->
 «inserta el precio». Un prompt con huecos no está entregado: está delegado de
