@@ -1,189 +1,228 @@
 # Entregable · Campaña Meta de arranque · 2026-08
 
-> **Esto no es doctrina del repositorio.** Es un entregable con fecha, producido
-> contra el ADN el 2026-08-19. Cuando la campaña termine, este archivo **se
-> borra** — la regla de este repositorio es que no se guardan copys finales
-> (`CLAUDE.md` §7). Lo que sí se queda, si algo de aquí se aprueba como norma,
-> sube a `datos/`, `campanas/` o `prompts/` por la vía de
-> `operacion/sincronizacion.md`.
+> **Esto no es doctrina del repositorio.** Es un entregable con fecha, revisado
+> el 2026-08-19. Cuando la campaña termine, este archivo **se borra** — la regla
+> de este repositorio es que no se guardan copys finales (`CLAUDE.md` §7). Lo que
+> sí se queda, si algo de aquí se aprueba como norma, sube a `datos/`,
+> `campanas/` o `prompts/` por la vía de `operacion/sincronizacion.md`.
 
-Presupuesto: **$15 al día**. Marca sin clientes, sin seguidores y sin histórico
-de pauta.
-
----
-
-## PARTE 0 · Lo que hay que resolver ANTES de gastar un dólar
-
-Va primero porque tres de estos puntos impiden que la campaña exista, no que
-rinda peor. Salen de `operacion/deuda-conocida.md`.
-
-| # | Qué falta | Efecto | Quién lo desbloquea |
-|---|---|---|---|
-| 1 | **Página de Facebook, cuenta de Instagram y WhatsApp Business conectados** | Sin página no hay anuncio. Sin WhatsApp Business conectado no hay anuncio de mensajes, que es el objetivo entero de esta campaña | Dueño de la marca |
-| 2 | **Declaración de contenido generado con IA activada en cada anuncio** | Desde marzo de 2026 Meta lo exige. No declararlo es de los motivos de rechazo más frecuentes, y todos los fondos de esta marca los genera un motor de imagen | Quien sube los anuncios |
-| 3 | **Mejoras automáticas de creativo desactivadas** | Reencuadran, filtran y cambian el color. Con un fondo `#100101` y un solo acento `#FF5100`, cualquier ajuste automático rompe la pieza | Quien sube los anuncios |
-| 4 | Dominio propio | Los 12 anuncios van a WhatsApp, así que **hoy no bloquea**. El día que se anuncie el sitio, sí: un anuncio que cae en un subdominio prestado contradice «el sitio es tuyo» en el primer clic | Dueño de la marca |
-
-El punto 4 es, además, la razón técnica por la que el destino de las doce piezas
-es WhatsApp y no la web.
+Presupuesto: **$15 al día**. Página de Facebook, cuenta de Instagram y dos
+semanas de contenido orgánico programado, a las 8:00 y a las 11:00 todos los
+días. Sitio web publicado con el píxel de Meta puesto.
 
 ---
 
-## PARTE 1 · La estructura de campaña
+## PARTE 0 · Qué queda por resolver antes de subir
 
-Esta parte se aprueba **antes** de producir los creativos
-(`campanas/README.md`, pasos 1–4 antes del 5). Si cambia, cambian las piezas.
+De los cuatro puntos que bloqueaban la versión anterior, **dos se cayeron**:
+la página de Facebook, la cuenta de Instagram y el contenido ya existen. Quedan
+dos, y los dos se hacen dentro del editor de anuncios, no antes.
+
+| Qué | Por qué | Cuándo |
+|---|---|---|
+| **Declarar contenido generado con IA** en los 12 anuncios | Meta lo exige desde marzo de 2026 y no declararlo es de los motivos de rechazo más frecuentes. Todos los fondos de esta marca los genera un motor de imagen | Al crear cada anuncio |
+| **Desactivar las mejoras automáticas de creativo** | Reencuadran, filtran y cambian el color. Con un fondo `#100101` y un solo acento `#FF5100`, cualquier ajuste automático rompe la pieza | En el conjunto, antes de publicar |
+
+Y una comprobación de un minuto: **que WhatsApp Business esté conectado a la
+página de Facebook**. Sin eso el objetivo de mensajes no ofrece WhatsApp como
+destino, y esta campaña entera cuelga de ahí.
+
+---
+
+## PARTE 1 · La decisión: a dónde va el clic
+
+Es la pregunta que hay que contestar antes de cualquier otra cosa, porque cambia
+el objetivo, el evento y el copy de los doce anuncios.
+
+### La respuesta: WhatsApp, en los doce. El sitio no recibe pauta todavía.
+
+**No es porque el sitio esté mal.** Es aritmética de arranque.
+
+Un conjunto necesita unas 50 conversiones semanales del evento que optimiza para
+salir de la fase de aprendizaje. Con $15 al día son $105 a la semana. **Cincuenta <!-- v: $105 es 15 × 7, aritmética de presupuesto de pauta, no un precio del catálogo -->
+eventos sobre $105 exigen que cada uno cueste $2.10 o menos.** <!-- v: $2.10 es 105 ÷ 50, el techo de coste por evento, no un precio del catálogo -->
+
+- Un envío de formulario del sitio **no cuesta eso en ningún mercado**. Optimizar
+  contra `Lead` a este presupuesto es apostar el dinero a un número que nadie ha
+  medido, y el conjunto se queda en aprendizaje limitado: lo que se lea después
+  es ruido.
+- Una conversación de WhatsApp **sí puede costar eso**. Es el evento más barato
+  y más frecuente que la marca puede comprar hoy.
+- Y es donde la marca cierra de verdad. No se está inventando un embudo para la
+  campaña: se está pagando por llenar el que ya existe.
+
+### Qué hace el sitio mientras tanto
+
+No se queda parado. Hace tres cosas, y ninguna necesita presupuesto:
+
+1. **Acumula píxel** con el tráfico orgánico de las dos semanas programadas. Eso
+   es exactamente el público que hace posible la campaña de remarketing.
+2. **Es lo que se manda dentro de la conversación de WhatsApp**, que es donde ya
+   hay intención. Ahí el enlace lo abre alguien que preguntó, no alguien a quien
+   se le interrumpió.
+3. **Es el destino de la campaña 2**, cuando la haya.
+
+### Cuándo sí se le manda pauta al sitio
+
+Cuando se cumplan las dos:
+
+- El píxel tiene público suficiente para que Meta deje de marcar el público de
+  remarketing como demasiado pequeño.
+- Hay dominio propio. Un anuncio pagado que cae en un subdominio prestado
+  contradice «el sitio es tuyo» en el primer clic, y es lo primero que nota
+  alguien que está evaluando agencias (`operacion/deuda-conocida.md` §1).
+
+> **Supuesto declarado:** doy por hecho que el sitio sigue en
+> `panaclaw.netlify.app`. Si ya está en dominio propio, dilo y la fase 2 puede
+> arrancar en cuanto el píxel tenga público — la fase 1 no cambia de todos
+> modos.
+
+### Lo que NO se hace
+
+**No se promociona ninguna publicación orgánica.** El botón de promocionar crea
+una campaña paralela que compite por el mismo público con el mismo dinero, y no
+deja elegir el evento contra el que optimiza. Con $15 al día, todo va a un solo <!-- v: presupuesto diario del cliente, no un precio del catálogo -->
+conjunto o no aprende ninguno.
+
+---
+
+## PARTE 2 · La ficha de campaña
+
+Esto es lo que va copiado dentro del documento HTML, para no tener que
+escribirlo dos veces ni dejar que nadie lo invente.
 
 ```
-1 CAMPAÑA  →  1 CONJUNTO  →  12 CREATIVOS
+NOMBRE DE CAMPAÑA
+  PanaClaw · Arranque · Conversaciones · 2026-08
+
+OBJETIVO
+  Interacción, optimizado a conversaciones de mensajería.
+  NO se optimiza contra Lead del píxel. El motivo, con los números, en
+  campanas/canales/meta.md
+
+APLICACIÓN DE DESTINO
+  WhatsApp
+
+PRESUPUESTO
+  $15 al día, fijado a nivel de campaña
+  Estrategia de puja: el coste más bajo, sin tope
+  Calendario: continuo, sin fecha de fin
+
+CONJUNTO DE ANUNCIOS — uno solo
+  Nombre        PanaClaw · Panamá · Amplio 25–55
+  Ubicación     Panamá
+  Edad          25–55
+  Género        Todos
+  Idioma        Español
+  Intereses     NINGUNO
+  Ubicaciones   Automáticas
+  Tope de cliente existente   entre 10 % y 20 %
+  Públicos parecidos          no, todavía no hay eventos suficientes
+
+ANUNCIOS — doce, todos dentro del mismo conjunto
+  6  imagen única 4:5    1080×1350
+  4  imagen única 9:16   1080×1920
+  2  carrusel 4:5        tres tarjetas cada uno, 1080×1350
+
+AUTOMATIZACIONES
+  Público automático              aceptar
+  Ubicaciones automáticas         aceptar
+  Presupuesto automático          aceptar
+  Mejoras automáticas de creativo DESACTIVAR
+  Emojis sugeridos por Meta       rechazar
+  Mejorar el copy con la IA de Meta   rechazar
+  Recortar la imagen a otras proporciones   rechazar
+  Botón de "Reservar ahora"       rechazar
+
+DECLARACIÓN DE CONTENIDO GENERADO CON IA
+  Activada en los doce anuncios
+
+MEDICIÓN
+  Píxel de Meta 1067898639025746, activo. Se queda encendido midiendo de
+  fondo aunque no se optimice contra él: está acumulando el histórico que
+  hace falta para pasar a Lead más adelante
+  Evento que cuenta como éxito: conversación de mensajería iniciada
+  Google Analytics 4: sin configurar. Google no se puede leer todavía
+
+QUÉ SE LEE, Y CUÁNDO
+  Conversaciones iniciadas y coste por conversación
+  No antes de 7 a 10 días. Un ganador declarado con tres conversaciones es
+  ruido
+  Las subidas de presupuesto van del 20 % cada tres o cuatro días. Un salto
+  mayor devuelve el conjunto a la fase de aprendizaje
+  Renovar creativos cada dos o tres semanas, no cuando bajen los resultados
+
+QUÉ NO SE MIDE, Y NO SE PROPONE
+  Coste por cliente, tasa de conversión por canal, retorno de la inversión.
+  Con un píxel y un evento, esas métricas no existen
 ```
-
-Un solo conjunto, con todo el presupuesto dentro. Repartir $15 entre dos
-conjuntos es repartir también la señal y que ninguno aprenda.
-
-### Objetivo
-
-**Interacción, optimizado a conversaciones de WhatsApp.** No `Lead` del píxel.
-
-El motivo, con los números de `campanas/canales/meta.md`: un conjunto necesita
-unas 50 conversiones semanales del evento que optimiza para salir de la fase de
-aprendizaje. Con $15 al día son $105 a la semana; **50 conversaciones a la <!-- v: $105 es 15 × 7, aritmética de presupuesto de pauta, no un precio del catálogo -->
-semana solo salen si una conversación cuesta $2.10 o menos.** Un `Lead` de <!-- v: $2.10 es 105 ÷ 50, el techo de coste por conversación, no un precio del catálogo -->
-formulario no cuesta eso en ningún mercado, y una conversación de WhatsApp en
-Panamá podría — es lo que la primera semana va a medir.
-
-**El píxel `1067898639025746` se queda encendido.** No se apaga: está acumulando
-el histórico que hace falta para poder pasar a optimizar contra `Lead` más
-adelante.
-
-### Público
-
-| Campo | Valor |
-|---|---|
-| Ubicación | Panamá |
-| Edad | 25–55 |
-| Intereses | **Ninguno** |
-| Tope de cliente existente | 10 %–20 % |
-| Públicos parecidos | No. Todavía no hay eventos suficientes; un parecido hoy se construye sobre ruido |
-
-Intereses en cero no es pereza: es como entrega Meta hoy. Lo que antes hacía la
-segmentación lo hace ahora el creativo, y por eso hay doce y no uno.
-
-**La trampa que sigue en pie:** nunca segmentar por «diseño web» ni
-«tecnología». Eso alcanza a colegas del gremio, no a clientes.
-
-### Automatizaciones
-
-| Automatización | Qué se hace |
-|---|---|
-| Público automático | Aceptar |
-| Ubicaciones automáticas | Aceptar |
-| Presupuesto automático | Aceptar |
-| **Mejoras automáticas de creativo** | **Desactivar** |
-| Emojis sugeridos por Meta | Rechazar |
-| «Mejorar» el copy con la IA de Meta | Rechazar |
-| Recortar la imagen a otras proporciones | Rechazar |
-| Botón de «Reservar ahora» | Rechazar |
-
-### Destino
-
-**WhatsApp, en los doce.** Una sola llamada a la acción por pieza: una pieza con
-dos no tiene dos, tiene cero.
-
-- Botón: **Enviar mensaje**
-- El número **no se imprime** en ninguna pieza ni en ningún texto
-- Enlace, si hace falta componerlo a mano:
-  `https://wa.me/19406046565?text={mensaje-codificado-en-url}`
-- Mensaje precargado, por producto:
-  - Conceptos de Start → `Hola PanaClaw, me interesa el plan Start`
-  - Conceptos de Diagnóstico → `Hola PanaClaw, quiero el Diagnóstico de Ventas`
 
 ### Los dos productos de entrada
 
 Solo dos cifras del catálogo son lo bastante bajas para decidirse dentro de un
 anuncio en frío:
 
-| Producto | Precio | Plazo | Conceptos |
+| Producto | Precio | Plazo | Anuncios |
 |---|---|---|---|
 | PanaClaw Start | $295 | 72 h | 01, 02, 03, 04, 05, 08 |
-| Diagnóstico de Ventas | $49 | Informe + llamada de 30 min en 48 h | 06, 07, 09, 10, 11, 12 |
+| Diagnóstico de Ventas | $49 | Informe y llamada de 30 min en 48 h | 06, 07, 09, 10, 11, 12 |
 
 Launch $450, Corporate $850, Commerce $1,200, eBot $499 y los planes de
 seguridad **no se anuncian en frío**. Se venden dentro de la conversación de
 WhatsApp, que es donde está el margen y donde se califica.
 
-### Presupuesto y lectura
-
-- **$15 al día**, todo en un conjunto.
-- El repositorio documenta que con $20–50 diarios salen datos legibles en 5–7 <!-- v: rango de presupuesto diario de campanas/canales/meta.md, no un precio del catálogo -->
-  días. Eso son $100–$140 de gasto. **A $15 al día ese mismo gasto tarda de 7 a <!-- v: gasto acumulado calculado sobre el rango anterior, no un precio del catálogo -->
-  10 días** — es aritmética sobre el rango publicado, no una predicción de
-  rendimiento.
-- **No se lee nada antes de eso.** Un ganador declarado con tres conversaciones
-  es ruido.
-- Las subidas de presupuesto van del **20 % cada tres o cuatro días**. Un salto
-  mayor devuelve el conjunto a aprendizaje.
-- **No hay CPM ni coste por clic de Panamá publicado.** La cifra se mide la
-  primera semana. Cualquier número propio antes de eso sería inventado.
-- **Renovar creativos cada dos o tres semanas**, no cuando bajen los resultados:
-  para entonces ya se pagó el desgaste.
-
-### Qué se mide, y qué no
-
-Se mide: conversaciones iniciadas, coste por conversación, y `Lead` en
-`/gracias/` acumulándose de fondo.
-
-**No se mide, y no se propone:** coste por cliente, tasa de conversión por
-canal, retorno de la inversión. Con un píxel y un evento, esas métricas no
-existen.
-
-### Los 12 creativos, en una vista
+### Los 12 anuncios, en una vista
 
 | # | Público | Producto | Ángulo (hipótesis) | Altura del titular | Formato | Escena madre |
 |---|---|---|---|---|---|---|
-| 01 | No tiene sitio | Start $295 | Precio publicado | Consecuencia | 4:5 | 7 · Esfera de roca |
-| 02 | No tiene sitio | Start $295 | Plazo | Consecuencia | 4:5 | 3 · Hélice de cristal |
-| 03 | No tiene sitio | Start $295 | Velocidad | Consecuencia | 9:16 | 1 · Proyectil |
-| 04 | No tiene sitio | Start $295 | Propiedad | Consecuencia | 4:5 | 4 · Servidores |
-| 05 | No tiene sitio | Start $295 | Precio publicado · el límite como diferenciador | Condición | 9:16 | 7 · Esfera de roca |
-| 06 | WordPress que da vergüenza | Diagnóstico $49 | Velocidad | Consecuencia | 4:5 | 1 · Proyectil |
-| 07 | WordPress que da vergüenza | Diagnóstico $49 | Precio publicado | Hecho | 4:5 | 6 · Cintas de luz |
-| 08 | No tiene sitio | Start $295 | Propiedad | Consecuencia | 9:16 | 4 · Servidores |
-| 09 | WordPress que da vergüenza | Diagnóstico $49 | Plazo | Hecho | 4:5 | 3 · Hélice de cristal |
-| 10 | Invierte en publicidad | Diagnóstico $49 | Velocidad | Consecuencia | 4:5 | 1 · Proyectil |
-| 11 | Invierte en publicidad | Diagnóstico $49 | Precio publicado | Consecuencia | 9:16 | 6 · Cintas de luz |
-| 12 | Invierte en publicidad | Diagnóstico $49 | Plazo | Hecho | 4:5 | 1 · Proyectil |
+| 01 | No tiene sitio | Start $295 | Precio publicado | Consecuencia | Imagen 4:5 | 7 · Esfera de roca |
+| 02 | No tiene sitio | Start $295 | Plazo | Consecuencia | Imagen 4:5 | 3 · Hélice de cristal |
+| 03 | No tiene sitio | Start $295 | Velocidad | Consecuencia | Imagen 9:16 | 1 · Proyectil |
+| 04 | No tiene sitio | Start $295 | Propiedad | Consecuencia | Imagen 4:5 | 4 · Servidores |
+| 05 | No tiene sitio | Start $295 | Precio publicado · qué entra y qué no | Consecuencia | **Carrusel 4:5, 3 tarjetas** | 7 · Esfera de roca |
+| 06 | WordPress que da vergüenza | Diagnóstico $49 | Velocidad | Consecuencia | Imagen 4:5 | 1 · Proyectil |
+| 07 | WordPress que da vergüenza | Diagnóstico $49 | Precio publicado · el entregable | Hecho | **Carrusel 4:5, 3 tarjetas** | 6 · Cintas de luz |
+| 08 | No tiene sitio | Start $295 | Propiedad | Consecuencia | Imagen 9:16 | 4 · Servidores |
+| 09 | WordPress que da vergüenza | Diagnóstico $49 | Plazo | Hecho | Imagen 9:16 | 3 · Hélice de cristal |
+| 10 | Invierte en publicidad | Diagnóstico $49 | Velocidad | Consecuencia | Imagen 4:5 | 1 · Proyectil |
+| 11 | Invierte en publicidad | Diagnóstico $49 | Precio publicado | Consecuencia | Imagen 9:16 | 6 · Cintas de luz |
+| 12 | Invierte en publicidad | Diagnóstico $49 | Plazo | Hecho | Imagen 4:5 | 1 · Proyectil |
 
-**Reparto de ángulos:** precio publicado 4 · plazo 3 · velocidad 3 · propiedad 2.
-**Alturas:** 8 consecuencia · 3 hecho · 1 condición. Una sola pieza abre por el
-límite, muy por debajo del tope de una de cada tres.
+**Ángulos:** precio publicado 4 · plazo 3 · velocidad 3 · propiedad 2. Una
+hipótesis por anuncio.
+**Alturas de los doce titulares de apertura:** 9 consecuencia, 3 hecho, 0
+condición. Dentro de los carruseles, una sola tarjeta abre por el límite —una de
+dieciséis piezas, muy por debajo del tope de una de cada tres.
+**Imágenes a generar:** 16 en total. Seis 4:5 sueltas, cuatro 9:16 sueltas y
+seis tarjetas de carrusel.
 
-**Lo que varía entre conceptos:** dolor, ángulo, escena madre y formato.
+**Lo que varía entre anuncios:** dolor, ángulo, escena madre y formato.
 **Lo que no varía nunca:** el bloque de estilo, la paleta, el acento único y las
 dos familias tipográficas. El motor de entrega agrupa creativos que se parecen y
-los hace competir entre sí; la diversidad que cuenta es de concepto, no de
-estilo.
+los hace competir entre sí en vez de ampliar el alcance; la diversidad que cuenta
+es de concepto y de formato, no de estilo.
 
 ---
 
-## PARTE 2 · El prompt maestro
+## PARTE 3 · El prompt maestro
 
-Se pega entero en Meta AI. Devuelve un documento HTML con los 12 creativos
-compuestos, descargables en PNG a tamaño real, y debajo de cada uno su copy de
-anuncio en texto seleccionable.
+Se pega entero en Meta AI. Devuelve un documento HTML con la ficha de campaña
+arriba, los 16 lienzos compuestos, descargables en PNG a tamaño real, y debajo de
+cada anuncio su copy en texto seleccionable.
 
 ````
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 1. QUÉ ERES Y QUÉ NO HACES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Vas a hacer dos cosas y ninguna más: generar 12 fondos de imagen y montar un
+Vas a hacer dos cosas y ninguna más: generar 16 fondos de imagen y montar un
 documento HTML donde esos fondos se ven ya compuestos con su texto y se pueden
 descargar.
 
 No escribas, no redactes, no completes, no acortes, no traduzcas y no
 "mejores" ningún texto. Todo el texto de este documento ya está escrito más
-abajo. Cópialo carácter por carácter, con sus tildes, sus eñes y sus puntos
+abajo: la ficha de campaña, los titulares, las notas y el copy de los doce
+anuncios. Cópialo carácter por carácter, con sus tildes, sus eñes y sus puntos
 finales. Si algo te parece incompleto, déjalo como está: está así a propósito.
 No añadas ninguna cifra, porcentaje, estadística, plazo, testimonio ni
 beneficio que no esté escrito literalmente en este documento.
@@ -218,7 +257,8 @@ TIPOGRAFÍA — dos familias con los roles cerrados
   sugiere por defecto para este aspecto. Si Antonio o Archivo no cargan, para
   y dilo: no sustituyas por la más parecida.
 
-RETÍCULA — lienzo 1080×1350 (formato 4:5, ocho piezas)
+RETÍCULA — lienzo 1080×1350 (formato 4:5: seis imágenes sueltas y las seis
+tarjetas de carrusel)
   Margen lateral        72 izquierda, 1008 derecha. Ancho útil 936
   Todo alineado a la izquierda en x=72. El símbolo es la única excepción
   Símbolo               88 de ancho × 72 de alto, centrado horizontalmente,
@@ -227,7 +267,7 @@ RETÍCULA — lienzo 1080×1350 (formato 4:5, ocho piezas)
   Bloque de texto       anclado por su centro óptico en y=594
   Wordmark              x=72, base del bloque en y=1254
 
-RETÍCULA — lienzo 1080×1920 (formato 9:16, cuatro piezas)
+RETÍCULA — lienzo 1080×1920 (formato 9:16, cuatro imágenes)
   Margen lateral        idéntico: 72 y 1008. Ancho útil 936
   Zonas seguras         nada de texto ni símbolo por encima de y=288 ni por
                         debajo de y=1536. Ahí caen la interfaz y los botones
@@ -235,12 +275,12 @@ RETÍCULA — lienzo 1080×1920 (formato 9:16, cuatro piezas)
   Bloque de texto       anclado por su centro óptico en y=880
   Wordmark              x=72, base del bloque en y=1500
 
-ESCALA — píxeles idénticos en los dos lienzos, porque los dos miden 1080 de ancho
+ESCALA — píxeles idénticos en los dos lienzos, porque los dos miden 1080 de
+ancho
   Titular XL   Antonio 700, 132 px, interlínea 0.88, tracking -0.01em, #FFF7F7
   Titular L    Antonio 700, 112 px, interlínea 0.88, tracking -0.01em, #FFF7F7
   Antetítulo   Archivo 500, 24 px, tracking 0.16em, VERSALITAS, #FF5100,
                margen inferior 28
-  Bajada       Archivo 300, 30 px, interlínea 1.45, #BABABA, margen superior 36
   Cifra        Antonio 700, 76 px, tracking 0, VERSALITAS, #FFF7F7,
                margen superior 44
   Nota         Archivo 400, 20 px, interlínea 1.5, tracking 0.14em,
@@ -248,8 +288,8 @@ ESCALA — píxeles idénticos en los dos lienzos, porque los dos miden 1080 de 
   Wordmark     Archivo 700, 30 px, tracking 0.22em, VERSALITAS, #FFF7F7,
                con un punto final "." en #FF5100
 
-  Titular y cifra siempre en versalitas. La bajada nunca. Cada pieza de abajo
-  lleva escrito su tamaño de titular: úsalo, no lo recalcules.
+  Titular y cifra siempre en versalitas. Cada pieza de abajo lleva escrito su
+  tamaño de titular: úsalo, no lo recalcules.
 
 EL ORDEN DEL BLOQUE DE TEXTO — no se negocia
   ANTETÍTULO
@@ -258,8 +298,9 @@ EL ORDEN DEL BLOQUE DE TEXTO — no se negocia
   NOTA
 
   La cifra va SIEMPRE después del titular, nunca antes. Si lo primero que se
-  lee en la pieza es un número, está al revés. Ninguna de estas 12 piezas
-  lleva bajada.
+  lee en una pieza es un número, está al revés. Ninguna de estas piezas lleva
+  bajada, y algunas no llevan cifra: en esas, la nota va justo después del
+  titular.
 
 EL ACENTO NARANJA
   Un solo tramo del titular va en #FF5100. Uno, continuo, y nunca más de la
@@ -280,6 +321,17 @@ EL VELO
   Ninguna caja, tarjeta, franja, rectángulo semitransparente ni sombra detrás
   del texto. El contraste lo pone el velo, que es continuo y no tiene borde.
 
+LOS DOS CARRUSELES
+  Las tres tarjetas de un carrusel miden 1080×1350 las tres. No mezcles
+  proporciones: deja bandas al deslizar.
+  El anclaje del texto NO salta entre tarjetas: las tres van ancladas por su
+  centro óptico en y=594.
+  El símbolo y el wordmark van en las tres. Cada tarjeta se puede compartir
+  suelta.
+  La primera tarjeta lleva el peso: es la única que se ve en el feed sin
+  deslizar.
+  Numerador apagado.
+
 EL SÍMBOLO
   Es una garra de tres zarpazos atravesando un par de corchetes angulares.
   Dibújalo como SVG en línea, en #FF5100 plano, sin degradado y sin efectos,
@@ -299,8 +351,28 @@ EL WORDMARK
 3. EL CONTRATO DEL HTML
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Devuelve UN documento HTML completo, con las 12 imágenes dentro del propio
+Devuelve UN documento HTML completo, con las 16 imágenes dentro del propio
 archivo, que se abra en el navegador sin depender de nada externo.
+
+ESTRUCTURA DEL DOCUMENTO, DE ARRIBA ABAJO
+  1. La ficha de campaña de la sección 4, copiada literal, en un panel al
+     principio y en texto seleccionable. Es lo primero que se ve.
+  2. Los doce anuncios, en orden, del 01 al 12.
+  3. Un botón de descargar todo al final.
+
+CADA ANUNCIO SE PRESENTA ASÍ
+  - Un encabezado con su número, su formato, su público, su producto y su
+     hipótesis, copiados literal de más abajo.
+  - Su pieza o piezas compuestas. Los dos carruseles muestran sus tres
+     tarjetas en fila, en el orden 1, 2, 3.
+  - Debajo, en texto seleccionable para pegar en el editor de anuncios:
+       Texto principal
+       Titular del anuncio
+       Descripción
+       Botón
+       Mensaje precargado de WhatsApp
+       El prompt del fondo, por si hay que regenerar esa imagen
+    En los carruseles, el titular y la descripción van por tarjeta.
 
 FUENTES — sin esto todo lo demás da igual
   Carga Antonio y Archivo desde Google Fonts:
@@ -308,7 +380,7 @@ FUENTES — sin esto todo lo demás da igual
   Espera a document.fonts.ready antes de dibujar cualquier canvas.
 
 CADA PIEZA, A MEDIDA REAL
-  Las ocho piezas 4:5 se dibujan a 1080×1350 exactos.
+  Las doce piezas 4:5 se dibujan a 1080×1350 exactos.
   Las cuatro piezas 9:16 se dibujan a 1080×1920 exactos.
   En pantalla se pueden ver reducidas con transform: scale(), pero el lienzo
   que se exporta mide exactamente eso.
@@ -316,7 +388,8 @@ CADA PIEZA, A MEDIDA REAL
 BOTONES DE DESCARGA
   Cada pieza lleva su botón que la baja en PNG a tamaño real, dibujando la
   imagen y el texto sobre un <canvas> del tamaño que le toca. Sin librerías
-  externas. Y un botón que las descargue todas.
+  externas. Los archivos se nombran así: 01.png, 05a.png, 05b.png, 05c.png.
+  Y un botón que las descargue todas.
 
 LAS CINCO TRAMPAS DEL EXPORTADOR
   Aquí es donde falla, y falla en silencio: la vista previa se ve perfecta y
@@ -339,26 +412,83 @@ LAS CINCO TRAMPAS DEL EXPORTADOR
      está centrado en esos valores. Su caja mide 88 de ancho por 72 de alto.
      No es cuadrado.
 
-  5. Un botón que lanza 12 descargas seguidas lo bloquea el navegador a la
+  5. Un botón que lanza 16 descargas seguidas lo bloquea el navegador a la
      tercera. O agrupas en un ZIP de verdad, o el botón se llama "descargar
      una por una" y avisa de que hay que permitirlo.
-
-DEBAJO DE CADA PIEZA
-  En texto seleccionable, para copiar y pegar en el editor de anuncios, y
-  copiado literal de lo que te doy más abajo:
-    - Texto principal
-    - Titular del anuncio
-    - Descripción
-    - Botón
-    - Mensaje precargado de WhatsApp
-    - El prompt del fondo, por si hay que regenerar esa imagen
 
 LA INTERFAZ DEL DOCUMENTO
   Fondo #100101, texto #FFF7F7, acento #FF5100. Es una herramienta interna,
   pero se mira todo el mes.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. EL BLOQUE DE ESTILO — idéntico en las 12, palabra por palabra
+4. LA FICHA DE CAMPAÑA — cópiala literal en el panel del principio
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOMBRE DE CAMPAÑA
+  PanaClaw · Arranque · Conversaciones · 2026-08
+
+OBJETIVO
+  Interacción, optimizado a conversaciones de mensajería.
+  No se optimiza contra el evento Lead del píxel.
+
+APLICACIÓN DE DESTINO
+  WhatsApp
+
+PRESUPUESTO
+  15 dólares al día, fijado a nivel de campaña
+  Estrategia de puja: el coste más bajo, sin tope
+  Calendario: continuo, sin fecha de fin
+
+CONJUNTO DE ANUNCIOS — uno solo
+  Nombre                       PanaClaw · Panamá · Amplio 25-55
+  Ubicación                    Panamá
+  Edad                         25 a 55
+  Género                       Todos
+  Idioma                       Español
+  Intereses                    Ninguno
+  Ubicaciones                  Automáticas
+  Tope de cliente existente    entre 10 y 20 por ciento
+  Públicos parecidos           No. Todavía no hay eventos suficientes
+
+ANUNCIOS — doce, todos dentro del mismo conjunto
+  6  imagen única 4:5     1080 por 1350
+  4  imagen única 9:16    1080 por 1920
+  2  carrusel 4:5         tres tarjetas cada uno, 1080 por 1350
+
+AUTOMATIZACIONES
+  Público automático                        aceptar
+  Ubicaciones automáticas                   aceptar
+  Presupuesto automático                    aceptar
+  Mejoras automáticas de creativo           desactivar
+  Emojis sugeridos por Meta                 rechazar
+  Mejorar el copy con la inteligencia artificial de Meta   rechazar
+  Recortar la imagen a otras proporciones   rechazar
+  Botón de Reservar ahora                   rechazar
+
+DECLARACIÓN DE CONTENIDO GENERADO CON IA
+  Activada en los doce anuncios. Todos los fondos los genera un motor de
+  imagen y va declarado desde el primer día.
+
+MEDICIÓN
+  Píxel de Meta 1067898639025746, activo. Se queda encendido midiendo de
+  fondo aunque no se optimice contra él.
+  Evento que cuenta como éxito: conversación de mensajería iniciada.
+  Google Analytics 4 sin configurar: Google no se puede leer todavía.
+
+QUÉ SE LEE, Y CUÁNDO
+  Conversaciones iniciadas y coste por conversación.
+  No antes de 7 a 10 días. Un ganador declarado con tres conversaciones es
+  ruido.
+  Las subidas de presupuesto van del 20 por ciento cada tres o cuatro días.
+  Un salto mayor devuelve el conjunto a la fase de aprendizaje.
+  Renovar creativos cada dos o tres semanas.
+
+QUÉ NO SE MIDE
+  Coste por cliente, tasa de conversión por canal, retorno de la inversión.
+  Con un píxel y un evento, esas métricas no existen.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. EL BLOQUE DE ESTILO — idéntico en las 16, palabra por palabra
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Estilo: fotografía cinematográfica de materia oscura incandescente. Fondo
@@ -371,7 +501,7 @@ Atmósfera de estudio, aire limpio, sin niebla lechosa. Grano fino de película.
 Sin personas.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. LOS NEGATIVOS — idénticos en las 12, palabra por palabra
+6. LOS NEGATIVOS — idénticos en las 16, palabra por palabra
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 No incluyas: personas, oficinas, laptops ni pantallas; ningún azul, verde,
@@ -381,10 +511,10 @@ gráfico; nada de estética de stock corporativo; nada de candados, escudos,
 bombillas, engranajes ni gráficos de barras.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-6. LOS DOS ENCUADRES — se pegan al final del prompt de cada fondo
+7. LOS DOS ENCUADRES — se pegan al final del prompt de cada fondo
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-ENCUADRE 4:5 (piezas 01, 02, 04, 06, 07, 09, 10, 12)
+ENCUADRE 4:5 (piezas 01, 02, 04, 05a, 05b, 05c, 06, 07a, 07b, 07c, 10, 12)
 Encuadre: composición vertical 4:5. Los 180 píxeles superiores y los 160
 inferiores del cuadro quedan en negro limpio, sin ninguna forma, resplandor
 ni reflejo, ni siquiera difuso. El sujeto vive entre esas dos bandas y se
@@ -392,7 +522,7 @@ abre hacia los bordes laterales y hacia el tercio superior. La banda central
 del cuadro queda en negro limpio, con la incandescencia muriendo antes de
 entrar en ella.
 
-ENCUADRE 9:16 (piezas 03, 05, 08, 11)
+ENCUADRE 9:16 (piezas 03, 08, 09, 11)
 Encuadre: composición vertical 9:16. Los 420 píxeles superiores y los 480
 inferiores del cuadro quedan en negro limpio, sin ninguna forma, resplandor
 ni reflejo, ni siquiera difuso. El sujeto vive entre esas dos bandas y se
@@ -401,10 +531,13 @@ abre hacia los bordes laterales. La banda central del cuadro, entre 590 y
 apagándose antes de llegar a ella.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-7. LAS 12 PIEZAS
+8. LOS DOCE ANUNCIOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-──────────────── PIEZA 01 · 1080×1350 ────────────────
+════════ ANUNCIO 01 · imagen única 4:5 · 1080×1350 ════════
+Público: el que no tiene sitio · Producto: PanaClaw Start
+Hipótesis: le duele que nadie le dé una cifra
+
 FONDO
 Una esfera de roca incandescente flotando sola en el centro de una cámara de
 piedra negra. Es pequeña respecto al espacio: la cámara se pierde en la
@@ -435,7 +568,10 @@ DESCRIPCIÓN           El precio y lo que no incluye, publicados.
 BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, me interesa el plan Start
 
-──────────────── PIEZA 02 · 1080×1350 ────────────────
+════════ ANUNCIO 02 · imagen única 4:5 · 1080×1350 ════════
+Público: el que no tiene sitio · Producto: PanaClaw Start
+Hipótesis: le duele la espera
+
 FONDO
 Una hélice de bloques de cristal rojo encajados uno tras otro, ascendiendo en
 espiral. Cada bloque entra en el anterior con un ajuste exacto y el punto de
@@ -466,7 +602,10 @@ DESCRIPCIÓN           El plazo cuenta desde tu material y la mitad del pago.
 BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, me interesa el plan Start
 
-──────────────── PIEZA 03 · 1080×1920 ────────────────
+════════ ANUNCIO 03 · imagen única 9:16 · 1080×1920 ════════
+Público: el que no tiene sitio · Producto: PanaClaw Start
+Hipótesis: le duele que su página sea lenta
+
 FONDO
 Un proyectil de obsidiana pulida entrando en el cuadro desde arriba a velocidad
 extrema, con las estelas de luz estirándose detrás de él hacia el borde
@@ -499,7 +638,10 @@ DESCRIPCIÓN           $295, lista en 72 horas.
 BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, me interesa el plan Start
 
-──────────────── PIEZA 04 · 1080×1350 ────────────────
+════════ ANUNCIO 04 · imagen única 4:5 · 1080×1350 ════════
+Público: el que no tiene sitio · Producto: PanaClaw Start
+Hipótesis: le duele depender de quien se la hizo
+
 FONDO
 Una retícula infinita de servidores negros encendidos en rojo, perdiéndose
 hacia el horizonte en filas perfectamente alineadas. Uno solo, en primer plano,
@@ -530,37 +672,84 @@ DESCRIPCIÓN           $295, lista en 72 horas.
 BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, me interesa el plan Start
 
-──────────────── PIEZA 05 · 1080×1920 ────────────────
+════════ ANUNCIO 05 · CARRUSEL 4:5 · tres tarjetas · 1080×1350 cada una ════════
+Público: el que no tiene sitio · Producto: PanaClaw Start
+Hipótesis: le duele no saber qué entra y qué no hasta que ya pagó
+Las tres tarjetas van ancladas por su centro óptico en y=594. No salta.
+
+──── TARJETA 05a ────
 FONDO
-Una esfera de roca incandescente vista de cerca y desde abajo. Las grietas de
-su superficie se abren en filamentos encendidos y el resto de la cámara ha
-desaparecido en negro. [BLOQUE DE ESTILO] [ENCUADRE 9:16] [NEGATIVOS]
+Una esfera de roca incandescente flotando sola en el centro de una cámara de
+piedra negra, vista de lejos. La cámara se pierde en la oscuridad y solo los
+muros más cercanos reciben algo de resplandor. [BLOQUE DE ESTILO]
+[ENCUADRE 4:5] [NEGATIVOS]
 
 ANTETÍTULO   PANACLAW START
-TITULAR      Antonio 700, 112 px, tres líneas, centro óptico y=880
-             LO QUE NO ENTRA
-             ESTÁ PUBLICADO
-             >>>AL LADO DEL PRECIO.<<<
+TITULAR      Antonio 700, 132 px, tres líneas, centro óptico y=594
+             TE DIGO LO QUE
+             NO ENTRA ANTES
+             >>>DE COBRARTE.<<<
 CIFRA        $295
-NOTA         START NO LLEVA RONDAS DE CAMBIOS. SI DESPUÉS QUIERES CAMBIAR ALGO
-             SE PIDE Y YA ESTÁ: $40, SABIDO DE ANTEMANO.
+NOTA         72 HORAS DESDE QUE ME DAS TU MATERIAL Y LA MITAD DEL PAGO.
 
-TEXTO PRINCIPAL
+TITULAR DE LA TARJETA   $295. Lista en 72 horas.
+DESCRIPCIÓN             El precio y lo que no entra, los dos publicados.
+
+──── TARJETA 05b ────
+FONDO
+La misma esfera de roca incandescente, ahora a media distancia. Se distinguen
+las vetas encendidas que recorren su superficie y la cámara sigue disolviéndose
+en negro alrededor. [BLOQUE DE ESTILO] [ENCUADRE 4:5] [NEGATIVOS]
+
+ANTETÍTULO   QUÉ ENTRA
+TITULAR      Antonio 700, 112 px, cuatro líneas, centro óptico y=594
+             CUATRO O CINCO
+             SECCIONES Y LOS
+             MENSAJES >>>TE LLEGAN
+             AL WHATSAPP.<<<
+NOTA         PUBLICACIÓN INCLUIDA Y MEDICIÓN DE VISITAS INCLUIDA. NO HAY QUE
+             PAGAR NADA APARTE PARA QUE QUEDE ABIERTA EN INTERNET.
+
+TITULAR DE LA TARJETA   Qué entra en Start
+DESCRIPCIÓN             Cuatro o cinco secciones, publicación incluida.
+
+──── TARJETA 05c ────
+FONDO
+Un plano muy cercano de la superficie de la esfera de roca incandescente. Las
+grietas se abren en filamentos encendidos y todo lo demás ha desaparecido en
+negro. [BLOQUE DE ESTILO] [ENCUADRE 4:5] [NEGATIVOS]
+
+ANTETÍTULO   QUÉ NO ENTRA
+TITULAR      Antonio 700, 112 px, cuatro líneas, centro óptico y=594
+             SIN PANEL PARA
+             EDITAR TÚ MISMO.
+             >>>ME ESCRIBES
+             Y LO CAMBIO YO.<<<
+NOTA         START NO LLEVA RONDAS DE CAMBIOS Y LA EXTRA CUESTA $40, SABIDA DE
+             ANTEMANO. SI QUIERES EDITARLO TÚ, ESO ES CORPORATE, $850.
+
+TITULAR DE LA TARJETA   Qué no entra
+DESCRIPCIÓN             Ronda extra $40. Editar tú mismo es Corporate.
+
+TEXTO PRINCIPAL DEL ANUNCIO 05
 Lo que no entra está publicado al lado del precio, no en la tercera reunión.
 $295, lista en 72 horas.
-Start no lleva rondas de cambios. Si después se te ocurre algo, se pide y ya
-está: $40, sin discusión y sin mala cara, y lo sabes desde antes de empezar.
-Tampoco lleva panel para editar tú mismo: me escribes y lo cambio yo. Si
-quieres hacerlo tú, eso es Corporate, $850.
+Start son cuatro o cinco secciones, los mensajes te llegan al WhatsApp y la
+publicación va incluida: queda abierta en internet sin que pagues nada aparte.
+Lo que no lleva: rondas de cambios, y panel para editar tú mismo. Si después se
+te ocurre algo, se pide y ya está, $40, sin discusión. Y si quieres cambiarlo tú
+desde el celular, eso es Corporate, $850.
 Escríbeme por WhatsApp y te digo cuál te encaja, o que no te hace falta ninguno.
-El fondo de esta imagen está generado con inteligencia artificial.
+Los fondos de estas imágenes están generados con inteligencia artificial.
 
-TITULAR DEL ANUNCIO   $295. Lo que no entra, publicado
-DESCRIPCIÓN           Ronda extra $40, sabida de antemano.
 BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, me interesa el plan Start
 
-──────────────── PIEZA 06 · 1080×1350 ────────────────
+════════ ANUNCIO 06 · imagen única 4:5 · 1080×1350 ════════
+Público: el que tiene un WordPress que le da vergüenza · Producto: Diagnóstico
+de Ventas
+Hipótesis: le duele que su sitio sea lento y no saber por qué
+
 FONDO
 Un proyectil de obsidiana pulida atravesando el cuadro de izquierda a derecha,
 con las estelas de luz roja estirándose muy largas detrás de él. La forma es
@@ -592,7 +781,13 @@ DESCRIPCIÓN           Tres razones concretas, y qué hacer con cada una.
 BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, quiero el Diagnóstico de Ventas
 
-──────────────── PIEZA 07 · 1080×1350 ────────────────
+════════ ANUNCIO 07 · CARRUSEL 4:5 · tres tarjetas · 1080×1350 cada una ════════
+Público: el que tiene un WordPress que le da vergüenza · Producto: Diagnóstico
+de Ventas
+Hipótesis: le duele que nadie le explique qué le pasa a su sitio
+Las tres tarjetas van ancladas por su centro óptico en y=594. No salta.
+
+──── TARJETA 07a ────
 FONDO
 Tres cintas de luz roja trenzándose sobre una superficie de obsidiana pulida.
 Las cintas se cruzan en un solo punto del cuadro y ahí la luz se concentra;
@@ -608,23 +803,62 @@ CIFRA        $49
 NOTA         INFORME Y LLAMADA DE 30 MINUTOS EN 48 HORAS. SE PAGA ENTERO POR
              ADELANTADO PORQUE SE ENTREGA EN DOS DÍAS.
 
-TEXTO PRINCIPAL
+TITULAR DE LA TARJETA   $49. Informe en 48 horas.
+DESCRIPCIÓN             Tres razones concretas, y qué hacer con cada una.
+
+──── TARJETA 07b ────
+FONDO
+Dos de esas cintas de luz roja vistas a media distancia sobre la obsidiana
+pulida, con una tercera entrando desde el borde. El cruce queda fuera de cuadro
+y lo que se ve es el recorrido. [BLOQUE DE ESTILO] [ENCUADRE 4:5] [NEGATIVOS]
+
+ANTETÍTULO   LO PRIMERO QUE MIDO
+TITULAR      Antonio 700, 112 px, tres líneas, centro óptico y=594
+             PRIMERO TE DIGO
+             >>>CUÁNTO TARDA
+             DE VERDAD<<< EN ABRIR.
+NOTA         MEDIDO, CON LA FECHA PUESTA. NO ES UN DATO DEL SECTOR NI UNA
+             ESTIMACIÓN.
+
+TITULAR DE LA TARJETA   Cuánto tarda de verdad
+DESCRIPCIÓN             Medido, con la fecha puesta.
+
+──── TARJETA 07c ────
+FONDO
+Una sola cinta de luz roja separándose de las otras sobre obsidiana pulida,
+vista de cerca. El punto donde se despega es lo más brillante del cuadro y el
+resto se apaga hacia los bordes. [BLOQUE DE ESTILO] [ENCUADRE 4:5] [NEGATIVOS]
+
+ANTETÍTULO   Y SI NO ME NECESITAS
+TITULAR      Antonio 700, 112 px, tres líneas, centro óptico y=594
+             Y SI SALE MEJOR
+             HACERLA DE NUEVO,
+             >>>TE LO DIGO IGUAL.<<<
+NOTA         NO INCLUYE ARREGLARLO: ESO SE COTIZA APARTE Y YA SABRÁS
+             EXACTAMENTE QUÉ ESTÁS PAGANDO Y POR QUÉ.
+
+TITULAR DE LA TARJETA   Te digo si no me necesitas
+DESCRIPCIÓN             No incluye arreglarlo: eso se cotiza aparte.
+
+TEXTO PRINCIPAL DEL ANUNCIO 07
 Tienes sitio, va mal, y nadie te ha dicho por qué. $49, informe y llamada en 48
 horas.
-Tres razones concretas por las que estás perdiendo ventas en él, y qué hacer
-con cada una. Con datos delante, no con una opinión.
-Se paga entero por adelantado porque se entrega en dos días. No incluye
-arreglar nada: eso se cotiza aparte y ya sabrás exactamente qué estás
-arreglando y por qué.
+Lo primero es medirlo: cuánto tarda en abrir de verdad, con la fecha puesta, no
+un dato del sector. Después, las tres razones concretas por las que estás
+perdiendo ventas en él y qué hacer con cada una.
+Se paga entero por adelantado porque se entrega en dos días. No incluye arreglar
+nada: eso se cotiza aparte y ya sabrás exactamente qué estás arreglando. Y si
+sale mejor hacerla de nuevo, te lo digo igual.
 Escríbeme por WhatsApp y te digo si vale la pena o si no me necesitas.
-El fondo de esta imagen está generado con inteligencia artificial.
+Los fondos de estas imágenes están generados con inteligencia artificial.
 
-TITULAR DEL ANUNCIO   Tres razones. $49.
-DESCRIPCIÓN           Informe y llamada de 30 minutos en 48 horas.
 BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, quiero el Diagnóstico de Ventas
 
-──────────────── PIEZA 08 · 1080×1920 ────────────────
+════════ ANUNCIO 08 · imagen única 9:16 · 1080×1920 ════════
+Público: el que no tiene sitio · Producto: PanaClaw Start
+Hipótesis: le duele que la dirección en internet no sea suya
+
 FONDO
 Una columna de servidores negros con vetas rojas alzándose desde abajo hacia el
 borde superior del cuadro, vista desde el suelo. Las filas se repiten hacia
@@ -656,14 +890,18 @@ DESCRIPCIÓN           $295, lista en 72 horas.
 BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, me interesa el plan Start
 
-──────────────── PIEZA 09 · 1080×1350 ────────────────
+════════ ANUNCIO 09 · imagen única 9:16 · 1080×1920 ════════
+Público: el que tiene un WordPress que le da vergüenza · Producto: Diagnóstico
+de Ventas
+Hipótesis: le duele llevar meses sin saber qué pasó
+
 FONDO
 Tres bloques de cristal rojo encajándose uno dentro de otro, vistos desde
 arriba y de cerca. El tercero todavía no ha terminado de entrar y la junta
-abierta deja escapar luz. [BLOQUE DE ESTILO] [ENCUADRE 4:5] [NEGATIVOS]
+abierta deja escapar luz. [BLOQUE DE ESTILO] [ENCUADRE 9:16] [NEGATIVOS]
 
 ANTETÍTULO   DIAGNÓSTICO DE VENTAS
-TITULAR      Antonio 700, 132 px, tres líneas, centro óptico y=594
+TITULAR      Antonio 700, 132 px, tres líneas, centro óptico y=880
              >>>EN 48 HORAS<<<
              SABES QUÉ LE
              PASA A TU WEB.
@@ -687,7 +925,10 @@ DESCRIPCIÓN           Tres razones concretas, y qué hacer con cada una.
 BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, quiero el Diagnóstico de Ventas
 
-──────────────── PIEZA 10 · 1080×1350 ────────────────
+════════ ANUNCIO 10 · imagen única 4:5 · 1080×1350 ════════
+Público: el que invierte en publicidad · Producto: Diagnóstico de Ventas
+Hipótesis: le duele pagar clics que caen en una página lenta
+
 FONDO
 El morro de un proyectil de obsidiana pulida, muy cerca, con las estelas de luz
 roja naciendo justo detrás del borde y perdiéndose fuera de cuadro. El resto
@@ -719,7 +960,11 @@ DESCRIPCIÓN           Informe y llamada de 30 minutos en 48 horas.
 BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, quiero el Diagnóstico de Ventas
 
-──────────────── PIEZA 11 · 1080×1920 ────────────────
+════════ ANUNCIO 11 · imagen única 9:16 · 1080×1920 ════════
+Público: el que invierte en publicidad · Producto: Diagnóstico de Ventas
+Hipótesis: le duele que nadie le dé una cifra por la página, sabiendo lo que le
+cuesta un clic
+
 FONDO
 Una cinta de luz roja separándose de otras dos sobre obsidiana pulida, vista muy
 de cerca. El punto donde se despega es lo más brillante del cuadro; el resto se
@@ -750,7 +995,10 @@ DESCRIPCIÓN           Informe y llamada de 30 minutos en 48 horas.
 BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, quiero el Diagnóstico de Ventas
 
-──────────────── PIEZA 12 · 1080×1350 ────────────────
+════════ ANUNCIO 12 · imagen única 4:5 · 1080×1350 ════════
+Público: el que invierte en publicidad · Producto: Diagnóstico de Ventas
+Hipótesis: le duele llevar meses gastando sin saber si la página tiene arreglo
+
 FONDO
 Dos proyectiles de obsidiana pulida cruzando el cuadro a distinta altura,
 vistos desde abajo. Uno deja una estela larga y encendida; el otro apenas
@@ -782,13 +1030,15 @@ BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, quiero el Diagnóstico de Ventas
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-8. ANTES DE DEVOLVER, COMPRUEBA
+9. ANTES DE DEVOLVER, COMPRUEBA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 No escribiste, redactaste, completaste, acortaste, tradujiste ni "mejoraste"
-ningún texto. Todo lo que aparece en el documento está copiado carácter por
-carácter de lo que te di, con sus tildes, sus eñes y sus puntos finales.
+ningún texto. Todo lo que aparece en el documento, la ficha de campaña
+incluida, está copiado carácter por carácter de lo que te di, con sus tildes,
+sus eñes y sus puntos finales.
 
+  [ ] ¿Está la ficha de campaña completa en el panel del principio, literal?
   [ ] ¿Añadiste alguna cifra, porcentaje, estadística, plazo o beneficio que
       no estuviera escrito arriba? Quítalo.
   [ ] ¿Hay un solo emoji, un solo signo de exclamación o una sola palabra en
@@ -805,12 +1055,14 @@ carácter de lo que te di, con sus tildes, sus eñes y sus puntos finales.
   [ ] ¿Cada titular es Antonio 700 en versalitas y todo lo demás es Archivo?
       Ninguna otra familia, en ningún caso.
   [ ] ¿Los cortes de línea son exactamente los que te di?
-  [ ] ¿El orden del bloque es antetítulo, titular, cifra, nota, en las doce?
+  [ ] ¿El orden del bloque es antetítulo, titular, cifra, nota, en las 16?
+  [ ] ¿Las tres tarjetas de cada carrusel están ancladas en y=594, sin saltar?
+  [ ] ¿El símbolo y el wordmark están en las tres tarjetas de cada carrusel?
   [ ] ¿Hay alguna caja, franja, tarjeta o sombra detrás de algún texto?
   [ ] ¿El wordmark dice PANACLAW en #FFF7F7 con el punto final en #FF5100?
   [ ] ¿El símbolo lleva fill-rule="evenodd" y conserva su proporción
       100 × 81.56, sin estirar?
-  [ ] ¿Las ocho piezas 4:5 exportan a 1080×1350 exactos y las cuatro 9:16 a
+  [ ] ¿Las doce piezas 4:5 exportan a 1080×1350 exactos y las cuatro 9:16 a
       1080×1920 exactos?
   [ ] ¿Están las cinco trampas del exportador resueltas, en particular el
       reinicio de ctx.letterSpacing a '0px' y ctx.textBaseline='top'?
@@ -818,12 +1070,12 @@ carácter de lo que te di, con sus tildes, sus eñes y sus puntos finales.
 
 ---
 
-## PARTE 3 · Qué comprobar cuando devuelva el documento
+## PARTE 4 · Qué comprobar cuando devuelva el documento
 
 1. **Descarga una pieza y ponla al lado de su vista previa.** Si no son
-   idénticas, el exportador está mal, y si está mal en una está mal en las doce.
-   Un desfase de dos o tres píxeles es normal; por encima de seis, algo está mal
-   calculado.
+   idénticas, el exportador está mal, y si está mal en una está mal en las
+   dieciséis. Un desfase de dos o tres píxeles es normal; por encima de seis,
+   algo está mal calculado.
 2. **Mira la banda del símbolo** (y 96 a 168 en las 4:5, y 312 a 384 en las
    9:16). Si asoma resplandor, forma o reflejo del fondo, **se regenera el
    fondo**. No se tapa con más velo: se probó y la mejora es insuficiente.
@@ -839,10 +1091,34 @@ carácter de lo que te di, con sus tildes, sus eñes y sus puntos finales.
    `datos/marca.json` → `redesSociales.tipografia.prohibidas`. Si el documento
    cae a una fuente del sistema, la pieza deja de ser de la marca aunque el
    resto esté bien.
+6. **Desliza los dos carruseles.** Si el bloque de texto salta de sitio entre
+   tarjetas, el anclaje no se respetó y se ve inmediatamente.
 
 ---
 
-## PARTE 4 · Lo que este entregable NO incluye
+## PARTE 5 · Qué hacer con el orgánico que ya está programado
+
+Las dos semanas a las 8:00 y a las 11:00 no se tocan, y la pauta tampoco las
+necesita. Cuatro cosas que sí importan:
+
+1. **No promociones ninguna publicación.** Ya está dicho en la Parte 1: crea una
+   campaña paralela que compite por el mismo público con el mismo dinero.
+2. **Los doce creativos de pauta son distintos de los orgánicos.** Si se repite
+   una pieza en los dos sitios, el motor de entrega la agrupa con la orgánica y
+   las hace competir entre sí en vez de ampliar el alcance.
+3. **El perfil ya se ve habitado**, y eso importa más de lo que parece: alguien
+   que ve un anuncio en frío y toca el nombre de la cuenta llega a un perfil con
+   contenido, no a uno vacío. Ese era el argumento más fuerte para esperar antes
+   de arrancar pauta y ya está resuelto.
+4. **A las dos semanas hay público de interacción** de Instagram y Facebook.
+   Todavía no da para un conjunto propio con este presupuesto, y forzarlo
+   partiría la señal del único conjunto que hay. Cuando Meta deje de marcarlo
+   como demasiado pequeño, **es una campaña aparte, no un segundo conjunto
+   dentro de esta.**
+
+---
+
+## PARTE 6 · Qué NO incluye este entregable
 
 - **No hay vídeo.** `campanas/canales/meta.md` recomienda un reparto de 70 %
   vídeo y 30 % imagen, y esta campaña es 100 % imagen. El motivo está en
@@ -856,25 +1132,23 @@ carácter de lo que te di, con sus tildes, sus eñes y sus puntos finales.
   (`catalogo/09-prueba.md`). Su lugar lo ocupan las promesas comprobables el
   primer día: abre en menos de un segundo, el código y el dominio quedan a tu
   nombre, el precio y las exclusiones están publicados.
-- **No hay campaña de remarketing todavía.** El píxel tiene que acumular
-  visitantes primero. Cuando los tenga, los públicos y qué anunciarle a cada uno
-  están en `campanas/canales/meta.md`.
+- **No hay campaña de remarketing todavía**, ni de sitio ni de interacción. Los
+  públicos y qué anunciarle a cada uno están en `campanas/canales/meta.md`, para
+  cuando haya volumen.
 - **No hay campaña de Google.** Se puede correr pero no leer: falta configurar
   Google Analytics 4.
-- **No se anuncia el sitio.** Los doce anuncios van a WhatsApp mientras el sitio
-  siga en un subdominio prestado.
+- **El sitio no recibe pauta en esta fase.** El porqué está entero en la Parte 1.
 
 ---
 
-## PARTE 5 · Decisiones que el dueño de la marca podría querer distintas
+## PARTE 7 · Decisiones que el dueño de la marca podría querer distintas
 
 1. **Los creativos llevan el texto compuesto dentro de la imagen.**
    `campanas/plantillas/estructura-anuncio.md` pone «texto en imagen» por
-   defecto en «no». Aquí va en «sí»: en frío, sin seguidores y compitiendo con
-   todo el feed, el titular dentro de la pieza es lo que detiene el pulgar, y el
-   sistema visual de la marca está construido exactamente para sostener un
-   titular. El copy completo va igualmente en los campos del editor de anuncios.
-   Si se prefiere el defecto, se quitan las capas de texto y quedan doce fondos.
+   defecto en «no». Aquí va en «sí»: en frío y compitiendo con todo el feed, el
+   titular dentro de la pieza es lo que detiene el pulgar, y el sistema visual de
+   la marca está construido exactamente para sostener un titular. El copy
+   completo va igualmente en los campos del editor de anuncios.
 2. **La retícula de 1080×1920 está derivada, no copiada.** `datos/marca.json`
    declara el lienzo de story y dice que los márgenes laterales no cambian y que
    los anclajes verticales se recalculan, pero **no publica los valores
@@ -882,7 +1156,12 @@ carácter de lo que te di, con sus tildes, sus eñes y sus puntos finales.
    y=880, wordmark con base en y=1500— son un cálculo hecho aquí contra las
    zonas seguras del 15 % y el 20 %. Si se aprueban, su sitio es
    `datos/marca.json` → `redesSociales.reticula`, no este archivo.
-3. **El presupuesto está por debajo del rango documentado.** $15 al día
+3. **Dos de los doce anuncios son carrusel.** No estaban en la primera versión.
+   Entran porque el formato es uno de los cuatro ejes de variación que el canal
+   reconoce, y porque los dos conceptos que llevan —qué entra y qué no en Start,
+   y el entregable del Diagnóstico— tienen tres tiempos naturales. Cuestan seis
+   fondos en vez de dos.
+4. **El presupuesto está por debajo del rango documentado.** $15 al día <!-- v: presupuesto diario del cliente, no un precio del catálogo -->
    funciona, pero tarda: el mismo gasto que produce datos legibles en 5–7 días a
    $20–50 diarios tarda de 7 a 10 a este ritmo. La alternativa no es repartirlo <!-- v: rango de presupuesto diario de campanas/canales/meta.md, no un precio del catálogo -->
-   mejor, es esperar más antes de leer nada.
+   mejor entre más conjuntos, es esperar más antes de leer nada.
