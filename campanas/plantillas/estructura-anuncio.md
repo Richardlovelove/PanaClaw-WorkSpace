@@ -105,7 +105,21 @@ No es letra pequeña: va en el cuerpo del anuncio, con el mismo peso que la cifr
 
 **Las primeras 125 caracteres de Meta son el anuncio entero.** El gancho y la
 cifra tienen que estar ahí; el giro y el límite pueden caer después del «ver
-más».
+más». `[verificado 2026-08-19: lo pulsa alrededor del 1 %]`
+
+> **Aviso sobre las zonas seguras de story, sin tocar nada (2026-08-19).** El
+> «15 % arriba, 20 % abajo» de la tabla no coincide con la especificación
+> unificada de Stories y Reels que Meta publicó en marzo de 2026: **14 % arriba,
+> 6 % a cada lado y hasta 35 % abajo**. El 20 % inferior sigue siendo correcto
+> para una story suelta; en un reel, un titular pegado a ese margen queda tapado
+> por la interfaz.
+>
+> **No se ha cambiado**, porque el encuadre es una decisión de diseño ya probada
+> y esa parte no se toca en una auditoría de información. Queda anotado para que
+> lo decida quien lleva el diseño. Los mismos números están en
+> [`prompts/bloques/encuadre.md`](../../prompts/bloques/encuadre.md) y en
+> [`prompts/imagen/nano-banana.md`](../../prompts/imagen/nano-banana.md): si se
+> cambian, se cambian los tres a la vez.
 
 ---
 
