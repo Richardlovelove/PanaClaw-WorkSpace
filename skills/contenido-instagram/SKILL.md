@@ -231,7 +231,7 @@ Antes de entregar, una a una:
 
 **Y cuando vuelva el documento, antes de publicar nada:** descarga una pieza y
 ponla al lado de su vista previa. Si no son idénticas, el exportador está mal y
-lo están las 33.
+lo están todas las del mes.
 
 ---
 

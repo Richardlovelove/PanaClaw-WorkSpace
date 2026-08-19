@@ -152,7 +152,6 @@ automatizaciones van activadas. Sin eso es copy suelto, no una campaña.
 
 1. Producto, público, etapa, canal y objetivo
 2. **Qué hipótesis prueba cada concepto**
-3. Si aplica: que no hay cadena de producción de vídeo, que Google no se puede
-   medir todavía (falta GA4), o que el destino sigue siendo un subdominio
-   prestado. Ver
+3. Si aplica: que no hay cadena de producción de vídeo, o que Google no se puede
+   medir todavía (falta GA4). Ver
    [`operacion/deuda-conocida.md`](../../operacion/deuda-conocida.md)

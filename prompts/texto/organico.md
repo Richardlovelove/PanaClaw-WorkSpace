@@ -18,8 +18,13 @@ gana de una sola forma: **enseñando cómo funciona el negocio por dentro**.
 
 El activo de contenido de PanaClaw no son consejos de diseño web. Es la
 transparencia: los precios publicados, la lista de exclusiones, el porqué de cada
-decisión. Nadie más en la categoría lo hace, y es lo único que no se puede
-copiar sin cambiar de modelo de negocio.
+decisión. Es lo que no se puede copiar sin cambiar de modelo de negocio — una
+agencia que vive del mantenimiento recurrente no puede prometer que el código
+queda a nombre del cliente.
+
+**No lo cuentes diciendo lo que hacen los demás.** Que la categoría no publique
+precios no está comprobado; que los nuestros estén publicados sí, y es
+comprobable abriendo la página.
 
 ---
 
@@ -76,6 +81,33 @@ Dos cosas que la gente confunde, separadas. Material de
 Un proyecto publicado, con su enlace. Solo los cuatro de
 [`catalogo/09-prueba.md`](../../catalogo/09-prueba.md), y solo lo que está
 verificado: qué es, para quién, y el enlace. **Sin métricas** — no están medidas.
+
+---
+
+## El enlace de la bio: `/smark/`
+
+El sitio tiene una página hecha exactamente para esto: **`panaclaw.com/smark/`**.
+No se enlaza desde ninguna parte del sitio —no está en el menú ni en el pie— y
+lleva `noindex`: existe para que se llegue a ella desde la bio de una red social.
+
+Es el destino que va en la bio, no `panaclaw.com` a secas ni un acortador ajeno:
+lleva el dominio del negocio, se mide con las mismas herramientas que el resto
+del sitio y nadie puede apagarlo.
+
+Reparte hacia cuatro sitios, en este orden:
+
+| Botón | A dónde va | Lo que dice debajo |
+|---|---|---|
+| **Calcular mi precio** (principal) | `/cotizador/` | 4 preguntas · sin dar datos |
+| Escribir por WhatsApp | WhatsApp | Te decimos el precio, sin rodeos |
+| Webs y precios | `/planes/` | 4 planes, precio público |
+| Sitios que hicimos | `/proyectos/` | 4 dominios que puedes abrir |
+
+Debajo del nombre lleva tres credenciales: **Panamá · Desde $295 · Precio y fecha
+cerrados**.
+
+**No pidas añadirle botones.** Tiene un solo trabajo, que es repartir; cada botón
+nuevo reparte peor los clics entre todos los demás.
 
 ---
 

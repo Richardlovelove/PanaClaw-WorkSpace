@@ -59,8 +59,13 @@ adjetivos:
 
 **Consecuencia para cualquier agente:** producir una pieza con una promesa vaga
 —«precios competitivos», «entrega rápida», «atención personalizada»— no es
-flojera de redacción, es romper el posicionamiento. La marca compite siendo la
-única que da la cifra.
+flojera de redacción, es romper el posicionamiento. La marca compite dando la
+cifra.
+
+**Y compite dándola, no acusando a nadie de esconderla.** Que la competencia
+publique o no sus precios no está comprobado —
+[`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md) punto 6— y
+mientras no lo esté, ninguna pieza lo afirma ni lo insinúa.
 
 ---
 
@@ -132,15 +137,24 @@ Es uno de los pocos nombres propios que el copy puede usar sin explicar.
 
 ---
 
-## Estado actual (2026-08-14)
+## Estado actual (2026-08-19)
 
-**El sitio está en beta.** Publicado pero sin anunciar, sin dominio propio y sin
-buscar clientes todavía. Vive en `panaclaw.netlify.app`.
+**El sitio está en línea con dominio propio: `panaclaw.com`.** Sigue desplegado
+en Netlify, pero sirve bajo el dominio del negocio. Lo declara `site` en
+`astro.config.mjs` desde el 2026-08-17 —de ahí salen la URL canónica, el
+`og:url`, el sitemap y el `robots.txt`— y **lo confirmó el dueño de la marca el
+2026-08-19**.
 
-Esto importa para cualquier campaña: **hoy no hay dominio propio que anunciar**.
-Antes de arrancar pauta hay que resolverlo — un anuncio pagado que lleva a un
-subdominio de Netlify contradice al pilar de «el sitio es tuyo» en el primer
-clic. Está registrado en
+**Es la única URL que se anuncia.** `panaclaw.netlify.app` no se reparte en
+ninguna pieza, ni en la bio, ni en un anuncio, ni al alimentar una herramienta
+externa.
+
+Esto desbloquea la pauta pagada: el destino del clic ya lleva el dominio del
+cliente, que era la única condición que faltaba.
+
+Sigue publicado sin anunciar y sin buscar clientes todavía, así que no hay
+histórico de campaña del que sacar cifras. Lo que queda abierto y afecta a
+cualquier trabajo de marketing está en
 [`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md).
 
 ---

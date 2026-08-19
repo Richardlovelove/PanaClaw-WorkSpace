@@ -49,8 +49,16 @@ número en la etiqueta.
 
 > **PanaClaw no es barata. Es exacta.**
 > `$295` no es un precio accesible: es lo que cuesta ese trabajo, publicado. La
-> categoría cobra `$1,200` por un WordPress equivalente y no dice la cifra hasta
-> la tercera reunión. Eso no es lujo, es opacidad.
+> referencia de la categoría son los `$1,200` de un WordPress equivalente, que es
+> la cifra que el propio sitio pone al lado del Corporate. La diferencia que se
+> puede defender no es que ellos escondan la suya: es que la nuestra se lee sin
+> escribirle a nadie.
+
+> **Lo que NO se afirma aquí:** que la competencia no publique sus precios, ni
+> que tarde tres reuniones en dar una cifra. Nadie lo ha comprobado y hay indicios
+> de lo contrario — está anotado en
+> [`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md) punto 6. Hasta
+> que se compruebe, no entra en una pieza.
 
 **Nunca** se describe el precio como accesible, económico, al alcance, barato,
 competitivo, ni «la mejor relación calidad-precio». El precio no se justifica: se

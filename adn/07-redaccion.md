@@ -50,7 +50,7 @@ deja el texto flojo.**
 |---|---|---|
 | Urgencia, cuenta atrás | No existe. El precio no cambia | **El plazo real.** «Lista en 72 horas» pesa más que «por tiempo limitado», y encima es verdad |
 | Escasez, «últimos cupos» | Inventada | **La condición del plazo.** El reloj empieza con el material y la mitad del pago. Se dice para que sepa desde cuándo cuenta, no para que corra |
-| Descuento | Rompe el precio publicado | **El precio publicado.** Que exista la cifra ya es la oferta: nadie más en la categoría la da |
+| Descuento | Rompe el precio publicado | **El precio publicado.** Que exista la cifra ya es la oferta: se lee sin escribirle a nadie ni esperar una reunión |
 | Testimonios, «X clientes» | No hay ninguno verificado | **La promesa comprobable el primer día**, de [`catalogo/09-prueba.md`](../catalogo/09-prueba.md) |
 | Miedo | Al público de seguridad se le pierde con eso | **El procedimiento**, paso por paso |
 | Superlativos | [`05`](05-personalidad.md) los prohíbe | **La cifra exacta** |
@@ -141,15 +141,20 @@ El único contraste autorizado está declarado en
 lo que cobra una agencia por un WordPress equivalente al Corporate.
 
 ```
-✓  Corporate: hasta 10 páginas a medida, $850. La agencia que te hace un
-   WordPress equivalente cobra $1,200 y no te dice la cifra hasta la tercera
-   reunión.
+✓  Corporate: hasta 10 páginas a medida, $850. Un WordPress equivalente en una
+   agencia ronda los $1,200.
 ✗  Somos más económicos que la competencia.
+✗  …y ellos no te dan la cifra hasta la tercera reunión.   ← nadie lo comprobó
 ```
 
 **Regla:** se ancla contra un hecho publicado y nombrado, nunca contra «lo que
-cobran otros». Y nunca se describe el precio propio como barato, accesible o
-competitivo — [`05`](05-personalidad.md) lo prohíbe expresamente.
+cobran otros». **Y el ancla es la cifra, no la conducta:** el `$1,200` está en el
+sitio y se puede citar; cómo se comporta la agencia de al lado —si publica su
+precio, cuántas reuniones pide— no está verificado y no entra en una pieza
+(`operacion/deuda-conocida.md` punto 6).
+
+Y nunca se describe el precio propio como barato, accesible o competitivo —
+[`05`](05-personalidad.md) lo prohíbe expresamente.
 
 ### 5 · La escena reconocible
 

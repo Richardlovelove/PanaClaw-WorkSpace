@@ -340,7 +340,7 @@ límites, en negativo, cuando son lo más afirmativo que tiene la marca:
 |---|---|
 | El dato de abandono es del sector, no una medición nuestra | Tu sitio abre en menos de un segundo, y te lo medimos delante el primer día |
 | El código queda a tu nombre | El código y el dominio quedan a tu nombre. Está en el contrato, no en nuestra palabra |
-| Cada plan lleva publicado lo que no incluye | Vas a saber lo que cuesta y lo que no entra antes de escribirme, no en la tercera reunión |
+| Cada plan lleva publicado lo que no incluye | Vas a saber lo que cuesta y lo que no entra antes de escribirme, no después |
 
 **Y sigue prohibido todo lo demás:** resultados, posiciones en Google,
 porcentajes de mejora, testimonios y métricas por proyecto. Una promesa solo es

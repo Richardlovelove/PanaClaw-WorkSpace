@@ -1,10 +1,10 @@
-# Plataforma · Grok
+# Plataforma · Grok, GPT y modelos ajenos
 
 > **El bloque que se pega abajo lleva `02` y `05` destilados y nada de `06` ni de
 > `07`.** Un modelo ajeno con solo esto escribe correcto y misterioso. Si el
 > encargo es copy que tiene que vender, añádele al pegado la prueba del rótulo de
 > [`adn/06-claridad.md`](../../adn/06-claridad.md) §9 y la del descarte de
-> [`adn/07-redaccion.md`](../../adn/07-redaccion.md) §4., GPT y modelos ajenos
+> [`adn/07-redaccion.md`](../../adn/07-redaccion.md) §4.
 
 Cómo cargar el ADN de PanaClaw en un modelo que **no tiene acceso a este
 repositorio**. Aplica a Grok, ChatGPT, Gemini fuera de este entorno, Claude en
@@ -107,7 +107,7 @@ Dominio: unos $15 al año. Es el único costo obligatorio de un sitio sin Care.
 ━━ DOS REGLAS DE CIFRAS ━━
 1. Un importe de pago único y uno mensual NUNCA se suman. Dos totales
    separados: "$375 de una vez y $45 al mes", nunca "$420".
-2. Los rangos se citan enteros ($80–$150) o con "desde" ($desde 80). Nunca el
+2. Los rangos se citan enteros ($80–$150) o con "desde" (desde $80). Nunca el
    mínimo a secas.
 
 ━━ NO CONFUNDAS ESTOS CUATRO ━━

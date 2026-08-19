@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "verificadoContra": {
     "repositorio": "abrinay1997-stack/PanaClaw",
-    "fecha": "2026-08-14",
-    "archivos": ["src/styles/global.css", "scripts/generate-brand-assets.mjs", "src/data/site.ts"]
+    "fecha": "2026-08-19",
+    "archivos": ["src/styles/global.css", "scripts/generate-brand-assets.mjs", "src/data/site.ts", "astro.config.mjs"]
   },
 
   "identidad": {
@@ -14,7 +14,7 @@
     "descripcionCorta": "Webs en Panamá. Abren en menos de 1 s, listas en días y quedan a tu nombre. Desde $295.",
     "mercado": "Panamá",
     "idioma": "es-PA",
-    "sitio": "https://panaclaw.netlify.app"
+    "sitio": "https://panaclaw.com"
   },
 
   "color": {

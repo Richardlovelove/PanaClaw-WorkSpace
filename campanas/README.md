@@ -16,9 +16,9 @@ DECISIÓN      Llegó al cotizador o al formulario y no envió.
               Objetivo: una promesa de propiedad o de límite. Nada más.
 ```
 
-**La marca no tiene etapa de «fidelización» todavía.** Con el sitio en beta y sin
-clientes captados por campaña, inventar esa etapa sería producir piezas para un
-público que no existe.
+**La marca no tiene etapa de «fidelización» todavía.** El sitio está publicado
+pero sin anunciar y no hay clientes captados por campaña: inventar esa etapa
+sería producir piezas para un público que no existe.
 
 ---
 
@@ -142,28 +142,16 @@ canal» ni «coste por cliente» mientras solo haya un píxel y un evento.
 
 ---
 
-## Dos avisos antes de arrancar pauta
+## El aviso antes de arrancar pauta
 
+**Google no se puede medir todavía.** Falta configurar Google Analytics, así que
+una campaña de Google se puede correr pero no leer. Meta sí tiene medición.
 
-### 1 · No hay dominio propio
+Está en [`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md). Dilo
+antes de producir, no después.
 
-El sitio vive en `panaclaw.netlify.app`. Un anuncio pagado que lleva a un
-subdominio de Netlify contradice el pilar de «el sitio es tuyo» en el primer
-clic, y es lo primero que va a notar alguien que esté evaluando agencias.
-
-> **En curso (2026-08-17):** el dueño de la marca compra `panaclaw.com`. Cuando
-> esté apuntando, este aviso se borra de aquí y de
-> [`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md) — no se
-> archiva, se borra.
-
-### 2 · Google no se puede medir todavía
-
-Falta configurar Google Analytics, así que una campaña de Google se puede correr
-pero no leer. Meta sí tiene medición.
-
-Las dos cosas están en
-[`operacion/deuda-conocida.md`](../operacion/deuda-conocida.md). Dilo antes de
-producir, no después.
+**El destino del clic es `panaclaw.com`**, el dominio propio del sitio desde el
+2026-08-17. `panaclaw.netlify.app` no se pone en ninguna pieza.
 
 ---
 

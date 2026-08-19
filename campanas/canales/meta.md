@@ -2,6 +2,13 @@
 
 El canal principal hoy: es el único con medición activa.
 
+> **Las cifras de este archivo no son de PanaClaw.** Son datos de la plataforma y
+> del oficio de comprar publicidad, comprobados el **2026-08-19** contra fuentes
+> públicas. La tabla de procedencia está al final: **cada una lleva su estado**, y
+> dos están marcadas como no verificadas. Ninguna de estas cifras se dice nunca en
+> una pieza de cara al cliente — la regla 4 sigue entera; esto es para decidir
+> cómo se compra, no para escribirlo en un anuncio.
+
 **Revisado el 2026-08-17** contra el estado real de la plataforma. Meta cambió
 dos veces en 2026 —en febrero fusionó el flujo manual con Ventajas+, y en marzo
 tocó presupuestos, públicos, creativo y las reglas de contenido generado con
@@ -27,7 +34,7 @@ cuando no lo hay.
 ### El problema del arranque
 
 Un conjunto de anuncios necesita alrededor de **50 conversiones por semana** del
-evento que optimiza para salir de la fase de aprendizaje. Por debajo, se queda en
+evento que optimiza para salir de la fase de aprendizaje. `[verificado 2026-08-19]` Por debajo, se queda en
 aprendizaje limitado y lo que se lea es ruido.
 
 ```
@@ -49,8 +56,15 @@ medido.
 2. **WhatsApp ya es el canal principal de conversación de la marca.** No se está
    inventando un embudo para la campaña: se está pagando por llenar el que ya
    existe.
-3. Latinoamérica es de los mercados donde este formato más crece, y la ventana de
-   las primeras 72 horas de conversación no tiene coste de mensajería.
+3. La conversación que abre un anuncio de clic a WhatsApp entra por la **ventana
+   gratuita de 72 horas**: lo que se responda ahí dentro no tiene coste de
+   mensajería. `[verificado 2026-08-19]`
+
+> **Ojo con la fecha.** Esa ventana de 72 horas de los anuncios sigue en pie,
+> pero Meta anunció el 2026-07-01 que **la ventana de servicio gratuita de 24
+> horas se acaba el 2026-10-01**: a partir de ahí, responder fuera de la ventana
+> del anuncio se cobra por mensaje. Si la campaña arranca cerca de esa fecha,
+> compruébalo antes de presupuestar.
 
 Con 20 a 50 dólares diarios se producen datos legibles en cinco a siete días.
 
@@ -71,7 +85,11 @@ histórico que hace falta para poder pasar a optimizar contra `Lead` más adelan
 
 La prueba interna de Meta que sostiene la recomendación actual: **un conjunto con
 25 creativos diversos produjo un 17 % más de conversiones a un 16 % menos de
-coste** que cinco conjuntos de cinco creativos cada uno.
+coste** que cinco conjuntos de cinco creativos cada uno. `[verificado 2026-08-19]`
+
+Sale del cambio de motor de entrega de Meta —el que la industria llama
+**Andromeda**— y es lo que explica por qué la estructura ganadora hoy es la
+contraria a la de hace dos años.
 
 ```
 1 campaña  →  1 conjunto  →  de 8 a 12 conceptos distintos dentro
@@ -94,9 +112,10 @@ Es el choque que hay que entender antes de producir, porque no es obvio y cuesta
 alcance.
 
 El motor de entrega **agrupa los creativos que se parecen bajo una misma
-identidad interna y los hace competir entre sí en vez de ampliar el alcance.** La
-recomendación es mantener el parecido por debajo del 40 % y renovar cada dos o
-tres semanas.
+identidad interna y los hace competir entre sí en vez de ampliar el alcance.** El
+colapso empieza a documentarse por encima del 60 % de parecido; la recomendación
+de oficio es quedarse **por debajo del 40 %** y renovar cada dos o tres semanas.
+`[verificado 2026-08-19]`
 
 Y el sistema visual de PanaClaw es deliberadamente idéntico entre piezas: mismo
 bloque de estilo, misma familia de escena, mismo velo, un solo acento. **Esa
@@ -131,14 +150,24 @@ inventar nada.
 | Feed cuadrado | 1:1 | 1080 × 1080 |
 | Stories y Reels | 9:16 | 1080 × 1920 |
 
-**Vídeo e imagen, no una cosa u otra.** Para negocios de servicios el vídeo
-vertical de aspecto nativo rinde por encima del estático pulido, y la ubicación
-de Reels sale alrededor de un 26 % más barata por clic que el feed. Pero el
-estático sigue produciendo entre el 60 y el 70 % de las conversiones y abarata el
-CPM en frío.
+**Vídeo e imagen, no una cosa u otra.** El vídeo vertical de aspecto nativo
+compra atención más barata: **la ubicación de Reels sale alrededor de un 26 % más
+barata por clic** que el feed de Facebook. `[verificado 2026-08-19]`
 
-**El reparto que se recomienda es 70 % vídeo y 30 % imagen.** Las cuentas de un
-solo formato quedan por debajo.
+> **No verificado:** que el estático produzca «entre el 60 y el 70 % de las
+> conversiones». La cifra circula por el oficio y no se le encuentra fuente
+> primaria; y lo que sí está documentado apunta en la otra dirección —el feed
+> convierte de forma más constante que Reels, pero nadie publica ese reparto.
+> **Trátalo como intuición, no como dato.**
+
+> **No verificado:** el reparto **70 % vídeo / 30 % imagen**. No es una
+> recomendación de Meta; es una de varias que circulan, y las fuentes consultadas
+> dan repartos distintos entre sí. **No lo defiendas como si fuera un estándar.**
+
+Lo que sí se sostiene: **una cuenta de un solo formato queda por debajo de una
+que mezcla**, porque el motor necesita creativos que no se parezcan entre sí (la
+sección de arriba). El reparto exacto lo decide la primera campaña de esta marca,
+midiéndolo — no una cifra copiada.
 
 > **Hueco conocido:** hay estructura de guion en
 > [`prompts/video/video-corto.md`](../../prompts/video/video-corto.md), pero no
@@ -149,7 +178,8 @@ solo formato quedan por debajo.
 
 ## Los primeros 125 caracteres
 
-Es el anuncio entero. Después viene el «ver más», y casi nadie lo pulsa.
+Es el anuncio entero. Después viene el «ver más», y **lo pulsa alrededor del 1 %**.
+`[verificado 2026-08-19]`
 
 **Ahí tienen que estar el gancho y la cifra.** El giro y el límite pueden caer
 después.
@@ -247,13 +277,16 @@ Rechazarlo todo hoy es pelearse con el flujo por defecto. La distinción correct
 No hay histórico de esta marca, así que **cualquier cifra de rendimiento propia
 sería inventada**. Lo que sí se puede decir:
 
-- **No hay CPM ni coste por clic publicado para Panamá.** Latinoamérica está entre
-  las regiones más baratas y los mercados del tramo bajo se mueven entre 1,50 y
-  4 dólares de CPM, frente a una media global de 7,47 de CPM. Sirve para saber que
-  el terreno es barato; **no sirve para presupuestar.** La cifra de Panamá se mide
-  la primera semana.
+- **No hay CPM ni coste por clic publicado para Panamá.** Lo único sólido es la
+  dirección: **Latinoamérica está entre las regiones más baratas.** Los tramos que
+  se citan para esos mercados van de 0,50 a 4 dólares de CPM según la fuente, y la
+  media global que publica cada informe es distinta —se encontraron 6,59 y 11,76
+  el 2026-08-19—. **Sirve para saber que el terreno es barato; no sirve para
+  presupuestar**, y ninguna de esas cifras se cita como si fuera la buena.
+  `[la media global de 7,47 que decía este archivo no se pudo confirmar y se retiró]`
+  La cifra de Panamá se mide la primera semana.
 - **Las subidas de presupuesto van del 20 % cada tres o cuatro días.** Un salto
-  mayor devuelve el conjunto a la fase de aprendizaje.
+  mayor devuelve el conjunto a la fase de aprendizaje. `[verificado 2026-08-19]`
 - **No se lee nada antes de tener eventos suficientes.** Un ganador declarado con
   tres conversiones es ruido.
 - **Renovar creativos cada dos o tres semanas**, no cuando bajen los resultados:
@@ -278,3 +311,42 @@ sería inventada**. Lo que sí se puede decir:
 - [ ] ¿La cifra coincide con [`datos/precios.json`](../../datos/precios.json)?
 - [ ] ¿La llamada a la acción de WhatsApp va sin número?
 - [ ] ¿Se está prometiendo algún resultado que no se pueda comprobar el primer día?
+- [ ] ¿Alguna cifra de esta página se coló en el texto de un anuncio? → ninguna
+      sale de aquí; las que se dicen en una pieza salen de `datos/precios.json`
+
+---
+
+## Procedencia de las cifras de esta página
+
+Comprobado el **2026-08-19** contra fuentes públicas del sector. Se anota aquí
+por la misma razón que se anota todo lo demás: **una cifra sin fecha deja de ser
+cierta sin que nadie la toque.**
+
+| Cifra | Estado |
+|---|---|
+| 50 conversiones semanales para salir de aprendizaje | **Verificado.** Es el umbral que documenta la propia Meta |
+| 25 creativos en un conjunto: +17 % conversiones, −16 % coste | **Verificado.** Prueba interna de Meta, ligada a su motor de entrega actual |
+| Parecido por debajo del 40 %, renovar cada 2–3 semanas | **Verificado.** El colapso se documenta por encima del 60 %; 40 % es el margen de oficio |
+| De 8 a 12 conceptos distintos | **Verificado** para presupuestos pequeños, que es el caso |
+| Reels ~26 % más barato por clic que el feed | **Verificado.** Es Reels de Instagram contra feed de Facebook |
+| Los primeros 125 caracteres, y ~1 % pulsa «ver más» | **Verificado** |
+| Subidas de presupuesto del 20 % cada 3–4 días | **Verificado** |
+| Ventana gratuita de 72 h del clic a WhatsApp | **Verificado**, con la fecha del 2026-10-01 encima. Ver arriba |
+| Meta fusionó el flujo manual con Ventajas+ (feb 2026) | **Verificado** |
+| Declarar contenido generado con IA (mar 2026) | **Verificado**, y es de los motivos de rechazo más frecuentes |
+| El estático produce el 60–70 % de las conversiones | **NO VERIFICADO.** Circula sin fuente primaria y lo documentado apunta en otra dirección |
+| Reparto 70 % vídeo / 30 % imagen | **NO VERIFICADO.** No es recomendación de Meta y las fuentes se contradicen |
+| Media global de CPM de 7,47 | **RETIRADO.** No se pudo confirmar: los informes consultados dan 6,59 y 11,76 |
+
+**Qué hacer con las dos no verificadas y la retirada.** No se borran del oficio —
+siguen siendo la intuición con la que trabaja medio sector— pero **no se
+defienden como dato, no se le pasan al cliente y no se usan para justificar un
+presupuesto.** Cuando esta marca corra su primera campaña, sus propios números
+sustituyen a los tres y llevan su fecha, como todo lo demás.
+
+> **Y una que no se comprobó porque no es de este archivo:** las zonas seguras de
+> story que declara
+> [`campanas/plantillas/estructura-anuncio.md`](../plantillas/estructura-anuncio.md)
+> —15 % arriba y 20 % abajo— no coinciden con la especificación unificada de
+> Stories y Reels de marzo de 2026. Está señalado para que lo decida quien lleva
+> el diseño; ver la nota de esa página.

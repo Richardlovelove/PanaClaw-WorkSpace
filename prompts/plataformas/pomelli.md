@@ -44,10 +44,11 @@ sin una sola letra. El motivo está en la cabecera del script.
 
 ## Qué darle
 
-**URL:** `https://panaclaw.netlify.app`
+**URL:** `https://panaclaw.com`
 
-> Hoy el sitio está en beta, publicado sin dominio propio. Cuando haya dominio,
-> se le da el dominio: es lo que va a quedar guardado en el perfil.
+> El dominio propio está en línea y confirmado (2026-08-19). Se le da este y
+> **nunca** `panaclaw.netlify.app`: la URL que se analiza es la que queda
+> guardada en el perfil, y ahí no se corrige después.
 
 ---
 
