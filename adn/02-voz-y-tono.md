@@ -67,6 +67,13 @@ Segunda persona, siempre. «Tu sitio», «tus clientes», «te llegan al WhatsAp
 La marca aparece en primera del plural solo cuando se compromete a algo:
 «lo montamos», «te lo decimos», «no lo hacemos».
 
+**Y siempre en plural, nunca en singular.** Decidido el 2026-08-19 por el dueño
+de la marca, después de encontrar el repositorio partido: esta regla decía plural
+y los ejemplos de otros archivos estaban en singular. No hay «te lo entrego», «me
+escribes y lo cambio yo» ni «te lo mido delante»: son «te lo entregamos», «nos
+escribes y lo cambiamos» y «te lo medimos delante». Vale para todo — web,
+anuncios, WhatsApp, correo, propuestas y respuestas del eBot.
+
 Cuenta las «nosotros» de tu texto. Si superan a las «tú», reescribe.
 
 ### 4. Nombra lo que va mal, sin dramatizar
@@ -325,6 +332,8 @@ Estructuras, no frases hechas. Rellénalas contra el contexto real.
 1. ¿Hay algún adjetivo que podría ser un número? → cámbialo.
 2. ¿Hay más «nosotros» que «tú»? → reescribe.
 3. ¿Alguna palabra de la lista prohibida? → fuera.
+3b. ¿Alguna primera persona del singular —«te digo», «me escribes», «lo hago
+   yo»—? → a plural.
 4. ¿Alguna promesa que no puedas señalar en `datos/precios.json` o en el
    catálogo? → fuera.
 5. ¿Dice en algún sitio qué **no** incluye? → si no, falta.

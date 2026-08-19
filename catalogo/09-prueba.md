@@ -105,6 +105,21 @@ Una ficha a medias se ve corta pero nunca falsa. Es el intercambio correcto.
 | Métricas de un caso | No están medidas todavía. `npm run medir` las produce con fecha; hasta entonces no se publican. |
 | Un caso de éxito con números | Puedo describir qué es cada proyecto, sin cifras de resultado. |
 | Logos de clientes | Hay cuatro dominios públicos y enlazables. Logos, no. |
+| Nombrar en la pieza que todavía no hay clientes | **No.** Ver abajo |
+
+### Nombrar el hueco: no
+
+**Decidido el 2026-08-19 por el dueño de la marca.** Se propuso decir en la web y
+en la propuesta algo del tipo «todavía no tengo clientes panameños que te cuenten
+cómo fue». **No se hace.**
+
+No se inventa prueba social y no se anuncia su ausencia: se ocupa su sitio con lo
+que sí es comprobable el primer día —los cuatro proyectos con su enlace, la
+velocidad medida delante, el contrato, el precio publicado—. La lista está arriba
+en «Las promesas verificables», y `adn/07-redaccion.md` §3 explica cómo se usan.
+
+Esto **no** relaja nada: sigue prohibido decir o insinuar que hay clientes,
+años, casos o métricas que no existen.
 
 Ninguna de estas es una negativa a trabajar: es la marca funcionando. La promesa
 de que no hay letra chica solo vale si también aplica hacia dentro.

@@ -129,6 +129,54 @@ del sitio.
 
 ---
 
+## 7 · Dos afirmaciones de mercado sin verificar `[tuyo]`
+
+**Qué pasa.** El ADN afirma dos cosas sobre la competencia que nadie ha
+comprobado:
+
+1. `adn/01-identidad.md` y `adn/05-personalidad.md` dicen que la categoría **no
+   publica el precio** y que la agencia «no te dice la cifra hasta la tercera
+   reunión». Una búsqueda del 2026-08-19 encontró agencias panameñas con cifras
+   públicas —una con «desde $399» en el propio título de su web, otra con tres <!-- v: precio publicado por un competidor, no un importe del catálogo de PanaClaw -->
+   precios publicados—. No se pudieron abrir las páginas para confirmarlo, así
+   que **el hallazgo es indicativo, no concluyente**.
+2. `adn/05-personalidad.md` presenta el `$1,200` de
+   [`datos/precios.json`](../datos/precios.json) → `otrosImportes.referenciaCompetencia`
+   como el precio de la categoría. Es una referencia, no una medición.
+
+**Qué bloquea.** Nada para producir, pero es la clase de afirmación que un
+competidor desmonta con una captura de pantalla, dentro de un repositorio cuya
+regla 4 prohíbe los datos sin verificar. Y si resulta cierta, el argumento de
+«somos los únicos que publicamos el precio» deja de ser un diferenciador y pasa
+a ser una paridad.
+
+**Cómo se arregla.** Abrir cinco o seis webs de agencias panameñas, anotar cuáles
+publican cifra y con qué fecha, y reescribir las dos frases con lo que se vea.
+Si la mayoría publica precio, el diferenciador se muda a lo que nadie más dice:
+a nombre de quién queda el sitio.
+
+---
+
+## 8 · Los cuatro pilares están ordenados por facilidad, no por defensibilidad `[tuyo]`
+
+**Qué pasa.** `adn/01-identidad.md` ordena el argumento en velocidad, seguridad y
+plazo, y la campaña reparte el peso a partes iguales entre velocidad, precio,
+plazo y propiedad. De esos cuatro ejes, precio y plazo los puede igualar
+cualquiera, velocidad es una carrera de números, y **propiedad y mecanismo son
+los dos únicos que la competencia no puede copiar sin cambiar de modelo de
+negocio**: una agencia que vive del mantenimiento recurrente no puede prometer
+que el código queda a nombre del cliente.
+
+**Qué bloquea.** Nada hoy. **Decisión del dueño de la marca del 2026-08-19: los
+cuatro pilares se quedan como están** hasta tener datos propios de la primera
+campaña. Queda anotado para revisarlo entonces, no antes.
+
+**Por qué se anota igual.** Porque el orden salió del sitio y cambiarlo obliga a
+tocar el otro repositorio; si la campaña dice que propiedad rinde más, este es el
+punto por donde se empieza.
+
+---
+
 ## Cómo se usa este documento
 
 Cualquier agente que vaya a producir una campaña, conectar una herramienta

@@ -108,7 +108,7 @@ No son dos versiones del mismo dato. Son las dos alturas del mismo dato.
 | El código queda a tu nombre | Nadie te puede quitar tu página. Ni yo |
 | El dominio se registra a tu nombre | La dirección en internet es tuya, no mía |
 | Panel para que edites el contenido | Cambias un precio o una foto tú mismo, desde el celular, sin llamar a nadie |
-| Sin panel de edición | Si quieres cambiar un texto, me escribes y lo cambio yo |
+| Sin panel de edición | Si quieres cambiar un texto, nos escribes y lo cambiamos nosotros |
 | No hay complementos que se rompan | No hay nada que actualizar cada semana. Se puede dejar sola un año |
 | No hay panel público por el que entrar | No hay una puerta de administración que alguien pueda forzar |
 | Publicación incluida | Queda abierta en internet sin que pagues nada aparte |
@@ -235,7 +235,7 @@ misma línea que el límite.
 |---|---|
 | Sin rondas de cambios incluidas | Start no lleva rondas. Si después quieres cambiar algo, se pide y ya está: $40, sin discusión y sin mala cara |
 | No escribimos tus textos | Los textos los pones tú, y te ayudo a ordenarlos mientras hablamos. Escribirlos enteros ya es otro trabajo y se cotiza |
-| No te vamos a prometer panel en los dos pequeños | En Start y Launch los cambios los hago yo: me escribes y lo cambio. Si quieres hacerlo tú, eso es Corporate |
+| No te vamos a prometer panel en los dos pequeños | En Start y Launch los cambios los hacemos nosotros: nos escribes y lo cambiamos. Si quieres hacerlo tú, eso es Corporate |
 | No prometemos posicionamiento en Google | El sitio se entrega con todo para que Google lo entienda, que es la mitad del trabajo. La otra mitad es tiempo y contenido |
 | No hay descuentos | El precio publicado es el mismo para todos, y esa es la idea. Lo único: dos meses gratis pagando Care anual |
 | El adelanto no se devuelve | Puedes parar cuando quieras y te entregamos lo que exista. Si los que no podemos seguir somos nosotros, devolvemos la parte proporcional |
@@ -274,7 +274,7 @@ Cuatro formas concretas, todas detectadas en las catorce piezas:
   a nadie su propia cabeza.
 - **Sentencias sobre el negocio ajeno.** «Un número que nadie midió no vale
   nada.» Suena a máxima y no la pidió nadie. Si el dato es tuyo, cuéntalo de ti:
-  «no te pongo cifras porque todavía no las he medido».
+  «no te ponemos cifras porque todavía no las hemos medido».
 - **Nombrar el daño que no ibas a hacer.** «Los $40 no son para castigarte»
   mete el castigo en la cabeza del lector. Se dice al derecho: «los $40 están
   para que puedas pedir un cambio más sin pensarlo».
@@ -338,8 +338,8 @@ límites, en negativo, cuando son lo más afirmativo que tiene la marca:
 
 | Se estaba diciendo así | Es una promesa y se dice así |
 |---|---|
-| El dato de abandono es del sector, no una medición nuestra | Tu sitio abre en menos de un segundo, y te lo mido delante el primer día |
-| El código queda a tu nombre | El código y el dominio quedan a tu nombre. Está en el contrato, no en mi palabra |
+| El dato de abandono es del sector, no una medición nuestra | Tu sitio abre en menos de un segundo, y te lo medimos delante el primer día |
+| El código queda a tu nombre | El código y el dominio quedan a tu nombre. Está en el contrato, no en nuestra palabra |
 | Cada plan lleva publicado lo que no incluye | Vas a saber lo que cuesta y lo que no entra antes de escribirme, no en la tercera reunión |
 
 **Y sigue prohibido todo lo demás:** resultados, posiciones en Google,
@@ -414,7 +414,7 @@ mandándolo la retícula de
 que no puede es faltar.
 
 En algún sitio de cada pieza tiene que aparecer la frase llana: «te hacemos tu
-página web», «reviso tu página y te digo por qué no vende». Sin metáfora y sin
+página web», «revisamos tu página y te decimos por qué no vende». Sin metáfora y sin
 elipsis. Si tapas el logo y la cifra, un dueño de negocio tiene que poder decir
 qué se vende ahí.
 
@@ -439,7 +439,7 @@ escalón: quitan la palabra de oficio que quedaba dentro de la consecuencia.
 > declarada en [`datos/marca.json`](../datos/marca.json) y no se toca: ahí
 > «código» es un nombre, no una explicación. En cualquier otro sitio se traduce.
 | El dominio queda a tu nombre | La dirección donde te encuentran en internet se registra a tu nombre |
-| Sin panel de edición | Si quieres cambiar un texto o una foto, me escribes y lo cambio yo |
+| Sin panel de edición | Si quieres cambiar un texto o una foto, nos escribes y lo cambiamos nosotros |
 | Con panel de edición | Cambias los textos y las fotos tú mismo, desde el celular, sin llamar a nadie |
 | 2 rondas de cambios | Dos tandas de correcciones, antes de publicarla |
 | Control de stock | Control de existencias: la página sabe cuánto te queda de cada cosa |

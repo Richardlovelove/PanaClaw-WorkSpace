@@ -106,8 +106,8 @@ falta hace: al lado de una cifra.
 ✗  eBot: $499, pago único.
 ✓  eBot: $499, pago único, porque no se alquila. El programa ya está hecho;
    los $499 son montarlo en tu cuenta y no se repiten. Lo que sigue pagando
-   cada mes no lo cobro yo: $5 de la nube y $1–2 de la llave de inteligencia
-   artificial.
+   cada mes no lo cobramos nosotros: $5 de la nube y $1–2 de la llave de
+   inteligencia artificial.
 ```
 
 **Regla:** toda cifra que pueda parecer arbitraria lleva su porqué a menos de una
@@ -239,7 +239,7 @@ distinto: de algo que se pueda abrir, medir, leer o comprobar sin creerte a ti.
 ```
 ✗  Es rápida de verdad. Muy rápida.
       ← la misma afirmación, dicha dos veces
-✓  Abre acusticasuperior.com en tu celular y cuéntame cuánto tardó.
+✓  Abre acusticasuperior.com en tu celular y cuéntanos cuánto tardó.
       ← la afirmación, comprobada por él
 ```
 
@@ -253,7 +253,7 @@ exactamente por qué no se inventa. Estos cuatro sí existen, y están casi sin 
 | **Demostración** | Algo que el que lee puede abrir o medir hoy mismo | Los cuatro sitios publicados. La velocidad, medida delante |
 | **Mecanismo** | Por qué funciona, con el detalle que nadie cuenta | No hay panel por el que entrar ni complementos que actualizar |
 | **Estructura** | Un compromiso que cuesta si se incumple | El contrato, el precio publicado, la lista de lo que no entra |
-| **Persona** | Que haya alguien concreto del otro lado | Quien contesta el WhatsApp y hace el trabajo |
+| **Respaldo** | Un compromiso escrito que alguien firma | El contrato del traspaso, con nombre y fecha |
 
 **El mecanismo es el que más rinde y el que menos se usa.** Contar cómo se hace
 algo, paso por paso, es lo que convence a alguien de que sabes hacerlo — y no
