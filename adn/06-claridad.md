@@ -3,9 +3,10 @@
 [`02-voz-y-tono.md`](02-voz-y-tono.md) dice **cómo se construye una frase**.
 [`05-personalidad.md`](05-personalidad.md) dice **desde dónde se dice**. Este
 dice **cómo le llega al que lo lee**: qué se dice primero, con qué palabras lo
-entiende, y con qué disposición.
+entiende, y con qué disposición. Y [`07-redaccion.md`](07-redaccion.md) dice
+**cómo se hace que funcione**.
 
-Los tres se leen juntos antes de escribir una sola palabra de cara al cliente.
+Los cuatro se leen juntos antes de escribir una sola palabra de cara al cliente.
 Con los dos primeros el texto sale correcto y con carácter, y aun así puede
 llegar frío, distante o dando lecciones.
 
@@ -107,7 +108,7 @@ No son dos versiones del mismo dato. Son las dos alturas del mismo dato.
 | El código queda a tu nombre | Nadie te puede quitar tu página. Ni yo |
 | El dominio se registra a tu nombre | La dirección en internet es tuya, no mía |
 | Panel para que edites el contenido | Cambias un precio o una foto tú mismo, desde el celular, sin llamar a nadie |
-| Sin panel de edición | Si quieres cambiar un texto, me escribes y lo cambio yo |
+| Sin panel de edición | Si quieres cambiar un texto, nos escribes y lo cambiamos nosotros |
 | No hay complementos que se rompan | No hay nada que actualizar cada semana. Se puede dejar sola un año |
 | No hay panel público por el que entrar | No hay una puerta de administración que alguien pueda forzar |
 | Publicación incluida | Queda abierta en internet sin que pagues nada aparte |
@@ -234,7 +235,7 @@ misma línea que el límite.
 |---|---|
 | Sin rondas de cambios incluidas | Start no lleva rondas. Si después quieres cambiar algo, se pide y ya está: $40, sin discusión y sin mala cara |
 | No escribimos tus textos | Los textos los pones tú, y te ayudo a ordenarlos mientras hablamos. Escribirlos enteros ya es otro trabajo y se cotiza |
-| No te vamos a prometer panel en los dos pequeños | En Start y Launch los cambios los hago yo: me escribes y lo cambio. Si quieres hacerlo tú, eso es Corporate |
+| No te vamos a prometer panel en los dos pequeños | En Start y Launch los cambios los hacemos nosotros: nos escribes y lo cambiamos. Si quieres hacerlo tú, eso es Corporate |
 | No prometemos posicionamiento en Google | El sitio se entrega con todo para que Google lo entienda, que es la mitad del trabajo. La otra mitad es tiempo y contenido |
 | No hay descuentos | El precio publicado es el mismo para todos, y esa es la idea. Lo único: dos meses gratis pagando Care anual |
 | El adelanto no se devuelve | Puedes parar cuando quieras y te entregamos lo que exista. Si los que no podemos seguir somos nosotros, devolvemos la parte proporcional |
@@ -273,7 +274,7 @@ Cuatro formas concretas, todas detectadas en las catorce piezas:
   a nadie su propia cabeza.
 - **Sentencias sobre el negocio ajeno.** «Un número que nadie midió no vale
   nada.» Suena a máxima y no la pidió nadie. Si el dato es tuyo, cuéntalo de ti:
-  «no te pongo cifras porque todavía no las he medido».
+  «no te ponemos cifras porque todavía no las hemos medido».
 - **Nombrar el daño que no ibas a hacer.** «Los $40 no son para castigarte»
   mete el castigo en la cabeza del lector. Se dice al derecho: «los $40 están
   para que puedas pedir un cambio más sin pensarlo».
@@ -337,8 +338,8 @@ límites, en negativo, cuando son lo más afirmativo que tiene la marca:
 
 | Se estaba diciendo así | Es una promesa y se dice así |
 |---|---|
-| El dato de abandono es del sector, no una medición nuestra | Tu sitio abre en menos de un segundo, y te lo mido delante el primer día |
-| El código queda a tu nombre | El código y el dominio quedan a tu nombre. Está en el contrato, no en mi palabra |
+| El dato de abandono es del sector, no una medición nuestra | Tu sitio abre en menos de un segundo, y te lo medimos delante el primer día |
+| El código queda a tu nombre | El código y el dominio quedan a tu nombre. Está en el contrato, no en nuestra palabra |
 | Cada plan lleva publicado lo que no incluye | Vas a saber lo que cuesta y lo que no entra antes de escribirme, no en la tercera reunión |
 
 **Y sigue prohibido todo lo demás:** resultados, posiciones en Google,
@@ -347,7 +348,122 @@ promesa si se puede comprobar el primer día.
 
 ---
 
-## 9 · Lo que este archivo NO relaja
+## 9 · Di qué vendes, con esas palabras
+
+**Decidido el 2026-08-19 por el dueño de la marca**, después de leer los doce
+anuncios de la primera campaña de pauta. El veredicto, literal: *«sonamos muy
+misteriosos y poco claros; a veces son empresarios que no tienen ni idea de qué
+es que se entregue en 72 horas o de qué es el código»*.
+
+Es la tercera vez que el mismo fallo llega por una puerta distinta, así que aquí
+está cerrada la puerta.
+
+### Por qué las secciones 1 a 8 no lo evitaron
+
+La sección 3 ya trae la prueba, y la primera de sus tres preguntas es **«¿sé qué
+me estás ofreciendo?»**. Los doce anuncios pasaban la 2 —se entendía qué le
+cambia al lector— y fallaban la 1: ninguno decía, con esas palabras, qué se
+vende.
+
+```
+✗  SABES LO QUE CUESTA ANTES DE ESCRIBIRME.
+✗  EL CLIC LO PAGAS TÚ. LA ESPERA LA PAGAN ELLOS.
+✗  LA DIRECCIÓN EN INTERNET ES TUYA, NO MÍA.
+```
+
+Las tres son ciertas, están a la altura de la consecuencia y no llevan jerga.
+Y las tres son **adivinanzas**: hay que deducir que lo que se vende es una
+página web. Escribir la consecuencia no exime de nombrar la cosa.
+
+### Las tres reglas
+
+**1 · El antetítulo nombra la categoría, no el plan.**
+
+`PANACLAW START` no le dice nada a alguien que nunca ha encargado una web: es un
+nombre interno usado como si fuera una explicación. El antetítulo es el primer
+texto que se lee y tiene que situar al lector.
+
+| No | Sí |
+|---|---|
+| `PANACLAW START` | `PÁGINAS WEB EN PANAMÁ` |
+| `DIAGNÓSTICO DE VENTAS` | `SI YA TIENES PÁGINA WEB` |
+
+**El nombre del producto no desaparece: baja a la bajada, a la descripción o al
+cuerpo del anuncio**, entero y con su escritura exacta. Sigue prohibido
+acortarlo.
+
+**Nunca a la nota ni al titular**, que van en versalitas por
+[`datos/marca.json`](../datos/marca.json): ahí `eBot` saldría `EBOT`, que
+[`02-voz-y-tono.md`](02-voz-y-tono.md) prohíbe expresamente.
+
+**Y la excepción, para los nombres con minúscula obligatoria:** el antetítulo
+lleva la categoría y el nombre juntos, y respeta su escritura.
+
+```
+✓  BOTS PARA WHATSAPP · eBot
+✗  eBot                          ← solo el nombre: no sitúa a nadie
+✗  BOTS PARA WHATSAPP            ← el nombre se pierde de la pieza
+```
+
+**2 · La pieza dice qué se hace, en presente y con el verbo normal.**
+
+**No tiene que ser el titular.** Puede vivir en la bajada, en la nota, en la
+primera línea de la descripción o en el cuerpo del anuncio — el titular sigue
+mandándolo la retícula de
+[`prompts/imagen/texto-en-imagen.md`](../prompts/imagen/texto-en-imagen.md). Lo
+que no puede es faltar.
+
+En algún sitio de cada pieza tiene que aparecer la frase llana: «te hacemos tu
+página web», «revisamos tu página y te decimos por qué no vende». Sin metáfora y sin
+elipsis. Si tapas el logo y la cifra, un dueño de negocio tiene que poder decir
+qué se vende ahí.
+
+**3 · Enumerar no es de mal gusto.**
+
+Cuatro planes con lo que trae cada uno se dicen como una lista de cuatro, no se
+insinúan. Una pieza que dice «tenemos cuatro planes y este es cada uno» y los
+enumera está haciendo el trabajo; una que dice «el precio está publicado» y
+espera que el lector vaya a mirar, no.
+
+### El traductor, un escalón más abajo
+
+La tabla de la sección 2 baja el hecho a la consecuencia. Estas filas bajan otro
+escalón: quitan la palabra de oficio que quedaba dentro de la consecuencia.
+
+| Se estaba diciendo | Se dice |
+|---|---|
+| Entrega en 72 horas | Lista en 72 horas, o sea tres días |
+| El código queda a tu nombre | Los archivos de tu página quedan en una cuenta tuya. Si mañana trabajas con otro, te la llevas entera |
+
+> **La única excepción es la tagline.** «Sitios rápidos. Código tuyo.» está
+> declarada en [`datos/marca.json`](../datos/marca.json) y no se toca: ahí
+> «código» es un nombre, no una explicación. En cualquier otro sitio se traduce.
+| El dominio queda a tu nombre | La dirección donde te encuentran en internet se registra a tu nombre |
+| Sin panel de edición | Si quieres cambiar un texto o una foto, nos escribes y lo cambiamos nosotros |
+| Con panel de edición | Cambias los textos y las fotos tú mismo, desde el celular, sin llamar a nadie |
+| 2 rondas de cambios | Dos tandas de correcciones, antes de publicarla |
+| Control de stock | Control de existencias: la página sabe cuánto te queda de cada cosa |
+| Medición de visitas | Ves cuánta gente entró y por dónde llegó |
+| Preparada para salir en Google | Google la puede leer entera |
+
+**La regla del número no cambia.** «Tres días» no sustituye a «72 horas»: van las
+dos, la cifra y su traducción. Quitar la cifra sería perder lo único que la
+categoría no puede copiar.
+
+### Lo que esta sección NO autoriza
+
+- **Escribir más largo por escribir más largo.** La economía de
+  [`05-personalidad.md`](05-personalidad.md) sigue en pie: sobra el 30 %. Lo que
+  se pide es cambiar palabras raras por palabras normales, no añadir párrafos.
+- **Explicar en vez de afirmar.** «Te hacemos tu página web» es llano y afirma.
+  «Nos dedicamos a ayudar a los negocios a tener presencia» es relleno de
+  agencia y sigue prohibido.
+- **Bajar la precisión.** Ni un adjetivo en lugar de una cifra, ni un plazo sin
+  su condición.
+
+---
+
+## 10 · Lo que este archivo NO relaja
 
 Es la parte que más fácil se malinterpreta. **Traducir no es ablandar, y ser
 cercano no es ser blando.**
@@ -378,7 +494,7 @@ cercano no es ser blando.**
 ## Autocorrección
 
 Sobre las siete de [`02-voz-y-tono.md`](02-voz-y-tono.md) y las cuatro de
-[`05-personalidad.md`](05-personalidad.md), estas nueve:
+[`05-personalidad.md`](05-personalidad.md), estas doce:
 
 **De altura**
 
@@ -391,17 +507,26 @@ Sobre las siete de [`02-voz-y-tono.md`](02-voz-y-tono.md) y las cuatro de
 4. En el conjunto del calendario, ¿más de una de cada tres piezas abre por el
    límite?
 
+**De claridad llana**
+
+5. **Tapa el logo y la cifra y léela.** ¿Un dueño de negocio sabría qué se
+   vende? Si hay que deducirlo, la pieza es una adivinanza.
+6. ¿El antetítulo nombra la categoría, o es un nombre de plan que solo
+   entiendo yo?
+7. ¿Aparece en algún sitio la frase llana de qué se hace, en presente y con el
+   verbo normal?
+
 **De disposición**
 
-5. **Subraya cada «no», «sin» y «no incluye».** ¿Cada uno tiene su «lo que sí» a
+8. **Subraya cada «no», «sin» y «no incluye».** ¿Cada uno tiene su «lo que sí» a
    menos de una frase? Si alguno está solo, falta media pieza.
-6. ¿Alguna frase describe cómo se porta, qué piensa o qué se calla el lector?
+9. ¿Alguna frase describe cómo se porta, qué piensa o qué se calla el lector?
    → gírala hacia una decisión propia de la marca.
-7. ¿Nombro algún daño que no iba a hacer —castigo, mala cara, cobro sorpresa—
+10. ¿Nombro algún daño que no iba a hacer —castigo, mala cara, cobro sorpresa—
    para decir que no lo hago? → dilo al derecho o quítalo.
-8. ¿Sabe el lector, al terminar, que hay alguien del otro lado y por dónde se
+11. ¿Sabe el lector, al terminar, que hay alguien del otro lado y por dónde se
    entra? Nombrar la puerta no cuenta como llamada a la acción.
-9. ¿He ganado claridad quitando precisión, o cercanía quitando el límite? →
+12. ¿He ganado claridad quitando precisión, o cercanía quitando el límite? →
    entonces no he ganado ninguna de las dos. Vuelve a poner la cifra, vuelve a
    poner el límite, y acompáñalos.
 

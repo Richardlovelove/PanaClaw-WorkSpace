@@ -105,6 +105,30 @@ hecho y no se devuelve, pero se le entrega lo que exista hasta ese momento. Si
 los que no pueden continuar somos nosotros, se devuelve la parte proporcional de
 lo que no se hizo.
 
+### Cómo se dice, que no es un detalle
+
+**Decidido el 2026-08-19 por el dueño de la marca.** El hecho no cambia; el orden
+sí. Dicho a secas, «el adelanto no se devuelve» es lo primero que lee alguien que
+va a mandar dinero a gente que no conoce, y deja el miedo entero encima de la
+mesa. Es la regla de [`adn/06-claridad.md`](../adn/06-claridad.md) §6 —todo «no»
+viene con su «sí»— aplicada al sitio donde más caro sale no aplicarla.
+
+```
+✗  50 % al empezar. El adelanto cubre el trabajo hecho y no se devuelve.
+
+✓  Pagas la mitad para reservar la semana de trabajo. Si a mitad decides
+   parar, paras: te entregamos lo que exista, con el código y el dominio a tu
+   nombre. Lo que ya está hecho no se devuelve, pero tampoco se queda con
+   nosotros.
+```
+
+No se promete nada distinto. Se dice **para qué sirve el adelanto** —reservar la
+agenda— y **qué se lleva el cliente si para**, que es lo que convierte una
+advertencia en una condición.
+
+> **No se anuncia una garantía de devolución.** No existe, y prometerla sería
+> exactamente la letra chica que la marca dice no tener.
+
 **Planes mensuales (Care, Protegida, Blindada):** cuando el cliente quiera, sin
 permanencia y sin llamada de retención. Lo que se queda es suyo: informes,
 contraseñas y configuración. **Lo que se para se le dice claro el día que

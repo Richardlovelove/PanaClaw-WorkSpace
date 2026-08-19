@@ -5,10 +5,12 @@ de cara al cliente, en cualquier medio: web, anuncio, WhatsApp, correo, guion de
 video o respuesta de un bot.
 
 Aquí está cómo se construye una frase. **Desde dónde se dice** está en
-[`05-personalidad.md`](05-personalidad.md), y **qué se dice primero** está en
-[`06-claridad.md`](06-claridad.md). Los tres se leen juntos: con este solo, el
-texto sale correcto pero sin carácter, y puede salir correcto, con carácter y aun
-así ilegible para quien no es del oficio.
+[`05-personalidad.md`](05-personalidad.md), **qué se dice primero** está en
+[`06-claridad.md`](06-claridad.md) y **cómo se hace que funcione** está en
+[`07-redaccion.md`](07-redaccion.md). Los cuatro se leen juntos: con este solo,
+el texto sale correcto pero sin carácter; puede salir correcto, con carácter y
+aun así ilegible para quien no es del oficio; y puede salir correcto, con
+carácter, entendible y sin fuerza ninguna.
 
 ---
 
@@ -64,6 +66,13 @@ Donde otro pondría un adjetivo, PanaClaw pone un número, un plazo o un ejemplo
 Segunda persona, siempre. «Tu sitio», «tus clientes», «te llegan al WhatsApp».
 La marca aparece en primera del plural solo cuando se compromete a algo:
 «lo montamos», «te lo decimos», «no lo hacemos».
+
+**Y siempre en plural, nunca en singular.** Decidido el 2026-08-19 por el dueño
+de la marca, después de encontrar el repositorio partido: esta regla decía plural
+y los ejemplos de otros archivos estaban en singular. No hay «te lo entrego», «me
+escribes y lo cambio yo» ni «te lo mido delante»: son «te lo entregamos», «nos
+escribes y lo cambiamos» y «te lo medimos delante». Vale para todo — web,
+anuncios, WhatsApp, correo, propuestas y respuestas del eBot.
 
 Cuenta las «nosotros» de tu texto. Si superan a las «tú», reescribe.
 
@@ -184,7 +193,7 @@ La voz no cambia. El registro sí.
 
 | Canal | Registro | Largo |
 |---|---|---|
-| Titular web / anuncio | Afirmación desnuda, en mayúsculas | 3–8 palabras |
+| Titular web / anuncio | Afirmación desnuda, en mayúsculas | 3–8 palabras. **En una pieza de redes manda la retícula:** 2–8 líneas, `prompts/imagen/texto-en-imagen.md` |
 | Bajada | La consecuencia para el cliente | 1–2 frases, ≤52 caracteres de ancho |
 | Cuerpo web | Explicativo, con el desastre concreto | 2–4 frases por bloque |
 | WhatsApp | Directo y sin formalismo, como escribe una persona | 1–3 líneas |
@@ -323,6 +332,8 @@ Estructuras, no frases hechas. Rellénalas contra el contexto real.
 1. ¿Hay algún adjetivo que podría ser un número? → cámbialo.
 2. ¿Hay más «nosotros» que «tú»? → reescribe.
 3. ¿Alguna palabra de la lista prohibida? → fuera.
+3b. ¿Alguna primera persona del singular —«te digo», «me escribes», «lo hago
+   yo»—? → a plural.
 4. ¿Alguna promesa que no puedas señalar en `datos/precios.json` o en el
    catálogo? → fuera.
 5. ¿Dice en algún sitio qué **no** incluye? → si no, falta.

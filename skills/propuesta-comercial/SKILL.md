@@ -32,6 +32,11 @@ compromiso: lo que diga se va a tener que cumplir.
 4. [`catalogo/07-condiciones.md`](../../catalogo/07-condiciones.md) — cobro,
    plazos, cancelación
 5. [`adn/02-voz-y-tono.md`](../../adn/02-voz-y-tono.md)
+6. [`adn/06-claridad.md`](../../adn/06-claridad.md) y
+   [`adn/07-redaccion.md`](../../adn/07-redaccion.md) — una propuesta es la pieza
+   de decisión por excelencia: van las tres promesas de riesgo, cada una con su
+   consecuencia, y la longitud la decide lo que el cliente necesita para decidir,
+   no una cuota de recorte
 
 ---
 

@@ -3,7 +3,12 @@
 Estructura de copy para pauta. La plantilla completa de una pieza de anuncio,
 con sus campos por canal, está en
 [`campanas/plantillas/estructura-anuncio.md`](../../campanas/plantillas/estructura-anuncio.md).
-Esto es cómo se **escribe** el texto.
+Esto es cómo se **arma** el texto: sus cuatro partes y sus límites por etapa.
+
+**El oficio de escribirlas está en [`adn/07-redaccion.md`](../../adn/07-redaccion.md)**
+—las seis palancas que esta marca sí puede usar, cómo se escribe un gancho, el
+ritmo y el cierre— y se lee antes que esto. Este archivo dice qué va en cada
+hueco; ese dice cómo se llena para que funcione.
 
 ---
 
@@ -150,9 +155,28 @@ compone con la plantilla de
 
 ---
 
+## La prueba del rótulo
+
+Antes de mirar nada más: **tapa la marca y la cifra y lee el anuncio.** Si un
+dueño de negocio no puede decir qué se vende ahí, la pieza es una adivinanza
+por muy cierta y muy bien escrita que esté.
+
+El gancho sigue siendo la situación —eso no cambia—, pero **en algún sitio del
+anuncio tiene que aparecer la frase llana de qué se hace**: «te hacemos tu
+página web», «reviso tu página y te digo por qué no vende». Y el antetítulo de
+la pieza nombra la categoría, no el plan: `PÁGINAS WEB EN PANAMÁ`, no
+`PANACLAW START`, que es un nombre interno usado como si fuera una explicación.
+
+La regla entera, con su traductor, está en
+[`adn/06-claridad.md`](../../adn/06-claridad.md) §9.
+
+---
+
 ## Antes de entregar
 
 - [ ] ¿Están las cuatro partes, incluido el límite?
+- [ ] ¿Pasa la prueba del rótulo: se sabe qué se vende sin deducirlo?
+- [ ] ¿El antetítulo nombra la categoría y no el nombre del plan?
 - [ ] ¿El gancho es una situación en segunda persona y en presente?
 - [ ] ¿La cifra coincide con `precios.json`?
 - [ ] ¿Los rangos van enteros?
@@ -160,3 +184,7 @@ compone con la plantilla de
 - [ ] ¿Un emoji, una exclamación, una urgencia inventada?
 - [ ] ¿Cada variante prueba una hipótesis distinta?
 - [ ] ¿Una sola llamada a la acción?
+- [ ] ¿Pasa la prueba del descarte de [`adn/07-redaccion.md`](../../adn/07-redaccion.md) §4:
+      el gancho funcionaría igual para otra agencia de Panamá?
+- [ ] ¿Cada afirmación fuerte lleva su prueba a menos de una frase? → `07` §3
+- [ ] ¿Leído en voz alta, alterna la longitud y cierra en palabra fuerte?

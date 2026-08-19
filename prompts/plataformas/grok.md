@@ -1,4 +1,10 @@
-# Plataforma · Grok, GPT y modelos ajenos
+# Plataforma · Grok
+
+> **El bloque que se pega abajo lleva `02` y `05` destilados y nada de `06` ni de
+> `07`.** Un modelo ajeno con solo esto escribe correcto y misterioso. Si el
+> encargo es copy que tiene que vender, añádele al pegado la prueba del rótulo de
+> [`adn/06-claridad.md`](../../adn/06-claridad.md) §9 y la del descarte de
+> [`adn/07-redaccion.md`](../../adn/07-redaccion.md) §4., GPT y modelos ajenos
 
 Cómo cargar el ADN de PanaClaw en un modelo que **no tiene acceso a este
 repositorio**. Aplica a Grok, ChatGPT, Gemini fuera de este entorno, Claude en
