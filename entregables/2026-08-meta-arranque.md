@@ -29,132 +29,228 @@ destino, y esta campaña entera cuelga de ahí.
 
 ---
 
-## PARTE 1 · La decisión: a dónde va el clic
+## PARTE 1 · Las dos campañas
 
-Es la pregunta que hay que contestar antes de cualquier otra cosa, porque cambia
-el objetivo, el evento y el copy de los doce anuncios.
+Se anuncia a los dos sitios: WhatsApp y la página web. Hay un hecho de la
+plataforma que decide cómo se monta.
 
-### La respuesta: WhatsApp, en los doce. El sitio no recibe pauta todavía.
+### Por qué no cabe en un solo conjunto
 
-**No es porque el sitio esté mal.** Es aritmética de arranque.
+**El destino no se elige por anuncio, se elige por conjunto.** Un conjunto con
+destino WhatsApp manda al chat sus doce anuncios; uno con destino sitio los manda
+todos a una dirección. No hay forma de mezclar los dos dentro del mismo conjunto,
+así que dos destinos son **dos campañas**, cada una con su objetivo y su
+presupuesto.
 
-Un conjunto necesita unas 50 conversiones semanales del evento que optimiza para
-salir de la fase de aprendizaje. Con $15 al día son $105 a la semana. **Cincuenta <!-- v: $105 es 15 × 7, aritmética de presupuesto de pauta, no un precio del catálogo -->
-eventos sobre $105 exigen que cada uno cueste $2.10 o menos.** <!-- v: $2.10 es 105 ÷ 50, el techo de coste por evento, no un precio del catálogo -->
+Lo que sí se elige por anuncio es **la dirección concreta** dentro de la campaña
+del sitio. Por eso los dos anuncios del ángulo de propiedad caen en `/proceso/` y
+el resto en `/planes/`, sin necesitar un conjunto aparte.
 
-- Un envío de formulario del sitio **no cuesta eso en ningún mercado**. Optimizar
-  contra `Lead` a este presupuesto es apostar el dinero a un número que nadie ha
-  medido, y el conjunto se queda en aprendizaje limitado: lo que se lea después
-  es ruido.
-- Una conversación de WhatsApp **sí puede costar eso**. Es el evento más barato
-  y más frecuente que la marca puede comprar hoy.
-- Y es donde la marca cierra de verdad. No se está inventando un embudo para la
-  campaña: se está pagando por llenar el que ya existe.
+> Si tu cuenta ofrece elegir «lugar de conversión» por conjunto dentro de un mismo
+> objetivo, se puede montar como una campaña con dos conjuntos en vez de dos
+> campañas. Funciona igual y reparte el presupuesto un poco mejor. La ficha de
+> abajo sirve para las dos formas.
 
-### Qué hace el sitio mientras tanto
+### Cómo se reparte
 
-No se queda parado. Hace tres cosas, y ninguna necesita presupuesto:
+| | Campaña A · WhatsApp | Campaña B · Sitio |
+|---|---|---|
+| **Objetivo** | Interacción, optimizado a conversaciones de mensajería | Tráfico, optimizado a **vistas de la página de destino** |
+| **Presupuesto** | $9 al día | $6 al día | <!-- v: reparto del presupuesto diario de pauta, no precios del catálogo -->
+| **Producto** | Diagnóstico de Ventas $49 | PanaClaw Start $295 |
+| **Anuncios** | 6 (06, 07, 09, 10, 11, 12) | 6 (01, 02, 03, 04, 05, 08) |
+| **Formatos** | 3 imagen 4:5 · 2 imagen 9:16 · 1 carrusel | 3 imagen 4:5 · 2 imagen 9:16 · 1 carrusel |
+| **Destino** | WhatsApp, con su mensaje precargado | `/planes/` y, en los dos de propiedad, `/proceso/` |
+| **Su trabajo** | Producir conversaciones y cerrar | Llenar el píxel y probar si el precio publicado sostiene el clic |
 
-1. **Acumula píxel** con el tráfico orgánico de las dos semanas programadas. Eso
-   es exactamente el público que hace posible la campaña de remarketing.
-2. **Es lo que se manda dentro de la conversación de WhatsApp**, que es donde ya
-   hay intención. Ahí el enlace lo abre alguien que preguntó, no alguien a quien
-   se le interrumpió.
-3. **Es el destino de la campaña 2**, cuando la haya.
+**El reparto por producto no es arbitrario: es el único donde la promesa del
+anuncio y su destino coinciden.**
 
-### Cuándo sí se le manda pauta al sitio
+- Los seis de Start prometen que la cifra está publicada. `/planes/` es
+  literalmente la página donde están los cuatro planes con su precio, su plazo y
+  lo que no incluye cada uno. El anuncio promete una cosa y la página la enseña.
+- Los seis del Diagnóstico prometen decirte qué le pasa a **tu** sitio. Eso no
+  está en ninguna página: es una conversación. Y no hay una página de producto
+  del Diagnóstico verificada en este repositorio, así que mandarlos al sitio
+  sería inventarse una dirección.
 
-Cuando se cumplan las dos:
+### Qué cuesta partir el presupuesto, dicho entero
 
-- El píxel tiene público suficiente para que Meta deje de marcar el público de
-  remarketing como demasiado pequeño.
-- Hay dominio propio. Un anuncio pagado que cae en un subdominio prestado
-  contradice «el sitio es tuyo» en el primer clic, y es lo primero que nota
-  alguien que está evaluando agencias (`operacion/deuda-conocida.md` §1).
+No es gratis y conviene saberlo antes, no después:
 
-> **Supuesto declarado:** doy por hecho que el sitio sigue en
-> `panaclaw.netlify.app`. Si ya está en dominio propio, dilo y la fase 2 puede
-> arrancar en cuanto el píxel tenga público — la fase 1 no cambia de todos
-> modos.
+1. **La campaña de WhatsApp lo tiene más difícil.** Un conjunto necesita unas 50
+   conversiones semanales del evento que optimiza para salir de aprendizaje. Con
+   $9 al día son $63 a la semana: **cada conversación tendría que costar $1.26 o <!-- v: $63 es 9 × 7 y $1.26 es 63 ÷ 50, aritmética de presupuesto de pauta, no precios del catálogo -->
+   menos**, frente a los $2.10 que daba el presupuesto entero en un solo <!-- v: $2.10 es 105 ÷ 50 con el presupuesto sin partir, aritmética de pauta, no un precio del catálogo -->
+   conjunto. Es el mismo objetivo con la mitad de margen.
+2. **Las dos campañas compiten en la misma subasta** por el mismo público amplio
+   de Panamá. Lo que lo hace tolerable es que llevan productos y creativos
+   distintos, no el mismo mensaje dos veces.
+3. **Vistas de la página de destino no es una venta.** Es el único evento lo
+   bastante barato para que $6 al día lo sostenga, y su valor real es que llena <!-- v: presupuesto diario de la campaña del sitio, no un precio del catálogo -->
+   el píxel: ese público es el que hace posible el remarketing, que hoy no
+   existe. Léelo como lo que es y no como resultado comercial.
 
-### Lo que NO se hace
+**No se optimiza contra `Lead` en ninguna de las dos.** Un envío de formulario no
+cuesta lo que este presupuesto puede pagar, y el conjunto se quedaría en
+aprendizaje limitado. El píxel sigue midiendo `Lead` de fondo en `/gracias/`.
+
+### La regla de decisión, fijada de antemano
+
+Se escribe ahora para no discutirla el día 8 mirando dos números feos.
+
+**A los 7 a 10 días**, con conversaciones suficientes para no leer ruido:
+
+- Si una campaña produce conversaciones o vistas a un coste claramente peor que
+  la otra, **se apaga y su presupuesto entero pasa a la que ganó.** El objetivo de
+  correr las dos es exactamente poder tomar esta decisión con datos.
+- Si las dos van parecidas, se dejan y se sube el presupuesto un 20 % cada tres o
+  cuatro días. Un salto mayor devuelve el conjunto a aprendizaje.
+- **Lo que no se hace es dejarlas empatadas y quietas seis semanas.** Partir el
+  presupuesto solo se paga si termina en una decisión.
+
+### El aviso del subdominio, que sigue en pie
+
+El sitio vive en `panaclaw.netlify.app`. Un anuncio pagado que cae en un
+subdominio prestado contradice «el sitio es tuyo» en el primer clic, y es lo
+primero que nota alguien que está evaluando agencias
+(`operacion/deuda-conocida.md` §1). **Esto no bloquea la campaña, pero es una
+grieta real en el argumento y la campaña B es la que la enseña.** Cuando haya
+dominio propio se cambian las seis direcciones de destino y ya está.
+
+### Lo que sigue sin hacerse
 
 **No se promociona ninguna publicación orgánica.** El botón de promocionar crea
-una campaña paralela que compite por el mismo público con el mismo dinero, y no
-deja elegir el evento contra el que optimiza. Con $15 al día, todo va a un solo <!-- v: presupuesto diario del cliente, no un precio del catálogo -->
-conjunto o no aprende ninguno.
+una tercera campaña que compite por el mismo público con el mismo dinero y no
+deja elegir el evento contra el que optimiza. Con $15 al día repartidos en dos, <!-- v: presupuesto diario del cliente, no un precio del catálogo -->
+una tercera no aprende nada.
 
 ---
 
-## PARTE 2 · La ficha de campaña
+## PARTE 2 · Las dos fichas de campaña
 
 Esto es lo que va copiado dentro del documento HTML, para no tener que
 escribirlo dos veces ni dejar que nadie lo invente.
 
 ```
+════════════ CAMPAÑA A · CONVERSACIONES ════════════
+
 NOMBRE DE CAMPAÑA
   PanaClaw · Arranque · Conversaciones · 2026-08
 
 OBJETIVO
   Interacción, optimizado a conversaciones de mensajería.
-  NO se optimiza contra Lead del píxel. El motivo, con los números, en
-  campanas/canales/meta.md
+  No se optimiza contra el evento Lead del píxel.
 
 APLICACIÓN DE DESTINO
   WhatsApp
 
 PRESUPUESTO
-  $15 al día, fijado a nivel de campaña
+  9 dólares al día, fijado a nivel de campaña
   Estrategia de puja: el coste más bajo, sin tope
   Calendario: continuo, sin fecha de fin
 
 CONJUNTO DE ANUNCIOS — uno solo
-  Nombre        PanaClaw · Panamá · Amplio 25–55
-  Ubicación     Panamá
-  Edad          25–55
-  Género        Todos
-  Idioma        Español
-  Intereses     NINGUNO
-  Ubicaciones   Automáticas
-  Tope de cliente existente   entre 10 % y 20 %
-  Públicos parecidos          no, todavía no hay eventos suficientes
+  Nombre                       PanaClaw · Panamá · Amplio 25-55 · Chat
+  Ubicación                    Panamá
+  Edad                         25 a 55
+  Género                       Todos
+  Idioma                       Español
+  Intereses                    Ninguno
+  Ubicaciones                  Automáticas
+  Tope de cliente existente    entre 10 y 20 por ciento
+  Públicos parecidos           No. Todavía no hay eventos suficientes
 
-ANUNCIOS — doce, todos dentro del mismo conjunto
-  6  imagen única 4:5    1080×1350
-  4  imagen única 9:16   1080×1920
-  2  carrusel 4:5        tres tarjetas cada uno, 1080×1350
+ANUNCIOS — seis, todos dentro del mismo conjunto
+  Producto: Diagnóstico de Ventas, 49 dólares
+  06  imagen única 4:5     1080 por 1350
+  07  carrusel 4:5         tres tarjetas, 1080 por 1350
+  09  imagen única 9:16    1080 por 1920
+  10  imagen única 4:5     1080 por 1350
+  11  imagen única 9:16    1080 por 1920
+  12  imagen única 4:5     1080 por 1350
+
+EVENTO QUE CUENTA COMO ÉXITO
+  Conversación de mensajería iniciada
+
+
+════════════ CAMPAÑA B · SITIO ════════════
+
+NOMBRE DE CAMPAÑA
+  PanaClaw · Arranque · Sitio · 2026-08
+
+OBJETIVO
+  Tráfico, optimizado a vistas de la página de destino.
+  No a clics en el enlace: la vista confirma que la página cargó, y esta
+  marca vende precisamente que carga.
+  No se optimiza contra el evento Lead del píxel.
+
+PRESUPUESTO
+  6 dólares al día, fijado a nivel de campaña
+  Estrategia de puja: el coste más bajo, sin tope
+  Calendario: continuo, sin fecha de fin
+
+CONJUNTO DE ANUNCIOS — uno solo
+  Nombre                       PanaClaw · Panamá · Amplio 25-55 · Sitio
+  Ubicación                    Panamá
+  Edad                         25 a 55
+  Género                       Todos
+  Idioma                       Español
+  Intereses                    Ninguno
+  Ubicaciones                  Automáticas
+  Tope de cliente existente    entre 10 y 20 por ciento
+  Públicos parecidos           No. Todavía no hay eventos suficientes
+
+ANUNCIOS — seis, todos dentro del mismo conjunto
+  Producto: PanaClaw Start, 295 dólares
+  01  imagen única 4:5     1080 por 1350   destino /planes/
+  02  imagen única 4:5     1080 por 1350   destino /planes/
+  03  imagen única 9:16    1080 por 1920   destino /planes/
+  04  imagen única 4:5     1080 por 1350   destino /proceso/
+  05  carrusel 4:5         tres tarjetas   destino /planes/
+  08  imagen única 9:16    1080 por 1920   destino /proceso/
+
+EVENTO QUE CUENTA COMO ÉXITO
+  Vista de la página de destino
+
+
+════════════ LO QUE VALE PARA LAS DOS ════════════
 
 AUTOMATIZACIONES
-  Público automático              aceptar
-  Ubicaciones automáticas         aceptar
-  Presupuesto automático          aceptar
-  Mejoras automáticas de creativo DESACTIVAR
-  Emojis sugeridos por Meta       rechazar
-  Mejorar el copy con la IA de Meta   rechazar
+  Público automático                        aceptar
+  Ubicaciones automáticas                   aceptar
+  Presupuesto automático                    aceptar
+  Mejoras automáticas de creativo           desactivar
+  Emojis sugeridos por Meta                 rechazar
+  Mejorar el copy con la inteligencia artificial de Meta   rechazar
   Recortar la imagen a otras proporciones   rechazar
-  Botón de "Reservar ahora"       rechazar
+  Botón de Reservar ahora                   rechazar
 
 DECLARACIÓN DE CONTENIDO GENERADO CON IA
-  Activada en los doce anuncios
+  Activada en los doce anuncios. Todos los fondos los genera un motor de
+  imagen y va declarado desde el primer día.
 
 MEDICIÓN
-  Píxel de Meta 1067898639025746, activo. Se queda encendido midiendo de
-  fondo aunque no se optimice contra él: está acumulando el histórico que
-  hace falta para pasar a Lead más adelante
-  Evento que cuenta como éxito: conversación de mensajería iniciada
-  Google Analytics 4: sin configurar. Google no se puede leer todavía
+  Píxel de Meta 1067898639025746, activo en las dos. Se queda encendido
+  midiendo de fondo aunque no se optimice contra él.
+  Google Analytics 4 sin configurar: Google no se puede leer todavía, y los
+  anuncios van sin parámetros de seguimiento en la dirección porque no habría
+  dónde leerlos.
 
 QUÉ SE LEE, Y CUÁNDO
-  Conversaciones iniciadas y coste por conversación
+  Campaña A: conversaciones iniciadas y coste por conversación.
+  Campaña B: vistas de la página de destino y su coste.
   No antes de 7 a 10 días. Un ganador declarado con tres conversaciones es
-  ruido
-  Las subidas de presupuesto van del 20 % cada tres o cuatro días. Un salto
-  mayor devuelve el conjunto a la fase de aprendizaje
-  Renovar creativos cada dos o tres semanas, no cuando bajen los resultados
+  ruido.
+  A los 7 a 10 días: si una campaña va claramente peor, se apaga y su
+  presupuesto entero pasa a la otra.
+  Las subidas de presupuesto van del 20 por ciento cada tres o cuatro días.
+  Un salto mayor devuelve el conjunto a la fase de aprendizaje.
+  Renovar creativos cada dos o tres semanas.
 
-QUÉ NO SE MIDE, Y NO SE PROPONE
+QUÉ NO SE MIDE
   Coste por cliente, tasa de conversión por canal, retorno de la inversión.
-  Con un píxel y un evento, esas métricas no existen
+  Con un píxel y un evento, esas métricas no existen.
 ```
 
 ### Los dos productos de entrada
@@ -162,10 +258,10 @@ QUÉ NO SE MIDE, Y NO SE PROPONE
 Solo dos cifras del catálogo son lo bastante bajas para decidirse dentro de un
 anuncio en frío:
 
-| Producto | Precio | Plazo | Anuncios |
-|---|---|---|---|
-| PanaClaw Start | $295 | 72 h | 01, 02, 03, 04, 05, 08 |
-| Diagnóstico de Ventas | $49 | Informe y llamada de 30 min en 48 h | 06, 07, 09, 10, 11, 12 |
+| Producto | Precio | Plazo | Campaña | Anuncios |
+|---|---|---|---|---|
+| PanaClaw Start | $295 | 72 h | B · Sitio | 01, 02, 03, 04, 05, 08 |
+| Diagnóstico de Ventas | $49 | Informe y llamada de 30 min en 48 h | A · WhatsApp | 06, 07, 09, 10, 11, 12 |
 
 Launch $450, Corporate $850, Commerce $1,200, eBot $499 y los planes de
 seguridad **no se anuncian en frío**. Se venden dentro de la conversación de
@@ -173,23 +269,24 @@ WhatsApp, que es donde está el margen y donde se califica.
 
 ### Los 12 anuncios, en una vista
 
-| # | Público | Producto | Ángulo (hipótesis) | Altura del titular | Formato | Escena madre |
-|---|---|---|---|---|---|---|
-| 01 | No tiene sitio | Start $295 | Precio publicado | Consecuencia | Imagen 4:5 | 7 · Esfera de roca |
-| 02 | No tiene sitio | Start $295 | Plazo | Consecuencia | Imagen 4:5 | 3 · Hélice de cristal |
-| 03 | No tiene sitio | Start $295 | Velocidad | Consecuencia | Imagen 9:16 | 1 · Proyectil |
-| 04 | No tiene sitio | Start $295 | Propiedad | Consecuencia | Imagen 4:5 | 4 · Servidores |
-| 05 | No tiene sitio | Start $295 | Precio publicado · qué entra y qué no | Consecuencia | **Carrusel 4:5, 3 tarjetas** | 7 · Esfera de roca |
-| 06 | WordPress que da vergüenza | Diagnóstico $49 | Velocidad | Consecuencia | Imagen 4:5 | 1 · Proyectil |
-| 07 | WordPress que da vergüenza | Diagnóstico $49 | Precio publicado · el entregable | Hecho | **Carrusel 4:5, 3 tarjetas** | 6 · Cintas de luz |
-| 08 | No tiene sitio | Start $295 | Propiedad | Consecuencia | Imagen 9:16 | 4 · Servidores |
-| 09 | WordPress que da vergüenza | Diagnóstico $49 | Plazo | Hecho | Imagen 9:16 | 3 · Hélice de cristal |
-| 10 | Invierte en publicidad | Diagnóstico $49 | Velocidad | Consecuencia | Imagen 4:5 | 1 · Proyectil |
-| 11 | Invierte en publicidad | Diagnóstico $49 | Precio publicado | Consecuencia | Imagen 9:16 | 6 · Cintas de luz |
-| 12 | Invierte en publicidad | Diagnóstico $49 | Plazo | Hecho | Imagen 4:5 | 1 · Proyectil |
+| # | Campaña | Público | Producto | Ángulo (hipótesis) | Altura | Formato | Escena madre | Destino |
+|---|---|---|---|---|---|---|---|---|
+| 01 | B · Sitio | No tiene sitio | Start $295 | Precio publicado | Consecuencia | Imagen 4:5 | 7 · Esfera de roca | `/planes/` |
+| 02 | B · Sitio | No tiene sitio | Start $295 | Plazo | Consecuencia | Imagen 4:5 | 3 · Hélice de cristal | `/planes/` |
+| 03 | B · Sitio | No tiene sitio | Start $295 | Velocidad | Consecuencia | Imagen 9:16 | 1 · Proyectil | `/planes/` |
+| 04 | B · Sitio | No tiene sitio | Start $295 | Propiedad | Consecuencia | Imagen 4:5 | 4 · Servidores | `/proceso/` |
+| 05 | B · Sitio | No tiene sitio | Start $295 | Precio publicado · qué entra y qué no | Consecuencia | **Carrusel 4:5** | 7 · Esfera de roca | `/planes/` |
+| 06 | A · WhatsApp | WordPress que da vergüenza | Diagnóstico $49 | Velocidad | Consecuencia | Imagen 4:5 | 1 · Proyectil | WhatsApp |
+| 07 | A · WhatsApp | WordPress que da vergüenza | Diagnóstico $49 | Precio publicado · el entregable | Hecho | **Carrusel 4:5** | 6 · Cintas de luz | WhatsApp |
+| 08 | B · Sitio | No tiene sitio | Start $295 | Propiedad | Consecuencia | Imagen 9:16 | 4 · Servidores | `/proceso/` |
+| 09 | A · WhatsApp | WordPress que da vergüenza | Diagnóstico $49 | Plazo | Hecho | Imagen 9:16 | 3 · Hélice de cristal | WhatsApp |
+| 10 | A · WhatsApp | Invierte en publicidad | Diagnóstico $49 | Velocidad | Consecuencia | Imagen 4:5 | 1 · Proyectil | WhatsApp |
+| 11 | A · WhatsApp | Invierte en publicidad | Diagnóstico $49 | Precio publicado | Consecuencia | Imagen 9:16 | 6 · Cintas de luz | WhatsApp |
+| 12 | A · WhatsApp | Invierte en publicidad | Diagnóstico $49 | Plazo | Hecho | Imagen 4:5 | 1 · Proyectil | WhatsApp |
 
 **Ángulos:** precio publicado 4 · plazo 3 · velocidad 3 · propiedad 2. Una
-hipótesis por anuncio.
+hipótesis por anuncio, y las dos campañas quedan con la misma mezcla de
+formatos: tres imágenes 4:5, dos 9:16 y un carrusel cada una.
 **Alturas de los doce titulares de apertura:** 9 consecuencia, 3 hecho, 0
 condición. Dentro de los carruseles, una sola tarjeta abre por el límite —una de
 dieciséis piezas, muy por debajo del tope de una de cada tres.
@@ -206,9 +303,9 @@ es de concepto y de formato, no de estilo.
 
 ## PARTE 3 · El prompt maestro
 
-Se pega entero en Meta AI. Devuelve un documento HTML con la ficha de campaña
-arriba, los 16 lienzos compuestos, descargables en PNG a tamaño real, y debajo de
-cada anuncio su copy en texto seleccionable.
+Se pega entero en Meta AI. Devuelve un documento HTML con las dos fichas de
+campaña arriba, los 16 lienzos compuestos, descargables en PNG a tamaño real, y
+debajo de cada anuncio su copy en texto seleccionable.
 
 ````
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -221,8 +318,8 @@ descargar.
 
 No escribas, no redactes, no completes, no acortes, no traduzcas y no
 "mejores" ningún texto. Todo el texto de este documento ya está escrito más
-abajo: la ficha de campaña, los titulares, las notas y el copy de los doce
-anuncios. Cópialo carácter por carácter, con sus tildes, sus eñes y sus puntos
+abajo: las dos fichas de campaña, los titulares, las notas y el copy de los
+doce anuncios. Cópialo carácter por carácter, con sus tildes, sus eñes y sus puntos
 finales. Si algo te parece incompleto, déjalo como está: está así a propósito.
 No añadas ninguna cifra, porcentaje, estadística, plazo, testimonio ni
 beneficio que no esté escrito literalmente en este documento.
@@ -355,14 +452,20 @@ Devuelve UN documento HTML completo, con las 16 imágenes dentro del propio
 archivo, que se abra en el navegador sin depender de nada externo.
 
 ESTRUCTURA DEL DOCUMENTO, DE ARRIBA ABAJO
-  1. La ficha de campaña de la sección 4, copiada literal, en un panel al
-     principio y en texto seleccionable. Es lo primero que se ve.
-  2. Los doce anuncios, en orden, del 01 al 12.
-  3. Un botón de descargar todo al final.
+  1. Las dos fichas de campaña de la sección 4, copiadas literales, en dos
+     paneles al principio y en texto seleccionable. Es lo primero que se ve.
+  2. La sección CAMPAÑA A · CONVERSACIONES, con sus seis anuncios en el orden
+     06, 07, 09, 10, 11, 12.
+  3. La sección CAMPAÑA B · SITIO, con sus seis anuncios en el orden
+     01, 02, 03, 04, 05, 08.
+  4. Un botón de descargar todo al final.
+
+  Los anuncios conservan su número aunque las secciones no vayan seguidas. El
+  número es su nombre en el editor de anuncios y no se renumera.
 
 CADA ANUNCIO SE PRESENTA ASÍ
-  - Un encabezado con su número, su formato, su público, su producto y su
-     hipótesis, copiados literal de más abajo.
+  - Un encabezado con su número, su campaña, su formato, su público, su
+     producto y su hipótesis, copiados literal de más abajo.
   - Su pieza o piezas compuestas. Los dos carruseles muestran sus tres
      tarjetas en fila, en el orden 1, 2, 3.
   - Debajo, en texto seleccionable para pegar en el editor de anuncios:
@@ -370,7 +473,8 @@ CADA ANUNCIO SE PRESENTA ASÍ
        Titular del anuncio
        Descripción
        Botón
-       Mensaje precargado de WhatsApp
+       Y según la campaña: el mensaje precargado de WhatsApp en los de la
+       campaña A, o la dirección de destino en los de la campaña B
        El prompt del fondo, por si hay que regenerar esa imagen
     En los carruseles, el titular y la descripción van por tarjeta.
 
@@ -421,8 +525,10 @@ LA INTERFAZ DEL DOCUMENTO
   pero se mira todo el mes.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. LA FICHA DE CAMPAÑA — cópiala literal en el panel del principio
+4. LAS DOS FICHAS DE CAMPAÑA — cópialas literales en los paneles del principio
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+════════════ CAMPAÑA A · CONVERSACIONES ════════════
 
 NOMBRE DE CAMPAÑA
   PanaClaw · Arranque · Conversaciones · 2026-08
@@ -435,12 +541,12 @@ APLICACIÓN DE DESTINO
   WhatsApp
 
 PRESUPUESTO
-  15 dólares al día, fijado a nivel de campaña
+  9 dólares al día, fijado a nivel de campaña
   Estrategia de puja: el coste más bajo, sin tope
   Calendario: continuo, sin fecha de fin
 
 CONJUNTO DE ANUNCIOS — uno solo
-  Nombre                       PanaClaw · Panamá · Amplio 25-55
+  Nombre                       PanaClaw · Panamá · Amplio 25-55 · Chat
   Ubicación                    Panamá
   Edad                         25 a 55
   Género                       Todos
@@ -450,10 +556,60 @@ CONJUNTO DE ANUNCIOS — uno solo
   Tope de cliente existente    entre 10 y 20 por ciento
   Públicos parecidos           No. Todavía no hay eventos suficientes
 
-ANUNCIOS — doce, todos dentro del mismo conjunto
-  6  imagen única 4:5     1080 por 1350
-  4  imagen única 9:16    1080 por 1920
-  2  carrusel 4:5         tres tarjetas cada uno, 1080 por 1350
+ANUNCIOS — seis, todos dentro del mismo conjunto
+  Producto: Diagnóstico de Ventas, 49 dólares
+  06  imagen única 4:5     1080 por 1350
+  07  carrusel 4:5         tres tarjetas, 1080 por 1350
+  09  imagen única 9:16    1080 por 1920
+  10  imagen única 4:5     1080 por 1350
+  11  imagen única 9:16    1080 por 1920
+  12  imagen única 4:5     1080 por 1350
+
+EVENTO QUE CUENTA COMO ÉXITO
+  Conversación de mensajería iniciada
+
+
+════════════ CAMPAÑA B · SITIO ════════════
+
+NOMBRE DE CAMPAÑA
+  PanaClaw · Arranque · Sitio · 2026-08
+
+OBJETIVO
+  Tráfico, optimizado a vistas de la página de destino.
+  No a clics en el enlace: la vista confirma que la página cargó, y esta
+  marca vende precisamente que carga.
+  No se optimiza contra el evento Lead del píxel.
+
+PRESUPUESTO
+  6 dólares al día, fijado a nivel de campaña
+  Estrategia de puja: el coste más bajo, sin tope
+  Calendario: continuo, sin fecha de fin
+
+CONJUNTO DE ANUNCIOS — uno solo
+  Nombre                       PanaClaw · Panamá · Amplio 25-55 · Sitio
+  Ubicación                    Panamá
+  Edad                         25 a 55
+  Género                       Todos
+  Idioma                       Español
+  Intereses                    Ninguno
+  Ubicaciones                  Automáticas
+  Tope de cliente existente    entre 10 y 20 por ciento
+  Públicos parecidos           No. Todavía no hay eventos suficientes
+
+ANUNCIOS — seis, todos dentro del mismo conjunto
+  Producto: PanaClaw Start, 295 dólares
+  01  imagen única 4:5     1080 por 1350   destino /planes/
+  02  imagen única 4:5     1080 por 1350   destino /planes/
+  03  imagen única 9:16    1080 por 1920   destino /planes/
+  04  imagen única 4:5     1080 por 1350   destino /proceso/
+  05  carrusel 4:5         tres tarjetas   destino /planes/
+  08  imagen única 9:16    1080 por 1920   destino /proceso/
+
+EVENTO QUE CUENTA COMO ÉXITO
+  Vista de la página de destino
+
+
+════════════ LO QUE VALE PARA LAS DOS ════════════
 
 AUTOMATIZACIONES
   Público automático                        aceptar
@@ -470,15 +626,19 @@ DECLARACIÓN DE CONTENIDO GENERADO CON IA
   imagen y va declarado desde el primer día.
 
 MEDICIÓN
-  Píxel de Meta 1067898639025746, activo. Se queda encendido midiendo de
-  fondo aunque no se optimice contra él.
-  Evento que cuenta como éxito: conversación de mensajería iniciada.
-  Google Analytics 4 sin configurar: Google no se puede leer todavía.
+  Píxel de Meta 1067898639025746, activo en las dos. Se queda encendido
+  midiendo de fondo aunque no se optimice contra él.
+  Google Analytics 4 sin configurar: Google no se puede leer todavía, y los
+  anuncios van sin parámetros de seguimiento en la dirección porque no habría
+  dónde leerlos.
 
 QUÉ SE LEE, Y CUÁNDO
-  Conversaciones iniciadas y coste por conversación.
+  Campaña A: conversaciones iniciadas y coste por conversación.
+  Campaña B: vistas de la página de destino y su coste.
   No antes de 7 a 10 días. Un ganador declarado con tres conversaciones es
   ruido.
+  A los 7 a 10 días: si una campaña va claramente peor, se apaga y su
+  presupuesto entero pasa a la otra.
   Las subidas de presupuesto van del 20 por ciento cada tres o cuatro días.
   Un salto mayor devuelve el conjunto a la fase de aprendizaje.
   Renovar creativos cada dos o tres semanas.
@@ -535,7 +695,7 @@ apagándose antes de llegar a ella.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ════════ ANUNCIO 01 · imagen única 4:5 · 1080×1350 ════════
-Público: el que no tiene sitio · Producto: PanaClaw Start
+Campaña B · Sitio · Público: el que no tiene sitio · Producto: PanaClaw Start
 Hipótesis: le duele que nadie le dé una cifra
 
 FONDO
@@ -560,16 +720,17 @@ Aquí el número está escrito antes de que me escribas, y al lado está la list
 de lo que no entra.
 El reloj empieza cuando me das tus textos y la mitad del pago. Escribirlos yo
 es otro trabajo y se cotiza; ordenarlos contigo va incluido en la conversación.
-Escríbeme por WhatsApp y te digo cuál te encaja, o que no te hace falta ninguno.
+Los cuatro planes están en la página con su cifra, su plazo y lo que no incluye
+cada uno.
 El fondo de esta imagen está generado con inteligencia artificial.
 
 TITULAR DEL ANUNCIO   $295. Lista en 72 horas.
 DESCRIPCIÓN           El precio y lo que no incluye, publicados.
-BOTÓN                 Enviar mensaje
-MENSAJE PRECARGADO    Hola PanaClaw, me interesa el plan Start
+BOTÓN                 Más información
+DIRECCIÓN DE DESTINO  https://panaclaw.netlify.app/planes/
 
 ════════ ANUNCIO 02 · imagen única 4:5 · 1080×1350 ════════
-Público: el que no tiene sitio · Producto: PanaClaw Start
+Campaña B · Sitio · Público: el que no tiene sitio · Producto: PanaClaw Start
 Hipótesis: le duele la espera
 
 FONDO
@@ -594,16 +755,16 @@ está resuelto, así que el tiempo se va en lo tuyo.
 Las 72 horas cuentan desde que me das tu material y la mitad del pago. Esperar
 los textos es la causa número uno de retraso, así que te ayudo a ordenarlos
 mientras hablamos.
-Escríbeme por WhatsApp y te digo cuál te encaja, o que no te hace falta ninguno.
+Cada plan lleva su plazo publicado, y están los cuatro en la página.
 El fondo de esta imagen está generado con inteligencia artificial.
 
 TITULAR DEL ANUNCIO   $295. Lista en 72 horas.
 DESCRIPCIÓN           El plazo cuenta desde tu material y la mitad del pago.
-BOTÓN                 Enviar mensaje
-MENSAJE PRECARGADO    Hola PanaClaw, me interesa el plan Start
+BOTÓN                 Más información
+DIRECCIÓN DE DESTINO  https://panaclaw.netlify.app/planes/
 
 ════════ ANUNCIO 03 · imagen única 9:16 · 1080×1920 ════════
-Público: el que no tiene sitio · Producto: PanaClaw Start
+Campaña B · Sitio · Público: el que no tiene sitio · Producto: PanaClaw Start
 Hipótesis: le duele que su página sea lenta
 
 FONDO
@@ -630,16 +791,17 @@ delante el primer día. No hay complementos que actualizar cada semana ni panel
 público por el que alguien pueda entrar.
 En Start los cambios los hago yo: me escribes y lo cambio. Si quieres editarlo
 tú mismo, eso es Corporate, $850.
-Escríbeme por WhatsApp y te digo cuál te encaja, o que no te hace falta ninguno.
+Los cuatro planes están publicados, y cuál te toca depende sobre todo de si
+quieres poder editarlo tú mismo o no.
 El fondo de esta imagen está generado con inteligencia artificial.
 
 TITULAR DEL ANUNCIO   Abre en menos de un segundo
 DESCRIPCIÓN           $295, lista en 72 horas.
-BOTÓN                 Enviar mensaje
-MENSAJE PRECARGADO    Hola PanaClaw, me interesa el plan Start
+BOTÓN                 Más información
+DIRECCIÓN DE DESTINO  https://panaclaw.netlify.app/planes/
 
 ════════ ANUNCIO 04 · imagen única 4:5 · 1080×1350 ════════
-Público: el que no tiene sitio · Producto: PanaClaw Start
+Campaña B · Sitio · Público: el que no tiene sitio · Producto: PanaClaw Start
 Hipótesis: le duele depender de quien se la hizo
 
 FONDO
@@ -664,16 +826,17 @@ código, y que enterarte te cueste otra web entera. Al pago final todo pasa a
 una cuenta tuya, y eso está en el contrato, no en mi palabra.
 No incluye escribir tus textos ni una sesión de fotos. Te ayudo a ordenar lo
 que ya tienes mientras hablamos.
-Escríbeme por WhatsApp y te digo cuál te encaja, o que no te hace falta ninguno.
+El proceso entero está publicado, traspaso incluido: cómo pasa el código a una
+cuenta tuya y el dominio a tu nombre.
 El fondo de esta imagen está generado con inteligencia artificial.
 
 TITULAR DEL ANUNCIO   El código y el dominio, a tu nombre
-DESCRIPCIÓN           $295, lista en 72 horas.
-BOTÓN                 Enviar mensaje
-MENSAJE PRECARGADO    Hola PanaClaw, me interesa el plan Start
+DESCRIPCIÓN           Cómo se hace el traspaso, publicado.
+BOTÓN                 Más información
+DIRECCIÓN DE DESTINO  https://panaclaw.netlify.app/proceso/
 
 ════════ ANUNCIO 05 · CARRUSEL 4:5 · tres tarjetas · 1080×1350 cada una ════════
-Público: el que no tiene sitio · Producto: PanaClaw Start
+Campaña B · Sitio · Público: el que no tiene sitio · Producto: PanaClaw Start
 Hipótesis: le duele no saber qué entra y qué no hasta que ya pagó
 Las tres tarjetas van ancladas por su centro óptico en y=594. No salta.
 
@@ -739,15 +902,16 @@ publicación va incluida: queda abierta en internet sin que pagues nada aparte.
 Lo que no lleva: rondas de cambios, y panel para editar tú mismo. Si después se
 te ocurre algo, se pide y ya está, $40, sin discusión. Y si quieres cambiarlo tú
 desde el celular, eso es Corporate, $850.
-Escríbeme por WhatsApp y te digo cuál te encaja, o que no te hace falta ninguno.
+Los cuatro planes están publicados con lo que entra y lo que no entra en cada
+uno.
 Los fondos de estas imágenes están generados con inteligencia artificial.
 
-BOTÓN                 Enviar mensaje
-MENSAJE PRECARGADO    Hola PanaClaw, me interesa el plan Start
+BOTÓN                 Más información
+DIRECCIÓN DE DESTINO  https://panaclaw.netlify.app/planes/
 
 ════════ ANUNCIO 06 · imagen única 4:5 · 1080×1350 ════════
-Público: el que tiene un WordPress que le da vergüenza · Producto: Diagnóstico
-de Ventas
+Campaña A · WhatsApp · Público: el que tiene un WordPress que le da vergüenza
+Producto: Diagnóstico de Ventas
 Hipótesis: le duele que su sitio sea lento y no saber por qué
 
 FONDO
@@ -782,8 +946,8 @@ BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, quiero el Diagnóstico de Ventas
 
 ════════ ANUNCIO 07 · CARRUSEL 4:5 · tres tarjetas · 1080×1350 cada una ════════
-Público: el que tiene un WordPress que le da vergüenza · Producto: Diagnóstico
-de Ventas
+Campaña A · WhatsApp · Público: el que tiene un WordPress que le da vergüenza
+Producto: Diagnóstico de Ventas
 Hipótesis: le duele que nadie le explique qué le pasa a su sitio
 Las tres tarjetas van ancladas por su centro óptico en y=594. No salta.
 
@@ -856,7 +1020,7 @@ BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, quiero el Diagnóstico de Ventas
 
 ════════ ANUNCIO 08 · imagen única 9:16 · 1080×1920 ════════
-Público: el que no tiene sitio · Producto: PanaClaw Start
+Campaña B · Sitio · Público: el que no tiene sitio · Producto: PanaClaw Start
 Hipótesis: le duele que la dirección en internet no sea suya
 
 FONDO
@@ -882,17 +1046,18 @@ final. Te puedes llevar todo sin pedirme permiso, y esa es la idea.
 Renovar el dominio cuesta unos $15 al año y es lo único que sigue costando cada
 año. El mantenimiento es aparte y es opcional: muchos no lo contratan y el sitio
 funciona igual.
-Escríbeme por WhatsApp y te digo cuál te encaja, o que no te hace falta ninguno.
+Cómo se hace el traspaso está publicado, paso por paso, antes de que contrates
+nada.
 El fondo de esta imagen está generado con inteligencia artificial.
 
 TITULAR DEL ANUNCIO   La dirección en internet es tuya
-DESCRIPCIÓN           $295, lista en 72 horas.
-BOTÓN                 Enviar mensaje
-MENSAJE PRECARGADO    Hola PanaClaw, me interesa el plan Start
+DESCRIPCIÓN           Cómo se hace el traspaso, publicado.
+BOTÓN                 Más información
+DIRECCIÓN DE DESTINO  https://panaclaw.netlify.app/proceso/
 
 ════════ ANUNCIO 09 · imagen única 9:16 · 1080×1920 ════════
-Público: el que tiene un WordPress que le da vergüenza · Producto: Diagnóstico
-de Ventas
+Campaña A · WhatsApp · Público: el que tiene un WordPress que le da vergüenza
+Producto: Diagnóstico de Ventas
 Hipótesis: le duele llevar meses sin saber qué pasó
 
 FONDO
@@ -926,7 +1091,8 @@ BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, quiero el Diagnóstico de Ventas
 
 ════════ ANUNCIO 10 · imagen única 4:5 · 1080×1350 ════════
-Público: el que invierte en publicidad · Producto: Diagnóstico de Ventas
+Campaña A · WhatsApp · Público: el que invierte en publicidad · Producto:
+Diagnóstico de Ventas
 Hipótesis: le duele pagar clics que caen en una página lenta
 
 FONDO
@@ -961,7 +1127,8 @@ BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, quiero el Diagnóstico de Ventas
 
 ════════ ANUNCIO 11 · imagen única 9:16 · 1080×1920 ════════
-Público: el que invierte en publicidad · Producto: Diagnóstico de Ventas
+Campaña A · WhatsApp · Público: el que invierte en publicidad · Producto:
+Diagnóstico de Ventas
 Hipótesis: le duele que nadie le dé una cifra por la página, sabiendo lo que le
 cuesta un clic
 
@@ -996,7 +1163,8 @@ BOTÓN                 Enviar mensaje
 MENSAJE PRECARGADO    Hola PanaClaw, quiero el Diagnóstico de Ventas
 
 ════════ ANUNCIO 12 · imagen única 4:5 · 1080×1350 ════════
-Público: el que invierte en publicidad · Producto: Diagnóstico de Ventas
+Campaña A · WhatsApp · Público: el que invierte en publicidad · Producto:
+Diagnóstico de Ventas
 Hipótesis: le duele llevar meses gastando sin saber si la página tiene arreglo
 
 FONDO
@@ -1034,11 +1202,19 @@ MENSAJE PRECARGADO    Hola PanaClaw, quiero el Diagnóstico de Ventas
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 No escribiste, redactaste, completaste, acortaste, tradujiste ni "mejoraste"
-ningún texto. Todo lo que aparece en el documento, la ficha de campaña
-incluida, está copiado carácter por carácter de lo que te di, con sus tildes,
+ningún texto. Todo lo que aparece en el documento, las dos fichas de campaña
+incluidas, está copiado carácter por carácter de lo que te di, con sus tildes,
 sus eñes y sus puntos finales.
 
-  [ ] ¿Está la ficha de campaña completa en el panel del principio, literal?
+  [ ] ¿Están las dos fichas de campaña completas en los paneles del principio,
+      literales?
+  [ ] ¿Están los doce anuncios repartidos en sus dos secciones, la campaña A
+      con 06, 07, 09, 10, 11 y 12, y la campaña B con 01, 02, 03, 04, 05 y 08?
+  [ ] ¿Los seis de la campaña A llevan mensaje precargado de WhatsApp y los
+      seis de la campaña B llevan dirección de destino? Ninguno lleva las dos
+      cosas, y ninguno se queda sin la suya.
+  [ ] ¿Copiaste las direcciones tal cual, sin añadirles parámetros de
+      seguimiento ni cambiarles la barra final?
   [ ] ¿Añadiste alguna cifra, porcentaje, estadística, plazo o beneficio que
       no estuviera escrito arriba? Quítalo.
   [ ] ¿Hay un solo emoji, un solo signo de exclamación o una sola palabra en
@@ -1093,6 +1269,9 @@ sus eñes y sus puntos finales.
    resto esté bien.
 6. **Desliza los dos carruseles.** Si el bloque de texto salta de sitio entre
    tarjetas, el anclaje no se respetó y se ve inmediatamente.
+7. **Abre las seis direcciones de destino** antes de pegarlas en el editor.
+   Cuatro van a `/planes/` y dos a `/proceso/`. Una dirección que devuelve un
+   error paga el clic igual.
 
 ---
 
@@ -1137,31 +1316,45 @@ necesita. Cuatro cosas que sí importan:
   cuando haya volumen.
 - **No hay campaña de Google.** Se puede correr pero no leer: falta configurar
   Google Analytics 4.
-- **El sitio no recibe pauta en esta fase.** El porqué está entero en la Parte 1.
+- **Los anuncios del sitio van sin parámetros de seguimiento en la dirección.**
+  Sin Google Analytics 4 no habría dónde leerlos, y Meta ya informa por anuncio.
+  Cuando GA4 esté puesto, se añaden.
+- **El sitio recibe pauta desde un subdominio prestado.** Es una grieta conocida
+  en el argumento de la marca, no un descuido. Está en la Parte 1 y en
+  `operacion/deuda-conocida.md` §1.
 
 ---
 
 ## PARTE 7 · Decisiones que el dueño de la marca podría querer distintas
 
-1. **Los creativos llevan el texto compuesto dentro de la imagen.**
+1. **El presupuesto va partido en dos campañas, y esa fue tu decisión, no mi
+   recomendación.** Yo había propuesto los $15 enteros en un solo conjunto a <!-- v: presupuesto diario del cliente, no un precio del catálogo -->
+   WhatsApp, porque a este nivel de gasto la señal repartida cuesta aprendizaje.
+   Partirlo es defendible —el sitio tiene toda la información, el píxel necesita
+   público y la pregunta de si esta gente prefiere escribir o leer el precio vale
+   la pena contestarla— y por eso está montado de la forma que menos daño hace:
+   dos campañas limpias, un producto en cada una, la misma mezcla de formatos, y
+   una regla de decisión escrita de antemano para consolidar a los 7 o 10 días.
+   Lo que no haría en ningún caso es una tercera.
+2. **Los creativos llevan el texto compuesto dentro de la imagen.**
    `campanas/plantillas/estructura-anuncio.md` pone «texto en imagen» por
    defecto en «no». Aquí va en «sí»: en frío y compitiendo con todo el feed, el
    titular dentro de la pieza es lo que detiene el pulgar, y el sistema visual de
    la marca está construido exactamente para sostener un titular. El copy
    completo va igualmente en los campos del editor de anuncios.
-2. **La retícula de 1080×1920 está derivada, no copiada.** `datos/marca.json`
+3. **La retícula de 1080×1920 está derivada, no copiada.** `datos/marca.json`
    declara el lienzo de story y dice que los márgenes laterales no cambian y que
    los anclajes verticales se recalculan, pero **no publica los valores
    recalculados**. Los de este entregable —símbolo en y=312, centro óptico en
    y=880, wordmark con base en y=1500— son un cálculo hecho aquí contra las
    zonas seguras del 15 % y el 20 %. Si se aprueban, su sitio es
    `datos/marca.json` → `redesSociales.reticula`, no este archivo.
-3. **Dos de los doce anuncios son carrusel.** No estaban en la primera versión.
+4. **Dos de los doce anuncios son carrusel.** No estaban en la primera versión.
    Entran porque el formato es uno de los cuatro ejes de variación que el canal
    reconoce, y porque los dos conceptos que llevan —qué entra y qué no en Start,
    y el entregable del Diagnóstico— tienen tres tiempos naturales. Cuestan seis
    fondos en vez de dos.
-4. **El presupuesto está por debajo del rango documentado.** $15 al día <!-- v: presupuesto diario del cliente, no un precio del catálogo -->
+5. **El presupuesto está por debajo del rango documentado.** $15 al día <!-- v: presupuesto diario del cliente, no un precio del catálogo -->
    funciona, pero tarda: el mismo gasto que produce datos legibles en 5–7 días a
    $20–50 diarios tarda de 7 a 10 a este ritmo. La alternativa no es repartirlo <!-- v: rango de presupuesto diario de campanas/canales/meta.md, no un precio del catálogo -->
    mejor entre más conjuntos, es esperar más antes de leer nada.
