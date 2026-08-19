@@ -139,10 +139,18 @@ Es uno de los pocos nombres propios que el copy puede usar sin explicar.
 
 ## Estado actual (2026-08-19)
 
-**El sitio tiene dominio propio: `panaclaw.com`.** Es lo que declara `site` en
-`astro.config.mjs` del repositorio del sitio desde el 2026-08-17, y de ahí salen
-la URL canónica, el `og:url`, el sitemap y el `robots.txt`. **Es la única URL que
-se anuncia**: `panaclaw.netlify.app` ya no se reparte en ninguna pieza.
+**El sitio está en línea con dominio propio: `panaclaw.com`.** Sigue desplegado
+en Netlify, pero sirve bajo el dominio del negocio. Lo declara `site` en
+`astro.config.mjs` desde el 2026-08-17 —de ahí salen la URL canónica, el
+`og:url`, el sitemap y el `robots.txt`— y **lo confirmó el dueño de la marca el
+2026-08-19**.
+
+**Es la única URL que se anuncia.** `panaclaw.netlify.app` no se reparte en
+ninguna pieza, ni en la bio, ni en un anuncio, ni al alimentar una herramienta
+externa.
+
+Esto desbloquea la pauta pagada: el destino del clic ya lleva el dominio del
+cliente, que era la única condición que faltaba.
 
 Sigue publicado sin anunciar y sin buscar clientes todavía, así que no hay
 histórico de campaña del que sacar cifras. Lo que queda abierto y afecta a

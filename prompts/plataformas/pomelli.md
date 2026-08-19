@@ -46,9 +46,9 @@ sin una sola letra. El motivo está en la cabecera del script.
 
 **URL:** `https://panaclaw.com`
 
-> Es el dominio propio del sitio desde el 2026-08-17 y lo que declara `site` en
-> `astro.config.mjs`. Se le da este y no `panaclaw.netlify.app`: la URL que se
-> analiza es la que queda guardada en el perfil.
+> El dominio propio está en línea y confirmado (2026-08-19). Se le da este y
+> **nunca** `panaclaw.netlify.app`: la URL que se analiza es la que queda
+> guardada en el perfil, y ahí no se corrige después.
 
 ---
 
