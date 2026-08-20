@@ -54,6 +54,7 @@ poco»: la razón de que existan es que sean idénticos entre piezas.
 | [`video/video-corto.md`](video/video-corto.md) | Reel, story, anuncio en video |
 | [`texto/anuncios.md`](texto/anuncios.md) | Copy de pauta |
 | [`texto/organico.md`](texto/organico.md) | Publicaciones, WhatsApp, correo |
+| [`texto/blog.md`](texto/blog.md) | Posts del blog para SEO — anatomía y el contrato técnico del schema |
 
 ## Por plataforma
 

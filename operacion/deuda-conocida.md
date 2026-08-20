@@ -173,6 +173,44 @@ punto por donde se empieza.
 
 ---
 
+## 8 · Los cuatro posts del blog ya publicados tienen datos sin verificar `[tuyo]`
+
+**Qué pasa.** `skills/blog-seo/SKILL.md` y
+[`prompts/texto/blog.md`](../prompts/texto/blog.md) se escribieron el
+2026-08-20 con la regla de que ninguna estadística de mercado entra sin estar
+en [`catalogo/09-prueba.md`](../catalogo/09-prueba.md). Los cuatro posts que ya
+existen en `src/content/blog/` del repositorio del sitio se escribieron antes
+de que esa regla estuviera empaquetada, y llevan cifras que no están
+verificadas aquí:
+
+- **`cuanto-cuesta-pagina-web-panama.md`**: «dos de cada tres agencias»,
+  rangos de precio del mercado panameño por tramo ($250–$450, $400–$800, <!-- v: cifras de mercado citadas por el post existente, no importes de PanaClaw -->
+  etc.), «perdieron el 40% del tráfico», rangos de mantenimiento y de SEO
+  mensual — ninguno con fuente citada.
+- **`wordpress-vs-sitio-a-medida.md`**: «43% de los sitios del mundo»,
+  «70% de las agencias en Panamá», «~7% de reducción de conversión por
+  segundo», rangos de costo de plugins y hospedaje sin fuente.
+- **`instagram-no-es-tu-web.md`**: «60% de las búsquedas comerciales
+  terminan en Google», y tres «casos reales del último año en Panamá»
+  (cuentas suspendidas, marcas con 20,000 seguidores) contados como hecho sin
+  que haya un caso propio y verificado detrás.
+- **`como-elegir-agencia-web-panama.md`** es el único de los cuatro que no
+  metió una cifra de mercado sin fuente.
+
+**Qué bloquea.** Nada para seguir publicando — el blog sigue en línea y
+funcionando. Es la clase de afirmación que un lector que sí conoce el sector
+puede desmontar, dentro de un repositorio cuya regla 4 prohíbe justo esto.
+
+**Cómo se arregla.** Reescribir los tres posts para que cada cifra de mercado
+tenga una fuente citable al lado, o se sustituya por el ángulo que sí se
+sostiene con lo que hay en `catalogo/09-prueba.md` — casi siempre cambia poco
+el argumento, porque la marca no necesita el dato inflado para sonar bien: el
+precio publicado y el código a nombre del cliente ya hacen el trabajo. No es
+trabajo de código; es una reescritura de contenido y se hace con
+`skills/blog-seo/SKILL.md` como procedimiento.
+
+---
+
 ## Cómo se usa este documento
 
 Cualquier agente que vaya a producir una campaña, conectar una herramienta
