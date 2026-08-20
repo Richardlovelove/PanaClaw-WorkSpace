@@ -96,6 +96,34 @@ letra chica.
 
 ---
 
+### Un post del blog, para SEO
+
+> «Escribe un post del blog sobre X», «el próximo artículo para SEO», «qué
+> blog toca este mes»
+
+**Lee:** [`skills/blog-seo/SKILL.md`](../skills/blog-seo/SKILL.md) y sigue su
+lista — manda a `adn/04-audiencia.md` para el tema, a `prompts/texto/blog.md`
+para la anatomía y el contrato técnico, y a `catalogo/09-prueba.md` para lo
+único que se puede citar como dato.
+
+**Pregunta antes:**
+- ¿Hay un tema concreto, o toca elegirlo?
+- ¿Qué categoría de las cinco (`precios`, `guias`, `comparativas`, `casos`, `panama`)?
+- ¿A qué público de `adn/04-audiencia.md` le habla?
+
+**Entrega:** un bloque Markdown con el frontmatter completo —validado contra
+el schema de `src/content.config.ts` del sitio— y el cuerpo, listo para
+guardarse en `src/content/blog/<slug>.md`.
+
+**La regla que no se negocia:** se lee primero lo que ya está publicado en
+`src/content/blog/` y ningún tema nuevo repite el ángulo de uno existente. Y
+ninguna estadística de mercado, de la competencia o cifra de proyecto entra
+sin estar en `catalogo/09-prueba.md` — es el formato donde más tienta
+rellenar con un dato que «suena creíble» y donde más caro sale, porque el post
+vive meses.
+
+---
+
 ### Video
 
 > «Un reel», «guion para un video», «prompt para Veo/Sora»

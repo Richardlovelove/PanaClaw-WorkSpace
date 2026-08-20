@@ -73,6 +73,8 @@ contradicción, se reporta — y se anota en
 | `src/data/projects.ts` | `catalogo/09-prueba.md` |
 | `docs/convenciones.md` | `orquestador/reglas.md` |
 | Las listas `*NoIncluye` de cada producto | El «qué NO incluye» de cada ficha |
+| `src/content.config.ts` (schema de `blog`) | El contrato técnico de [`prompts/texto/blog.md`](../prompts/texto/blog.md) — rangos de caracteres y el enum de `category` |
+| `src/content/blog/*.md` | Los temas ya publicados. `skills/blog-seo/SKILL.md` los lee antes de proponer uno nuevo — no viven espejados aquí, se consultan en vivo |
 
 ### Lo que NO tiene espejo en el sitio
 

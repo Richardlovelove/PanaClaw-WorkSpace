@@ -17,6 +17,7 @@ No son documentación de la marca: eso está en [`adn/`](../adn/) y
 | [`lote-visual`](lote-visual/SKILL.md) | «Genera N creativos», «un lote para el mes» |
 | [`anuncio-pagado`](anuncio-pagado/SKILL.md) | «Anuncios para Meta», «copy para pauta» |
 | [`propuesta-comercial`](propuesta-comercial/SKILL.md) | «Arma una propuesta», «cotiza esto» |
+| [`blog-seo`](blog-seo/SKILL.md) | «Escribe un post del blog», «el próximo artículo para SEO» |
 
 Plantilla para crear una nueva: [`_plantilla/SKILL.md`](_plantilla/SKILL.md).
 
