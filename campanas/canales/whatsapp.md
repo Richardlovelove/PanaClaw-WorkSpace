@@ -16,7 +16,7 @@ dentro de la conversación, no como reclamo público.
 [`datos/marca.json`](../../datos/marca.json) → `contacto`:
 
 ```
-https://wa.me/19406046565?text={mensaje-codificado-en-url}
+https://wa.me/50765310721?text={mensaje-codificado-en-url}
 ```
 
 **Mensaje por defecto:** `Hola PanaClaw, quiero cotizar mi sitio web`
