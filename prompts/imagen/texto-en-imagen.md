@@ -335,10 +335,10 @@ llegar al carril. No se sube el velo hasta tapar la imagen.
 
 ## El símbolo y el wordmark
 
-**Símbolo:** 88 de ancho, centrado horizontalmente, borde superior en y=96. Es la
-garra de tres zarpazos sobre los corchetes angulares. Como no es cuadrado —100 ×
-81.56— a 88 de ancho le corresponden **71.77 de alto**, y por eso su caja termina
-en y=167.77. El «72» redondeado es lo que aparece en el resto de la retícula.
+**Símbolo:** caja de 88 × 72, centrada horizontalmente, borde superior en y=96.
+Es la garra de tres zarpazos sobre los corchetes angulares. La caja es 88 × 72
+pero **la tinta mide 88 × 71.77**, porque el símbolo no es cuadrado —100 × 81.56—:
+sobran 0.23 px que a esta escala no se ven.
 
 **El trazado se pega, nunca se describe.** Está listo para copiar —en `<svg>` y
 en `Path2D`, con la frase que lo acompaña— en

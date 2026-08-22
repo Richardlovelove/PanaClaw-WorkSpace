@@ -43,20 +43,27 @@ Va literal, sin tocar una coma. Es lo que se pone en el documento del mes, en
 una landing, en un correo o en cualquier pieza que se componga en el navegador:
 
 ```html
-<svg width="88" height="71.77" viewBox="0 0 100 81.56" aria-hidden="true">
+<svg width="88" height="72" viewBox="0 0 100 81.56" aria-hidden="true">
   <path fill="#FF5100" fill-rule="evenodd" d="M73.43 28.64L54.69 50.19L42.73 77.94L67.38 50.63L67.45 47.83L68.19 44.36Z M81.03 21.85L73.95 28.93L85.68 40.52L67.9 58.38L75.2 65.76L100 40.52Z M74.61 15.5L74.39 15.5L73.8 16.09L73.65 16.39L73.28 16.61L72.69 17.2L72.62 17.42L67.6 22.44L67.6 22.59L72.1 27.01L72.25 27.01L79.19 20.08Z M25.17 15.35L0 40.3L25.39 65.32L32.32 58.16L14.32 40.37L32.18 22.36Z M59.26 1.77L32.69 28.79L32.62 31.52L31.59 36.31L26.64 51.74L45.68 29.75L50.41 19.41Z M75.94 0.15L52.18 27.24L50.85 31L41.62 43.62L23.91 81.56L48.12 52.55L49.89 47.98L59.04 35.65Z"/>
 </svg>
 ```
 
-Para otro tamaño se cambian `width` y `height` a la vez, manteniendo la
-proporción: **el alto es el ancho × 0.8156**. El `viewBox`, el `fill-rule` y el
-`d` no se tocan nunca.
+El `viewBox`, el `fill-rule` y el `d` no se tocan nunca. Para otro tamaño se
+cambia `width`, y `height` con él.
 
-| Ancho | Alto |
-|---|---|
-| 88 | 71.77 |
-| 120 | 97.87 |
-| 200 | 163.12 |
+**En SVG el símbolo no se puede estirar por accidente.** `preserveAspectRatio`
+vale `xMidYMid meet` por defecto: el trazado se ajusta dentro de la caja
+conservando su proporción y se centra, así que un `height` de más solo deja aire
+arriba y abajo. Con `width="88"` la tinta mide 88 × 71.77 en cualquier caso, y el
+`height="72"` de la retícula le deja 0.23 px de holgura.
+
+Lo único que sí lo estira es `preserveAspectRatio="none"`. **No se pone nunca.**
+
+| Ancho de la caja | Alto de la caja | Tinta real |
+|---|---|---|
+| 88 | 72 | 88 × 71.77 |
+| 120 | 98 | 120 × 97.87 |
+| 200 | 164 | 200 × 163.12 |
 
 ---
 
@@ -81,13 +88,15 @@ function dibujarSimbolo(ctx, x, y, ancho) {
 }
 ```
 
-**`ctx.scale(k, k)` con el mismo número en los dos ejes.** Escalar 88/100 en x y
-72/81.56 en y son dos números distintos y deforman el símbolo un 0.3 %: no se ve
-a simple vista y está en la lista de usos prohibidos igual.
+**`ctx.scale(k, k)` con el mismo número en los dos ejes.** Aquí es donde el
+símbolo sí se estira de verdad: el lienzo no tiene `preserveAspectRatio` que lo
+proteja, así que escalar 88/100 en x y 72/81.56 en y —dos números distintos— lo
+deforma un 0.3 %. No se ve a simple vista y está en la lista de usos prohibidos
+igual.
 
-Con `ancho = 88` la caja mide **88 × 71.77**, no 88 × 72. El «72» que aparece en
-la retícula es ese 71.77 redondeado, y por eso el símbolo termina en y=167.77 y
-no en 168.
+Con `ancho = 88` la tinta mide **88 × 71.77**. El «72» de la retícula es la caja
+reservada, no la tinta: sobran 0.23 px que en el lienzo van arriba si quieres
+que coincida exactamente con la vista previa, y que a esta escala no se ven.
 
 ---
 
@@ -104,8 +113,9 @@ Las cinco se han visto, y ninguna se nota si no se mira a propósito:
 4. **En otro color.** Es `#FF5100` plano. Ni blanco, ni degradado a `#FF1E1E`
    —que por debajo de unos 200 px no se ve y solo ensucia el borde—, ni el color
    del texto de al lado.
-5. **En una caja cuadrada.** No es cuadrado: 100 × 81.56. Meterlo en 88 × 88 lo
-   estira un 9 %.
+5. **En una caja cuadrada, o con `preserveAspectRatio="none"`.** No es cuadrado:
+   100 × 81.56. En SVG la proporción se conserva sola salvo que se desactive a
+   propósito; en un `<canvas>` no hay red y hay que escalar igual los dos ejes.
 
 Y una sexta que no es del símbolo sino de su sitio: **sobre fondo oscuro no
 lleva cuadrado detrás.** El fondo ya es el cuadrado.
@@ -154,7 +164,8 @@ Antes de entregar cualquier prompt o pieza que lleve el símbolo:
       Se compara, no se recuerda
 - [ ] ¿Lleva `fill-rule="evenodd"`?
 - [ ] ¿`fill="#FF5100"`, y ningún `stroke`?
-- [ ] ¿El alto es el ancho × 0.8156?
+- [ ] ¿Está sin `preserveAspectRatio="none"`, y en el lienzo con la misma escala
+      en los dos ejes?
 - [ ] Si la pieza se exporta a PNG, ¿el lienzo dibuja este mismo trazado?
 - [ ] ¿Va la frase de arriba pegada al SVG, en el mismo bloque?
 
