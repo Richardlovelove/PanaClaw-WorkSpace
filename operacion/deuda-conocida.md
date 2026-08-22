@@ -217,7 +217,7 @@ Cualquier agente que vaya a producir una campaña, conectar una herramienta
 externa o proponer una métrica **lee esto antes**, y dice en la entrega qué punto
 afecta a su trabajo.
 
-No es una lista de excusas: es la aplicación hacia dentro de la regla 7 de la
+No es una lista de excusas: es la aplicación hacia dentro de la regla 8 de la
 marca —**di siempre qué no incluye**—. Entregar una campaña sin avisar de que su
 canal principal todavía no se puede medir es exactamente la letra chica que esta
 marca dice no tener.

@@ -63,6 +63,15 @@ Sube [`logo-original.svg`](../../logo-original.svg) —la garra sobre los
 corchetes— y el wordmark. **Solo versión sobre fondo oscuro**: no subas
 variantes sobre claro, porque no existen.
 
+**Y no lo redibujes dentro de Canva.** Ni con las formas, ni con la IA, ni
+«aproximándolo» porque el SVG subido se ve pequeño en el panel. Es la regla 6 de
+[`orquestador/reglas.md`](../../orquestador/reglas.md): el único trazado válido
+es el del archivo. Si hace falta a otro tamaño, se reescala el SVG subido —el
+alto es siempre el ancho × 0.8156— y nunca se estira por una esquina libre.
+
+El trazado, por si hay que pegarlo en un elemento personalizado, está en
+[`bloques/logo.md`](../bloques/logo.md).
+
 > No uses el `favicon.svg` del sitio: todavía dibuja el rayo viejo. La
 > divergencia está anotada en [`adn/03-sistema-visual.md`](../../adn/03-sistema-visual.md).
 

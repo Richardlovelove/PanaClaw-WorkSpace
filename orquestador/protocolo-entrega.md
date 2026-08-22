@@ -25,8 +25,8 @@ Si el humano ya te dio los tres, no preguntes nada más y produce.
 
 ## Verificación obligatoria
 
-Cinco comprobaciones. Se hacen **mirando el archivo**, no de memoria — la memoria
-es exactamente donde se cuelan los precios viejos.
+Ocho comprobaciones. Se hacen **mirando el archivo**, no de memoria — la memoria
+es exactamente donde se cuelan los precios viejos y donde se redibuja el logo.
 
 ### 1. Cifras
 
@@ -46,17 +46,39 @@ Cada hex se copió de [`datos/marca.json`](../datos/marca.json).
 - ¿La tipografía es la que toca? Archivo en web, anuncios, correo y propuestas.
   En piezas de redes, Antonio 700 en titular y cifra y Archivo en el resto.
   **Ninguna otra familia, en ningún caso** — el verificador la caza.
-- ¿El símbolo es la garra, y no el rayo viejo? ¿Lleva `fill-rule="evenodd"` y
-  conserva su proporción 100 × 81.56?
+### 3. El logo
 
-### 3. Jerga
+Regla 6 de [`reglas.md`](reglas.md). Se comprueba en dos sitios: en el
+entregable, y en el prompt que lo produjo.
+
+**En la pieza:**
+
+- ¿El símbolo son **seis figuras rellenas** —dos corchetes, un punto romboidal y
+  tres zarpazos—, y no unos trazos parecidos? Amplía al 400 % y cuéntalas.
+- ¿Los huecos de los corchetes se ven abiertos? Si es una mancha sólida, falta
+  `fill-rule="evenodd"`.
+- ¿Es `#FF5100` plano, con `fill` y sin ningún `stroke`?
+- ¿Conserva su proporción 100 × 81.56, escalado con el mismo número en los dos
+  ejes?
+- ¿Lleva el wordmark su punto naranja?
+
+**En el prompt, si el entregable es un prompt:**
+
+- ¿Está el trazado **entero, dentro**, copiado de
+  [`prompts/bloques/logo.md`](../prompts/bloques/logo.md)?
+- ¿Aparece en las **dos** formas que hagan falta —el `<svg>` de la vista previa y
+  el `Path2D` del lienzo que exporta?
+- ¿Queda alguna frase que describa el logo en palabras o que lo mande a buscar a
+  un archivo de este repositorio? → es un hueco con medidas, y se rellena solo.
+
+### 4. Jerga
 
 Búsqueda literal en el entregable: `Jamstack`, `CDN`, `LCP`, `SSG`, `headless`,
 `stack`, `deploy`, `framework`, `Lighthouse`, `pipeline`, `onboarding`.
 
 Cero resultados o se reescribe.
 
-### 4. Personalidad
+### 5. Personalidad
 
 Tres preguntas de [`adn/05-personalidad.md`](../adn/05-personalidad.md):
 
@@ -68,7 +90,7 @@ Tres preguntas de [`adn/05-personalidad.md`](../adn/05-personalidad.md):
 Y la búsqueda literal del léxico de esta capa: `premium`, `exclusivo`,
 `boutique`, `VIP`, `élite`, `alta gama`, `líder`, `referente`, `los mejores`.
 
-### 5. Promesas
+### 6. Promesas
 
 - ¿Se promete posicionamiento en Google? → prohibido.
 - ¿Se promete un plazo sin decir desde cuándo cuenta? → el reloj empieza cuando
@@ -76,7 +98,7 @@ Y la búsqueda literal del léxico de esta capa: `premium`, `exclusivo`,
 - ¿Hay un dato, cifra o testimonio que no puedas señalar en este repositorio? →
   fuera.
 
-### 6. Claridad y oficio
+### 7. Claridad y oficio
 
 Dos preguntas, y las dos se contestan mirando la pieza, no recordándola:
 
@@ -90,7 +112,7 @@ Y el recorte: **¿se hizo el paso 5 del método de `07-redaccion.md` §7?** Si s
 no se recorta otra vez aquí. Recortar tres veces produce la adivinanza que las
 dos preguntas de arriba vienen a cazar.
 
-### 7. Huecos
+### 8. Huecos
 
 Ni un `[completa aquí]`, ni un `<tu negocio>`, ni un corchete vacío, ni un <!-- v: contraejemplos de huecos sin resolver -->
 «inserta el precio». Un prompt con huecos no está entregado: está delegado de

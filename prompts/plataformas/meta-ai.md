@@ -41,7 +41,20 @@ Ocho invenciones en doce publicaciones. Todas verosímiles, todas con la cifra
 bien puesta, ninguna cierta. **Un modelo que inventa el 60 % de las piezas no
 puede escribir el copy de una marca cuyo argumento es que no hay letra chica.**
 
-De ahí sale la única regla dura de este archivo.
+**Y también inventa el logo.** El 2026-08-22 devolvió un carrusel con todo lo
+demás correcto —retícula exacta, texto literal, tildes respetadas, costuras
+limpias— y el símbolo inventado en las cinco diapositivas: tres trazos
+diagonales blancos, `stroke` de grosor 8 con los extremos redondeados, sin los
+corchetes, sin el punto romboidal y sin el naranja. Lo dibujó dos veces, en la
+vista previa y otra vez en el lienzo de exportación, así que el PNG descargado
+salía igual de mal.
+
+No fue desobediencia: **el prompt no llevaba el logo dentro.** Le daba la caja
+—88 × 72, esquina superior en y=96—, la descripción en palabras, y para el
+trazado lo mandaba a `datos/marca.json`, que es un archivo de este repositorio
+que Meta AI no puede abrir. Recibió un hueco con medidas y lo rellenó.
+
+De ahí salen las dos reglas duras de este archivo.
 
 ---
 
@@ -84,6 +97,46 @@ https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Archivo:wght@30
 
 Sin esas dos, todo lo demás da igual: el navegador cae a una fuente del sistema
 y la pieza deja de ser de la marca.
+
+### El logo va dentro del prompt, entero
+
+**Esta es la sección que faltaba y por la que se perdió un carrusel.** El
+símbolo no se describe ni se manda a buscar: va pegado en el prompt maestro, en
+sus dos formas, porque el documento lo dibuja dos veces —una en la vista previa
+y otra en el lienzo que exporta el PNG.
+
+El bloque completo está en [`prompts/bloques/logo.md`](../bloques/logo.md) y se
+copia entero. Esto es lo mínimo que tiene que aparecer literal:
+
+```
+El logo de PanaClaw NO se dibuja, no se aproxima y no se rediseña. El trazado
+completo está aquí abajo y es lo único que puedes usar. Cópialo carácter por
+carácter. Si te falta, deja el hueco vacío y dilo — no lo rellenes con una
+versión tuya.
+
+En la vista previa:
+
+<svg width="88" height="71.77" viewBox="0 0 100 81.56" aria-hidden="true">
+  <path fill="#FF5100" fill-rule="evenodd" d="M73.43 28.64L54.69 50.19L42.73 77.94L67.38 50.63L67.45 47.83L68.19 44.36Z M81.03 21.85L73.95 28.93L85.68 40.52L67.9 58.38L75.2 65.76L100 40.52Z M74.61 15.5L74.39 15.5L73.8 16.09L73.65 16.39L73.28 16.61L72.69 17.2L72.62 17.42L67.6 22.44L67.6 22.59L72.1 27.01L72.25 27.01L79.19 20.08Z M25.17 15.35L0 40.3L25.39 65.32L32.32 58.16L14.32 40.37L32.18 22.36Z M59.26 1.77L32.69 28.79L32.62 31.52L31.59 36.31L26.64 51.74L45.68 29.75L50.41 19.41Z M75.94 0.15L52.18 27.24L50.85 31L41.62 43.62L23.91 81.56L48.12 52.55L49.89 47.98L59.04 35.65Z"/>
+</svg>
+
+En el lienzo de exportación, el MISMO trazado, no un dibujo equivalente:
+
+const SIMBOLO = new Path2D("M73.43 28.64L54.69 50.19L42.73 77.94L67.38 50.63L67.45 47.83L68.19 44.36Z M81.03 21.85L73.95 28.93L85.68 40.52L67.9 58.38L75.2 65.76L100 40.52Z M74.61 15.5L74.39 15.5L73.8 16.09L73.65 16.39L73.28 16.61L72.69 17.2L72.62 17.42L67.6 22.44L67.6 22.59L72.1 27.01L72.25 27.01L79.19 20.08Z M25.17 15.35L0 40.3L25.39 65.32L32.32 58.16L14.32 40.37L32.18 22.36Z M59.26 1.77L32.69 28.79L32.62 31.52L31.59 36.31L26.64 51.74L45.68 29.75L50.41 19.41Z M75.94 0.15L52.18 27.24L50.85 31L41.62 43.62L23.91 81.56L48.12 52.55L49.89 47.98L59.04 35.65Z");
+ctx.save();
+ctx.translate(496, 96);
+ctx.scale(0.88, 0.88);        // el mismo número en los dos ejes
+ctx.fillStyle = "#FF5100";
+ctx.fill(SIMBOLO, "evenodd"); // sin evenodd los corchetes se rellenan
+ctx.restore();
+
+Son seis figuras rellenas: dos corchetes angulares, un punto romboidal y tres
+zarpazos. No son líneas: nada de stroke, ni en el SVG ni en el lienzo.
+```
+
+**Va en su propia sección y no dentro de la del sistema visual.** Mezclado con
+los hex y la retícula se lee como una medida más y se pierde; el fallo del
+2026-08-22 fue exactamente eso.
 
 ### Cada pieza, compuesta y a medida real
 
@@ -157,8 +210,13 @@ gustos — son fallos observados en un documento que por lo demás estaba bien.
    elemento ya maquetado. No lo estimes multiplicando líneas por interlínea:
    el anclaje al centro óptico se descuadra respecto a lo que se ve.
 
-4. El símbolo EMPIEZA en y=96, no está centrado en y=96. Su caja va de 96 a
-   168, y mide 88 de ancho por 72 de alto. No es cuadrado.
+4. El símbolo del PNG es el MISMO trazado que el de la vista previa, no un
+   dibujo equivalente. Se pinta con new Path2D(d) y ctx.fill(p,'evenodd'),
+   con el trazado que está más arriba en este prompt. Nunca con moveTo,
+   lineTo ni stroke.
+   Y EMPIEZA en y=96, no está centrado en y=96: su caja va de 96 a 167.77 y
+   mide 88 de ancho. No es cuadrado — el alto es el ancho x 0.8156, y se
+   escala con el mismo número en los dos ejes.
 
 5. Un botón que lanza una descarga por pieza, todas seguidas, lo bloquea el
    navegador a la tercera. O agrupas en un ZIP de verdad, o el botón se llama
@@ -243,16 +301,23 @@ El orden importa y es este:
 
 ```
 1. QUÉ ERES Y QUÉ NO HACES      el reparto del trabajo, la prohibición de escribir
-2. EL SISTEMA VISUAL            hex, tipografías, retícula, escala, velo
-3. EL CONTRATO DEL HTML         fuentes, medidas, descarga
-4. EL BLOQUE DE ESTILO          literal, de bloques/estilo-visual.md
-5. LOS NEGATIVOS                literal, de bloques/negativos.md
-6. LAS PIEZAS                   una por una, con su texto ya escrito y su fondo
-7. LA VERIFICACIÓN              lo que tiene que comprobar antes de devolver
+2. EL LOGO                      el <svg> y el Path2D pegados enteros
+3. EL SISTEMA VISUAL            hex, tipografías, retícula, escala, velo
+4. EL CONTRATO DEL HTML         fuentes, medidas, descarga
+5. EL BLOQUE DE ESTILO          literal, de bloques/estilo-visual.md
+6. LOS NEGATIVOS                literal, de bloques/negativos.md
+7. LAS PIEZAS                   una por una, con su texto ya escrito y su fondo
+8. LA VERIFICACIÓN              lo que tiene que comprobar antes de devolver
 ```
 
-**La prohibición de escribir va la primera y se repite en la séptima.** Una sola
+**La prohibición de escribir va la primera y se repite en la octava.** Una sola
 vez, al principio de un prompt largo, se le olvida a la mitad.
+
+**Y el logo va el segundo, antes que la retícula.** No porque sea más
+importante que el texto, sino porque es el único elemento que el modelo tiene
+que reproducir exacto y que no puede deducir de nada: todo lo demás —un hex, un
+tamaño, un margen— es un número que se le da y se aplica. El trazado son 530
+caracteres que no significan nada por separado, y si no están, se inventan.
 
 ---
 
@@ -262,6 +327,7 @@ Los cinco fallos, por frecuencia:
 
 | Fallo | Cómo se ve | Qué se le dice |
 |---|---|---|
+| **Inventó el logo** | El símbolo no son seis figuras rellenas naranjas: son trazos, líneas, otra forma u otro color | «El símbolo no es el de la marca. Reemplázalo por el SVG que te di, literal, en la vista previa **y** en el lienzo.» |
 | **Reescribió un texto** | Una descripción que suena parecida pero no igual | «El texto de la pieza N no coincide con el que te di. Cópialo literal.» |
 | **Añadió una cifra** | Un porcentaje o una estadística que no le diste | «Quita el dato de la pieza N. No estaba en lo que te pasé.» |
 | **Se comió una tilde** | «CODIGO TUYO» | «Faltan tildes en la pieza N. El texto correcto es: …» |
@@ -271,6 +337,54 @@ Los cinco fallos, por frecuencia:
 | **Subió la interlínea de todas** | El bloque del titular se ve suelto y ya no compacto | «La interlínea base sigue siendo 0.88. La holgura va solo en las líneas que la necesitan.» |
 | **Generó un fondo por diapositiva** | Al poner el carrusel en tira, cada corte es una imagen distinta | «El fondo del carrusel es una sola panorámica cortada. Usa la misma imagen desplazada −1080·k en cada diapositiva.» |
 | **Cambió el brillo entre diapositivas** | Un escalón de luz en la costura | «El brillo de la imagen es el mismo número en las N diapositivas.» |
+
+### La corrección del logo, para pegar tal cual
+
+Cuando el documento vuelva con el símbolo inventado, no se le explica: se le
+vuelve a dar. Va entero, en un solo mensaje, sin añadirle nada más —si en el
+mismo mensaje se le piden dos cosas, arregla una:
+
+```
+El logo que dibujaste no es el de PanaClaw. Lo inventaste: son tres trazos
+diagonales blancos con stroke. El símbolo real son SEIS figuras rellenas
+—dos corchetes angulares, un punto romboidal y tres zarpazos— en naranja
+#FF5100.
+
+No lo redibujes ni lo aproximes. Reemplázalo por esto, literal.
+
+1) En la vista previa de cada diapositiva, donde ahora están los tres trazos:
+
+<svg width="88" height="71.77" viewBox="0 0 100 81.56" aria-hidden="true">
+  <path fill="#FF5100" fill-rule="evenodd" d="M73.43 28.64L54.69 50.19L42.73 77.94L67.38 50.63L67.45 47.83L68.19 44.36Z M81.03 21.85L73.95 28.93L85.68 40.52L67.9 58.38L75.2 65.76L100 40.52Z M74.61 15.5L74.39 15.5L73.8 16.09L73.65 16.39L73.28 16.61L72.69 17.2L72.62 17.42L67.6 22.44L67.6 22.59L72.1 27.01L72.25 27.01L79.19 20.08Z M25.17 15.35L0 40.3L25.39 65.32L32.32 58.16L14.32 40.37L32.18 22.36Z M59.26 1.77L32.69 28.79L32.62 31.52L31.59 36.31L26.64 51.74L45.68 29.75L50.41 19.41Z M75.94 0.15L52.18 27.24L50.85 31L41.62 43.62L23.91 81.56L48.12 52.55L49.89 47.98L59.04 35.65Z"/>
+</svg>
+
+2) En el <canvas> que exporta el PNG, el MISMO trazado. Quita los moveTo,
+   lineTo y stroke que tienes ahí y pon:
+
+const SIMBOLO = new Path2D("M73.43 28.64L54.69 50.19L42.73 77.94L67.38 50.63L67.45 47.83L68.19 44.36Z M81.03 21.85L73.95 28.93L85.68 40.52L67.9 58.38L75.2 65.76L100 40.52Z M74.61 15.5L74.39 15.5L73.8 16.09L73.65 16.39L73.28 16.61L72.69 17.2L72.62 17.42L67.6 22.44L67.6 22.59L72.1 27.01L72.25 27.01L79.19 20.08Z M25.17 15.35L0 40.3L25.39 65.32L32.32 58.16L14.32 40.37L32.18 22.36Z M59.26 1.77L32.69 28.79L32.62 31.52L31.59 36.31L26.64 51.74L45.68 29.75L50.41 19.41Z M75.94 0.15L52.18 27.24L50.85 31L41.62 43.62L23.91 81.56L48.12 52.55L49.89 47.98L59.04 35.65Z");
+ctx.save();
+ctx.translate(496, 96);
+ctx.scale(0.88, 0.88);
+ctx.fillStyle = "#FF5100";
+ctx.fill(SIMBOLO, "evenodd");
+ctx.restore();
+
+Tres cosas que tienen que quedar así:
+- fill, nunca stroke. Son figuras rellenas, no líneas.
+- fill-rule="evenodd" y ctx.fill(..., "evenodd"). Sin eso los huecos de los
+  corchetes se rellenan y sale una mancha.
+- La misma escala en los dos ejes: 0.88 y 0.88. El símbolo no es cuadrado
+  —100 x 81.56— y estirarlo está prohibido.
+
+Todo lo demás del documento se queda exactamente como está: no toques el
+texto, ni la retícula, ni los fondos, ni el wordmark. Devuelve el documento
+completo otra vez.
+```
+
+**Y cuando lo devuelva, amplía el símbolo al 400 %** en la vista previa y en un
+PNG descargado. Seis figuras, huecos de los corchetes abiertos, naranja plano.
+Se corrige en los dos sitios o no está corregido: el fallo del 2026-08-22 estaba
+duplicado y arreglar solo la vista previa deja el PNG igual de mal.
 
 **Cuenta los hashtags de cada pieza.** Es lo que más se le va: le das seis y
 devuelve nueve.
@@ -282,6 +396,7 @@ ninguna otra manera.
 
 ## Lo que no se le pide nunca
 
+- **Que dibuje, rediseñe, simplifique o «limpie» el logo.** Se le pega, punto
 - Que escriba, sugiera o mejore copy
 - Que proponga publicaciones que no estén en el plan
 - Que ajuste un precio «para que se lea mejor»

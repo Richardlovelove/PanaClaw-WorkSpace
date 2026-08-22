@@ -48,6 +48,8 @@ En este orden:
 14. [`campanas/plantillas/calendario.md`](../../campanas/plantillas/calendario.md) — la mezcla de tipos
 15. [`prompts/bloques/estilo-visual.md`](../../prompts/bloques/estilo-visual.md) y
     [`negativos.md`](../../prompts/bloques/negativos.md) — se copian literales
+16. [`prompts/bloques/logo.md`](../../prompts/bloques/logo.md) — el trazado del
+    símbolo. **Se copia entero dentro del prompt maestro**, no se referencia
 
 ---
 
@@ -176,40 +178,46 @@ maestro:
 
 ### Paso 7 · Armar el prompt maestro
 
-Siete secciones, en este orden. El orden no es decorativo: la prohibición de
+Ocho secciones, en este orden. El orden no es decorativo: la prohibición de
 escribir va primero y se repite al final, porque en un prompt largo una sola
-mención se le olvida a la mitad.
+mención se le olvida a la mitad. Y el logo va el segundo, por lo mismo.
 
 ```
 ━━ 1. QUÉ ERES Y QUÉ NO HACES ━━
 El reparto del trabajo y la prohibición literal de redactar, mejorar,
 acortar, traducir o completar cualquier texto.
 
-━━ 2. EL SISTEMA VISUAL ━━
+━━ 2. EL LOGO ━━
+El bloque entero de prompts/bloques/logo.md: el <svg> de la vista previa y
+el Path2D del lienzo, con el trazado completo pegado en los dos, más la
+frase que prohíbe dibujarlo. NO un enlace, NO una descripción, NO «sale de
+marca.json»: Meta AI no puede abrir este repositorio.
+
+━━ 3. EL SISTEMA VISUAL ━━
 Los cinco hex. Las dos familias con sus roles. La retícula en píxeles. La
 escala completa. EL ORDEN DEL BLOQUE DE TEXTO. LA CUENTA DE LA INTERLÍNEA,
 con sus tres holguras. El velo. La regla del acento naranja. Y si el mes
 lleva carruseles, las reglas de continuidad.
 
-━━ 3. EL CONTRATO DEL HTML ━━
+━━ 4. EL CONTRATO DEL HTML ━━
 Las dos fuentes de Google Fonts. Lienzo de 1080×1350 exactos. Botón de
 descarga por pieza y botón de descargar todas. Descripción y hashtags en
 texto seleccionable debajo de cada pieza. Y las siete trampas del exportador
 de prompts/plataformas/meta-ai.md, literales.
 
-━━ 4. EL BLOQUE DE ESTILO ━━
+━━ 5. EL BLOQUE DE ESTILO ━━
 Literal, de prompts/bloques/estilo-visual.md. Una sola vez.
 
-━━ 5. LOS NEGATIVOS ━━
+━━ 6. LOS NEGATIVOS ━━
 Literal, de prompts/bloques/negativos.md, más los del tema del mes.
 
-━━ 6. LAS PIEZAS ━━
+━━ 7. LAS PIEZAS ━━
 Una por una: número, tipo, titular con sus cortes y su tramo naranja,
 anclaje, prompt del fondo, descripción, hashtags. En el titular, la holgura
 de interlínea ya resuelta línea a línea. Un carrusel va como UNA pieza con N
 diapositivas y UN prompt de fondo, no como N piezas.
 
-━━ 7. ANTES DE DEVOLVER ━━
+━━ 8. ANTES DE DEVOLVER ━━
 La lista que Meta tiene que comprobar, con la prohibición repetida.
 ```
 
@@ -260,6 +268,12 @@ Antes de entregar, una a una:
 - [ ] ¿Está el orden del bloque de texto escrito, y no solo la escala? Dar los
       tamaños sin el orden deja al modelo poniendo la cifra encima del titular
 - [ ] ¿Están las siete trampas del exportador dentro del prompt maestro?
+- [ ] **¿Está el trazado del logo dentro del prompt maestro, entero y dos veces**
+      —el `<svg>` de la vista previa y el `Path2D` del lienzo—? Un enlace a
+      `marca.json` o a este repositorio **no cuenta**: es un hueco con medidas y
+      se rellena solo. Regla 6 de
+      [`orquestador/reglas.md`](../../orquestador/reglas.md)
+- [ ] ¿Va el logo en la sección 2, antes del sistema visual?
 - [ ] ¿Pasa cada pieza la prueba del rótulo? Tapa la marca y la cifra: ¿se sabe
       qué se vende sin deducirlo? → [`adn/06-claridad.md`](../../adn/06-claridad.md) §9
 - [ ] ¿El antetítulo nombra la categoría en la que está el lector, y no el
@@ -269,9 +283,14 @@ Antes de entregar, una a una:
 - [ ] ¿Cada afirmación fuerte lleva su prueba a menos de una frase? → `07` §3
 - [ ] ¿Huecos sin resolver en el prompt maestro?
 
-**Y cuando vuelva el documento, antes de publicar nada:** descarga una pieza y
-ponla al lado de su vista previa. Si no son idénticas, el exportador está mal y
-lo están todas las del mes.
+**Y cuando vuelva el documento, dos comprobaciones antes de publicar nada:**
+
+1. **Descarga una pieza y ponla al lado de su vista previa.** Si no son
+   idénticas, el exportador está mal y lo están todas las del mes.
+2. **Amplía el símbolo al 400 %, en la vista previa y en el PNG descargado.**
+   Seis figuras rellenas naranjas, con los huecos de los corchetes abiertos. Si
+   son trazos, si son menos de seis o si no es `#FF5100`, lo dibujó él: se
+   devuelve con el `<svg>` correcto y se rehace el lote.
 
 ---
 

@@ -39,7 +39,7 @@ Sobre lienzo de 1080×1350. Todas las medidas en píxeles.
 
 ```
 0 ────────────────────────────────────────────── borde superior
-                        ⌁                          96   rayo, 64×64, centrado
+                       ╱╱╱                         96   símbolo, 88 ancho, centrado
 72 │                                          │ 1008   márgenes laterales
    │                                          │
    │  ANTETÍTULO EN NARANJA                   │        (opcional)
@@ -53,7 +53,7 @@ Sobre lienzo de 1080×1350. Todas las medidas en píxeles.
 1350 ───────────────────────────────────────────── borde inferior
 ```
 
-**Todo se alinea a la izquierda, en x=72.** El rayo es la única excepción: va
+**Todo se alinea a la izquierda, en x=72.** El símbolo es la única excepción: va
 centrado. Es la misma composición del sitio, donde el titular cae siempre en el
 carril izquierdo del contenedor.
 
@@ -333,21 +333,32 @@ llegar al carril. No se sube el velo hasta tapar la imagen.
 
 ---
 
-## El rayo y el wordmark
+## El símbolo y el wordmark
 
-**Símbolo:** 88 de ancho por 72 de alto, centrado horizontalmente, borde superior
-en y=96. Es la garra de tres zarpazos sobre los corchetes angulares. El path
-completo sale de [`datos/marca.json`](../../datos/marca.json) → `logo.pathSVG`,
-en `viewBox="0 0 100 81.56"` y con `fill-rule="evenodd"`. El archivo está en
-[`logo-original.svg`](../../logo-original.svg).
+**Símbolo:** 88 de ancho, centrado horizontalmente, borde superior en y=96. Es la
+garra de tres zarpazos sobre los corchetes angulares. Como no es cuadrado —100 ×
+81.56— a 88 de ancho le corresponden **71.77 de alto**, y por eso su caja termina
+en y=167.77. El «72» redondeado es lo que aparece en el resto de la retícula.
 
-Tres cosas que se rompen solas si no se dicen:
+**El trazado se pega, nunca se describe.** Está listo para copiar —en `<svg>` y
+en `Path2D`, con la frase que lo acompaña— en
+[`prompts/bloques/logo.md`](../bloques/logo.md). Es la regla 6 de
+[`orquestador/reglas.md`](../../orquestador/reglas.md), y aquí significa una cosa
+concreta: **si esta maquetación se le pasa a otra herramienta, el trazado va
+dentro.** Decirle «el símbolo va aquí, 88 × 72» y mandarla a `marca.json` es
+darle un hueco con medidas, y un hueco con medidas se rellena. Pasó el
+2026-08-22.
+
+Cuatro cosas que se rompen solas si no se dicen:
 
 1. **No es cuadrado.** 100 × 81.56. Meterlo en una caja cuadrada lo estira, y
-   estirar el símbolo está en la lista de usos prohibidos.
+   estirar el símbolo está en la lista de usos prohibidos. Se escala con el
+   mismo número en los dos ejes.
 2. **`fill-rule="evenodd"`.** Sin eso los huecos de los corchetes se rellenan y
    el logo sale como una mancha.
-3. **Naranja `#FF5100` plano**, sin degradado. A 88 píxeles el degradado a ember
+3. **Relleno, no trazo.** Son seis figuras con `fill`. Un `stroke` —aunque sea
+   sobre el trazado correcto— no es el logo.
+4. **Naranja `#FF5100` plano**, sin degradado. A 88 píxeles el degradado a ember
    no se ve y solo ensucia el borde.
 
 Sobre fondo oscuro no lleva cuadrado detrás: el fondo ya es el cuadrado.
@@ -469,9 +480,14 @@ suelta no hay manera de verlo.
 - [ ] ¿Alguna línea huérfana que no sea el remate?
 - [ ] ¿Alguna caja, franja o sombra detrás del texto?
 - [ ] ¿El wordmark lleva su punto naranja?
-- [ ] ¿Todo alineado a x=72, con el rayo como única excepción centrada?
+- [ ] ¿Todo alineado a x=72, con el símbolo como única excepción centrada?
 - [ ] ¿Se lee el titular al tamaño de un pulgar? Aléjate y míralo pequeño.
 - [ ] Si la pieza dice una cifra, ¿está la nota del límite debajo?
+- [ ] **Amplía el símbolo al 400 % y cuéntale las figuras.** Tienen que ser seis
+      —dos corchetes, un punto romboidal y tres zarpazos—, rellenas, naranjas y
+      con los huecos de los corchetes abiertos. Si son trazos, si son menos de
+      seis o si no es `#FF5100`, alguien lo dibujó: se reemplaza por el `<svg>`
+      de [`prompts/bloques/logo.md`](../bloques/logo.md)
 - [ ] **Mira la banda del símbolo, y 96 a 168.** ¿Asoma algo del fondo detrás?
       Si hay resplandor, forma o reflejo, el fondo está mal generado y se
       regenera. El símbolo naranja sobre un resplandor naranja desaparece.

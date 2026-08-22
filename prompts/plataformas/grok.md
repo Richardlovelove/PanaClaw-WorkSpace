@@ -172,10 +172,17 @@ precios** — sin las cifras literales los va a inventar.
 Nada de lo que salga de un modelo ajeno se publica sin pasar por
 [`orquestador/protocolo-entrega.md`](../../orquestador/protocolo-entrega.md).
 
-Los tres fallos que más se repiten, en orden:
+Los cuatro fallos que más se repiten, en orden:
 
 1. **Una cifra inventada o redondeada.** Verifica cada importe contra
    `datos/precios.json`.
 2. **Un testimonio o una métrica de la nada.** «Más de 50 clientes satisfechos»
    es la salida por defecto de cualquier modelo al que le pidas copy de agencia.
 3. **Care y Seguridad mezclados.** Es el error conceptual más frecuente.
+4. **El logo inventado**, si le pediste algo que lo lleve —una pieza, un HTML,
+   una plantilla—. Un modelo ajeno no tiene el trazado y lo rellena con algo
+   parecido. Es la regla 6 de
+   [`orquestador/reglas.md`](../../orquestador/reglas.md), y se evita de una sola
+   forma: **pegándole el bloque entero de
+   [`bloques/logo.md`](../bloques/logo.md) dentro del prompt.** Nombrar el logo
+   sin darle el trazado es pedirle que se lo invente.

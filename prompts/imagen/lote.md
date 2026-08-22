@@ -89,7 +89,7 @@ decirlo.
 
 > Si el humano insiste en 200, entrega las 20 piezas madre y las variaciones de
 > encuadre y de mensaje que salgan de ellas, y **di explícitamente** cuántas son
-> imágenes nuevas y cuántas son derivadas. Es la regla 7: di qué no incluye.
+> imágenes nuevas y cuántas son derivadas. Es la regla 8: di qué no incluye.
 
 ---
 

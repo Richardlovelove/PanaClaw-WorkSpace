@@ -38,9 +38,15 @@ de `bloques/`.
 | [`bloques/negativos.md`](bloques/negativos.md) | Lo prohibido, en la forma que entiende cada motor | Toda imagen y todo video |
 | [`bloques/encuadre.md`](bloques/encuadre.md) | Proporciones por canal y dónde dejar aire | Toda imagen |
 | [`bloques/voz.md`](bloques/voz.md) | La voz de la marca comprimida, para pegar en otra IA | Todo prompt de texto |
+| [`bloques/logo.md`](bloques/logo.md) | El trazado del símbolo, listo para pegar en HTML y en lienzo | Toda pieza **compuesta** que lleve el logo. Nunca en el prompt del fondo |
 
 Un bloque **se copia entero**. No se resume, no se parafrasea y no se «adapta un
 poco»: la razón de que existan es que sean idénticos entre piezas.
+
+> **El bloque del logo no entra en el prompt de imagen.** El motor nunca dibuja
+> el símbolo: lo tiene prohibido en los negativos. El bloque va en el prompt de
+> **maquetación** —el HTML de Meta AI, la plantilla de Canva, el lienzo de
+> exportación—, que es donde el logo se compone encima.
 
 ---
 
@@ -67,7 +73,7 @@ poco»: la razón de que existan es que sean idénticos entre piezas.
 
 ---
 
-## Las cuatro reglas de este directorio
+## Las cinco reglas de este directorio
 
 ### 1. Un prompt se entrega resuelto
 
@@ -86,7 +92,28 @@ Los generadores interpretan «naranja» como cualquier cosa entre `#FF8C00` y <!
 `#FF4500`. Con el hex, aciertan mucho más y sobre todo **aciertan igual la <!-- v: hex de ejemplo de lo que un generador confunde con naranja -->
 segunda vez**.
 
-### 3. El motor genera el fondo. El texto se compone encima
+### 3. El logo se pega, nunca se describe
+
+Es la regla 6 de [`orquestador/reglas.md`](../orquestador/reglas.md) y aquí tiene
+una forma concreta: **si el prompt nombra el símbolo, el prompt lleva el trazado
+dentro.**
+
+```
+✗  el logo va arriba, centrado, 88 × 72, en naranja
+✗  el símbolo es la garra de tres zarpazos sobre los corchetes
+✗  el trazado sale de datos/marca.json → logo.pathSVG
+✓  el bloque entero de bloques/logo.md, con el <svg> completo pegado
+```
+
+Las tres primeras describen el logo o apuntan a él. Ninguna se lo entrega a
+quien tiene que ponerlo, y un modelo con una caja vacía y una descripción la
+rellena — el 2026-08-22 la rellenó con tres trazos blancos inventados en un
+carrusel entero.
+
+Lo mismo aplica al `<canvas>` que exporta el PNG: es el segundo sitio donde se
+inventa, porque se escribe aparte del maquetado.
+
+### 4. El motor genera el fondo. El texto se compone encima
 
 **Nunca se le pide a un motor de imagen que escriba el titular.** Siguen
 comiéndose las tildes y convirtiendo la eñe en ene, y ninguno reproduce la
@@ -107,7 +134,7 @@ Quién compone el texto encima depende de la pieza:
 En los tres casos el resultado es el mismo: **la imagen final sí lleva el texto
 dentro.** Lo que no lo lleva nunca es el pixel que devuelve el generador.
 
-### 4. Nada de gente
+### 5. Nada de gente
 
 No hay personas en el sistema visual de PanaClaw. Ni clientes sonriendo, ni
 equipos en reunión, ni manos sobre teclados. La única excepción tolerada, porque

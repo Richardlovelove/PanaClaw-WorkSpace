@@ -24,9 +24,9 @@ del cliente al terminar de pagar. Todo lo que produzcas tiene que sostener eso.
 
 ---
 
-## 2. Las cinco reglas que no puedes romper
+## 2. Las seis reglas que no puedes romper
 
-Estas cinco cuestan clientes si se rompen. La lista completa, con el porqué de
+Estas seis cuestan clientes si se rompen. La lista completa, con el porqué de
 cada una, está en [`orquestador/reglas.md`](orquestador/reglas.md).
 
 1. **Ninguna cifra que no esté en [`datos/precios.json`](datos/precios.json).**
@@ -42,6 +42,12 @@ cada una, está en [`orquestador/reglas.md`](orquestador/reglas.md).
    de las otras diez piezas.
 5. **Un solo acento cromático: naranja `#FF5100`.** El rojo `#FF1E1E` es
    exclusivo de fondos y jamás toca un texto. Nada de azul, nunca.
+6. **El logo no se dibuja, se pega.** Un solo trazado válido:
+   [`datos/marca.json`](datos/marca.json) → `logo.pathSVG`, con
+   `fill-rule="evenodd"` y `#FF5100` plano. No lo aproximes, no lo rediseñes y
+   **no se lo pidas a ningún modelo**. Y si el prompt nombra el logo, el prompt
+   lleva el trazado dentro: un enlace a este repositorio no es entregarlo.
+   Listo para pegar en [`prompts/bloques/logo.md`](prompts/bloques/logo.md).
 
 ---
 
@@ -89,6 +95,7 @@ según la petición:
 | **Un post del blog, para SEO** | `skills/blog-seo/SKILL.md` — y de ahí a `prompts/texto/blog.md` |
 | Prompts de imagen, creativos, Nano Banana | `datos/marca.json` → `prompts/README.md` → `prompts/bloques/` → `prompts/imagen/nano-banana.md` |
 | Imágenes **por lote** (10, 50, 200 piezas) | lo anterior + `prompts/imagen/lote.md` + `skills/lote-visual/SKILL.md` |
+| **Cualquier pieza que lleve el logo**: HTML, lienzo, Canva, un prompt para otra IA | `prompts/bloques/logo.md` — el trazado listo para pegar. Se copia entero, siempre |
 | Maquetar una pieza: retícula, tamaños, qué va en naranja | `datos/marca.json` → `redesSociales` + `prompts/imagen/texto-en-imagen.md` |
 | **Un carrusel**: que las diapositivas se lean como una sola pieza | `datos/marca.json` → `redesSociales.carrusel` + `prompts/imagen/texto-en-imagen.md` (§ Carrusel) + `prompts/imagen/nano-banana.md` (el fondo) |
 | Guion o prompt de video, reel, anuncio en video | `prompts/video/video-corto.md` + `adn/02-voz-y-tono.md` |
@@ -121,6 +128,10 @@ antes de salir. El resumen:
   de escribirlo. No de memoria.
 - **Todo hex se copia de `datos/marca.json`.** No «naranja», no «#FF5500», <!-- v: contraejemplo de hex equivocado -->
   no de memoria: `#FF5100`.
+- **Si el entregable lleva el logo, lleva el trazado dentro.** Copiado de
+  [`prompts/bloques/logo.md`](prompts/bloques/logo.md), no descrito en palabras y
+  no referido a un archivo que quien lo reciba no puede abrir. Un modelo al que
+  se le da la caja del símbolo y no el trazado se lo inventa: ya pasó.
 - **Di qué no incluye.** Es la firma de la marca y aplica también a tu trabajo:
   si el entregable tiene un límite, se dice arriba y no en una nota al pie.
 

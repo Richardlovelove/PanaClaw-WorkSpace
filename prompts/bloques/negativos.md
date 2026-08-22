@@ -98,6 +98,13 @@ qué medidas está en
 **Si la pieza sí lleva texto generado**, quita solo `texto`, `letras` y
 `tipografía` de la lista. Deja los iconos, los logos y las infografías fuera.
 
+**`logotipos` incluye el de PanaClaw, y no tiene excepción.** El motor no dibuja
+el símbolo de la marca ni siquiera cuando la pieza lo lleva: el logo se compone
+encima, con el trazado exacto de
+[`bloques/logo.md`](logo.md). Un logo generado sale parecido —tres trazos, un
+color aproximado— y parecido es otra marca. Es la regla 6 de
+[`orquestador/reglas.md`](../../orquestador/reglas.md).
+
 ### 5 · Clichés de agencia
 
 `stock corporativo · apretón de manos · gráfico de barras subiendo · bombilla ·

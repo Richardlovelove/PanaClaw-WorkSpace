@@ -140,7 +140,8 @@ node herramientas/verificar.mjs
 ```
 
 Sin dependencias. Vigila que ninguna cifra se haya salido de `precios.json`,
-ningún hex de `marca.json`, que no se cuele jerga y que no haya enlaces rotos.
+ningún hex de `marca.json`, que el trazado del logo sea el de `marca.json` allí
+donde aparezca, que no se cuele jerga y que no haya enlaces rotos.
 Detalles en [`herramientas/README.md`](herramientas/README.md).
 
 ---

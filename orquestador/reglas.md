@@ -1,9 +1,9 @@
 # Las reglas que no se negocian
 
-Doce reglas, cada una con el motivo por el que existe. No son preferencias de
+Trece reglas, cada una con el motivo por el que existe. No son preferencias de
 estilo: cada una tapa una forma concreta de perder un cliente o de quedar en
-evidencia. Las cinco primeras son las que más caro salen y están resumidas en el
-[orquestador](../CLAUDE.md#2-las-cinco-reglas-que-no-puedes-romper).
+evidencia. Las seis primeras son las que más caro salen y están resumidas en el
+[orquestador](../CLAUDE.md#2-las-seis-reglas-que-no-puedes-romper).
 
 Van dirigidas al agente que produce, no al humano que revisa.
 
@@ -74,7 +74,34 @@ Nunca en un texto, nunca en un icono, nunca en un botón.
 Y nada de azul. El azul es el color de todas las agencias tecnológicas del mundo,
 y PanaClaw se posiciona explícitamente en contra de esa categoría.
 
-## 6. El dolor antes que la herramienta
+## 6. El logo no se dibuja, se pega
+
+El símbolo de PanaClaw tiene un solo trazado válido y está en
+[`datos/marca.json`](../datos/marca.json) → `logo.pathSVG`. No se aproxima, no se
+rediseña, no se sustituye por unos corchetes de texto y **no se le pide a ningún
+modelo que lo dibuje**. Se copia carácter por carácter, con su
+`fill-rule="evenodd"` y su `#FF5100` plano.
+
+Y una consecuencia que es la mitad de la regla: **un prompt que nombra el logo
+lleva el logo dentro.** Decirle a un modelo que el símbolo va en una caja de
+88 × 72 y que el trazado «sale de `marca.json`» es darle un hueco con medidas:
+`marca.json` es un archivo de este repositorio y el modelo no lo puede abrir.
+
+Pasó el 2026-08-22. Un carrusel volvió de Meta AI con todo lo demás correcto
+—retícula exacta, texto literal, tildes respetadas— y con el logo inventado en
+las cinco diapositivas: tres trazos diagonales blancos, sin los corchetes, sin el
+punto y sin el naranja. El prompt le había dado la caja y la descripción, nunca
+el trazado.
+
+Una cifra equivocada se corrige con una nota. Un logo equivocado publicado es
+la marca siendo otra marca durante todo el tiempo que la pieza esté arriba, y
+nadie del otro lado sabe cuál de las dos es la buena.
+
+El trazado listo para pegar, en HTML y en lienzo, con la frase que lo acompaña,
+está en [`prompts/bloques/logo.md`](../prompts/bloques/logo.md). Es un bloque: se
+copia entero.
+
+## 7. El dolor antes que la herramienta
 
 Toda frase de cara al cliente empieza por la situación en la que está la persona,
 no por lo que nosotros hacemos.
@@ -85,7 +112,7 @@ Bien: «Tu sitio abre antes de que a nadie le dé tiempo a arrepentirse.»
 Mal: «Autenticación con control de acceso por filas.»
 Bien: «Cada persona entra con su clave y ve solo lo que le corresponde.»
 
-## 7. Di siempre qué NO incluye
+## 8. Di siempre qué NO incluye
 
 Cada producto de la marca publica su lista de exclusiones, y es deliberado: lo
 que sale caro no es cobrar aparte, es que el cliente se entere después.
@@ -94,7 +121,7 @@ Aplica a lo que produzcas. Un anuncio que promete «tu web lista en 72 horas» s
 decir que el reloj empieza cuando el cliente entrega los textos está preparando
 una discusión. La condición va **en la pieza**, no en la letra pequeña.
 
-## 8. Los rangos se citan enteros
+## 9. Los rangos se citan enteros
 
 `$80–$150` se cita `$80–$150`, o `desde $80`. Nunca `$80` a secas.
 
@@ -103,7 +130,7 @@ cuesta lo mismo revisar una página de cinco secciones que una tienda con años 
 complementos encima». Un rango sin su razón parece que se lo inventan sobre la
 marcha.
 
-## 9. Respeta las fronteras entre productos
+## 10. Respeta las fronteras entre productos
 
 Cuatro cosas de este catálogo se parecen y no son lo mismo. Confundirlas es el
 error más caro que puede cometer un agente aquí, porque genera una venta que
@@ -117,7 +144,7 @@ luego no se puede cumplir:
 Está desarrollado en [`catalogo/08-fronteras.md`](../catalogo/08-fronteras.md).
 Consúltalo antes de escribir sobre cualquiera de los cuatro.
 
-## 10. El número de WhatsApp no se imprime
+## 11. El número de WhatsApp no se imprime
 
 Los botones dicen «WhatsApp», sin dígitos. El número aparece cuando la persona ya
 está dentro de la conversación, no como reclamo público.
@@ -126,7 +153,7 @@ Es una decisión de marca del sitio y aplica a toda pieza publicitaria: el CTA e
 la acción, no el teléfono. El enlace se compone con la plantilla de
 `datos/marca.json` → `contacto.plantillaEnlace`.
 
-## 11. Ninguna promesa de posicionamiento en Google
+## 12. Ninguna promesa de posicionamiento en Google
 
 Está prohibido prometer primeras posiciones, plazos de posicionamiento o
 resultados de SEO. La postura publicada de la marca es literalmente
@@ -135,7 +162,7 @@ resultados de SEO. La postura publicada de la marca es literalmente
 Lo que sí se puede prometer, porque es verificable el primer día: la velocidad, y
 que el sitio se entrega con todo lo necesario para que Google lo entienda.
 
-## 12. Accesibilidad y movimiento
+## 13. Accesibilidad y movimiento
 
 Solo se anima `transform` y `opacity`. `prefers-reduced-motion: reduce` apaga
 todo. Ningún objetivo táctil por debajo de 24 px.
@@ -149,7 +176,7 @@ permitirse repintados por una animación decorativa.
 ## Cómo se comprueba
 
 `node herramientas/verificar.mjs` vigila mecánicamente lo que se puede vigilar
-mecánicamente: las reglas 1, 3, 5 y 8. Las demás son de criterio y las revisa
+mecánicamente: las reglas 1, 3, 5, 6 y 9. Las demás son de criterio y las revisa
 quien entrega.
 
 La regla al añadir una comprobación nueva, heredada del repositorio del sitio:

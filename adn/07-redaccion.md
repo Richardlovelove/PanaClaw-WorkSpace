@@ -204,7 +204,7 @@ consecuencia. «El código es tuyo. Puedes parar cuando quieras. El precio no
 cambia» es un folleto. Las mismas tres, cada una con lo que le pasa al lector,
 son un contrato.
 
-**Y el límite no se va.** La regla 7 de [`orquestador/reglas.md`](../orquestador/reglas.md)
+**Y el límite no se va.** La regla 8 de [`orquestador/reglas.md`](../orquestador/reglas.md)
 sigue mandando: la condición va en la pieza, también aquí.
 
 ---

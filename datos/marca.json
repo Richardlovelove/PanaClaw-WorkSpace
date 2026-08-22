@@ -1,6 +1,6 @@
 {
   "$comentario": "FUENTE ÚNICA DE TOKENS VISUALES. Los hex, las fuentes y los pesos que se pegan en Nano Banana, Pomelli, Canva, Grok o cualquier generador salen de aquí y solo de aquí. Espejo de src/styles/global.css y scripts/generate-brand-assets.mjs del repositorio abrinay1997-stack/PanaClaw.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "verificadoContra": {
     "repositorio": "abrinay1997-stack/PanaClaw",
     "fecha": "2026-08-19",
@@ -324,8 +324,12 @@
   "logo": {
     "simbolo": "Una garra de tres zarpazos atravesando un par de corchetes angulares — el signo de «código» rasgado. Seis figuras: el corchete izquierdo, el derecho, el punto romboidal y los tres zarpazos.",
     "pathSVG": "M73.43 28.64L54.69 50.19L42.73 77.94L67.38 50.63L67.45 47.83L68.19 44.36Z M81.03 21.85L73.95 28.93L85.68 40.52L67.9 58.38L75.2 65.76L100 40.52Z M74.61 15.5L74.39 15.5L73.8 16.09L73.65 16.39L73.28 16.61L72.69 17.2L72.62 17.42L67.6 22.44L67.6 22.59L72.1 27.01L72.25 27.01L79.19 20.08Z M25.17 15.35L0 40.3L25.39 65.32L32.32 58.16L14.32 40.37L32.18 22.36Z M59.26 1.77L32.69 28.79L32.62 31.52L31.59 36.31L26.64 51.74L45.68 29.75L50.41 19.41Z M75.94 0.15L52.18 27.24L50.85 31L41.62 43.62L23.91 81.56L48.12 52.55L49.89 47.98L59.04 35.65Z",
+    "$noNegociable": "REGLA 6 DE orquestador/reglas.md. El logo no se dibuja: se pega. pathSVG es el único trazado válido y se copia carácter por carácter. Y un prompt que nombra el logo lleva pathSVG DENTRO: apuntar a este archivo no es entregarlo, porque quien recibe el prompt no lo puede abrir. El 2026-08-22 Meta AI devolvió un carrusel con el símbolo inventado —tres trazos blancos con stroke, sin corchetes, sin punto y sin naranja— porque el prompt le dio la caja de 88x72 y la descripción, nunca el trazado. Listo para pegar, en <svg> y en Path2D, en prompts/bloques/logo.md.",
     "viewBox": "0 0 100 81.56",
     "fillRule": "evenodd",
+    "color": "#FF5100",
+    "relleno": "fill. NUNCA stroke: son seis figuras rellenas, no seis líneas.",
+    "altoPorAncho": 0.8156,
     "$proporcion": "NO es cuadrado: 100 de ancho por 81.56 de alto. Escalarlo a una caja cuadrada lo deforma, y deformar el símbolo está en la lista de usos prohibidos.",
     "$origen": "Trazado de logo-original.png (1408×1408 RGBA) el 2026-08-17. Comprobado rasterizando el trazado contra el alfa del original: 0.48 % de píxeles distintos. El archivo vectorial está en logo-original.svg.",
     "$divergenciaConElSitio": "marca.json declaraba hasta hoy un rayo, «M37.5 6 18 35.5h11.2L26.5 58 46 28.5H34.8L37.5 6Z» en viewBox 0 0 64 64, que es lo que dibuja scripts/generate-brand-assets.mjs del repositorio del sitio. El símbolo real de la marca —el que se usa en las piezas publicadas y el que está en logo-original.png— es este. Mientras no se corrija el generador del sitio, los favicons y el og.png siguen saliendo con el rayo. HAY QUE ARREGLARLO ALLÍ; aquí queda anotado, no resuelto.",
@@ -334,10 +338,15 @@
     "originales": "brand-assets/logo-original.{png,svg} en el repositorio del sitio",
     "regenerar": "npm run brand en el repositorio del sitio. Los favicons y og.png son archivos generados y NO se recalculan en cada build.",
     "usosProhibidos": [
-      "Rayo en cualquier color que no sea el degradado naranja→ember",
-      "Rayo sobre fondo claro",
-      "Estirar, rotar o inclinar el símbolo",
-      "Wordmark sin tracking",
+      "Dibujar, aproximar, rediseñar o «simplificar» el símbolo: el único trazado válido es pathSVG",
+      "Pedirle a un modelo —de imagen o de texto— que genere el símbolo",
+      "Nombrar el logo en un prompt sin pegar pathSVG dentro de ese mismo prompt",
+      "El símbolo en cualquier color que no sea #FF5100 plano",
+      "El símbolo sin fill-rule «evenodd»: los corchetes se rellenan y sale una mancha",
+      "El símbolo con stroke en vez de fill",
+      "El símbolo sobre fondo claro",
+      "Estirar, rotar o inclinar el símbolo, o escalarlo con distinto factor en cada eje",
+      "Wordmark sin tracking, sin su punto naranja, o partido en dos colores",
       "Añadir efectos: sombra, contorno, bisel, brillo"
     ]
   },

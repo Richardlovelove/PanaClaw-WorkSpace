@@ -247,9 +247,19 @@ Se copia de ahí, no se aproxima a mano.
 **Wordmark:** `PANACLAW` en Archivo 700, tracking `0.20em`, `#FFF7F7`, seguido de
 un punto `.` en `#FF5100`. El punto naranja es parte de la marca.
 
-**Prohibido:** el símbolo en otro color, sobre fondo claro, estirado, rotado o
-inclinado; wordmark sin tracking; y cualquier efecto añadido (sombra, contorno,
-bisel, brillo).
+**Prohibido, y esto es la regla 6 de
+[`orquestador/reglas.md`](../orquestador/reglas.md):** dibujarlo, aproximarlo,
+rediseñarlo o pedirle a un modelo que lo genere; el símbolo en otro color, con
+`stroke` en vez de `fill`, sin `fill-rule="evenodd"`, sobre fondo claro,
+estirado, rotado o inclinado; wordmark sin tracking o sin su punto naranja; y
+cualquier efecto añadido (sombra, contorno, bisel, brillo).
+
+**Y una que solo se ve al pasarle la marca a otra herramienta:** un prompt que
+nombra el logo **lleva el trazado dentro**. Mandar a quien lo recibe a
+`marca.json` es darle un hueco con medidas, y un hueco con medidas se rellena
+—el 2026-08-22 se rellenó con tres trazos blancos inventados en un carrusel
+entero. El bloque listo para pegar, en `<svg>` y en `Path2D`, está en
+[`prompts/bloques/logo.md`](../prompts/bloques/logo.md).
 
 > **Divergencia abierta con el sitio.** Este archivo declaró hasta el 2026-08-17
 > un rayo, `M37.5 6 18 35.5h11.2L26.5 58 46 28.5H34.8L37.5 6Z`, que es lo que

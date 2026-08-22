@@ -311,6 +311,100 @@ function reglaTipografia() {
 }
 
 /* ------------------------------------------------------------------ *
+ * Regla 6 — el logo no se dibuja, se pega
+ * ------------------------------------------------------------------ */
+
+/**
+ * El fallo que cierra este cepo no es que alguien cambie el trazado a mano: es
+ * que un prompt NOMBRE el logo sin llevarlo dentro. El 2026-08-22 se le pasó a
+ * Meta AI la caja del símbolo —88 × 72, esquina en y=96— y, para el trazado, un
+ * «sale de datos/marca.json», que es un archivo que Meta AI no puede abrir.
+ * Devolvió el carrusel entero con tres trazos blancos inventados en su lugar.
+ *
+ * De ahí las tres comprobaciones:
+ *
+ *   A. Todo trazado escrito en un .md es el de marca.json. Uno distinto es un
+ *      logo inventado que ya entró al repositorio.
+ *   B. Los archivos que le entregan el logo a una herramienta de fuera lo
+ *      llevan literal. Si alguien lo sustituye por un enlace, vuelve el hueco.
+ *   C. El trazado va relleno, en naranja y con evenodd. Con stroke, en otro
+ *      color o sin evenodd es el trazado correcto dibujado mal.
+ *
+ * El escape <!-- v: … --> sigue valiendo para ilustrar un contraejemplo.
+ */
+
+const rutaLogoSVG = join(RAIZ, 'logo-original.svg');
+
+/** Archivos que tienen que llevar el trazado dentro, no un enlace a él. */
+const PORTADORES_DEL_LOGO = [
+  'prompts/bloques/logo.md',
+  'prompts/plataformas/meta-ai.md',
+];
+
+function reglaLogo() {
+  const canonico = marca?.logo?.pathSVG;
+  if (!canonico) {
+    error('datos/marca.json', 0, 'Falta logo.pathSVG: no hay trazado contra el que comparar');
+    return;
+  }
+
+  // A · Ningún trazado distinto del canónico, en ningún .md
+  for (const ruta of md) {
+    if (saltar(ruta)) continue;
+    for (const { n, contenido, exenta } of lineas(ruta)) {
+      if (exenta) continue;
+      for (const m of contenido.matchAll(/\bd="([^"]*)"/g)) {
+        if (m[1].trim() === canonico) continue;
+        error(rel(ruta), n,
+          'El símbolo no se dibuja: el único trazado válido es datos/marca.json → logo.pathSVG');
+      }
+    }
+  }
+
+  // B · Los portadores lo llevan literal
+  for (const relativa of PORTADORES_DEL_LOGO) {
+    const ruta = join(RAIZ, relativa);
+    if (!existsSync(ruta)) {
+      error(relativa, 0, 'Falta un archivo que tiene que llevar el trazado del logo dentro');
+      continue;
+    }
+    if (!readFileSync(ruta, 'utf8').includes(canonico)) {
+      error(relativa, 0,
+        'Nombra el logo pero no lo lleva dentro: pega logo.pathSVG entero, un enlace no lo entrega');
+    }
+  }
+
+  // C · Relleno, naranja y evenodd allí donde el trazado aparece en un <path>
+  const naranja = (marca?.logo?.color ?? '#FF5100').toLowerCase();
+  for (const ruta of md) {
+    if (saltar(ruta)) continue;
+    for (const { n, contenido, exenta } of lineas(ruta)) {
+      if (exenta || !contenido.includes(canonico)) continue;
+      if (!/<path\b/.test(contenido) && !/Path2D/.test(contenido)) continue;
+      if (/\bstroke[-a-z]*\s*[=:]/.test(contenido)) {
+        error(rel(ruta), n, 'El símbolo va relleno: son seis figuras, no seis líneas. Nada de stroke');
+      }
+      if (/<path\b/.test(contenido)) {
+        if (!/fill-rule\s*=\s*"evenodd"/.test(contenido)) {
+          error(rel(ruta), n, 'Falta fill-rule="evenodd": sin eso los corchetes se rellenan');
+        }
+        if (!contenido.toLowerCase().includes(`fill="${naranja}"`)) {
+          error(rel(ruta), n, `El símbolo es ${marca?.logo?.color ?? '#FF5100'} plano`);
+        }
+      }
+    }
+  }
+
+  // D · El archivo vectorial y el JSON no se separan
+  if (existsSync(rutaLogoSVG)) {
+    if (!readFileSync(rutaLogoSVG, 'utf8').includes(canonico)) {
+      error('logo-original.svg', 0,
+        'El trazado del SVG no coincide con datos/marca.json → logo.pathSVG');
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ *
  * Enlaces internos
  * ------------------------------------------------------------------ */
 
@@ -359,6 +453,7 @@ reglaRangos();
 reglaJerga();
 reglaColor();
 reglaTipografia();
+reglaLogo();
 enlaces();
 huecos();
 

@@ -13,7 +13,7 @@ rompen la ejecución.
 
 ## Qué vigila
 
-Las cuatro reglas de [`orquestador/reglas.md`](../orquestador/reglas.md) que se
+Las cinco reglas de [`orquestador/reglas.md`](../orquestador/reglas.md) que se
 pueden comprobar mecánicamente:
 
 | Regla | Comprobación |
@@ -21,7 +21,8 @@ pueden comprobar mecánicamente:
 | **1 · Ninguna cifra fuera de `precios.json`** | Todo `$N` en prosa existe en el JSON |
 | **3 · Cero jerga** | `Jamstack`, `CDN`, `LCP`, `SSG`, `headless`, `Lighthouse`, `pipeline`… |
 | **5 · Un solo acento cromático** | Todo hex existe en `marca.json` |
-| **8 · Los rangos se citan enteros** | El mínimo de un rango sin «desde» delante → aviso |
+| **6 · El logo no se dibuja, se pega** | Todo trazado escrito es el de `marca.json`; los archivos que le entregan el logo a otra herramienta lo llevan dentro; va relleno, naranja y con `evenodd`; y `logo-original.svg` no se separa del JSON |
+| **9 · Los rangos se citan enteros** | El mínimo de un rango sin «desde» delante → aviso |
 
 Y dos más, propias del repositorio:
 
