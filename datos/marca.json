@@ -302,12 +302,12 @@
 
   "contacto": {
     "$regla": "El número NO se imprime en la UI. Los botones dicen «WhatsApp» sin dígitos. El número solo aparece cuando la persona ya está dentro del chat. Es una decisión de marca.",
-    "whatsappLegible": "+1 (940) 604-6565",
-    "whatsappCrudo": "19406046565",
+    "whatsappLegible": "+507 6531-0721",
+    "whatsappCrudo": "50765310721",
     "mensajePorDefecto": "Hola PanaClaw, quiero cotizar mi sitio web",
     "horario": "Lun–Vie · 9:00 – 18:00",
     "zona": "Hora de Panamá (GMT-5)",
-    "plantillaEnlace": "https://wa.me/19406046565?text={mensaje-url-encoded}"
+    "plantillaEnlace": "https://wa.me/50765310721?text={mensaje-url-encoded}"
   },
 
   "medicion": {
