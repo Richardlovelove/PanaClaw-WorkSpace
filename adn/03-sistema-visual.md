@@ -129,6 +129,16 @@ lo que produce el bloque compacto de tres líneas que la marca ya usa en el hero
 demasiado finos para sobrevivir sobre una imagen, y llevan a subir el tamaño para
 compensar — que es exactamente como se rompe la retícula.
 
+**La interlínea del titular no es un número.** Antonio no rebaja los acentos
+cuando el texto va en versalitas: la tilde de una `Á` sube un 27 % de su cuerpo
+por encima de la letra, y a interlínea fija se mete dentro de las letras de la
+línea de arriba. Así que el avance se calcula línea a línea: la base, más lo que
+la línea de abajo sube por la tilde o la eñe, más lo que la de arriba baja por
+una `Q` o un signo de apertura. Cada holgura es exactamente lo que sobresale la
+tinta, de forma que **el bloque se sigue viendo igual de apretado** — que es todo
+el argumento de esta tipografía. Los valores y la comprobación en píxeles están
+en [`datos/marca.json`](../datos/marca.json) → `redesSociales.interlinea`.
+
 **Ninguna otra familia.** En particular las que sugiere por defecto cualquier
 editor para este aspecto: Montserrat, Open Sans, Inter, Roboto, Poppins, Oswald, <!-- v: lista negra de tipografías, se nombran para prohibirlas -->
 Bebas Neue, Impact, Helvetica, Arial, Lato, Futura. <!-- v: lista negra de tipografías, se nombran para prohibirlas -->

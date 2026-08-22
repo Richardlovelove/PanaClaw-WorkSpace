@@ -18,6 +18,14 @@ cambia entre filas es sujeto, escena y encuadre.
 
 ---
 
+> **Un carrusel no es un lote.** Un lote son N piezas hermanas y separadas; un
+> carrusel es **una** pieza cortada en trozos, con un solo fondo. Se produce con
+> otras reglas: [`prompts/imagen/nano-banana.md`](nano-banana.md) para el fondo y
+> [`prompts/imagen/texto-en-imagen.md`](texto-en-imagen.md) para la continuidad.
+> Un mes de contenido normal lleva las dos cosas.
+
+---
+
 ## Los cuatro ejes de variación
 
 Elige **uno** como eje principal. Como mucho dos. Un lote que varía tres ejes a

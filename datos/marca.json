@@ -172,20 +172,43 @@
       "$reglaCentroOptico": "594 y no 675. El centro óptico va por encima del centro geométrico; un bloque centrado a 675 se lee caído."
     },
 
+    "interlinea": {
+      "$regla": "El avance entre dos líneas de titular NO es un número fijo. Es la base MÁS lo que la línea de abajo sube por encima de la altura de versalita, MÁS lo que la de arriba baja por debajo de su línea base. A interlínea fija, la tilde de una Á se mete dentro de las letras de la línea anterior.",
+      "formula": "avance(n → n+1) = base + holguraSuperior(línea n+1) + holguraInferior(línea n)",
+      "base": { "titular-xl": 0.88, "titular-l": 0.88, "titular-m": 0.90, "cifra": 0.88 },
+      "holguraSuperior": {
+        "$que": "Lo que la línea de ABAJO sube por encima de la altura de versalita.",
+        "Á É Í Ó Ú": 0.27,
+        "Ñ Ü": 0.20,
+        "resto": 0
+      },
+      "holguraInferior": {
+        "$que": "Lo que la línea de ARRIBA baja por debajo de su línea base.",
+        "Q ¿ ¡ ,": 0.17,
+        "resto": 0
+      },
+      "$porQueAntonioLoNecesita": "Antonio no trae acentos rebajados para versalitas —no tiene la característica «case» de OpenType—, así que la tilde de una versalita ocupa toda su altura natural. No hay ajuste tipográfico que lo evite: o lo paga la interlínea, o las líneas se comen.",
+      "$medidoEn": "Antonio 700, 2048 unidades por em. Versalita 1760 = 0.8594 em. Tope de Á É Í Ó Ú 2313 = 1.1294 em. Tope de Ñ 2155 = 1.0522 em. Tope de Ü 2126 = 1.0381 em. Cola de Q −292 = −0.1426 em. Signo ¿ −283 = −0.1382 em. Signo ¡ −236 = −0.1152 em. Coma −338 = −0.1650 em.",
+      "$porQueEsosNumeros": "Cada holgura es exactamente lo que sobresale la tinta, ni un punto más. Por eso el hueco óptico que queda es el MISMO que ya hay entre dos líneas sin tilde: el bloque sigue viéndose igual de apretado y las tildes dejan de comerse la línea de encima. Una interlínea uniforme que despejara la tilde tendría que subir a 1.16, y eso sí afloja el bloque entero para arreglar dos líneas.",
+      "$comprobado": "Renderizado en Antonio 700 a 112 px, midiendo tinta contra tinta columna a columna. SIN holgura: la tilde aguda solapa 27 px la línea de encima, la eñe 19 px, y una tilde bajo la cola de una Q, 39 px. CON la holgura: esos mismos pares quedan entre 3 y 8 px limpios — el mismo hueco que deja un par sin tilde, que son 3 px.",
+      "$soloElTitular": "Solo aplica al titular y a la cifra, que son lo único que va por debajo de interlínea 1. La bajada (1.45) y la nota (1.5) van en Archivo y con holgura de sobra: ahí no hay nada que corregir y no se toca.",
+      "$anclajes": "Los anclajes verticales se miden sobre la CAJA DE VERSALITAS —tope de versalita de la primera línea, línea base de la última—, nunca sobre la caja de tinta. Medidos sobre la tinta, una pieza cuya primera línea lleva tilde caería 0.27 em respecto de otra que no la lleva y dos piezas del mismo mes no cuadrarían. La tilde de la primera línea vive en el aire de encima: a 132 px son 36 px, el anclaje alto empieza en 248 y el símbolo termina en 168, así que entra con 44 px de sobra."
+    },
+
     "escala": {
       "$comentario": "Píxeles sobre lienzo de 1080×1350. El tamaño del titular lo decide el número de líneas, no el gusto.",
       "titular-xl": {
-        "familia": "Antonio", "peso": 700, "size": 132, "lineHeight": 0.88,
+        "familia": "Antonio", "peso": 700, "size": 132, "lineHeight": 0.88, "$lineHeight": "Es la BASE. El avance real se calcula línea a línea con redesSociales.interlinea.",
         "letterSpacing": "-0.01em", "transform": "uppercase",
         "caracteresPorLinea": "14–17", "lineas": "2–3", "color": "#FFF7F7"
       },
       "titular-l": {
-        "familia": "Antonio", "peso": 700, "size": 112, "lineHeight": 0.88,
+        "familia": "Antonio", "peso": 700, "size": 112, "lineHeight": 0.88, "$lineHeight": "Es la BASE. El avance real se calcula línea a línea con redesSociales.interlinea.",
         "letterSpacing": "-0.01em", "transform": "uppercase",
         "caracteresPorLinea": "17–20", "lineas": "4–5", "color": "#FFF7F7"
       },
       "titular-m": {
-        "familia": "Antonio", "peso": 700, "size": 92, "lineHeight": 0.90,
+        "familia": "Antonio", "peso": 700, "size": 92, "lineHeight": 0.90, "$lineHeight": "Es la BASE. El avance real se calcula línea a línea con redesSociales.interlinea.",
         "letterSpacing": "-0.01em", "transform": "uppercase",
         "caracteresPorLinea": "20–24", "lineas": "6–8", "color": "#FFF7F7"
       },
@@ -215,7 +238,8 @@
       "numerador": {
         "familia": "Archivo", "peso": 500, "size": 20, "letterSpacing": "0.14em",
         "color": "#BABABA", "formato": "01/05", "posicion": "esquina superior derecha, x=1008",
-        "porDefecto": "apagado"
+        "porDefecto": "apagado en pieza suelta, ENCENDIDO en carrusel",
+        "$porQueEnCarrusel": "En un carrusel no es un adorno: es la barra de avance del concepto. Dice cuánto falta y que lo que se está leyendo es un trozo de algo, no una pieza suelta."
       }
     },
 
@@ -224,6 +248,55 @@
       "$porQueLaMitad": "El tope se fijó primero en 40 % y estaba mal: la pieza publicada que mejor funciona —«no hacemos cubos con brasa / hacemos obsidiana fría, rápida»— lleva el 56 % en naranja porque la afirmación es más larga que la negación, y es justo lo que la hace funcionar. Lo que rompe una pieza no es la proporción: es que haya dos tramos naranjas en vez de uno.",
       "queVaEnNaranja": "La afirmación, la consecuencia o la cifra. En un titular de forma «no hacemos X, hacemos Y», el naranja es Y.",
       "queNuncaVaEnNaranja": "La negación, la bajada, la nota y el titular entero."
+    },
+
+    "carrusel": {
+      "$regla": "Un carrusel es UNA pieza larga cortada en trozos, no N piezas seguidas. Al deslizar tiene que seguir siendo el mismo objeto, la misma luz y la misma frase.",
+      "diapositivas": { "minimo": 2, "maximo": 6, "lienzo": "1080×1350 todas, sin excepción" },
+
+      "fondo": {
+        "$regla": "El fondo de un carrusel se genera UNA vez y se corta. No una vez por diapositiva.",
+        "panoramica": {
+          "para": "2 o 3 diapositivas",
+          "como": "Una sola imagen panorámica, generada con la proporción más ancha que acepte el motor, escalada para cubrir 1080×N de ancho por 1350 de alto y cortada en trozos de 1080.",
+          "tres": "Lienzo final 3240×1350. Una panorámica 21:9 escalada a 3240 de ancho da 1388 de alto: sobran 38 px, que se recortan 19 arriba y 19 abajo.",
+          "dos": "Lienzo final 2160×1350. Una panorámica 21:9 se queda en 925 de alto y no cubre; se pide 3:2, que a 2160 de ancho da 1440 y deja 90 px que recortar.",
+          "corteEn": "x = 1080, 2160, … del panorama. El trozo k se coloca desplazando la panorámica −1080·k."
+        },
+        "cadena": {
+          "para": "4 diapositivas o más",
+          "porQue": "Por encima de 3 la panorámica pediría 3.2:1 o más, que ningún motor entrega. Escalar una 21:9 hasta ahí obliga a recortar más de un tercio del alto y se pierde el encuadre con el que se compuso.",
+          "como": "Se genera la primera, y cada siguiente se pide CON LA ANTERIOR DELANTE como imagen de referencia, pidiendo que la cámara siga avanzando en la misma dirección. Describir la misma escena dos veces por separado no la cose: devuelve dos imágenes parecidas y distintas."
+        }
+      },
+
+      "costura": {
+        "$regla": "Por la costura pasa materia continua —una estela, el cuerpo del sujeto, la caída de la luz—, nunca el punto focal.",
+        "porQue": "Al deslizar, la aplicación mete un hueco entre diapositivas. Lo que esté partido justo ahí se lee roto; lo que solo cruza, se lee entero."
+      },
+
+      "velo": {
+        "$regla": "El velo es vertical y con los mismos valores en todas las diapositivas, y el brillo de la imagen es el mismo número en todas.",
+        "porQue": "Un velo vertical vale lo mismo en todo el ancho, así que en la costura no hay escalón. En cuanto una diapositiva cambia de anclaje o de brillo, el velo cambia de dirección o de valor y la costura se ve. Esa es la razón mecánica de que el anclaje no salte: no es gusto, es que se nota el corte."
+      },
+
+      "movimiento": {
+        "direccion": "De izquierda a derecha, en el sentido en que se desliza.",
+        "recorrido": "En la 01 el sujeto entra, en las intermedias cruza, en la última se detiene o aterriza.",
+        "luz": "La incandescencia va en un solo sentido en todo el carrusel: o crece o se apaga. Nunca sube, baja y vuelve a subir."
+      },
+
+      "texto": {
+        "antetitulo": "EL MISMO en todas las diapositivas del carrusel. Es el hilo: cada diapositiva declara de qué concepto forma parte.",
+        "anclaje": "No salta. El que lleve la 01 lo llevan todas.",
+        "acentoNaranja": "Un tramo naranja por diapositiva y, leídos en orden, los N tramos forman UNA frase. Es la prueba de que el carrusel dice una cosa y no N.",
+        "primera": "Es la única que se ve en el feed sin deslizar: el titular más corto y más grande del carrusel va ahí.",
+        "ultima": "Cierra o pide algo. No se deja morir en un dato.",
+        "sueltas": "El símbolo y el wordmark van en todas: cada diapositiva se puede compartir sola.",
+        "numerador": "Encendido. En un carrusel es la barra de avance del concepto."
+      },
+
+      "revision": "En tira, no una a una. Las N pegadas por el borde, sin separación, y se miran las costuras. Una diapositiva que suelta está bien puede romper la tira."
     },
 
     "velo": {

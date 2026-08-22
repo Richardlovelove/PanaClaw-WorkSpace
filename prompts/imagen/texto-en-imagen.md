@@ -101,7 +101,7 @@ compuesta de una pieza colocada.
 El tamaño del titular **lo decide el número de líneas**, no el gusto de quien
 maqueta. Es lo que hace que doce piezas del mismo mes se vean hermanas.
 
-| Rol | Familia | Peso | Tamaño | Interlínea | Tracking | Color |
+| Rol | Familia | Peso | Tamaño | Interlínea base | Tracking | Color |
 |---|---|---|---|---|---|---|
 | Titular XL · 2–3 líneas | Antonio | 700 | 132 | 0.88 | −0.01em | `#FFF7F7` |
 | Titular L · 4–5 líneas | Antonio | 700 | 112 | 0.88 | −0.01em | `#FFF7F7` |
@@ -111,6 +111,10 @@ maqueta. Es lo que hace que doce piezas del mismo mes se vean hermanas.
 | Nota / límite | Archivo | 400 | 20 | 1.5 | 0.14em | `#BABABA` |
 | Cifra | Antonio | 700 | 76 | — | 0 | `#FFF7F7` |
 | Wordmark | Archivo | 700 | 30 | — | 0.22em | `#FFF7F7` + punto `#FF5100` |
+
+> **«Interlínea base» quiere decir base.** Es el punto de partida de una cuenta
+> que se hace línea a línea, y está en la sección siguiente. Aplicar 0.88 a todas
+> las líneas por igual es exactamente el fallo que se come las tildes.
 
 **Titular y cifra siempre en versalitas.** La bajada nunca: en minúscula se lee
 mucho más rápido, y la bajada está para leerse.
@@ -151,6 +155,102 @@ Aplica a cualquier nombre futuro que lleve minúscula obligatoria, no solo a est
 El titular del sitio va a −0.02em porque Archivo es de ancho normal y necesita
 cerrarse. Antonio ya viene condensada; a −0.02em las letras se tocan y la
 palabra deja de leerse a tamaño de pulgar.
+
+---
+
+## La interlínea no es un número: es una cuenta
+
+Es lo que más rompe una pieza sin que nadie sepa nombrarlo: **las tildes y la eñe
+se comen la línea de arriba.**
+
+### Por qué pasa, medido
+
+Antonio **no trae acentos rebajados para versalitas** — no tiene la
+característica `case` de OpenType. Así que la tilde de una `Á` ocupa toda su
+altura natural: llega a **1.1294 em** sobre su línea base, cuando la altura de
+versalita es **0.8594 em**. La tilde sobresale **0.27 em por encima de la letra**.
+
+Con interlínea fija de 0.88, esa tilde sube **0.25 em por encima de la línea base
+de la línea anterior** — y como las letras de esa línea se apoyan en esa base y
+crecen hacia arriba, la tilde acaba dentro de ellas. Y por abajo pasa
+lo mismo: la cola de una `Q` baja 0.1426 em y el `¿` baja 0.1382 em, así que
+también invaden lo que venga debajo.
+
+No es teoría. Renderizado en Antonio 700 a 112 px, midiendo tinta contra tinta:
+
+| Par de líneas | Con 0.88 en todas |
+|---|---|
+| Versalita lisa sobre versalita lisa | 3 px limpios · **es el hueco de la marca** |
+| Tilde aguda debajo de un asta llena | **solapa 27 px** |
+| Eñe debajo de un asta llena | **solapa 19 px** |
+| Tilde debajo de la cola de una `Q` | **solapa 39 px** |
+
+### La cuenta
+
+```
+avance(n → n+1) = base + holguraSuperior(línea n+1) + holguraInferior(línea n)
+```
+
+**Lo que la línea de abajo sube** por encima de la altura de versalita:
+
+| Si la línea de abajo lleva | holguraSuperior |
+|---|---|
+| `Á` `É` `Í` `Ó` `Ú` | **0.27** |
+| `Ñ` `Ü` | **0.20** |
+| nada de lo anterior | 0 |
+
+**Lo que la línea de arriba baja** por debajo de su línea base:
+
+| Si la línea de arriba lleva | holguraInferior |
+|---|---|
+| `Q` `¿` `¡` `,` | **0.17** |
+| nada de lo anterior | 0 |
+
+Las dos se suman cuando coinciden. Una línea con tilde debajo de una que termina
+en `Q` avanza `0.88 + 0.27 + 0.17`.
+
+### Por qué el bloque no se afloja
+
+Cada holgura es **exactamente lo que sobresale la tinta**, ni un punto más. El
+hueco óptico que queda es el mismo que ya había entre dos líneas sin tilde, así
+que el bloque se sigue viendo igual de apretado. Comprobado con los mismos pares
+de antes:
+
+| Par de líneas | Con la cuenta puesta |
+|---|---|
+| Versalita lisa sobre versalita lisa | 3 px limpios |
+| Tilde aguda debajo de un asta llena | 3 px limpios |
+| Eñe debajo de un asta llena | 3 px limpios |
+| Tilde debajo de la cola de una `Q` | 8 px limpios |
+
+**La alternativa era subir la interlínea a 1.16 en todas.** Despeja la tilde,
+sí — y afloja el bloque entero para arreglar dos líneas. El titular de esta marca
+es un bloque compacto; una interlínea uniforme que respete las tildes deja de
+serlo. Por eso la holgura va donde hace falta y solo donde hace falta.
+
+### Dónde NO se toca
+
+Solo el titular y la cifra. Son lo único que va por debajo de interlínea 1. La
+bajada va a 1.45 y la nota a 1.5, las dos en Archivo: ahí sobra sitio y no hay
+nada que corregir.
+
+### Los anclajes se miden sobre la versalita, no sobre la tinta
+
+El tope del bloque es el **tope de versalita** de la primera línea, y la base es
+la **línea base** de la última. Nunca la caja de tinta.
+
+Si se midieran sobre la tinta, una pieza cuya primera línea lleva tilde caería
+0.27 em respecto de otra que no la lleva, y dos piezas del mismo mes no
+cuadrarían. La tilde de la primera línea vive en el aire de encima: a 132 px son
+36 px, el anclaje alto empieza en 248 y el símbolo termina en 168 — entra con 44
+px de sobra.
+
+### Y no la recortes
+
+Con interlínea por debajo de 1, la tinta de la primera línea **sale por arriba de
+su propia caja de línea**. Cualquier recorte sobre el bloque de texto —una caja
+de alto fijo que corte lo que sobra— le rasura la tilde a la primera línea. El
+bloque no lleva recorte.
 
 ---
 
@@ -266,18 +366,87 @@ y=1254.
 
 ## Carrusel
 
-- **Todas las diapositivas 1080×1350.** Mezclar proporciones deja bandas al
-  deslizar.
-- **El anclaje del texto no salta.** Si la primera va anclada al medio, las
-  demás también. El deslizamiento tiene que sentirse como una sola pieza larga,
-  no como cinco piezas distintas seguidas.
-- **El rayo y el wordmark van en todas.** Cada diapositiva se puede compartir
-  suelta.
-- **La primera lleva el peso.** Es la única que se ve en el feed sin deslizar:
-  el titular más corto y más grande del carrusel va ahí.
+> **Un carrusel es UNA pieza larga cortada en trozos, no N piezas seguidas.**
+
+Es la regla de la que salen todas las demás de este apartado. Al deslizar tiene
+que seguir siendo el mismo objeto, la misma luz y la misma frase. Si cada
+diapositiva se compone por su cuenta, lo que se publica son N piezas que
+comparten paleta — que es justo lo que se nota y lo que hace que nadie llegue a
+la última.
+
+Cuatro cosas lo producen, y ninguna es opcional: **un fondo, un velo, un
+recorrido y una frase.**
+
+### 1 · Un fondo, cortado en trozos
+
+El fondo se genera **una vez para todo el carrusel** y se corta. No una vez por
+diapositiva.
+
+| Diapositivas | Cómo |
+|---|---|
+| **2 o 3** | **Panorámica cortada.** Una sola imagen que cubre 1080×N de ancho por 1350 de alto, partida en trozos de 1080 |
+| **4 o más** | **Cadena de relevo.** Cada diapositiva se genera con la anterior delante, avanzando la cámara |
+
+El corte cae en `x = 1080`, `2160`… de la panorámica. El trozo `k` se coloca
+desplazando la imagen `−1080·k`. Cómo se le pide al motor está en
+[`prompts/imagen/nano-banana.md`](nano-banana.md).
+
+**Por qué 3 es el tope de la panorámica.** Tres diapositivas son 3240×1350, o
+sea 2.4:1 — una panorámica 21:9 escalada a ese ancho da 1388 de alto y solo hay
+que recortar 38 px. Cuatro serían 3.2:1, que ningún motor entrega: escalar una
+21:9 hasta ahí obliga a tirar más de un tercio del alto y se pierde el encuadre
+con el que se compuso.
+
+### 2 · Un velo, con el mismo número en todas
+
+**El velo es vertical y con los mismos valores en las N. El brillo de la imagen
+es el mismo número en las N.**
+
+Un velo vertical vale lo mismo en todo el ancho, así que en la costura no hay
+escalón. En cuanto una diapositiva cambia de anclaje o de brillo, el velo cambia
+de dirección o de valor y **el corte se ve**.
+
+Esa es la razón mecánica de que **el anclaje del texto no salte**: si la primera
+va anclada al medio, las demás también. No es gusto — es que se nota el corte.
+
+### 3 · Un recorrido
+
+- **La dirección es de izquierda a derecha**, la misma en la que se desliza. El
+  sujeto tira del dedo hacia la siguiente.
+- **En la 01 el sujeto entra, en las intermedias cruza, en la última se detiene o
+  aterriza.** Un carrusel que acaba con el sujeto todavía cruzando no ha
+  terminado.
+- **La luz va en un solo sentido:** o crece o se apaga a lo largo del carrusel.
+  Nunca sube, baja y vuelve a subir.
+
+**Por la costura pasa materia continua** —una estela, el cuerpo del sujeto, la
+caída de la luz—, **nunca el punto focal.** Al deslizar, la aplicación mete un
+hueco entre diapositivas: lo que esté partido justo ahí se lee roto; lo que solo
+cruza, se lee entero.
+
+### 4 · Una frase
+
+- **El antetítulo es el mismo en todas.** Es el hilo: cada diapositiva declara de
+  qué concepto forma parte. Es lo más barato que se puede hacer por la
+  continuidad y lo primero que se nota cuando falta.
+- **Los tramos naranjas, leídos en orden, forman una frase.** Uno por
+  diapositiva, como en cualquier pieza. Léelos seguidos sin el resto del texto:
+  si no dicen nada, el carrusel son N piezas con un tema común, no un concepto.
+- **La primera lleva el peso.** Es la única que se ve en el feed sin deslizar: el
+  titular más corto y más grande del carrusel va ahí.
 - **La última cierra o pide algo.** No se deja morir en un dato.
-- **Numerador:** apagado por defecto. Si se enciende, va en la esquina superior
-  derecha en x=1008, formato `01/05`, en `#BABABA`.
+- **El símbolo y el wordmark van en todas.** Cada diapositiva se puede compartir
+  suelta.
+- **Numerador encendido.** En una pieza suelta va apagado; en un carrusel es la
+  barra de avance del concepto y va en la esquina superior derecha en x=1008,
+  formato `01/05`, en `#BABABA`.
+
+### Cómo se revisa
+
+**En tira, no una a una.** Las N pegadas por el borde, sin separación entre
+ellas, y se miran las costuras. Es el equivalente para carrusel de mirar un lote
+en cuadrícula: una diapositiva que suelta está perfecta puede romper la tira, y
+suelta no hay manera de verlo.
 
 ---
 
@@ -286,6 +455,13 @@ y=1254.
 - [ ] ¿El titular es Antonio 700 en versalitas, y el resto Archivo?
 - [ ] ¿El tamaño corresponde al número de líneas, y ninguna línea se pasa de su
       rango de caracteres?
+- [ ] **Busca las tildes, las eñes y los signos de apertura del titular.** ¿Cada
+      línea que lleva una tiene su holgura sumada al avance? Y si encima de ella
+      hay una `Q`, un `¿`, un `¡` o una coma, ¿está sumada también la de abajo?
+- [ ] Amplía el titular y **mira el punto donde una tilde queda debajo de una
+      letra.** Si se tocan, falta holgura. Si hay un dedo de aire, sobra.
+- [ ] ¿El bloque de texto va sin recorte, para que la tilde de la primera línea
+      no salga rasurada?
 - [ ] ¿Algún nombre de minúscula obligatoria —`eBot`— metido dentro del titular?
 - [ ] ¿Hay **un solo** tramo naranja, y es la afirmación o la cifra?
 - [ ] ¿Alguna letra en `#FF1E1E`?
@@ -303,10 +479,22 @@ y=1254.
 - [ ] ¿El wordmark termina en y=1254? Si se colocó por su borde superior en vez
       de por su base, queda unos 14 px alto y se nota contra el margen.
 
+### Si es un carrusel, además
+
+- [ ] ¿El fondo salió de **una sola** imagen cortada, o de N imágenes distintas?
+- [ ] ¿El anclaje del texto es el mismo en todas?
+- [ ] ¿El brillo de la imagen es el mismo número en todas?
+- [ ] ¿El antetítulo es el mismo en todas?
+- [ ] Lee **solo los tramos naranjas** en orden: ¿forman una frase?
+- [ ] ¿El sujeto avanza hacia la derecha y se detiene en la última?
+- [ ] ¿Está el numerador encendido?
+- [ ] **Ponlas en tira, pegadas.** ¿Se ve alguna costura? ¿Hay un escalón de
+      brillo en algún corte? ¿Hay un punto focal partido por la mitad?
+
 ### La comprobación que no se puede saltar
 
 **Descarga la pieza y ponla al lado de su vista previa.** Si no son idénticas, el
-exportador está mal — y si está mal en una, está mal en todas. Las cinco trampas
+exportador está mal — y si está mal en una, está mal en todas. Las siete trampas
 que lo causan están en
 [`prompts/plataformas/meta-ai.md`](../plataformas/meta-ai.md).
 

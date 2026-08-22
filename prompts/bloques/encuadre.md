@@ -56,6 +56,33 @@ superior y el 20 % inferior: ahí caen la interfaz de la aplicación y los
 botones.
 ```
 
+### Panorámica de carrusel (2 o 3 diapositivas)
+
+El fondo de un carrusel es **uno solo, cortado en trozos de 1080**. Las bandas
+reservadas y el carril del texto dejan de ser zonas de una pieza y pasan a ser
+**franjas que cruzan la panorámica entera**, porque el símbolo, el wordmark y el
+anclaje del texto son los mismos en todas las diapositivas.
+
+```
+Encuadre: composición horizontal 21:9, muy apaisada, pensada para leerse como
+una sola escena continua de izquierda a derecha. La franja superior y la
+franja inferior del cuadro quedan en negro limpio de lado a lado, sin ninguna
+forma, resplandor ni reflejo. El tercio inferior del cuadro entero queda en
+negro casi puro, limpio y sin detalle, de un extremo al otro y a la misma
+altura en todo el ancho, con la incandescencia apagándose antes de bajar hasta
+él. Reparte el interés en tres momentos: uno centrado en el tercio izquierdo,
+uno en el centro y uno en el tercio derecho. Justo en el primer tercio y en
+los dos tercios del ancho no debe haber ningún detalle que llame la atención:
+por ahí solo pasa materia continua.
+```
+
+Para **dos** diapositivas se pide **3:2** en vez de 21:9 y se reparte el interés
+en dos momentos: una 21:9 escalada a 2160 de ancho se queda corta de alto y no
+cubre el lienzo.
+
+Para **cuatro o más** no hay panorámica que valga: se encadena. Está en
+[`prompts/imagen/nano-banana.md`](../imagen/nano-banana.md).
+
 ### Sin texto — la imagen se sostiene sola
 
 ```

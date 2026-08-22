@@ -90,6 +90,7 @@ según la petición:
 | Prompts de imagen, creativos, Nano Banana | `datos/marca.json` → `prompts/README.md` → `prompts/bloques/` → `prompts/imagen/nano-banana.md` |
 | Imágenes **por lote** (10, 50, 200 piezas) | lo anterior + `prompts/imagen/lote.md` + `skills/lote-visual/SKILL.md` |
 | Maquetar una pieza: retícula, tamaños, qué va en naranja | `datos/marca.json` → `redesSociales` + `prompts/imagen/texto-en-imagen.md` |
+| **Un carrusel**: que las diapositivas se lean como una sola pieza | `datos/marca.json` → `redesSociales.carrusel` + `prompts/imagen/texto-en-imagen.md` (§ Carrusel) + `prompts/imagen/nano-banana.md` (el fondo) |
 | Guion o prompt de video, reel, anuncio en video | `prompts/video/video-corto.md` + `adn/02-voz-y-tono.md` |
 | Anuncios pagados (Meta, Google) | `campanas/plantillas/estructura-anuncio.md` + `campanas/canales/` + `catalogo/` del producto |
 | Una campaña completa | `campanas/README.md` (el embudo entero) y de ahí a las plantillas |
