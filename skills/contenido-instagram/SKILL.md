@@ -43,8 +43,10 @@ En este orden:
 10. [`prompts/texto/organico.md`](../../prompts/texto/organico.md) — los cinco tipos de publicación
 11. [`prompts/imagen/texto-en-imagen.md`](../../prompts/imagen/texto-en-imagen.md) — la maquetación
 12. [`prompts/plataformas/meta-ai.md`](../../prompts/plataformas/meta-ai.md) — el contrato
-13. [`campanas/plantillas/calendario.md`](../../campanas/plantillas/calendario.md) — la mezcla de tipos
-14. [`prompts/bloques/estilo-visual.md`](../../prompts/bloques/estilo-visual.md) y
+13. [`prompts/imagen/nano-banana.md`](../../prompts/imagen/nano-banana.md) — si el mes
+    lleva carruseles: cómo se genera un fondo que es uno solo
+14. [`campanas/plantillas/calendario.md`](../../campanas/plantillas/calendario.md) — la mezcla de tipos
+15. [`prompts/bloques/estilo-visual.md`](../../prompts/bloques/estilo-visual.md) y
     [`negativos.md`](../../prompts/bloques/negativos.md) — se copian literales
 
 ---
@@ -135,17 +137,44 @@ Y los negativos específicos del tema, de
 [`skills/lote-visual/SKILL.md`](../lote-visual/SKILL.md) paso 5. Para eBot:
 `robots, androides, burbujas de chat`.
 
-### Paso 5 · Elegir anclaje y tamaño por pieza
+### Paso 5 · Elegir anclaje y tamaño por pieza, y resolver la interlínea
 
 Mecánico, no artístico: el número de líneas del titular decide el tamaño, y el
 tamaño decide el anclaje. La tabla está en
 [`prompts/imagen/texto-en-imagen.md`](../../prompts/imagen/texto-en-imagen.md).
 
+**Y con el titular ya cortado, se resuelve la interlínea línea a línea.** No es
+un número fijo: cada línea que lleva `Á É Í Ó Ú` suma 0.27 al avance, cada una
+con `Ñ` o `Ü` suma 0.20, y la que va debajo de una línea con `Q`, `¿`, `¡` o
+coma suma 0.17. Antonio no rebaja los acentos en versalitas, así que sin esa
+cuenta la tilde cae dentro de las letras de la línea de arriba. La cuenta entera,
+medida, está en el mismo archivo.
+
+Se entrega **resuelta**, no como regla: si Meta tiene que decidirlo, no lo hace.
+
 El anclaje decide dónde tiene que quedar limpio el fondo, y eso se escribe dentro
 del prompt de esa pieza — describiendo **qué hay** en esa zona (negro limpio, la
 incandescencia apagándose), nunca «espacio para el texto».
 
-### Paso 6 · Armar el prompt maestro
+### Paso 6 · Coser los carruseles
+
+Un carrusel es **una pieza larga cortada en trozos**, no N publicaciones
+seguidas. Por cada carrusel del mes se decide, antes de escribir el prompt
+maestro:
+
+1. **Cuántas diapositivas**, porque decide cómo se genera el fondo: 2 o 3 van con
+   una panorámica cortada; 4 o más, con cadena de relevo.
+   [`prompts/imagen/nano-banana.md`](../../prompts/imagen/nano-banana.md).
+2. **Un solo prompt de fondo** para todo el carrusel. No uno por diapositiva.
+3. **Un antetítulo**, el mismo en las N. Es el hilo.
+4. **Un anclaje y un brillo**, los mismos en las N. Si cambian, se ve la costura.
+5. **Los tramos naranjas leídos en orden tienen que formar una frase.**
+   Escríbelos seguidos y léelos: si no dicen nada, el carrusel son N piezas con
+   un tema común.
+6. **El recorrido:** en la 01 el sujeto entra, en las intermedias cruza, en la
+   última se detiene. Y la luz va en un solo sentido.
+
+### Paso 7 · Armar el prompt maestro
 
 Siete secciones, en este orden. El orden no es decorativo: la prohibición de
 escribir va primero y se repite al final, porque en un prompt largo una sola
@@ -158,13 +187,14 @@ acortar, traducir o completar cualquier texto.
 
 ━━ 2. EL SISTEMA VISUAL ━━
 Los cinco hex. Las dos familias con sus roles. La retícula en píxeles. La
-escala completa. EL ORDEN DEL BLOQUE DE TEXTO. El velo. La regla del acento
-naranja.
+escala completa. EL ORDEN DEL BLOQUE DE TEXTO. LA CUENTA DE LA INTERLÍNEA,
+con sus tres holguras. El velo. La regla del acento naranja. Y si el mes
+lleva carruseles, las reglas de continuidad.
 
 ━━ 3. EL CONTRATO DEL HTML ━━
 Las dos fuentes de Google Fonts. Lienzo de 1080×1350 exactos. Botón de
 descarga por pieza y botón de descargar todas. Descripción y hashtags en
-texto seleccionable debajo de cada pieza. Y las cinco trampas del exportador
+texto seleccionable debajo de cada pieza. Y las siete trampas del exportador
 de prompts/plataformas/meta-ai.md, literales.
 
 ━━ 4. EL BLOQUE DE ESTILO ━━
@@ -175,13 +205,15 @@ Literal, de prompts/bloques/negativos.md, más los del tema del mes.
 
 ━━ 6. LAS PIEZAS ━━
 Una por una: número, tipo, titular con sus cortes y su tramo naranja,
-anclaje, prompt del fondo, descripción, hashtags.
+anclaje, prompt del fondo, descripción, hashtags. En el titular, la holgura
+de interlínea ya resuelta línea a línea. Un carrusel va como UNA pieza con N
+diapositivas y UN prompt de fondo, no como N piezas.
 
 ━━ 7. ANTES DE DEVOLVER ━━
 La lista que Meta tiene que comprobar, con la prohibición repetida.
 ```
 
-### Paso 7 · Entregar
+### Paso 8 · Entregar
 
 El prompt maestro completo, en un bloque, listo para pegar. Ver
 [`orquestador/protocolo-entrega.md`](../../orquestador/protocolo-entrega.md).
@@ -215,11 +247,19 @@ Antes de entregar, una a una:
 - [ ] ¿Alguna pieza dice su tagline tres veces —titular, apertura y firma—?
 - [ ] ¿Cada titular cabe en 8 líneas, con los cortes escritos?
 - [ ] ¿Un solo tramo naranja por titular?
+- [ ] ¿Está resuelta la interlínea línea a línea en cada titular que lleva
+      tilde, eñe o signo de apertura? → `texto-en-imagen.md`
+- [ ] En cada carrusel: ¿un solo prompt de fondo, un antetítulo, un anclaje y un
+      brillo para todas las diapositivas?
+- [ ] En cada carrusel: lee **solo los tramos naranjas** en orden. ¿Forman una
+      frase?
+- [ ] ¿Pide el prompt maestro que los carruseles se muestren **en tira**, pegados
+      y sin separación, además de sueltos?
 - [ ] ¿El bloque de estilo está una sola vez y es idéntico para todas?
 - [ ] ¿La prohibición de escribir aparece al principio **y** al final?
 - [ ] ¿Está el orden del bloque de texto escrito, y no solo la escala? Dar los
       tamaños sin el orden deja al modelo poniendo la cifra encima del titular
-- [ ] ¿Están las cinco trampas del exportador dentro del prompt maestro?
+- [ ] ¿Están las siete trampas del exportador dentro del prompt maestro?
 - [ ] ¿Pasa cada pieza la prueba del rótulo? Tapa la marca y la cifra: ¿se sabe
       qué se vende sin deducirlo? → [`adn/06-claridad.md`](../../adn/06-claridad.md) §9
 - [ ] ¿El antetítulo nombra la categoría en la que está el lector, y no el
